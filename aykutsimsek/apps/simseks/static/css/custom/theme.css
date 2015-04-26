@@ -1,0 +1,112 @@
+body {
+	font: 10px sans-serif;
+	cursor: default;
+}
+
+html {
+	background-color: #eee;
+}
+
+#reasondiv {
+	position: relative;
+	font: 10px 'Helvetica',Arial;
+	font-weight: 200;
+	text-anchor:middle;
+	margin: auto;
+}
+
+/* DROPDOWN */
+
+.dropselect {
+	position: relative;
+	-webkit-appearance: button;
+    -moz-appearance: button;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -webkit-padding-end: 20px;
+    -moz-padding-end: 20px;
+    -webkit-padding-start: 2px;
+    -moz-padding-start: 2px;
+    border-radius: 2px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, .1);
+    color: #555;
+    font-size: inherit;
+    margin: 0;
+    overflow: hidden;
+    padding: 2px 34px 2px 4px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    background: url(../../images/dropDownArrow.png) no-repeat right #eee;
+    background-size:20px 20px;
+}
+
+/* DONUT */
+.arc path {
+  stroke: #eee;//rgba(255,255,255,1);
+  stroke-width: 2px;
+}
+
+g .arc {
+  cursor: pointer;
+    pointer-events: all;
+}
+
+g .arc:hover {
+  //fill-opacity: .7;
+}
+
+g .arc:selected {
+  fill-opacity: .7;
+}
+.donut_hover {
+	fill: #ffffff;
+	width: 400px;
+	white-space: nowrap;
+	font: 13px "Helvetica",Arial;
+	font-weight: 400;
+	text-align: center;
+	padding: 6px 2px 7px 2px;
+	text-anchor: middle;
+}
+
+
+g rect:hover {
+  fill: brown;
+  fill-opacity: .8;
+}
+
+.legend rect:hover, .legend rect:selected {
+  fill: brown;
+  fill-opacity: .8;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.sparkline {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 4px;
+}
+
+.sparkcircle {
+  fill: #ffffff;
+  stroke: none;
+}
+.country_text {
+	width: 100%;
+	font: 10px "Helvetica",Arial;
+	font-weight: 700;
+	text-align: center;
+	padding: 2px 0 4px 0;
+	color: #111;
+}
+.arc0 {
+	opacity: .8;
+}
+
+.arc1 {
+	opacity: .8;
+}

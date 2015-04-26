@@ -1,0 +1,129 @@
+html,body {
+	text-align: center;
+	margin: 0; padding: 0;
+	font-family: Georgia;
+	background: #222;
+	height: 100%;
+}
+
+#map { width: 100%; height: 100%; }
+#cover {
+	display:block; position:absolute; top:0; bottom:0; left:0; right:0;
+	background: url(../../img/altug_firarda/cover.png) no-repeat center center fixed;
+	opacity: 1;
+	pointer-events: none;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#header{
+	position: absolute;
+	top: 0px;
+	left: 80px;
+	width: 33%;
+	height: 300px;
+	text-align: left;
+	pointer-events: none;
+}
+
+#header a {
+	text-decoration: none;
+	pointer-events: auto;
+	color: rgba(252,187,174,1);
+	font-size: 13px;
+}
+
+#header #milestone {
+	color: #fff;
+	font-size: 13px;
+	font-family: Helvetica, Arial, Sans-serif;
+	font-style: italic;
+}
+
+#header #milestone h3{
+	margin: 20px auto 2px auto;
+	max-width: 700px;
+}
+
+#header #milestone p{
+	margin: 20px auto 2px auto;
+	max-width: 700px;
+}
+
+#header #milestone span {
+	color: rgba(255,255,255,0.5);
+	font-size: 13px;
+	text-transform:capitalize;
+}
+
+#header #milestone #text-sources{
+	font-size: 13px;
+}
+
+
+#header #milestone #text-sources a:hover{
+	color: rgba(255,255,255,0.5);
+}
+
+
+#footer {
+	position: relative;
+	bottom: 0;
+	top: 10px;
+	width: 100%;
+	height: 70px;
+	text-align: center;
+	color: #fff;
+	font-size: 15px;
+	font-family: Helvetica, Arial, Sans-serif;
+	font-style: italic;
+}
+
+#footer #buttons ul{
+	margin: 0 0 0px 0px;
+}
+
+#footer #buttons ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0;
+}
+
+#footer #buttons ul li a {
+	display: block;
+	width: 22px;
+	height: 22px;
+	background: red;
+	pointer-events: auto;
+}
+
+#footer #buttons ul li a.prev {
+	background: url(../../img/altug_firarda/arrows.png) no-repeat 0 0;
+	margin: 0 16px 0 0;
+}
+
+#footer #buttons ul li a.next {
+	background: url(../../img/altug_firarda/arrows.png) no-repeat -38px 0;
+}
+
+#languageselector ul
+{
+margin: 0;
+padding: 0;
+list-style-type: none;
+text-align: center;
+}
+
+#languageselector ul li { display: inline; margin-left:-10px}
+
+#languageselector ul li a
+{
+text-decoration: none;
+}
+
+#languageselector ul li a:hover
+{
+opacity: .7
+}

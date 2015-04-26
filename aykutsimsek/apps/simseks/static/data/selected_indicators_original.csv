@@ -1,0 +1,80 @@
+"indicator","type"
+"Employment in agriculture (% of total employment)",Agriculture & Rural Development
+"Agricultural irrigated land (% of total agricultural land)",Agriculture & Rural Development
+"Agricultural land (% of land area)",Agriculture & Rural Development
+"Agriculture, value added (constant 2005 US$)",Agriculture & Rural Development
+"Agricultural machinery, tractors per 100 sq. km of arable land",Agriculture & Rural Development
+"GDP growth (annual %)",Economy & Growth
+"GDP per capita (current US$)",Economy & Growth
+"Imports of goods and services (% of GDP)",Economy & Growth
+"Inflation, GDP deflator (annual %)",Economy & Growth
+"Total reserves (includes gold, current US$)",Economy & Growth
+"Children in employment, total (% of children ages 7-14)",Social Development
+"Refugee population by country or territory of asylum",Social Development
+"Proportion of seats held by women in national parliaments (%)",Social Development
+"Vulnerable employment, total (% of total employment)",Social Development
+"Water pollution, chemical industry (% of total BOD emissions)",Environment
+"Forest area (% of land area)",Environment
+"Real interest rate (%)",Financial Sector
+"Bank capital to assets ratio (%)",Financial Sector
+"Market capitalization of listed companies (current US$)",Financial Sector
+"Domestic credit provided by financial sector (% of GDP)",Financial Sector
+"Energy use (kt of oil equivalent)",Energy & Mining
+"Energy production (kt of oil equivalent)",Energy & Mining
+"Alternative and nuclear energy (% of total energy use)",Energy & Mining
+"Death rate, crude (per 1,000 people)",Health
+"Health expenditure, total (% of GDP)",Health
+"Population growth (annual %)",Health
+"Health expenditure per capita (current US$)",Health
+"Internet users (per 100 people)",Infrastructure
+"Electric power consumption (kWh per capita)",Infrastructure
+"Rail lines (total route-km)",Infrastructure
+"Air transport, registered carrier departures worldwide",Infrastructure
+"Poverty gap at national poverty line (%)",Infrastructure
+"Income share held by lowest 10%",Infrastructure
+"Income share held by lowest 20%",Infrastructure
+"Income share held by highest 10%",Infrastructure
+"Net flows on external debt, total (NFL, current US$)",External Debt
+"Use of IMF credit (DOD, current US$)",External Debt
+"Total debt service (% of exports of goods, services and primary income)",External Debt
+"Births attended by skilled health staff (% of total)",Gender
+"Prevalence of HIV, female (% ages 15-24)",Gender
+"Employees, industry, female (% of female employment)",Gender
+"Total tax rate (% of commercial profits)",Private Sector
+"Trade in services (% of GDP)",Private Sector
+"Domestic credit to private sector (% of GDP)",Private Sector
+"New businesses registered (number)",Private Sector
+"Cash surplus/deficit (% of GDP)",Public Sector
+"Central government debt, total (% of GDP)",Public Sector
+"Military expenditure (% of GDP)",Public Sector
+"Revenue, excluding grants (% of GDP)",Public Sector
+"Patent applications, residents",Science & Technology
+"Trademark applications, total",Science & Technology
+"Research and development expenditure (% of GDP)",Science & Technology
+"High-technology exports (current US$)",Science & Technology
+"Employment in agriculture (% of total employment)",Social Protection & Labor
+"GDP per person employed (constant 1990 PPP $)",Social Protection & Labor
+"Labor force participation rate, total (% of total population ages 15+)",Social Protection & Labor
+"Access to electricity (% of population)",Climate Change
+"CO2 emissions (metric tons per capita)",Climate Change
+"Land area where elevation is below 5 meters (% of total land area)",Climate Change
+"Forest area (% of land area)",Climate Change
+"Imports of goods and services (% of GDP)",Trade
+"Exports of goods and services (% of GDP)",Trade
+"Merchandise trade (% of GDP)",Trade
+"High-technology exports (% of manufactured exports)",Trade
+"Energy imports, net (% of energy use)",Trade
+"Urban population (% of total)",Urban Development
+"Poverty gap at urban poverty line (%)",Urban Development
+"Population in the largest city (% of urban population)",Urban Development
+"Improved water source (% of population with access)",Urban Development
+"School enrollment, primary (% gross)",Education
+"Children out of school, primary",Education
+"Literacy rate, adult total (% of people ages 15 and above)",Education
+"Trained teachers in primary education (% of total teachers)",Education
+"Primary completion rate, total (% of relevant age group)",Education
+"Improved sanitation facilities (% of population with access)",Aid Effectiveness
+"Net migration",Aid Effectiveness
+"Mortality rate, under-5 (per 1,000 live births)",Aid Effectiveness
+"Net official development assistance received (current US$)",Aid Effectiveness
+"Mobile cellular subscriptions (per 100 people)",Aid Effectiveness

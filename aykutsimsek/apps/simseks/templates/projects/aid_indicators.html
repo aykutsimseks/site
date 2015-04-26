@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<head>
+	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/custom/theme.css">	
+	<!-- Javascript Libraries -->
+	<script src="{{ STATIC_URL }}js/d3.v3.min.js"></script>
+	<script src="{{ STATIC_URL }}js/jquery.tools.min.js"></script>
+	<script src="{{ STATIC_URL }}js/jquery-ui.js" type="text/javascript" charset="utf-8"></script>
+	
+	<style>
+	  .sortable { list-style-type: none; margin: 0; padding: 0;  }
+	  .sortable li { float: left; width: 100px; height: 90px; font-size: 4em; text-align: center; }
+	  </style>
+	
+
+	<!-- Custom JS Modules -->
+	<script src="{{ STATIC_URL }}js/custom/utils.js"></script>
+	<script src="{{ STATIC_URL }}js/custom/glyph.js"></script>
+	<script src="{{ STATIC_URL }}js/custom/spatial_glyph_aid.js"></script>
+	<script src="{{ STATIC_URL }}js/custom/map_doreen.js"></script>
+	<script src="{{ STATIC_URL }}js/custom/donut_selector.js" ></script>
+	<script src="{{ STATIC_URL }}js/custom/circle_hover.js" ></script>
+	<script src="{{ STATIC_URL }}js/custom/horizontal_stacked_bar.js" ></script>
+	
+	
+	<script type="text/javascript">
+	var agriculture = [];
+	var water = [];
+	var health = [];
+	var education = [];
+	var law = [];
+	var _reason = "Total";
+	$('#hiddenreason').val(_reason);
+	
+	//readsparklinedata();
+	drawDonut();
+
+		$(function(){
+			
+			
+			$('#dropselect').change( function(){
+				_reason = $('#hiddenreason').val();
+				_order  = $('#dropselect').val();
+				drawDoreen(_order , _reason);
+			});
+			
+			
+			var _order  = $('#dropselect').val();
+			drawDoreen( _order , _reason );
+			
+			$('#check_box').click( function(){
+				if(d3.select("#check_box")[0][0].checked)
+				{
+        			drawDoreen( _order , _reason );
+   			 	}
+   			 	else
+   			 	{
+   			 		clearSelected();
+   			 		drawDoreen( _order , _reason );
+   			 	}
+   			 })
+		});
+	 
+	 
+	
+	
+	</script>
+</head>
+<body>
+<input type="hidden" name="hiddenreason" value="" id="hiddenreason">
+	<!-- A nicer header should go here -->
+	<div id='header' style="font-size:20px;color:#666;top:10px;left:8px;position: absolute;">
+				Aid Data / World Bank
+				<br/>
+				<div style="font-size:10px;top:0px;position: relative;color:#666;">
+				by 
+                <a href="http://www.linkedin.com/in/ahmedshabbir" alt="Ahmed Shabbir" target="_blank" style="color:#666;">Ahmed Shabbir</a>
+                &nbsp&&nbsp
+                <a href="http://www.linkedin.com/pub/aykut-simsek/38/b70/27" alt="Aykut Simsek" target="_blank" style="color:#666;">Aykut Simsek</a>
+            	</div>			
+    </div>
+	<div id="reasondiv" style="top:12px;left:1195px; position: absolute; "></div>	
+	<div id='map_canvas' style="top:0px;right:0px;position: absolute;  border-radius: 10px;"></div>
+	<div style="top:60px;position:fixed;left:10px;"> 
+    	<div id='sample_glyph' style="top:0px;left:140px;position: absolute;  border-radius: 10px;"></div>
+		<div id='donut_selector' style="top:60px;left:10px;position: absolute;"></div>
+		<div style="top:230px;left:10px;position: absolute;display:block;font: 10px 'Helvetica',Arial;font-weight: 800">
+			Sorted by:
+			<select id="dropselect" class="dropselect">
+		  		<option value="country" selected="selected">Country Name</option>
+		  		<option value="-population">Population</option>
+		  		<!--<option value="-all_total_aid">Total Aid</option>
+		 		<option value="-all_total_aid_reason">Total Aid for reason</option> -->
+		  		<option value="-all_per_capita_aid">Aid Per Capita</option> 
+		  		<option value="-indicator">Indicator</option>
+			</select>
+		</div>
+		<div id='check_div' style="position:relative;top:270px;left: 0px;font: 10px 'Helvetica',Arial;font-weight: 800;visibility:hidden;" >
+			<input type='checkbox' id='check_box'>Show selected countries only</input>
+		</div>
+		<div id='circle_hover' style="top:290px;left: 5px;position: absolute;"></div>
+
+	</div>
+	<div style="bottom:30px;position:absolute;left:10px;width:210px">
+		<p>The purpose of this visualization is to find if countries use received aid effectively. The top half of the circle represents the amount of received aid, where as the bottom half represents the indicator values from Wold Bank.</p>
+		<p>Select aid purpose, change sort order or click on the boxes the get more detailed view. </p>
+		<p>This is still work in progress.</p>
+	</div
+
+</body>
+

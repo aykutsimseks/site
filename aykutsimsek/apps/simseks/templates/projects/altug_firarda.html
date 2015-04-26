@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Altug Firarda</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.css" />
+	<link rel="stylesheet" href="{{ STATIC_URL }}css/altug_firarda/app.css" />
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="http://libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script>
+	<script src="http://cartodb.github.io/odyssey.js/dist/odyssey.js" charset="UTF-8"></script>
+	<script src="{{ STATIC_URL }}js/altug_firarda/app.js"></script>
+	
+	<style>
+		#map div.cartodb-legend-stack {
+  			position: absolute;
+  			bottom: 40px;
+  			left: -10px;
+  			webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 0 0px 0px;
+  			-moz-box-shadow: rgba(0, 0, 0, 0.2) 0 0 0px 0px;
+  			box-shadow: rgba(0, 0, 0, 0.2) 0 0 0px 0px;
+  			border: 0px solid #999999;
+  			background: rgba(255,255,255,0);
+  			z-index: 105;
+  			cursor: text;
+		}
+		#map div.cartodb-legend ul li {
+			padding: 0px 10px 0px 4px;
+			float:left;
+			text-transform: none;
+			color: rgba(255,255,255,1);
+			font-weight: 400;
+		}
+		
+		#map .cartodb-share-dialog .block .content {
+			padding: 10px 5px;
+		}
+		
+		#map div.leaflet-bottom.leaflet-right > div { 
+			color: rgba(0,0,0,.6);
+			background: rgba(255,255,255,.2);
+		}
+		#map div.leaflet-bottom.leaflet-right > div a{
+			color: rgba(0,0,0,1);
+			font-weight: 500;
+		}
+	</style>
+</head>
+<body>
+	<div id="map">
+		<div id="languageselector" style="position:absolute;bottom:8px;left:95px;z-index:999">
+			<ul>
+				<li><a href="{% url 'altug_firarda' language='tr'  %}"><img height=24 src="{{ STATIC_URL }}img/altug_firarda/turkey_round_icon_64.png"></img></a></li>
+				<li><a href="{% url 'altug_firarda' language='en'  %}"><img height=24 src="{{ STATIC_URL }}img/altug_firarda/united_kingdom_round_icon_64.png"></img></a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="cover"></div>
+	<div id="header">
+		<div id="milestone">
+			<!-- <img id="picture" src="" alt="Jennifer Gao" style="width:80px;border-radius:60px;top:18px;position:absolute"></img> -->
+			<div id="top-section" style="display: inline-block;"> <!-- margin-left:85px" -->
+				<h3></h3>
+				<span id="location" style="font-size: 20px;"></span>
+				</br>
+				<span id="date"></span>
+			</div>
+			
+			<p id="text-description"></p>
+			<p id="text-sources"></p>
+		</div>
+		<div id="footer">
+			<div id="buttons">
+				<ul>
+					<li><a class="prev" href="#"></a></li>
+					<li><a class="next" href="#"></a></li>
+				</ul>
+				<span>1/14</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

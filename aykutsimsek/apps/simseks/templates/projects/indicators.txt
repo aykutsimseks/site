@@ -1,0 +1,127 @@
+http://www.investopedia.com/articles/investing/100614/world-banks-allimportant-world-development-indicators-wdi.asp
+
+Agriculture & Rural Development
+employment in agriculture (% of total employment)
+agricultural irrigated land (% of total agricultural land)
+agricultural land (% of land area)
+agriculture value added (% of GDP)
+arable land (% of land area)
+agricultural machinery tractors per 100 km2 of arable land
+
+Economy & Growth
+GDP growth (annual %)
+GDP per capita (current US$)
+import of goods and services (% of GDP)
+inflation (annual %)
+total reserves (includes gold, current US$)
+among others.
+
+Social Development
+children in employment (% of children between ages 7-14)
+refugee population by country or territory of origin
+proportion of seats held by women in national parliaments (%)
+vulnerable employment (% of female or male population).
+
+Environment
+water pollution specific industry (% of total BOD, ie organic water pollutant) emissions
+threatened plant species, forest area (% of land area)
+
+Financial Sector
+real interest rate (%)
+bank capital to asset ratio (%)
+market capitalization of listed companies (% of GDP)
+and domestic credit provided by the financial sector (% of GDP)
+
+Energy & Mining
+energy use (kt of oil equivalent)
+energy production (kt of oil equivalent)
+alternative and nuclear energy (% of total energy use)
+
+Health
+the death rate, crude (per 1,000 people)
+health expenditure (% of GDP)
+population growth (annual %)
+health expenditure per capita (current US$)
+
+Infrastructure
+internet users (per 100 people)
+electric power consumption (kWh per capita)
+rail lines (total route-km)
+air transport
+aregistered carrier departures worldwide, 
+
+Poverty
+poverty gap, 
+population below the national poverty line (%)
+income share held by the lowest 10%
+income share held by the lowest 20%
+income share held by the highest 10%
+
+External Debt
+net flows on external debt
+use of IMF credit
+total debt service (% of exports of good & services and primary income)
+
+Gender
+Births attended by skilled health staff (% of total), 
+prevalence of HIV among females (% ages 15-24), 
+employees (industry, female)
+
+Private Sector
+the level and progress of the economies private sector are total tax rate (% of commercial profits), 
+trade in services (% of GDP), 
+domestic credit held by the private sector (% of GDP), 
+the number of new businesses registered
+
+Public Sector
+cash surplus/deficit (% of GDP), 
+central government debt, 
+total (% of GDP), 
+military expenditure (% of GDP), 
+revenue excluding grants (% of GDP)
+
+Science & Technology
+patent applications, 
+trademark applications, 
+research & development expenditure (% of GDP), 
+high technology exports (current US$)
+
+Social Protection & Labor
+employment in agriculture (% of total employment), 
+GDP per person employed (constant 1990 PPP $), 
+labor force participation rate (% of total population ages 15+).
+
+Climate Change
+access to electricity (% of population), 
+CO2 emissions (metric tonne per capita), 
+land area where elevation is below 5 meters (% of total land area), 
+forest area (% of land area)
+
+
+Trade
+imports of goods and services (% of GDP), 
+exports of goods and services (% of GDP), 
+merchandise trade (% of GDP), 
+high-technology exports (% of manufactured exports), 
+and energy imports (% of energy use)
+
+Urban Development
+urban population (% of total), 
+poverty gap at urban poverty line (%), 
+population in the largest city (% of urban population)
+improved water source (% of urban population with access).
+
+Education
+school enrollment, 
+primary (% gross), 
+children out of school, 
+literacy rate, 
+trained teachers in primary education (% of total teachers), 
+primary completion rate (% of relevant age group)
+
+Aid Effectiveness
+improved sanitation facilities (% of population with access), 
+net migration, 
+the mortality rate for children under the age of five years (per 1,000 birth lives), 
+net official development assistance received (current US$), 
+mobile cellular subscriptions (per 100 people)

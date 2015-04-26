@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<head>
+		<head>
+		<!-- Meta Tags -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>About</title>
+		<!-- <title>Life of Me</title> -->
+		<!-- <title>About | Aykut Simsek</title> -->
+		<meta name="description" content="Insert Your Site Description" />
+		<!-- Mobile Specifics -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="HandheldFriendly" content="true"/>
+		<meta name="MobileOptimized" content="320"/>
+		<!-- Mobile Internet Explorer ClearType Technology -->
+		<!--[if IEMobile]>  
+		<meta http-equiv="cleartype" content="on">
+		<![endif]-->
+		<!-- Bootstrap  -->
+		<link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet">
+		
+		<!-- Main Style -->
+		<link href="{{ STATIC_URL }}css/main.css" rel="stylesheet">
+		<!-- Supersized -->
+		<link href="{{ STATIC_URL }}css/supersized.css" rel="stylesheet">
+		<link href="{{ STATIC_URL }}css/supersized.shutter.css" rel="stylesheet">
+		<!-- FancyBox -->
+		<link href="{{ STATIC_URL }}css/fancybox/jquery.fancybox.css" rel="stylesheet">
+		<!-- Font Icons -->
+		<link href="{{ STATIC_URL }}css/fonts.css" rel="stylesheet">
+		<!-- Shortcodes -->
+		<link href="{{ STATIC_URL }}css/shortcodes.css" rel="stylesheet">
+	
+		<!-- Responsive -->
+		<link href="{{ STATIC_URL }}css/bootstrap-responsive.min.css" rel="stylesheet">
+		<link href="{{ STATIC_URL }}css/responsive.css" rel="stylesheet">
+		
+		<!-- Supersized -->
+		<link href="{{ STATIC_URL }}css/supersized.css" rel="stylesheet">
+		<link href="{{ STATIC_URL }}css/supersized.shutter.css" rel="stylesheet">
+		<!-- Google Font -->
+		<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
+		<!-- Fav Icon -->
+		<link rel="shortcut icon" href="#">
+		<link rel="apple-touch-icon" href="#">
+		<link rel="apple-touch-icon" sizes="114x114" href="#">
+		<link rel="apple-touch-icon" sizes="72x72" href="#">
+		<link rel="apple-touch-icon" sizes="144x144" href="#">
+		<style type="text/css">
+			#countries path {
+				fill: #ccc;
+				stroke: #444;
+				stroke-width: .2px;
+				stroke-linejoin: round;
+			}
+			#countries .inactive {
+				fill: #444;
+				stroke: #2F3238;
+				stroke-width: .4px;
+			}
+			#countries .active, #countries :hover  {
+				fill: rgba(222,94,96,.7);
+			}
+			#countries2 path {
+				fill: #ccc;
+				stroke: #444;
+				stroke-width: .2px;
+				stroke-linejoin: round;
+			}
+			#countries2 .inactive {
+				fill: #444;
+				stroke: #2F3238;
+				stroke-width: .4px;
+			}
+			#countries2 .active, #countries2 :hover  {
+				fill: rgba(255,153,0,.7);
+			}
+			
+			select {
+				background-color: #444;
+				color: #ffffff;
+				width: 100%;
+			}
+			
+			select optgroup {
+				color: #888;
+				font-weight: bold;
+			}
+			hr {
+				margin: 10px;
+			}
+		</style>
+		<!-- Modernizr -->
+		<script src="{{ STATIC_URL }}js/modernizr.js"></script>
+		
+		<!-- Analytics -->
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'Insert Your Code']);
+			_gaq.push(['_trackPageview']);
+			
+			(function() {
+			  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+			
+		</script>
+		<!-- End Analytics -->
+		
+		<!-- Scripts -->
+		<!--[if IE 6]>
+		<script src="js/DD_belatedPNG_0.0.8a-min.js"></script>
+		<script>
+			/* EXAMPLE */
+			DD_belatedPNG.fix('.button');
+			
+			/* string argument can be any CSS selector */
+			/* .png_bg example is unnecessary */
+			/* change it to what suits you! */
+		</script>
+		<![endif]-->
+		<!-- Js -->
+		<script src="{{ STATIC_URL }}js/jquery.2.1.1.min.js"></script> <!-- Jquery -->
+		<script src="{{ STATIC_URL }}js/bootstrap.min.js"></script> <!-- Bootstrap -->
+		<script src="{{ STATIC_URL }}js/supersized.3.2.7.min.js"></script> <!-- Slider -->
+		<script src="{{ STATIC_URL }}js/waypoints.js"></script> <!-- WayPoints -->
+		<script src="{{ STATIC_URL }}js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
+		<script src="{{ STATIC_URL }}js/jquery.isotope.js"></script> <!-- Isotope Filter -->
+		<script src="{{ STATIC_URL }}js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
+		<script src="{{ STATIC_URL }}js/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
+		<script src="{{ STATIC_URL }}js/jquery.tweet.js"></script> <!-- Tweet -->
+		<script src="{{ STATIC_URL }}js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
+		<!-- End Js -->
+
+		<script src="{{ STATIC_URL }}js/d3.3.5.2.min.js"></script>
+		<script src="{{ STATIC_URL }}js/topojson.v1.min.js"></script>
+		<script src="{{ STATIC_URL }}js/d3.geo.projection.v0.min.js"></script>
+		<script src="{{ STATIC_URL }}js/custom/spatial_glyph.js" ></script>
+		<script src="{{ STATIC_URL }}js/custom/utils.js" ></script>
+		<script src="{{ STATIC_URL }}js/custom/map_topo.js"></script>	
+		<script type="text/javascript">
+			var select_indicator1 = 'SL.AGR.EMPL.ZS'
+			var select_indicator2 = 'SL.AGR.EMPL.ZS'
+			var select_country1 = ''
+			var select_country2 = ''
+			
+   		 	var glyph_colors = ["#DE5E60","#ff9900"]
+   		 	var default_set = [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,]
+			var values = [{
+                	"yearly_values": [],
+                	"format" : 'percent'
+                }, {
+                    "yearly_values": [],
+                    "format" : 'percent'
+            }];
+            
+            
+			var indicators = {}
+			
+			$(function(){ 
+				json = {}
+				d3.csv("{{ STATIC_URL }}data/WDI_Data_Modified_All.csv", function(error, csv) {
+					csv.forEach(function(d) {
+						if(!json[d["Country Name"]]) {
+							json[d["Country Name"]] = {}
+						}
+						json[d["Country Name"]][d["Indicator Code"]] = d["values"].replace(/[\[\]]/g,'').split(',').map(function (x) { return parseFloat(x) || 0; });
+    				});
+    			});
+				
+				var body = document.body,
+				html = document.documentElement;
+				var h = $(window).height();
+			    var w = $(window).width();
+			    drawMap(w/2,"#map_canvas1");
+			});
+			
+			d3.csv("{{ STATIC_URL }}data/selected_indicators_modified.csv", function(error, csv) {
+					lastType = '';
+					csv.forEach(function(d) {
+						var self = d["self"];
+    					var type = d["type"];
+    					var code = d["Indicator Code"];
+    					
+						indicators[code] = {
+							'type': type,
+							'self': self,
+							'value_type':d["value_type"],
+							'description':d["description"]
+						}
+						
+    					if (type != lastType) {
+    						if (lastType!='') {
+      							$('#indicators1').append('</optgroup>');
+      							$('#indicators2').append('</optgroup>');		
+        						$('#indicators1').append('<hr style="height:2px"></hr>')
+        						$('#indicators2').append('<hr style="height:2px"></hr>')
+      						}
+    						$('#indicators1').append('<optgroup label="' + type + '">');
+    						$('#indicators2').append('<optgroup label="' + type + '">');
+    					}
+    					if(lastType=='') {
+    						$('#indicators1').append('<option selected="selected" value="'+ code +'">' + self + '</option>');
+    						$('#indicators2').append('<option selected="selected" value="'+ code +'">' + self + '</option>');
+    					}
+    					else {
+    						$('#indicators1').append('<option value="'+ code +'">' + self + '</option>');
+    						$('#indicators2').append('<option value="'+ code +'">' + self + '</option>');
+    					}
+						lastType = type;
+						
+						
+					})
+					$('select[id="indicators1"]').change(function() {
+    					select_indicator1 = ($(this).val())
+    					values[0]["yearly_values"] = json[select_country1][select_indicator1]
+    					values[0]["format"] = indicators[select_indicator1]['value_type']
+    					$("#indicator1_name").html(indicators[select_indicator1]['self'] + "<div style='font-size:12px;line-height:8px;'>("+ indicators[select_indicator1]['description'] + ")</div>")
+    					if(!values[0]["yearly_values"]){
+    						values[0]["yearly_values"] = default_set
+    					}
+    					half_circle_spatial("#circle_hover", values, glyph_colors, $(window).height() * 1 / 2, $(window).width(),select_indicator1==select_indicator2);
+    					
+    				})
+    				$('select[id="indicators2"]').change(function() {
+    					select_indicator2 = ($(this).val())
+    					values[1]["yearly_values"] = json[select_country2][select_indicator2]
+    					values[1]["format"] = indicators[select_indicator2]['value_type']
+    					$("#indicator2_name").html(indicators[select_indicator2]['self'] + "<div style='font-size:12px;line-height:8px;'>("+ indicators[select_indicator2]['description'] + ")</div>")
+    					if(!values[1]["yearly_values"]){
+    						values[1]["yearly_values"] = default_set
+    					}
+    					half_circle_spatial("#circle_hover", values, glyph_colors, $(window).height() * 1 / 2, $(window).width(),select_indicator1==select_indicator2);
+    				})
+    		});
+
+    	
+		</script>
+	</head>
+	<body>
+		<div id='circle_hover' style="position: absolute;margin-top:25%"></div>
+		<div style="top:0px;left:0px;position: relative;">
+			<div id='map_canvas1' style="position:fixed;left:0px;top:0px" ></div>
+			<div id='map_canvas2' style="position:fixed;right:0px;top:0px;display:none;" ></div>
+			<!-- 
+			<div id='map_country_text' style="margin-bottom:-5px"></div>
+			-->
+		</div>
+		<div class="select_list" id="select_list1" style="position:fixed;left:10px;top:50%;width:20%;display:none;margin-top:-20px">
+			<div>
+				Select Indicator:
+				</br>
+			</div>
+			<select id="indicators1" name="indicators1" size=15 >
+			</select>
+		</div>
+		<div class="select_list" id="select_list2" style="position:fixed;right:10px;top:50%;width:20%;display:none;margin-top:-15px">
+			<div>
+				Select Indicator:</br>
+			</div>
+			<select id="indicators2" name="indicators2" size=15 >
+			</select>
+		</div>
+	</body>
+</html>

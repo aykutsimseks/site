@@ -25,7 +25,9 @@ window.onload = function() {
 	}
 	
 	var points;
-
+	var line_data = []
+	var line_lookup = {};
+	
 	var startDate = new Date('02/01/2015')
 	var currentDate = new Date();
 
@@ -35,7 +37,10 @@ window.onload = function() {
 		})
 		.done(function(vis, layers) {
 			var map = vis.getNativeMap();
-			$('#map > div:nth-child(2) > div > div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div').prepend('Map by <a href="http://www.aykutsimseks.com" target="_blank">Aykut Şimşek</a> | ')
+			$('#map > div:nth-child(2) > div > div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div')
+				.prepend('<a href="http://www.aykutsimseks.com" target="_blank">Aykut Simsek</a> | ')
+				
+			
 			var seq = O.Sequential();
 			O.Keys().left().then(seq.prev, seq);
 			O.Keys().right().then(seq.next, seq);
@@ -48,15 +53,49 @@ window.onload = function() {
 
 			var story = O.Story();
 
-			var updateUI = function(title, description, sources, location, date, marker, k) {
+			var updateUI = function(title, description, sources, location, date, marker, k, instagram_link) {				
 				return O.Action(function() {
+					/* http://api.instagram.com/publicapi/oembed/?url=http://instagr.am/p/ynan9PR-1N/ */
+					if(instagram_link) {
+						/*
+						$.ajax({
+  							url: "http://api.instagram.com/publicapi/oembed/?"
+  								 +"url=" + instagram_link
+  								 +"&maxwidth=320&omitscript=true",
+  							type: 'get',
+            	    		dataType: 'jsonp',
+                			cache: true,
+                			success: function (data) {
+                				var html = '<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="5">'
+										   + '<a href="' + instagram_link + 'https://instagram.com/p/ynan9PR-1N/"></a>
+											+ '</blockquote> '
+                				//console.log($(html))
+                				$('#milestone > #text-description').html(html)
+                				window.instgrm.Embeds.process()
+                			},
+                			async:false,
+  							beforeSend: function( xhr ) {
+    							//xhr.overrideMimeType( "text/plain; charset=x-user-defined" );
+  							}
+						})
+						*/
+						var html = '<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="4" style="width:310px;">'
+								   + '<a href="' + instagram_link + '"></a>'
+								   + '</blockquote> '
+						$('#milestone > #instagram-embed').html(html)
+                		window.instgrm.Embeds.process()
+					}
+					else {
+						$('#milestone > #instagram-embed').html("")
+					}
+					
+					$('#milestone > #text-description').html(description)
 					//$('#milestone > #picture').attr('src',images[k])
 					$('#milestone > #top-section >  h3').html(title)
-					$('#milestone > #top-section > #location').html(location)
-					$('#milestone > #top-section > #date').html(date)
-					$('#milestone > #text-description').html(description)
+					$('#milestone > #top-section #location').html(location)
+					$('#milestone > #top-section #date').html(date)
 					$('#milestone > #text-sources').html(sources)
-					$('#footer > #buttons > span').html(story.state() + 1 + ' / ' + (points.length + 1))
+					$('#buttons > span').html(story.state() + 1 + ' / ' + (points.length + 1))
 				});
 			}
 
@@ -71,8 +110,9 @@ window.onload = function() {
 				O.Location.changeHash('#' + 0)
 			)
 			story.addState(seq.step(0), action);
-
-
+			//story.go(0)
+			//seq.current(0)
+	
 			var sql = new cartodb.SQL({
 				user: 'aykutsimseks'
 			});
@@ -117,7 +157,9 @@ window.onload = function() {
 								text + '</br> ' + story_html.join(", "),
 								'', (tr ? ((daydiff(startDate, begin) + 1) + ". Gün") : ("Day " + (daydiff(startDate, begin) + 1))),
 								"<span class='glyphicon glyphicon-calendar'></span> " + begin.toLocaleDateString() + " - " + end.toLocaleDateString() + " (" + (daydiff(begin, end) + 1) + (tr ? (" gün") : (" days")) + ")",
-								marker, (i + 1)
+								marker, 
+								(i + 1),
+								point.instagram_links
 							),
 							O.Location.changeHash('#' + (i + 1))
 						)
@@ -128,13 +170,36 @@ window.onload = function() {
 					} else {
 						story.go(0);
 					}
-
+					
+					
+					for (var i = 0; i < points.length; ++i)  {
+						var point = data.rows[i];
+						if(/*point['begin_date'] && */!line_lookup[point['country']]) {
+							line_data.push({
+								'color':'rgba(255,255,255,.5)',
+								//'date':point['begin_date'].split('-')[2].split('T')[0]  + "." + point['begin_date'].split('-')[1], 
+								'date':line_data.length+'.00', 
+								'seq_id': i,
+								'id': (line_data.length+1), 
+								'image': "",
+								'text':point['country'],
+								'text-offset': 0,
+								'd':[]
+							})
+							line_lookup[point['country']] = i
+						}
+					}
+					//draw_line(line_data)
+						
+					$('#map div.cartodb-legend ul li').click(function() {
+						story.go(line_lookup[$(this).text().trim()]+1)
+						seq.current(line_lookup[$(this).text().trim()]+1)
+					})
 				})
 				.error(function(errors) {
 					// errors contains a list of errors
 					console.log("errors:" + errors);
-				});
-
+			});
 		});
 
 }

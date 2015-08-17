@@ -17,27 +17,27 @@
 		<meta http-equiv="cleartype" content="on">
 		<![endif]-->
 		<!-- Bootstrap  -->
-		<link href="../_include/css/bootstrap.min.css" rel="stylesheet">
+		<link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet">
 		
 		<!-- Main Style -->
-		<link href="../_include/css/main.css" rel="stylesheet">
+		<link href="{{ STATIC_URL }}css/main.css" rel="stylesheet">
 		<!-- Supersized -->
-		<link href="../_include/css/supersized.css" rel="stylesheet">
-		<link href="../_include/css/supersized.shutter.css" rel="stylesheet">
+		<link href="{{ STATIC_URL }}css/supersized.css" rel="stylesheet">
+		<link href="{{ STATIC_URL }}css/supersized.shutter.css" rel="stylesheet">
 		<!-- FancyBox -->
-		<link href="../_include/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+		<link href="{{ STATIC_URL }}css/fancybox/jquery.fancybox.css" rel="stylesheet">
 		<!-- Font Icons -->
-		<link href="../_include/css/fonts.css" rel="stylesheet">
+		<link href="{{ STATIC_URL }}css/fonts.css" rel="stylesheet">
 		<!-- Shortcodes -->
-		<link href="../_include/css/shortcodes.css" rel="stylesheet">
+		<link href="{{ STATIC_URL }}css/shortcodes.css" rel="stylesheet">
 	
 		<!-- Responsive -->
-		<link href="../_include/css/bootstrap-responsive.min.css" rel="stylesheet">
-		<link href="../_include/css/responsive.css" rel="stylesheet">
+		<link href="{{ STATIC_URL }}css/bootstrap-responsive.min.css" rel="stylesheet">
+		<link href="{{ STATIC_URL }}css/responsive.css" rel="stylesheet">
 		
 		<!-- Supersized -->
-		<link href="../_include/css/supersized.css" rel="stylesheet">
-		<link href="../_include/css/supersized.shutter.css" rel="stylesheet">
+		<link href="{{ STATIC_URL }}css/supersized.css" rel="stylesheet">
+		<link href="{{ STATIC_URL }}css/supersized.shutter.css" rel="stylesheet">
 		<!-- Google Font -->
 		<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
 		<!-- Fav Icon -->
@@ -75,7 +75,7 @@
 			
 		</style>
 		<!-- Modernizr -->
-		<script src="../_include/js/modernizr.js"></script>
+		<script src="{{ STATIC_URL }}js/modernizr.js"></script>
 		
 		<!-- Analytics -->
 		<script type="text/javascript">
@@ -105,18 +105,18 @@
 		</script>
 		<![endif]-->
 		<!-- Js -->
-		<script src="../_include/js/jquery.2.1.1.min.js"></script>
-		<script src="../_include/js/bootstrap.min.js"></script> <!-- Bootstrap -->
-		<script src="../_include/js/supersized.3.2.7.min.js"></script> <!-- Slider -->
-		<script src="../_include/js/waypoints.js"></script> <!-- WayPoints -->
-		<script src="../_include/js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
-		<script src="../_include/js/jquery.isotope.js"></script> <!-- Isotope Filter -->
-		<script src="../_include/js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
-		<script src="../_include/js/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
-		<script src="../_include/js/jquery.tweet.js"></script> <!-- Tweet -->
-		<script src="../_include/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
+		<script src="{{ STATIC_URL }}js/jquery.2.1.1.min.js"></script>
+		<script src="{{ STATIC_URL }}js/bootstrap.min.js"></script> <!-- Bootstrap -->
+		<script src="{{ STATIC_URL }}js/supersized.3.2.7.min.js"></script> <!-- Slider -->
+		<script src="{{ STATIC_URL }}js/waypoints.js"></script> <!-- WayPoints -->
+		<script src="{{ STATIC_URL }}js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
+		<script src="{{ STATIC_URL }}js/jquery.isotope.js"></script> <!-- Isotope Filter -->
+		<script src="{{ STATIC_URL }}js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
+		<script src="{{ STATIC_URL }}js/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
+		<script src="{{ STATIC_URL }}js/jquery.tweet.js"></script> <!-- Tweet -->
+		<script src="{{ STATIC_URL }}js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
 		<!-- End Js -->
-		<script src="../_include/js/d3.3.5.2.min.js"></script>
+		<script src="{{ STATIC_URL }}js/d3.3.5.2.min.js"></script>
 	</head>
 	<body>
 		<div id="profiles">
@@ -463,202 +463,7 @@
 		       	.style("z-index",1)
 		       	.attr("stroke-dashoffset", 0)
 		       	.each(addCircle)
-		}
-		
-		
-		
-		/*
-		   svg.on("click", function(){
-		     		path      
-		       		.transition()
-		       		.duration(2000)
-		       		.ease("linear")
-		       		.attr("stroke-dashoffset", totalLength);
-		   })
-		*/
-		
-		/*
-		
-		   var h = 580;
-		   var w = 980;
-		
-		var transition_duration = 2000;
-		
-		   var svg = d3.select("#line")
-		     			.append("svg")
-		     			.attr("width", w)
-		     			.attr("height", h)
-		     			.style("margin-top","-50px")
-		     			.style("margin-bottom","-50px")
-		   			
-		   var data_a = [
-		   		  		{ "color":"#cccccc" , "data":[4,4,4,4,4,4,4,4,100,100,100,100,100,100,100,100,100,100,100,4,4], "image": "" ,"text":"InfoVis.guru"},
-		   		  		{ "color":"#28A0FF" , "data":[4,4,4,4,4,4,4,4,100,100,100,100,100,100,100,100,100,100,100,100,100], "image": "" ,"text":""},
-		   		  		{ "color":"#6B008F" , "data":[4,4,4,4,4,4,4,4,100,100,100,100,100,100,100,100,100], "image": "{% static 'images/ontodia.png' %}" ,"text":"Software Engineer at Ontodia"},
-		   		  		{ "color":"#6B008F" , "data":[4,4,4,4,4,4,4,4,100,100,100,100,100,100,100,100,150,150,150],  "image": "{% static 'images/nyu.png' %}" ,"text":"Graduated from New York University, Polytechnic School of Engineering (M.Sc.)"},
-		   		  		{ "color":"#d3a21a" , "data":[4,4,4,4,4,4,4,4,100,100,100,100,100,100,100] ,  "image": "{% static 'images/new_york.png' %}" ,"text":"Moved to New York, NY"},
-		   		  		{ "color":"#d3a21a" , "data":[4,4,4,4,4,4,4,100,150],  "image": "" ,"text":""},
-		   		  		{ "color":"#d3a21a" , "data":[4,4,4,4,4,4,4,4,100,100,150],  "image": "" ,"text":""},
-		   		  		{ "color":"#d3a21a" , "data":[4,4,4,4,4,4,4,4,100,100,100,100,50] ,  },
-		   		  		{ "color":"#B20000" , "data":[4,4,4,4,4,4,4] , "image": "{% static 'images/metu.png' %}" ,"text":"Graduated from Middle East Technical University (B.Sc.)"},
-		   		  		{ "color":"#B20000" , "data":[4,4,4,4,4] , "image": "" ,"text":"Roommates for 3 years" },
-		   		  		{ "color":"#8F006B" , "data":[4,4,4] ,  "image": "{% static 'images/ayzofl.png' %}" ,"text":"Graduated from Antalya  Science High School"},
-		   		  		{ "color":"#FFA347" , "data":[4] ,  "image": "{% static 'images/antalya.png' %}" ,"text":"Born in Antalya, Turkey"},
-		   			 ]
-		   			 
-		   var data_s = [
-		   		  		{ "color":"#cccccc" , "data":[-4,-4,-4,-4,-4,-4,-4,-4,-100,-100,-100,-100,-100,-100,-100,-100,-100,-100,-100,-4,-4], "image": "" ,"text":"InfoVis.guru"},
-		   		  		{ "color":"#B20000" , "data":[-4,-4,-4,-4,-4,-4,-4,-4,-100,-100,-100,-100,-100,-100,-100,-100,-100,-100,-100,-100,-100], "image": "" ,"text":""},
-		   		  		{ "color":"#d3a21a" , "data":[-4,-4,-4,-4,-4,-4,-4,-4,-100,-100,-100,-100,-100,-100,-100,-100,-100], "image": "{% static 'images/upf.png' %}" ,"text":"PhD Candidate at Universitat Pompeu Fabra"},
-		   		  		{ "color":"#d3a21a" , "data":[-4,-4,-4,-4,-4,-4,-4,-4,-100,-100,-100,-100,-100,-100,-100,-100,-150,-150,-150],  "image": "" ,"text":""},
-		   		  		{ "color":"#d3a21a" , "data":[-4,-4,-4,-4,-4,-4,-4,-4,-100,-100,-100,-100,-100,-100,-100] ,  "image": "{% static 'images/barcelona.png' %}" ,"text":"Moved to Barcelona, Spain"},
-		   		  		{ "color":"#d3a21a" , "data":[-4,-4,-4,-4,-4,-4,-4,-100,-150],  "image": "" ,"text":""},
-		   		  		{ "color":"#d3a21a" , "data":[-4,-4,-4,-4,-4,-4,-4,-4,-100,-100,-150],  "image": "" ,"text":""},
-		   		  		{ "color":"#00248F" , "data":[-4,-4,-4,-4,-4,-4,-4,-4,-100,-100,-100,-100,-100] ,  "image": "{% static 'images/sabanci.png' %}" ,"text":"Graduated from Sabanci University (M.Sc.)" },
-		   		  		{ "color":"#B20000" , "data":[-4,-4,-4,-4,-4,-4,-4] , "image": "{% static 'images/metu.png' %}" ,"text":"Graduated from Middle East Technical University (B.Sc.)"},
-		   		  		{ "color":"#B20000" , "data":[-4,-4,-4,-4,-4,-4] , "image": "" ,"text":"Roommates for 3 years" },
-		   		  		{ "color":"#8F006B" , "data":[-4,-4,-4] ,  "image": "{% static 'images/ayzofl.png' %}" ,"text":"Graduated from Antalya  Science High School"},
-		   		  		{ "color":"#FFA347" , "data":[-4] ,  "image": "{% static 'images/antalya.png' %}" ,"text":"Born in Antalya, Turkey"},
-		   			 ]
-		   			
-		   var y = d3.scale.linear()
-		   			.domain([-3, 22])
-		   			.range([h, 0]);
-		   			
-		   var x = d3.scale.linear()
-		   				.domain([-w/2,w/2 ])
-		   				.range([w, 0]);
-		
-		   var line = d3.svg.line()
-		     .interpolate("basis")
-		     .x(function(d) { return x(d[1]); })
-		     .y(function(d) { return y(d[0]); });
-		   
-		   data_a.forEach(function(s) {
-		   	//alert(s.data[s.data.length-1])
-		   	drawSinglePath(s);
-		});
-		  
-		   g.append("line")
-		   	.attr("x1", (w/2 + 200 ))
-		   	.attr("y1", 69)
-		   	.attr("x2", (w/2 + 200 + 175))
-		   	.attr("y2", 69)
-		   	.style("stroke", "rgb(0,0,0)")   	
-		   	.style("stroke-width", .8)
-		   	.style("stroke-dasharray", ("3, 3"))
-		   	.style("stroke-opacity", .6);
-		
-			
-		function drawSinglePath(s) 
-		{
-		
-			d = s.data.map(function(v,i) {return [i, v];});
-			
-			var path = svg.append("path")
-		     			.attr("d", line(d))
-		     			.attr("stroke", s.color)
-		     			.attr("stroke-width", "2")
-		     			.attr("fill", "none")
-		
-		   	var totalLength = 1000;
-		   	//path.node().getTotalLength();alert(totalLength);
-			
-			curr_total_length = path.node().getTotalLength();
-		    	last_point = path.node().getPointAtLength(curr_total_length)
-		    	last_x = s.data[s.data.length - 1];
-			if(last_x >= -10 && last_x < 10)
-			{
-				last_point.x = w/2;
-			}
-			
-			
-			function addCircle(){
-				// Eliminate duplicate drawing of shared points
-				if(last_x > 0  && last_x < 10)
-		   		{
-		   			return
-		   		}
-		   	
-				var g = svg.append('g')
-							.attr("transform","translate(" + last_point.x + "," + last_point.y + ")")
-				if(s.image) {
-		 				g.append("circle")
-		   						.attr('class','circle')
-		   						.attr("r",20)
-		   			    		//.attr("r", 0)	  
-		   			    		.style("opacity",0)  		
-								.transition()
-								.style("opacity",1)
-		 							//.attr("r",20)
-		 							.delay((transition_duration-300)*(curr_total_length/totalLength))
-		 							.duration(0) // this is 1s
-		 			}			
-		 			
-		 			g.append("image")
-		 					.attr("transform","translate(" + -20 + "," + -20 + ")")
-		     				.attr("xlink:href", s.image)
-		     				.attr("width", 40)
-		     				.attr("height", 40)
-		     				.style("opacity",0)
-		     				.style("radius", "20px")
-		     				.style("pointer-events","none")
-		     				.transition()
-		 					.delay((transition_duration-1000)*(curr_total_length/totalLength))
-		 					.duration(2000) // this is 1s
-		     				.style("opacity",1)
-		     				
-		     		if(last_point.x >= w/2 )
-		     		{
-		     			
-		     			g.append("text")   				
-		     			 	.attr("transform","translate(" + (-last_point.x + w/2 + 200) + "," + 0 + ")")
-		   				// I believe w/h are required, though the size is arbitrary
-		  				 	.attr("width", 280)
-		   			 	.attr("height", 40)
-		   			 	.attr("class","ttext")
-		 				 	//.append("xhtml:text")
-		     			 	.text(s.text)		 
-		     			 	.style("opacity",0)	
-		     			 	.transition()
-		 				 	.delay((transition_duration-1000)*(curr_total_length/totalLength))
-		 				 	.duration(2000) // this is 1s
-		     			 	.style("opacity",1)	      			 
-		     		}
-		     		if(last_point.x <= w/2)
-		     		{      			
-		     			
-		     			g.append("text")   				
-		     			 	.attr("transform","translate(" + (-last_point.x + 280 + 10) + "," + 0 + ")")
-		   				// I believe w/h are required, though the size is arbitrary
-		  				 	.attr("width", 280)
-		   			 	.attr("height", 40)
-		   			 	.attr("class","ttext")
-		   			 	      			 	.style("text-anchor","end")
-		 				 	//.append("xhtml:text")
-		     			 	.text(s.text)
-		     			 	.style("opacity",0)	
-		     			 	.transition()
-		 				 	.delay((transition_duration-1000)*(curr_total_length/totalLength))
-		 				 	.duration(2000) // this is 1s
-		     			 	.style("opacity",1)	
-		     			 
-		     		}
-		     		
-		     		
-			};
-			
-		   	path
-		     		.attr("stroke-dasharray", totalLength + " " + totalLength)
-		     		.attr("stroke-dashoffset", totalLength)
-		     		.transition()
-		     		.duration(transition_duration)
-		       	.ease("linear")
-		       	.attr("stroke-dashoffset", 0)
-		       	.each(addCircle)
-		   }
-		   */
-		 
+		}		
 	</script>
 </body>
 </html>

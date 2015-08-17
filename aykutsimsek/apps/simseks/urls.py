@@ -7,7 +7,7 @@ from django.views.generic.base import TemplateView, RedirectView
 from .views import *
 
 admin.autodiscover()
-STANDARD_CACHE_TIME = 60*15 # 15-minute cache
+STANDARD_CACHE_TIME = 60*60 # 60-minute cache
 
 urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
@@ -17,4 +17,5 @@ urlpatterns = patterns('',
     url(r'^project/aid-indicators$', TemplateView.as_view(template_name='projects/aid_indicators.html'), name="aid_indicators"),
     url(r'^project/altug-firarda$', TemplateView.as_view(template_name='projects/altug_firarda.html'), name="altug_firarda"),
     url(r'^project/altug-firarda\?l=(?P<language>\w+)$', TemplateView.as_view(template_name='projects/altug_firarda.html'), name="altug_firarda"),
+    url(r'^project/moviero$', TemplateView.as_view(template_name='projects/moviero.html'), name="moviero"),
 )

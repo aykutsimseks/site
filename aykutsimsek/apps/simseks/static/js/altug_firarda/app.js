@@ -18,30 +18,87 @@ var marker = L.icon({
 	iconAnchor: [12, 32]
 });
 
+
+
 window.onload = function() {
 	var tr = true;
 	if (urlParam('l') == 'en') {
 		tr = false;
 	}
+	var map;
 	
 	var points;
 	var line_data = []
 	var line_lookup = {};
 	var polyline;
-	
+	var transMarkers = new L.FeatureGroup();
+		
 	var startDate = new Date('02/01/2015')
 	var currentDate = new Date('08/17/2015');
-
+	
+	
+	var add_line_icons = function(start,end) {
+		var line = [];
+		var icon;
+		var prev_loc = [];
+		var curr_loc = [];
+		
+		var transportMarker = L.AwesomeMarkers.icon({
+    		icon: 'plane',
+    		prefix: 'fa', 
+    		iconColor: 'black',
+    		iconSize: [24, 34], 
+    		iconAnchor: [12, 16]
+  		});
+  		
+  		
+  		transMarkers.clearLayers();
+		for (var m = start; m < end; ++m) {
+  			if(points[m]) {
+  				curr_loc = [points[m]['lat'],points[m]['lon']];
+	    		line.push(L.latLng(curr_loc));
+	    		if(prev_loc.length > 0) {
+	    			try {
+	    				transportMarker.options.icon = points[m]['arrived_by'];
+	    				var t_mark = L.marker([(points[m]['lat'] + points[m-1]['lat'])/2,(points[m]['lon'] + points[m-1]['lon'])/2],{icon: transportMarker });    				
+			    		transMarkers.addLayer(t_mark);
+			    	}
+			    	catch(err) {
+			    		console.log(err)
+			    	}
+				}
+				prev_loc = curr_loc;
+			}
+		};
+		
+		map.addLayer(transMarkers);
+		
+		var polyline_options = {
+    		color: '#666',
+    		weight: 1,
+    		dashArray: [2,2]
+  		};
+		
+		try {
+			map.removeLayer(polyline);
+		}
+		catch(err) {
+			console.log(err);
+		}
+		polyline = new L.polyline(line, polyline_options)
+		map.addLayer(polyline);
+	}
+	
+	
 	cartodb.createVis('map', 'http://aykutsimseks.cartodb.com/api/v2/viz/73dba65c-eb63-11e4-a391-0e9d821ea90d/viz.json', {
 			shareable: true,
 			zoomControl: true
 		})
 		.done(function(vis, layers) {
-			var map = vis.getNativeMap();
+			map = vis.getNativeMap();
 			$('#map > div:nth-child(2) > div > div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div')
 				.prepend('<a href="http://www.aykutsimseks.com" target="_blank">Aykut Simsek</a> | <a href="http://cartodb.github.io/odyssey.js/index.html" target="_blank">Odyssey.js</a> | ')
-				
-			
+							
 			var seq = O.Sequential();
 			O.Keys().left().then(seq.prev, seq);
 			O.Keys().right().then(seq.next, seq);
@@ -76,22 +133,9 @@ window.onload = function() {
 					$('#milestone > #text-sources').html(sources)
 					$('#buttons > span').html(story.state() + 1 + ' / ' + (points.length + 1))
 					
-					var line = [];
+					add_line_icons(k-2,k+1)
 					
-					//map.removeLayer(polyline)
-  					for (var m = k-2; m < k+1; ++m) {
-  						if(points[m]) {
-	    					line.push(L.latLng(points[m]['lat'],points[m]['lon']));
-	    				}
-  					};
-
-		 	 		var polyline_options = {
-    					color: '#666',
-    					weight: 1,
-    					dashArray: [2,2]
-  					};
-
-  					polyline = L.polyline(line, polyline_options).addTo(map);
+					
   					
 				});
 			}

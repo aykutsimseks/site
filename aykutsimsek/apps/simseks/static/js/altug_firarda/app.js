@@ -27,9 +27,10 @@ window.onload = function() {
 	var points;
 	var line_data = []
 	var line_lookup = {};
+	var polyline;
 	
 	var startDate = new Date('02/01/2015')
-	var currentDate = new Date();
+	var currentDate = new Date('08/17/2015');
 
 	cartodb.createVis('map', 'http://aykutsimseks.cartodb.com/api/v2/viz/73dba65c-eb63-11e4-a391-0e9d821ea90d/viz.json', {
 			shareable: true,
@@ -38,7 +39,7 @@ window.onload = function() {
 		.done(function(vis, layers) {
 			var map = vis.getNativeMap();
 			$('#map > div:nth-child(2) > div > div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div')
-				.prepend('<a href="http://www.aykutsimseks.com" target="_blank">Aykut Simsek</a> | ')
+				.prepend('<a href="http://www.aykutsimseks.com" target="_blank">Aykut Simsek</a> | <a href="http://cartodb.github.io/odyssey.js/index.html" target="_blank">Odyssey.js</a> | ')
 				
 			
 			var seq = O.Sequential();
@@ -57,28 +58,6 @@ window.onload = function() {
 				return O.Action(function() {
 					/* http://api.instagram.com/publicapi/oembed/?url=http://instagr.am/p/ynan9PR-1N/ */
 					if(instagram_link) {
-						/*
-						$.ajax({
-  							url: "http://api.instagram.com/publicapi/oembed/?"
-  								 +"url=" + instagram_link
-  								 +"&maxwidth=320&omitscript=true",
-  							type: 'get',
-            	    		dataType: 'jsonp',
-                			cache: true,
-                			success: function (data) {
-                				var html = '<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="5">'
-										   + '<a href="' + instagram_link + 'https://instagram.com/p/ynan9PR-1N/"></a>
-											+ '</blockquote> '
-                				//console.log($(html))
-                				$('#milestone > #text-description').html(html)
-                				window.instgrm.Embeds.process()
-                			},
-                			async:false,
-  							beforeSend: function( xhr ) {
-    							//xhr.overrideMimeType( "text/plain; charset=x-user-defined" );
-  							}
-						})
-						*/
 						var html = '<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="4" style="width:310px;">'
 								   + '<a href="' + instagram_link + '"></a>'
 								   + '</blockquote> '
@@ -96,15 +75,33 @@ window.onload = function() {
 					$('#milestone > #top-section #date').html(date)
 					$('#milestone > #text-sources').html(sources)
 					$('#buttons > span').html(story.state() + 1 + ' / ' + (points.length + 1))
+					
+					var line = [];
+					
+					//map.removeLayer(polyline)
+  					for (var m = k-2; m < k+1; ++m) {
+  						if(points[m]) {
+	    					line.push(L.latLng(points[m]['lat'],points[m]['lon']));
+	    				}
+  					};
+
+		 	 		var polyline_options = {
+    					color: '#666',
+    					weight: 1,
+    					dashArray: [2,2]
+  					};
+
+  					polyline = L.polyline(line, polyline_options).addTo(map);
+  					
 				});
 			}
 
 			var action = O.Step(
-				map.actions.setView([0, 52.0186], 3),
+				map.actions.setView([10, 32.0186], 2),
 				//O.Debug().log("state " + 0),
 				updateUI(
 					"Altuğ Firarda",
-					"", (tr ? "6 Aylık dünya turumda gezdiklerim, gördüklerim ve yaşadıklarım." : "English"), (tr ? ((daydiff(startDate, currentDate) + 1) + ". Gün") : ("Day " + (daydiff(startDate, currentDate) + 1))),
+					"", (tr ? "6 Aylık dünya turumda gezdiklerim, gördüklerim ve yaşadıklarım." : "English"), (daydiff(startDate, currentDate) + 1) + (tr ? " Gün" :" Days"),
 					"<span class='glyphicon glyphicon-calendar'></span> " + startDate.toLocaleDateString() + " - " + currentDate.toLocaleDateString() + " (" + (daydiff(startDate, currentDate) + 1) + (tr ? (" gün") : (" days")) + ")",
 					marker, 0),
 				O.Location.changeHash('#' + 0)
@@ -155,8 +152,8 @@ window.onload = function() {
 							updateUI(
 								[place, country].join(', '),
 								text + '</br> ' + story_html.join(", "),
-								'', (tr ? ((daydiff(startDate, begin) + 1) + ". Gün") : ("Day " + (daydiff(startDate, begin) + 1))),
-								"<span class='glyphicon glyphicon-calendar'></span> " + begin.toLocaleDateString() + " - " + end.toLocaleDateString() + " (" + (daydiff(begin, end) + 1) + (tr ? (" gün") : (" days")) + ")",
+								'', (tr ? ((daydiff(startDate, begin)) + ". Gün") : ("Day " + (daydiff(startDate, begin)))),
+								"<span class='glyphicon glyphicon-calendar'></span> " + begin.toLocaleDateString() + " - " + end.toLocaleDateString() + " (" + (daydiff(begin, end)) + (tr ? (" gün") : (" days")) + ")",
 								marker, 
 								(i + 1),
 								point.instagram_links
@@ -189,6 +186,7 @@ window.onload = function() {
 							line_lookup[point['country']] = i
 						}
 					}
+					console.log(line_lookup)
 					//draw_line(line_data)
 						
 					$('#map div.cartodb-legend ul li').click(function() {

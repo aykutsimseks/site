@@ -46,7 +46,7 @@ window.onload = function() {
 		var transportMarker = L.AwesomeMarkers.icon({
     		icon: 'plane',
     		prefix: 'fa', 
-    		iconColor: 'black',
+    		iconColor: '#990000',
     		iconSize: [24, 34], 
     		iconAnchor: [12, 16]
   		});
@@ -74,9 +74,9 @@ window.onload = function() {
 		map.addLayer(transMarkers);
 		
 		var polyline_options = {
-    		color: '#666',
-    		weight: 1,
-    		dashArray: [2,2]
+    		color: '#990000',
+    		weight: 2,
+    		dashArray: [4,5]
   		};
 		
 		try {

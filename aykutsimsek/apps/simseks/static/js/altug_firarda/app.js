@@ -34,14 +34,21 @@ window.onload = function() {
 	var transMarkers = new L.FeatureGroup();
 		
 	var startDate = new Date('02/01/2015')
-	var currentDate = new Date('08/17/2015');
+	var currentDate = new Date('08/20/2015');
 	
 	
-	var add_line_icons = function(start,end) {
+	var add_line_icons = function(start,end, icons) {
 		var line = [];
 		var icon;
 		var prev_loc = [];
 		var curr_loc = [];
+		icons = icons||true;
+		
+		if(start < -1) {
+			start = 0;
+			end   = points['length']; 
+			icons = false;
+		}
 		
 		var transportMarker = L.AwesomeMarkers.icon({
     		icon: 'plane',
@@ -57,7 +64,7 @@ window.onload = function() {
   			if(points[m]) {
   				curr_loc = [points[m]['lat'],points[m]['lon']];
 	    		line.push(L.latLng(curr_loc));
-	    		if(prev_loc.length > 0) {
+	    		if(prev_loc.length > 0 && icons) {
 	    			try {
 	    				transportMarker.options.icon = points[m]['arrived_by'];
 	    				var t_mark = L.marker([(points[m]['lat'] + points[m-1]['lat'])/2,(points[m]['lon'] + points[m-1]['lon'])/2],{icon: transportMarker });    				
@@ -115,7 +122,7 @@ window.onload = function() {
 				return O.Action(function() {
 					/* http://api.instagram.com/publicapi/oembed/?url=http://instagr.am/p/ynan9PR-1N/ */
 					if(instagram_link) {
-						var html = '<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="4" style="width:310px;">'
+						var html = '<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="4" style="width:350px;">'
 								   + '<a href="' + instagram_link + '"></a>'
 								   + '</blockquote> '
 						$('#milestone > #instagram-embed').html(html)
@@ -133,10 +140,7 @@ window.onload = function() {
 					$('#milestone > #text-sources').html(sources)
 					$('#buttons > span').html(story.state() + 1 + ' / ' + (points.length + 1))
 					
-					add_line_icons(k-2,k+1)
-					
-					
-  					
+					add_line_icons(k-2,k+1)			
 				});
 			}
 
@@ -147,7 +151,7 @@ window.onload = function() {
 					"Altuğ Firarda",
 					"", (tr ? "6 Aylık dünya turumda gezdiklerim, gördüklerim ve yaşadıklarım." : "English"), (daydiff(startDate, currentDate) + 1) + (tr ? " Gün" :" Days"),
 					"<span class='glyphicon glyphicon-calendar'></span> " + startDate.toLocaleDateString() + " - " + currentDate.toLocaleDateString() + " (" + (daydiff(startDate, currentDate) + 1) + (tr ? (" gün") : (" days")) + ")",
-					marker, 0),
+					marker, -1, null),
 				O.Location.changeHash('#' + 0)
 			)
 			story.addState(seq.step(0), action);

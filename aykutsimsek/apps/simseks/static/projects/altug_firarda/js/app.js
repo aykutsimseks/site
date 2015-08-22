@@ -180,7 +180,7 @@ window.onload = function() {
 				map.actions.setView([10, 32.0186], 2),
 				//O.Debug().log("state " + 0),
 				updateUI(
-					"Altuğ Firarda",
+					"<i class='fa fa-globe' style='font-size:18px;'></i>&nbsp; Altuğ Firarda",
 					"", (tr ? "6 Aylık dünya turumda gezdiklerim, gördüklerim ve yaşadıklarım." : "English"), (daydiff(startDate, currentDate) + 1) + (tr ? " Gün" :" Days"),
 					"<span class='glyphicon glyphicon-calendar'></span> " + startDate.toLocaleDateString('en-GB') + " - " + currentDate.toLocaleDateString('en-GB') + " (" + (daydiff(startDate, currentDate) + 1) + (tr ? (" gün") : (" days")) + ")",
 					marker, -1, null),

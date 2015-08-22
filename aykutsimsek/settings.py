@@ -22,8 +22,8 @@ APPS_PATH  = os.path.join(PROJECT_PATH, 'apps')
 SECRET_KEY = 'a%cl5_93l0k$mk@rwn#v6xstu^f9_sheynicornbitoy)zt^tu'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-#DEBUG = True
-DEBUG = False
+DEBUG = True
+#DEBUG = False
 
 TEMPLATE_DEBUG = False
 TEMPLATE_DIRS = (       

@@ -82,6 +82,7 @@ html,body {
 }
 
 #buttons ul{
+		
 	margin: 0 0 1px 0px;
 }
 
@@ -93,12 +94,12 @@ html,body {
 
 #buttons ul li a {
 	display: block;
-	width: 18px;
-	height: 18px;
+	width: 32px;
+	height: 22px;
 	pointer-events: auto;
 	border-radius: 4px;
 	background:#666;
-	padding: 4px 4px 0 4px;
+	padding: 6px 4px 0 4px;
 	color: rgba(200,200,200,1)
 
 }

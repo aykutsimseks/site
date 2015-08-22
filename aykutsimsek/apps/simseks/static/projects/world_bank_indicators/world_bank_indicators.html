@@ -5,7 +5,7 @@
 		<head>
 		<!-- Meta Tags -->
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<title>About</title>
+		<title>World Bank Indicators</title>
 		<!-- <title>Life of Me</title> -->
 		<!-- <title>About | Aykut Simsek</title> -->
 		<meta name="description" content="Insert Your Site Description" />
@@ -22,31 +22,7 @@
 		
 		<!-- Main Style -->
 		<link href="{{ STATIC_URL }}css/main.css" rel="stylesheet">
-		<!-- Supersized -->
-		<link href="{{ STATIC_URL }}css/supersized.css" rel="stylesheet">
-		<link href="{{ STATIC_URL }}css/supersized.shutter.css" rel="stylesheet">
-		<!-- FancyBox -->
-		<link href="{{ STATIC_URL }}css/fancybox/jquery.fancybox.css" rel="stylesheet">
-		<!-- Font Icons -->
-		<link href="{{ STATIC_URL }}css/fonts.css" rel="stylesheet">
-		<!-- Shortcodes -->
-		<link href="{{ STATIC_URL }}css/shortcodes.css" rel="stylesheet">
-	
-		<!-- Responsive -->
-		<link href="{{ STATIC_URL }}css/bootstrap-responsive.min.css" rel="stylesheet">
-		<link href="{{ STATIC_URL }}css/responsive.css" rel="stylesheet">
 		
-		<!-- Supersized -->
-		<link href="{{ STATIC_URL }}css/supersized.css" rel="stylesheet">
-		<link href="{{ STATIC_URL }}css/supersized.shutter.css" rel="stylesheet">
-		<!-- Google Font -->
-		<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
-		<!-- Fav Icon -->
-		<link rel="shortcut icon" href="#">
-		<link rel="apple-touch-icon" href="#">
-		<link rel="apple-touch-icon" sizes="114x114" href="#">
-		<link rel="apple-touch-icon" sizes="72x72" href="#">
-		<link rel="apple-touch-icon" sizes="144x144" href="#">
 		<style type="text/css">
 			#countries path {
 				fill: #ccc;
@@ -137,9 +113,9 @@
 		<script src="{{ STATIC_URL }}js/d3.3.5.2.min.js"></script>
 		<script src="{{ STATIC_URL }}js/topojson.v1.min.js"></script>
 		<script src="{{ STATIC_URL }}js/d3.geo.projection.v0.min.js"></script>
-		<script src="{{ STATIC_URL }}js/custom/spatial_glyph.js" ></script>
-		<script src="{{ STATIC_URL }}js/custom/utils.js" ></script>
-		<script src="{{ STATIC_URL }}js/custom/map_topo.js"></script>	
+		<script src="{{ STATIC_URL }}projects/world_bank_indicators/js/spatial_glyph.js" ></script>
+		<script src="{{ STATIC_URL }}projects/world_bank_indicators/js/utils.js" ></script>
+		<script src="{{ STATIC_URL }}projects/world_bank_indicators/js/map_topo.js"></script>	
 		<script type="text/javascript">
 			var select_indicator1 = 'SL.AGR.EMPL.ZS'
 			var select_indicator2 = 'SL.AGR.EMPL.ZS'
@@ -161,7 +137,7 @@
 			
 			$(function(){ 
 				json = {}
-				d3.csv("{{ STATIC_URL }}data/WDI_Data_Modified_All.csv", function(error, csv) {
+				d3.csv("{{ STATIC_URL }}projects/world_bank_indicators/data/WDI_Data_Modified_All.csv", function(error, csv) {
 					csv.forEach(function(d) {
 						if(!json[d["Country Name"]]) {
 							json[d["Country Name"]] = {}
@@ -177,7 +153,7 @@
 			    drawMap(w/2,"#map_canvas1");
 			});
 			
-			d3.csv("{{ STATIC_URL }}data/selected_indicators_modified.csv", function(error, csv) {
+			d3.csv("{{ STATIC_URL }}projects/world_bank_indicators/data/selected_indicators_modified.csv", function(error, csv) {
 					lastType = '';
 					csv.forEach(function(d) {
 						var self = d["self"];

@@ -13,12 +13,13 @@ var urlParam = function(name, w) {
 }
 
 var marker = L.icon({
-	iconUrl: '../static/img/altug_firarda/location.png',
+	iconUrl: '/static/projects/altug_firarda/img/location.png',
 	iconSize: [24, 34],
 	iconAnchor: [12, 32]
 });
 
-
+// Day line cross index for crossing dayline 
+var dlci = 87;
 
 window.onload = function() {
 	var tr = true;
@@ -62,8 +63,17 @@ window.onload = function() {
   		transMarkers.clearLayers();
 		for (var m = start; m < end; ++m) {
   			if(points[m]) {
+  				if(points[m]['cartodb_id'] == dlci) {
+  					curr_loc = [points[m]['lat'],points[m]['lon']];
+  					line.push(L.latLng(curr_loc[0],curr_loc[1]+360,true));
+  					line.push(L.latLng(prev_loc[0],prev_loc[1]-360,true));
+  					line.push(L.latLng(curr_loc,true));
+  					continue
+  				}
+		
+  			
   				curr_loc = [points[m]['lat'],points[m]['lon']];
-	    		line.push(L.latLng(curr_loc));
+	    		line.push(L.latLng(curr_loc,true));
 	    		if(prev_loc.length > 0 && icons) {
 	    			try {
 	    				transportMarker.options.icon = points[m]['arrived_by'];
@@ -83,7 +93,9 @@ window.onload = function() {
 		var polyline_options = {
     		color: '#990000',
     		weight: 2,
-    		dashArray: [4,5]
+    		dashArray: [4,5],
+    		smoothFactor: 0
+
   		};
 		
 		try {
@@ -92,8 +104,24 @@ window.onload = function() {
 		catch(err) {
 			console.log(err);
 		}
-		polyline = new L.polyline(line, polyline_options)
+		// Overview
+		if(start == 0 && end > 3) {
+			line = [line.slice(0,87),line.slice(87)]
+		}
+		// Hong Kong -> NYC
+		else if(start == dlci-3) {
+			line = [[line[0],line[1],line[2]]]
+		}
+		// NYC -> Cancun
+		else if(start == dlci-2 || start == dlci-1) {
+			line = [[line[2],line[3],line[4]]]
+		}
+		else { 
+			line = [line]
+		}
+		polyline = new L.multiPolyline(line, polyline_options)
 		map.addLayer(polyline);
+		
 	}
 	
 	
@@ -122,14 +150,18 @@ window.onload = function() {
 				return O.Action(function() {
 					/* http://api.instagram.com/publicapi/oembed/?url=http://instagr.am/p/ynan9PR-1N/ */
 					if(instagram_link) {
-						var html = '<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="4" style="width:350px;">'
+						var html = '<blockquote class="instagram-media" data-instgrm-version="4" style="width:320px;">'
 								   + '<a href="' + instagram_link + '"></a>'
 								   + '</blockquote> '
-						$('#milestone > #instagram-embed').html(html)
+						
+						$('#instagram-loader').css("display","inline-block");
+						$('#milestone > #instagram-embed')
+							.html(html)
                 		window.instgrm.Embeds.process()
 					}
 					else {
 						$('#milestone > #instagram-embed').html("")
+						$('#instagram-loader').css("display","none");
 					}
 					
 					$('#milestone > #text-description').html(description)
@@ -150,7 +182,7 @@ window.onload = function() {
 				updateUI(
 					"Altuğ Firarda",
 					"", (tr ? "6 Aylık dünya turumda gezdiklerim, gördüklerim ve yaşadıklarım." : "English"), (daydiff(startDate, currentDate) + 1) + (tr ? " Gün" :" Days"),
-					"<span class='glyphicon glyphicon-calendar'></span> " + startDate.toLocaleDateString() + " - " + currentDate.toLocaleDateString() + " (" + (daydiff(startDate, currentDate) + 1) + (tr ? (" gün") : (" days")) + ")",
+					"<span class='glyphicon glyphicon-calendar'></span> " + startDate.toLocaleDateString('en-GB') + " - " + currentDate.toLocaleDateString('en-GB') + " (" + (daydiff(startDate, currentDate) + 1) + (tr ? (" gün") : (" days")) + ")",
 					marker, -1, null),
 				O.Location.changeHash('#' + 0)
 			)
@@ -201,7 +233,7 @@ window.onload = function() {
 								[place, country].join(', '),
 								text + '</br> ' + story_html.join(", "),
 								'', (tr ? ((daydiff(startDate, begin)) + ". Gün") : ("Day " + (daydiff(startDate, begin)))),
-								"<span class='glyphicon glyphicon-calendar'></span> " + begin.toLocaleDateString() + " - " + end.toLocaleDateString() + " (" + (daydiff(begin, end)) + (tr ? (" gün") : (" days")) + ")",
+								"<span class='glyphicon glyphicon-calendar'></span> " + begin.toLocaleDateString('en-GB') + " - " + end.toLocaleDateString('en-GB') + " (" + (daydiff(begin, end)+1) + (tr ? (" gün") : (" days")) + ")",
 								marker, 
 								(i + 1),
 								point.instagram_links
@@ -217,9 +249,9 @@ window.onload = function() {
 					}
 					
 					
-					for (var i = 0; i < points.length; ++i)  {
+					for (var i = 0; i < points.length; i++)  {
 						var point = data.rows[i];
-						if(/*point['begin_date'] && */!line_lookup[point['country']]) {
+						if(!(point['country'] in line_lookup)) {
 							line_data.push({
 								'color':'rgba(255,255,255,.5)',
 								//'date':point['begin_date'].split('-')[2].split('T')[0]  + "." + point['begin_date'].split('-')[1], 
@@ -231,10 +263,11 @@ window.onload = function() {
 								'text-offset': 0,
 								'd':[]
 							})
+							
 							line_lookup[point['country']] = i
 						}
 					}
-					console.log(line_lookup)
+					//console.log(line_lookup)
 					//draw_line(line_data)
 						
 					$('#map div.cartodb-legend ul li').click(function() {

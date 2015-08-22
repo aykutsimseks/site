@@ -9,7 +9,7 @@ html,body {
 #map { width: 100%; height: 100%; }
 #cover {
 	display:block; position:absolute; top:0; bottom:0; left:0; right:0;
-	background: url(../../img/altug_firarda/cover.png) no-repeat center center fixed;
+	background: url(/static/projects/altug_firarda/img/cover.png) no-repeat center center fixed;
 	opacity: 1;
 	pointer-events: none;
 	-webkit-background-size: cover;
@@ -22,8 +22,8 @@ html,body {
 	position: absolute;
 	top: 0px;
 	left: 70px;
-	width: 300px;
-	height: 300px;
+	width: 270px;
+	height: 100%;
 	text-align: left;
 	pointer-events: none;
 }

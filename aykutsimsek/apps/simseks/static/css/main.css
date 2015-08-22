@@ -327,7 +327,7 @@ h3.spec {
 }
 
 #home-slider .slide-content {
-	font-size: 60px;
+	font-size: 3.7em;
 	color: #FFFFFF;
 	/*
 	letter-spacing: -3px;
@@ -631,7 +631,7 @@ nav#menu #menu-nav li a:hover {
 
 .page {
 	background: #2F3238;
-	padding: 100px 0;
+	padding: 40px 0;
 	position: relative;
 	z-index: 99;
 }
@@ -645,7 +645,7 @@ nav#menu #menu-nav li a:hover {
 
 .title-page {
 	text-align: center;
-	margin-bottom: 100px;	
+	margin-bottom: 30px;	
 }
 
 .title-page .title {
@@ -1065,7 +1065,7 @@ nav#menu #menu-nav li a:hover {
 
 #social-area #social ul li {
 	display: inline-block;
-	margin-left: 15px;
+	margin: 0px 6px;
 	list-style: none;
 	cursor: pointer;
 }
@@ -1076,8 +1076,8 @@ nav#menu #menu-nav li a:hover {
 
 #social ul li a {
 	display: block;
-	width: 50px;
-	height: 50px;
+	width: 48px;
+	height: 48px;
 
 	background: #26292E;
 	
@@ -1100,8 +1100,8 @@ nav#menu #menu-nav li a:hover {
 	font-size:24px;
 	line-height: 50px;
 	
-	opacity: 0.3;
-	filter: alpha(opacity=30);
+	opacity: .8;
+	filter: alpha(opacity=80);
 	
 	-webkit-transition: all 400ms ease-out 0s;	
 	   -moz-transition: all 400ms ease-out 0s;

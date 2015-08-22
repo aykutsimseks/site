@@ -6,7 +6,7 @@
 		<script src="//listjs.com/no-cdn/list.js"></script>
 		<script src="//listjs.com/no-cdn/list.pagination.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
-		<link href="{{ STATIC_URL }}css/moviero/moviero.css" rel="stylesheet" type="text/css"/>
+		<link href="{{ STATIC_URL }}projects/moviero/css/moviero.css" rel="stylesheet" type="text/css"/>
 		<link href='//cdn.jsdelivr.net/jquery.nouislider/8.0.2/nouislider.min.css' rel="stylesheet"/>
 		<meta charset=utf-8 />
 		<title>Moviero</title>
@@ -100,7 +100,7 @@
 								<ul class="list" id='list'></ul>
 							</div>
 							<div class="col-12" style='text-align:center'>
-								&copy;2015 <a href="http://aykutsimseks.com">Aykut Simsek</a> | Data from <a href='http://www.imdb.com' target='_blank'><img height=20  style='vertical-align:-5px;' src="{{STATIC_URL}}img/moviero/imdb.png"></img></a> | Using <a href='http://www.listjs.com/' target='_blank'>List.js</a>
+								&copy;2015 <a href="http://aykutsimseks.com">Aykut Simsek</a> | Data from <a href='http://www.imdb.com' target='_blank'><img height=20  style='vertical-align:-5px;' src="{{STATIC_URL}}projects/moviero/img/imdb.png"></img></a> | Using <a href='http://www.listjs.com/' target='_blank'>List.js</a>
 							</div>
 						</div>
 					</div>
@@ -169,7 +169,7 @@
 		</script>
 		<script>
 			// Field Mapping from csv file
-			var csv_file = '{{STATIC_URL}}data/moviero/movies.csv'
+			var csv_file = '{{STATIC_URL}}projects/moviero/data/movies.csv'
 			var featureList = null;
 			var filterList  = null;
 			var genre = null;
@@ -181,7 +181,7 @@
 					$('#list').append(
 						[
 							'<li>',
-							'<a href=' + c.url + ' target="_blank"><img height="140" width="200" src="{{STATIC_URL}}img/moviero/thumbnails/' + c.unique_id + '.png" class="thumb" /></a>',
+							'<a href=' + c.url + ' target="_blank"><img height="140" width="200" src="{{STATIC_URL}}/projects/moviero/img/thumbnails/' + c.unique_id + '.png" class="thumb" /></a>',
 							'<a href=' + c.url + ' target="_blank"><h4><span class="name">' + c.title + '</span></h4></a>',
 							'<p>' + ((c.metascore != '')?('Metascore: <span class="metascore">' + c.metascore + '</span> | '):'') + c.run_time + ' min | <span class="genres">' + eval(c.genres).join(', ') + '</span> | <span>' + (months[c.month]||'') + '</span>, <span class="year">' + (c.year||'') + '</span></p></p>',
 							'<span class="month" style="display:none;">' + (c.month||0) + '</span><span class="air_date" style="display:none;">' + (parseInt((c.month||0)) + parseInt((c.year||0))*12)+ '</span>',

@@ -5,7 +5,8 @@
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.css" />
-	<link rel="stylesheet" href="{{ STATIC_URL }}css/altug_firarda/app.css" />
+	
+	<link rel="stylesheet" href="{{ STATIC_URL }}projects/altug_firarda/css/app.css" />
 	
 	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
 	<link rel="stylesheet" href="http://watson.lennardvoogdt.nl/Leaflet.awesome-markers/dist/leaflet.awesome-markers.css">
@@ -13,13 +14,10 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="http://libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script>
 	<script src="http://cartodb.github.io/odyssey.js/dist/odyssey.js" charset="UTF-8"></script>
-	
 	<script src="http://watson.lennardvoogdt.nl/Leaflet.awesome-markers/dist/leaflet.awesome-markers.js"></script>
-	<!-- <script async defer src="//platform.instagram.com/en_US/embeds.js"></script> -->
-	<script async defer src="{{ STATIC_URL }}js/altug_firarda/embeds.js"></script>
 	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
-	<script src="{{ STATIC_URL }}js/altug_firarda/app.js"></script>
+	<script async defer src="{{ STATIC_URL }}projects/altug_firarda/js/embeds.js"></script>
+	<script src="{{ STATIC_URL }}projects/altug_firarda/js/app.js"></script>
 	
 	<style>
 	
@@ -37,7 +35,7 @@
   			cursor: text;
 		}
 		#map div.cartodb-legend ul li {
-			padding: 0px 7px 0px 5px;
+			padding: 0px 5px 0px 5px;
 			float:left;
 			text-transform: none;
 			color: rgba(255,255,255,1);
@@ -74,14 +72,25 @@
 			background: none;!important
 		}
 		
+		
+		#loader1 {
+    position:absolute;
+    left:40%;
+    top:35%;
+    border-radius:20px;
+    padding:25px;
+    border:1px solid #777777;
+    background:#ffffff;
+    box-shadow:0px 0px 10px #777777;
+}
 	</style>
 </head>
 <body>
 	<div id="map">
 		<div id="languageselector" style="position:absolute;bottom:8px;left:95px;z-index:999">
 			<ul>
-				<li><a href="{% url 'altug_firarda' language='tr'  %}"><img height=24 src="{{ STATIC_URL }}img/altug_firarda/turkey_round_icon_64.png"></img></a></li>
-				<li><a href="{% url 'altug_firarda' language='en'  %}"><img height=24 src="{{ STATIC_URL }}img/altug_firarda/united_kingdom_round_icon_64.png"></img></a></li>
+				<li><a href="{% url 'altug_firarda' language='tr'  %}"><img height=24 src="{{ STATIC_URL }}projects/altug_firarda/img/turkey_round_icon_64.png"></img></a></li>
+				<li><a href="{% url 'altug_firarda' language='en'  %}"><img height=24 src="{{ STATIC_URL }}projects/altug_firarda/img/united_kingdom_round_icon_64.png"></img></a></li>
 			</ul>
 		</div>
 	</div>
@@ -109,7 +118,8 @@
 						
 			<p id="text-sources" style='margin-left:-50px;'></p>
 
-			<p id="instagram-embed" style='margin-left:-50px;z-index:99999;pointer-events:all;'></p>
+			<p id="instagram-embed" style='position:absolute;bottom:70px;margin-left:-50px;z-index:99999;pointer-events:all;'></p>
+			<div id='instagram-loader' style='position:absolute;display:none;bottom:220px;width:270px;text-align:center;font-size:18px;' ><i style='font-size:36px;vertical-align:-4px;' class="fa fa-spinner fa-pulse" ></i>&nbsp;Loading...</div>
 		</div>
 		<div id="footer">
 		</div>

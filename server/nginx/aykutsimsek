@@ -1,0 +1,20 @@
+server {
+    listen 80;
+    server_tokens off;
+    server_name www.aykutsimseks.com aykutsimseks.com;
+
+     location / {
+         include uwsgi_params;
+         uwsgi_pass unix:/tmp/aykutsimseks.sock;
+	 # uwsgi_pass 0.0.0.0:8080;
+     }
+
+     location /static {
+         alias /home/ubuntu/aykutsimsek_com/aykutsimsek/apps/simseks/static;
+     }
+
+     ## Only requests to our Host are allowed
+     if ($host !~ ^(172.31.17.107|aykutsimseks.com|www.aykutsimseks.com)$ ) {
+        return 444;
+     }
+}

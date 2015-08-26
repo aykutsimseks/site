@@ -97,12 +97,13 @@ window.onload = function() {
     		smoothFactor: 0
 
   		};
-		
-		try {
-			map.removeLayer(polyline);
-		}
-		catch(err) {
-			console.log(err);
+		if(polyline) {
+			try {
+				map.removeLayer(polyline);
+			}
+			catch(err) {
+				console.log(err);
+			}
 		}
 		// Overview
 		if(start == 0 && end > 3) {
@@ -140,7 +141,7 @@ window.onload = function() {
 		})
 		.done(function(vis, layers) {
 			map = vis.getNativeMap();
-			$('#map > div:nth-child(2) > div > div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div')
+			$('#map > div:nth-child(3) > div > div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div')
 				.prepend('<a href="http://www.aykutsimseks.com" target="_blank">Aykut Simsek</a> | <a href="http://cartodb.github.io/odyssey.js/index.html" target="_blank">Odyssey.js</a> | ')
 							
 			var seq = O.Sequential();
@@ -176,7 +177,7 @@ window.onload = function() {
 							].join(''))
 						}
 						else {
-							description.html('')
+							$('#milestone > #text-description').html('')
 						}
 					}
 					else {

@@ -125,6 +125,15 @@ window.onload = function() {
 	}
 	
 	
+	if(tr) {
+		$('#instagram-loader').html("<i style='font-size:36px;vertical-align:-4px;' class='fa fa-spinner fa-pulse' ></i>&nbsp;Yükleniyor...");
+		$('#controls-text').html('* Klayvenizin sağ/sol tuşları veya yukarıdaki ok tuşlarını kullanarak günleri değiştirebilir, ülke isimlerine tıklayarak direkt o ülkere ulaşabilirsiniz.')
+	}
+	else {
+		$('#instagram-loader').html("<i style='font-size:36px;vertical-align:-4px;' class='fa fa-spinner fa-pulse' ></i>&nbsp;Loading...");
+		$('#controls-text').html()
+	}
+	
 	cartodb.createVis('map', 'http://aykutsimseks.cartodb.com/api/v2/viz/73dba65c-eb63-11e4-a391-0e9d821ea90d/viz.json', {
 			shareable: true,
 			zoomControl: true
@@ -149,22 +158,33 @@ window.onload = function() {
 			var updateUI = function(title, description, sources, location, date, marker, k, instagram_link) {				
 				return O.Action(function() {
 					/* http://api.instagram.com/publicapi/oembed/?url=http://instagr.am/p/ynan9PR-1N/ */
+					/* data-instgrm-captioned  */
+					$('#milestone > #text-description').html('')
 					if(instagram_link) {
-						var html = '<blockquote class="instagram-media" data-instgrm-version="4" style="width:320px;">'
+						var html = '<blockquote class="instagram-media" data-instgrm-version="4" style="width:320px;border-radius:0">'
 								   + '<a href="' + instagram_link + '"></a>'
 								   + '</blockquote> '
 						
 						$('#instagram-loader').css("display","inline-block");
-						$('#milestone > #instagram-embed')
-							.html(html)
+						$('#milestone > #instagram-embed').html(html)
                 		window.instgrm.Embeds.process()
+        	        	if(description) {
+							$('#milestone > #text-description').html(
+							[	'<div class="Embed"><div class="EmbedCaption">',
+								description.replace(/#(\S*)/g,'<div class="hashtag" style="color:#3f729b;display:inline-block;">#$1</div>'),
+								'</div></div>'
+							].join(''))
+						}
+						else {
+							description.html('')
+						}
 					}
 					else {
 						$('#milestone > #instagram-embed').html("")
 						$('#instagram-loader').css("display","none");
 					}
 					
-					$('#milestone > #text-description').html(description)
+					
 					//$('#milestone > #picture').attr('src',images[k])
 					$('#milestone > #top-section >  h3').html(title)
 					$('#milestone > #top-section #location').html(location)
@@ -231,7 +251,7 @@ window.onload = function() {
 							}).actions.addRemove(map),
 							updateUI(
 								[place, country].join(', '),
-								text + '</br> ' + story_html.join(", "),
+								text /* + '</br> ' + story_html.join(", ")*/,
 								'', (tr ? ((daydiff(startDate, begin)) + ". Gün") : ("Day " + (daydiff(startDate, begin)))),
 								"<span class='glyphicon glyphicon-calendar'></span> " + begin.toLocaleDateString('en-GB') + " - " + end.toLocaleDateString('en-GB') + " (" + (daydiff(begin, end)+1) + (tr ? (" gün") : (" days")) + ")",
 								marker, 

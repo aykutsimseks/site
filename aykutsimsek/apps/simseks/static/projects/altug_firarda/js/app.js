@@ -22,6 +22,11 @@ var marker = L.icon({
 var dlci = 87;
 
 window.onload = function() {
+
+
+}
+
+window.onload = function() {
 	var tr = true;
 	if (urlParam('l') == 'en') {
 		tr = false;
@@ -36,6 +41,11 @@ window.onload = function() {
 		
 	var startDate = new Date('02/01/2015')
 	var currentDate = new Date('08/20/2015');
+	
+
+  // Parse the document body and
+  // insert <img> tags in place of Unicode Emojis
+
 	
 	
 	var add_line_icons = function(start,end, icons) {
@@ -169,10 +179,11 @@ window.onload = function() {
 						$('#instagram-loader').css("display","inline-block");
 						$('#milestone > #instagram-embed').html(html)
                 		window.instgrm.Embeds.process()
+                		console.log(twemoji.parse(description))
         	        	if(description) {
 							$('#milestone > #text-description').html(
-							[	'<div class="Embed"><div class="EmbedCaption">',
-								description.replace(/#(\S*)/g,'<div class="hashtag" style="color:#3f729b;display:inline-block;">#$1</div>'),
+							[	'<div class="Embed" ><div class="EmbedCaption">',
+								twemoji.parse(description.replace(/#(\S*)/g,'<div class="hashtag" style="color:#3f729b;display:inline-block;">#$1</div>')),
 								'</div></div>'
 							].join(''))
 						}
@@ -192,7 +203,6 @@ window.onload = function() {
 					$('#milestone > #top-section #date').html(date)
 					$('#milestone > #text-sources').html(sources)
 					$('#buttons > span').html(story.state() + 1 + ' / ' + (points.length + 1))
-					
 					add_line_icons(k-2,k+1)			
 				});
 			}

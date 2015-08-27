@@ -66,12 +66,24 @@ html,body {
 
 #header #milestone #text-description {
 	background: rgba(255,255,255,1);
-	color: #666;
 	border-radius: 4px 4px 4px 4px;
+	color: #666;
 	box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 1px 0px, rgba(0, 0, 0, 0.14902) 0px 1px 10px 0px;
+		max-height: -moz-calc(100% - (150px));
+	max-height: -webkit-calc(100% - (150px));
+	max-height: calc(100% - (150px));
 }
 
-.Embed{padding:8px 8px 8px 8px}
+#header #milestone #text-description #description {
+	
+	max-height:104px;
+	overflow-y: auto;
+	text-overflow: ellipsis;
+	pointer-events:all;
+}
+
+
+.Embed{padding:4px 8px 8px 8px}
 .EmbedCaption{display:block;margin-bottom:0;padding:0 4px;word-wrap:break-word;font-size:12px;line-height:15px;color:#000}
 .EmbedFooter {margin-top:0;margin-bottom:0}
 #header #milestone #text-sources a:hover{

@@ -159,7 +159,7 @@ window.onload = function() {
 				return O.Action(function() {
 					/* http://api.instagram.com/publicapi/oembed/?url=http://instagr.am/p/ynan9PR-1N/ */
 					/* data-instgrm-captioned  */
-					$('#milestone > #text-description').html('')
+					$('#milestone > #text-description #description').html('')
 					if(instagram_link) {
 						var html = '<blockquote class="instagram-media" data-instgrm-version="1" style="width:340px;border-radius:0">'
 								   + '<a href="' + instagram_link + '"></a>'
@@ -169,14 +169,16 @@ window.onload = function() {
 						$('#milestone > #instagram-embed').html(html)
                 		window.instgrm.Embeds.process()
         	        	if(description) {
-							$('#milestone > #text-description').show().html(
+							$('#milestone > #text-description').show()
+							$('#milestone > #text-description > #description').html(
 							[	'<div class="Embed" ><div class="EmbedCaption">',
 								twemoji.parse(description.replace(/#(\S*)/g,'<div class="hashtag" style="color:#3f729b;display:inline-block;">#$1</div>')),
 								'</div></div>'
 							].join(''))
 						}
 						else {
-							$('#milestone > #text-description').show().html('');
+							$('#milestone > #text-description').show()
+							$('#milestone > #text-description > #description').html('');
 						}
 					}
 					else {

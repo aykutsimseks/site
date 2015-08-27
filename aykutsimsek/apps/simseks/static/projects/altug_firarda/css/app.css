@@ -22,7 +22,7 @@ html,body {
 	position: absolute;
 	top: 0px;
 	left: 70px;
-	width: 320px;
+	width: 340px;
 	height: 100%;
 	text-align: left;
 	pointer-events: none;
@@ -37,7 +37,7 @@ html,body {
 
 #header #milestone {
 	color: #fff;
-	font-size: 13px;
+	font-size: 14px;
 	font-family: Helvetica, Arial, Sans-serif;
 	font-style: italic;
 }
@@ -53,7 +53,9 @@ html,body {
 }
 
 #header #milestone span {
-	color: rgba(200,200,200,1);
+	/*color: rgba(200,200,200,1);*/
+	
+	color: rgba(220,220,220,1);
 	font-size: 13px;
 	text-transform:capitalize;
 }
@@ -71,7 +73,7 @@ html,body {
 
 .Embed{padding:8px 8px 8px 8px}
 .EmbedCaption{display:block;margin-bottom:0;padding:0 4px;word-wrap:break-word;font-size:12px;line-height:15px;color:#000}
-
+.EmbedFooter {margin-top:0;margin-bottom:0}
 #header #milestone #text-sources a:hover{
 	color: rgba(255,255,255,0.5);
 }
@@ -109,7 +111,7 @@ html,body {
 	border-radius: 4px;
 	background:#666;
 	padding: 6px 4px 0 4px;
-	color: rgba(200,200,200,1)
+	color: rgba(220,220,220,1)
 
 }
 

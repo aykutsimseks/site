@@ -22,11 +22,6 @@ var marker = L.icon({
 var dlci = 87;
 
 window.onload = function() {
-
-
-}
-
-window.onload = function() {
 	var tr = true;
 	if (urlParam('l') == 'en') {
 		tr = false;
@@ -39,14 +34,8 @@ window.onload = function() {
 	var polyline;
 	var transMarkers = new L.FeatureGroup();
 		
-	var startDate = new Date('02/01/2015')
+	var startDate = new Date('02/02/2015')
 	var currentDate = new Date('08/20/2015');
-	
-
-  // Parse the document body and
-  // insert <img> tags in place of Unicode Emojis
-
-	
 	
 	var add_line_icons = function(start,end, icons) {
 		var line = [];
@@ -172,14 +161,13 @@ window.onload = function() {
 					/* data-instgrm-captioned  */
 					$('#milestone > #text-description').html('')
 					if(instagram_link) {
-						var html = '<blockquote class="instagram-media" data-instgrm-version="4" style="width:320px;border-radius:0">'
+						var html = '<blockquote class="instagram-media" data-instgrm-version="1" style="width:340px;border-radius:0">'
 								   + '<a href="' + instagram_link + '"></a>'
 								   + '</blockquote> '
 						
 						$('#instagram-loader').css("display","inline-block");
 						$('#milestone > #instagram-embed').html(html)
                 		window.instgrm.Embeds.process()
-                		console.log(twemoji.parse(description))
         	        	if(description) {
 							$('#milestone > #text-description').show().html(
 							[	'<div class="Embed" ><div class="EmbedCaption">',
@@ -212,14 +200,14 @@ window.onload = function() {
 				map.actions.setView([10, -10], 2),
 				//O.Debug().log("state " + 0),
 				updateUI(
-					"<i class='fa fa-globe' style='font-size:18px;'></i>&nbsp; Altuğ Firarda",
+					"<i class='fa fa-globe' style='font-size:18px;'></i>&nbsp; Altuğ Firarda &nbsp;<i class='fa fa-globe' style='font-size:18px;'></i>",
 					"", (tr ? ["2 şubat 2015 tarihinde sadece bir sırt çantası ve Hindistan’a tek yön bir bilet alarak başladığım ve 6.5 ayda, 4 kıta, 20 ülke, 82 şehir gezdiğim; 26 uçak yolculuğu, sayısız otobüs, tren, araba, gemi ve motosiklet yolculukları yaptığım 200 günlük dünya turumun haritasını ve maceralarımın bir kısmını bu sitede bulabilirsiniz."
 							  ,""
 							  ,"Daha detaylı fotoğraflar ve hikayeler için <a href='https://instagram.com/altugsimsek/' target='_blank'>Instagram</a> hesabıma göz atabilirsiniz."
 							  ,""
 							  ,"Seyahatimdeki günleri ilerletmek ve rotamı görebilmek için klavyenizin sağ/sol ok tuşlarını veya ekrandaki ok tuşlarını kullanabilirsiniz. Bulunduğum ülkelere direkt ulaşabilmek için ise ekranın altındaki ülke isimlerine tıklayabilirsiniz."
 							  ,""
-							  ,"Seyahate başlamadan önce Altuğ Şimşek kimdir derseniz buraya, gezi öncesindeki hazırlıklarımı öğrenmek için buraya tıklayabilirsiniz."
+							  ,"Seyahate başlamadan önce Altuğ Şimşek kimdir derseniz <a href='http://altugfirarda.blogspot.com.tr/2015/03/ben-kimim-neden-ve-nasl-dunya-turu.html' target='_blank'>buraya</a>, gezi öncesindeki hazırlıklarımı öğrenmek için <a href='http://altugfirarda.blogspot.com.tr/2015/03/seyahat-hazrlklarm-ve-turkiyede-son.html' target='_blank'>buraya</a> tıklayabilirsiniz."
 							  ,""
 							  ,"Bunlara ek olarak seyahat sonrası yorumlarım veya başka sorularınız için <a href='mailto:simsekaltug@gmail.com' target='_blank'>simsekaltug@gmail.com</a> adresinden benimle iletişime geçebilirsiniz."
  							  ,""
@@ -234,15 +222,13 @@ window.onload = function() {
 							  ,"If you have any questions, you can reach me via <a href='mailto:simsekaltug@gmail.com' target='_blank'>simsekaltug@gmail.com</a>"
 							  ,""
 							  ,"Enjoy your trip."].join('<br/>') 
-						), (daydiff(startDate, currentDate) + 1) + (tr ? " Gün" :" Days"),
-					"<span class='glyphicon glyphicon-calendar'></span> " + startDate.toLocaleDateString('en-GB') + " - " + currentDate.toLocaleDateString('en-GB') + " (" + (daydiff(startDate, currentDate) + 1) + (tr ? (" gün") : (" days")) + ")",
+						), (daydiff(startDate, currentDate) + 2) + (tr ? " Gün" :" Days"),
+					"<span class='glyphicon glyphicon-calendar'></span> " + startDate.toLocaleDateString('en-GB') + " - " + currentDate.toLocaleDateString('en-GB') + " (" + (daydiff(startDate, currentDate) + 2) + (tr ? (" gün") : (" days")) + ")",
 					marker, -1, null),
 				O.Location.changeHash('#' + 0)
 			)
 			story.addState(seq.step(0), action);
-			//story.go(0)
-			//seq.current(0)
-	
+
 			var sql = new cartodb.SQL({
 				user: 'aykutsimseks'
 			});
@@ -285,7 +271,7 @@ window.onload = function() {
 							updateUI(
 								[place, country].join(', '),
 								text /* + '</br> ' + story_html.join(", ")*/,
-								'', (tr ? ((daydiff(startDate, begin)) + ". Gün") : ("Day " + (daydiff(startDate, begin)))),
+								'', (tr ? ((daydiff(startDate, begin)+1) + ". Gün") : ("Day " + (daydiff(startDate, begin) + 1))),
 								"<span class='glyphicon glyphicon-calendar'></span> " + begin.toLocaleDateString('en-GB') + " - " + end.toLocaleDateString('en-GB') + " (" + (daydiff(begin, end)+1) + (tr ? (" gün") : (" days")) + ")",
 								marker, 
 								(i + 1),
@@ -295,9 +281,10 @@ window.onload = function() {
 						)
 						story.addState(seq.step((i + 1)), action);
 					}
-					if (location.hash) {
+					if (location.hash && location.hash.slice(1)>0) {
 						seq.current(+location.hash.slice(1));
 					} else {
+						seq.current(0);
 						story.go(0);
 					}
 					

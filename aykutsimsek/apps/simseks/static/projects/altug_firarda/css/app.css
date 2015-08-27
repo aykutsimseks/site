@@ -75,7 +75,6 @@ html,body {
 }
 
 #header #milestone #text-description #description {
-	
 	max-height:104px;
 	overflow-y: auto;
 	text-overflow: ellipsis;
@@ -83,7 +82,7 @@ html,body {
 }
 
 
-.Embed{padding:4px 8px 8px 8px}
+.Embed{padding:8px 8px 8px 8px}
 .EmbedCaption{display:block;margin-bottom:0;padding:0 4px;word-wrap:break-word;font-size:12px;line-height:15px;color:#000}
 .EmbedFooter {margin-top:0;margin-bottom:0}
 #header #milestone #text-sources a:hover{
@@ -123,6 +122,19 @@ html,body {
 	border-radius: 4px;
 	background:#666;
 	padding: 6px 4px 0 4px;
+	color: rgba(220,220,220,1)
+
+}
+
+#buttons .small-button a{
+	display: block;
+	float:right;
+	width: 12px;
+	height: 12px;
+	pointer-events: auto;
+	border-radius: 4px;
+	background:#666;
+	padding: 2px 4px 4px 4px;
 	color: rgba(220,220,220,1)
 
 }

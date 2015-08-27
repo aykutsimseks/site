@@ -131,7 +131,8 @@ window.onload = function() {
 	}
 	else {
 		$('#instagram-loader').html("<i style='font-size:36px;vertical-align:-4px;' class='fa fa-spinner fa-pulse' ></i>&nbsp;Loading...");
-		$('#controls-text').html('* Use the left/right arrow keys on your keyboard or on the screen to navigate the map. You can click on country names above for direct access to those countries.')
+		$('#controls-text').html('* Use the left/right arrow keys on your keyboard or on the screen to navigate the map. You can click on country names above for direct access to those countries.');
+		$('#restart a').prop('href','.?l=en')
 	}
 	
 	cartodb.createVis('map', 'http://aykutsimseks.cartodb.com/api/v2/viz/73dba65c-eb63-11e4-a391-0e9d821ea90d/viz.json', {

@@ -138,11 +138,11 @@ window.onload = function() {
 	
 	if(tr) {
 		$('#instagram-loader').html("<i style='font-size:36px;vertical-align:-4px;' class='fa fa-spinner fa-pulse' ></i>&nbsp;Yükleniyor...");
-		$('#controls-text').html('* Klayvenizin sağ/sol tuşları veya yukarıdaki ok tuşlarını kullanarak günleri değiştirebilir, ülke isimlerine tıklayarak direkt o ülkere ulaşabilirsiniz.')
+		$('#controls-text').html('* Klayvenizin sağ/sol tuşlarını veya yukarıdaki ok tuşlarını kullanarak günleri değiştirebilir, ülke isimlerine tıklayarak direkt o ülkere ulaşabilirsiniz.')
 	}
 	else {
 		$('#instagram-loader').html("<i style='font-size:36px;vertical-align:-4px;' class='fa fa-spinner fa-pulse' ></i>&nbsp;Loading...");
-		$('#controls-text').html()
+		$('#controls-text').html('* Use the left/right arrow keys on your keyboard or on the screen to navigate the map. You can click on country names above for direct access to those countries.')
 	}
 	
 	cartodb.createVis('map', 'http://aykutsimseks.cartodb.com/api/v2/viz/73dba65c-eb63-11e4-a391-0e9d821ea90d/viz.json', {
@@ -181,19 +181,20 @@ window.onload = function() {
                 		window.instgrm.Embeds.process()
                 		console.log(twemoji.parse(description))
         	        	if(description) {
-							$('#milestone > #text-description').html(
+							$('#milestone > #text-description').show().html(
 							[	'<div class="Embed" ><div class="EmbedCaption">',
 								twemoji.parse(description.replace(/#(\S*)/g,'<div class="hashtag" style="color:#3f729b;display:inline-block;">#$1</div>')),
 								'</div></div>'
 							].join(''))
 						}
 						else {
-							$('#milestone > #text-description').html('')
+							$('#milestone > #text-description').show().html('');
 						}
 					}
 					else {
 						$('#milestone > #instagram-embed').html("")
-						$('#instagram-loader').css("display","none");
+						$('#instagram-loader').css("display","none")
+						$('#milestone > #text-description').hide();
 					}
 					
 					
@@ -208,11 +209,32 @@ window.onload = function() {
 			}
 
 			var action = O.Step(
-				map.actions.setView([10, 32.0186], 2),
+				map.actions.setView([10, -10], 2),
 				//O.Debug().log("state " + 0),
 				updateUI(
 					"<i class='fa fa-globe' style='font-size:18px;'></i>&nbsp; Altuğ Firarda",
-					"", (tr ? "6 Aylık dünya turumda gezdiklerim, gördüklerim ve yaşadıklarım." : "English"), (daydiff(startDate, currentDate) + 1) + (tr ? " Gün" :" Days"),
+					"", (tr ? ["2 şubat 2015 tarihinde sadece bir sırt çantası ve Hindistan’a tek yön bir bilet alarak başladığım ve 6.5 ayda, 4 kıta, 20 ülke, 82 şehir gezdiğim; 26 uçak yolculuğu, sayısız otobüs, tren, araba, gemi ve motosiklet yolculukları yaptığım 200 günlük dünya turumun haritasını ve maceralarımın bir kısmını bu sitede bulabilirsiniz."
+							  ,""
+							  ,"Daha detaylı fotoğraflar ve hikayeler için <a href='https://instagram.com/altugsimsek/' target='_blank'>Instagram</a> hesabıma göz atabilirsiniz."
+							  ,""
+							  ,"Seyahatimdeki günleri ilerletmek ve rotamı görebilmek için klavyenizin sağ/sol ok tuşlarını veya ekrandaki ok tuşlarını kullanabilirsiniz. Bulunduğum ülkelere direkt ulaşabilmek için ise ekranın altındaki ülke isimlerine tıklayabilirsiniz."
+							  ,""
+							  ,"Seyahate başlamadan önce Altuğ Şimşek kimdir derseniz buraya, gezi öncesindeki hazırlıklarımı öğrenmek için buraya tıklayabilirsiniz."
+							  ,""
+							  ,"Bunlara ek olarak seyahat sonrası yorumlarım veya başka sorularınız için <a href='mailto:simsekaltug@gmail.com' target='_blank'>simsekaltug@gmail.com</a> adresinden benimle iletişime geçebilirsiniz."
+ 							  ,""
+ 							  ,"Keyifli yolculuklar."].join('<br/>') 
+ 							  : 
+ 							  ["This is the summary of my world trip which I traveled 4 continents, 20 countries, 82 cities in 6.5 months by taking 26 flights, countless bus, train, car, ferry and motorcycle trips after taking a one way flight to India with my backpack without any proper plan on 2nd February 2015."
+ 							  ,""
+ 							  ,"For more detailed pictures and stories you can also check my <a href='https://instagram.com/altugsimsek/' target='_blank'>Instagram</a> account."
+							  ,""
+							  ,"To move between days and places, use the left/right arrow keys on your keyboard or on the screen. You can directly access countries by clicking the name of the country at the bottom of the screen."
+ 							  ,""
+							  ,"If you have any questions, you can reach me via <a href='mailto:simsekaltug@gmail.com' target='_blank'>simsekaltug@gmail.com</a>"
+							  ,""
+							  ,"Enjoy your trip."].join('<br/>') 
+						), (daydiff(startDate, currentDate) + 1) + (tr ? " Gün" :" Days"),
 					"<span class='glyphicon glyphicon-calendar'></span> " + startDate.toLocaleDateString('en-GB') + " - " + currentDate.toLocaleDateString('en-GB') + " (" + (daydiff(startDate, currentDate) + 1) + (tr ? (" gün") : (" days")) + ")",
 					marker, -1, null),
 				O.Location.changeHash('#' + 0)

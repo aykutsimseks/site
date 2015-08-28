@@ -126,12 +126,12 @@ window.onload = function() {
 	
 	
 	if(tr) {
-		$('#instagram-loader').html("<i style='font-size:36px;vertical-align:-4px;' class='fa fa-spinner fa-pulse' ></i>&nbsp;Yükleniyor...");
-		$('#controls-text').html('* Klayvenizin sağ/sol tuşlarını veya yukarıdaki ok tuşlarını kullanarak günleri değiştirebilir, ülke isimlerine tıklayarak direkt o ülkere ulaşabilirsiniz.')
+		$('#left-panel .loader').html("<i style='font-size:36px;vertical-align:-4px;' class='fa fa-spinner fa-pulse' ></i>&nbsp;Yükleniyor...");
+		$('#info-text').html('* Klayvenizin sağ/sol tuşlarını veya yukarıdaki ok tuşlarını kullanarak günleri değiştirebilir, ülke isimlerine tıklayarak direkt o ülkere ulaşabilirsiniz.')
 	}
 	else {
-		$('#instagram-loader').html("<i style='font-size:36px;vertical-align:-4px;' class='fa fa-spinner fa-pulse' ></i>&nbsp;Loading...");
-		$('#controls-text').html('* Use the left/right arrow keys on your keyboard or on the screen to navigate the map. You can click on country names above for direct access to those countries.');
+		$('#left-panel .loader').html("<i style='font-size:36px;vertical-align:-4px;' class='fa fa-spinner fa-pulse' ></i>&nbsp;Loading...");
+		$('#info-text').html('* Use the left/right arrow keys on your keyboard or on the screen to navigate the map. You can click on country names above for direct access to those countries.');
 		$('#restart a').prop('href','.?l=en')
 	}
 	
@@ -160,41 +160,40 @@ window.onload = function() {
 				return O.Action(function() {
 					/* http://api.instagram.com/publicapi/oembed/?url=http://instagr.am/p/ynan9PR-1N/ */
 					/* data-instgrm-captioned  */
-					$('#milestone > #text-description #description').html('')
+					$('.caption-panel .caption').html('')
 					if(instagram_link) {
 						var html = '<blockquote class="instagram-media" data-instgrm-version="1" style="width:340px;border-radius:0">'
 								   + '<a href="' + instagram_link + '"></a>'
 								   + '</blockquote> '
 						
-						$('#instagram-loader').css("display","inline-block");
-						$('#milestone > #instagram-embed').html(html)
+						$('#left-panel .loader').css("display","inline-block");
+						$('.instagram-panel').html(html)
                 		window.instgrm.Embeds.process()
         	        	if(description) {
-							$('#milestone > #text-description').show()
-							$('#milestone > #text-description > #description').html(
-							[	'<div class="Embed" ><div class="EmbedCaption">',
+							$('.caption-panel').show()
+							$('.caption-panel .caption').html(
+							[	'<div class="Embed" ><div class="EmbedCaption normal-text">',
 								twemoji.parse(description.replace(/#(\S*)/g,'<div class="hashtag" style="color:#3f729b;display:inline-block;">#$1</div>')),
 								'</div></div>'
 							].join(''))
 						}
 						else {
-							$('#milestone > #text-description').show()
-							$('#milestone > #text-description > #description').html('');
+							$('.caption-panel').show()
+							$('.caption-panel .caption').html('');
 						}
 					}
 					else {
-						$('#milestone > #instagram-embed').html("")
-						$('#instagram-loader').css("display","none")
-						$('#milestone > #text-description').hide();
+						$('.instagram-panel').html("")
+						$('#left-panel .loader').css("display","none")
+						$('.caption-panel').hide();
 					}
 					
-					
-					//$('#milestone > #picture').attr('src',images[k])
-					$('#milestone > #top-section >  h3').html(title)
-					$('#milestone > #top-section #location').html(location)
-					$('#milestone > #top-section #date').html(date)
-					$('#milestone > #text-sources').html(sources)
-					$('#buttons > span').html(story.state() + 1 + ' / ' + (points.length + 1))
+				
+					$('#left-panel h3').html(title)
+					$('#left-panel .location').html(location)
+					$('#left-panel .date').html(date)
+					$('#left-panel .text-panel').html(sources)
+					$('.controls .page-num').html(story.state() + 1 + ' / ' + (points.length + 1))
 					add_line_icons(k-2,k+1)			
 				});
 			}

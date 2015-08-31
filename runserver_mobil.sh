@@ -3,4 +3,5 @@ export WORKON_HOME=~/Envs
 mkdir -p $WORKON_HOME
 source /usr/local/bin/virtualenvwrapper.sh
 workon aykutsimsek
-python manage.py runserver 192.168.1.42:8000
+INET_ADDRESS=$(ifconfig | grep "inet " | grep -v 127.0.0.1 | cut -d\  -f2)
+python manage.py runserver $INET_ADDRESS:8000

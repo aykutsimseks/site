@@ -3,9 +3,13 @@ body {
     margin: 0;
     padding: 0;
     font-size: .9em;
-    font-family: Helvetica, Arial, Sans-serif;
     background: rgba(222, 222, 222, 1);
     height: 100%;
+    
+    font-family: 'Lato', sans-serif;
+    /* 
+    font-family: Helvetica, Arial, Sans-serif;
+    */
 }
 
 a {
@@ -92,7 +96,9 @@ a {
     bottom: 1.1em;
     left: 13em;
     z-index: 9999;
+    color: #fff;
 }
+
 
 /* Map Attribution */
 #map .cartodb-share-dialog .block .content {
@@ -150,6 +156,7 @@ a {
 
 #left-panel p {
     max-width: 700px;
+    display:none;
 }
 
 #left-panel h3 {
@@ -172,7 +179,7 @@ a {
     top: 7em;
     width: 100%;
     min-height: 0px;
-
+   
 }
 #left-panel .caption-panel {
     display: none;
@@ -289,7 +296,9 @@ img.emoji {
 }
 
 /* Mobile */
-@media only screen and (max-device-width: 480px) {
+@media only screen 
+and (max-width : 768px) 
+and (orientation : portrait) {
 	html,
 	body {
 		font-size: 1.13em;
@@ -339,7 +348,7 @@ img.emoji {
 	#left-panel .controls {
 	    position: fixed;
 	    text-align:center;
-	    top: calc(100% - 14em);
+	    top: calc(100% - 8em);
 	    z-index: 9999;
 	    width:100%;
 	}
@@ -392,7 +401,11 @@ img.emoji {
 
 #left-panel .text-panel {
     background: rgba(100,100,100,.4);
-    padding: 0 .1em 0em .4em;
+    padding: .5em .2em .5em .4em;
 
+}
+
+#map div.cartodb-legend-stack {
+	display:none!important;
 }
 }

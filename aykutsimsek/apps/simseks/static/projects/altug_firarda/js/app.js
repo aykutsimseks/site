@@ -192,7 +192,13 @@ window.onload = function() {
 					$('#left-panel h3').html(title)
 					$('#left-panel .location').html(location)
 					$('#left-panel .date').html(date)
-					$('#left-panel .text-panel').html(sources)
+					if(sources) {
+						$('#left-panel .text-panel').show()
+						$('#left-panel .text-panel').html(sources)
+					}
+					else {
+						$('#left-panel .text-panel').hide()
+					}
 					$('.controls .page-num').html(story.state() + 1 + ' / ' + (points.length + 1))
 					add_line_icons(k-2,k+1)			
 				});

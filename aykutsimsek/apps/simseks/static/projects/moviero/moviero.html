@@ -2,14 +2,20 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset='utf-8' />
+		<title>Moviero</title>
+		<link rel="shortcut icon" href="//static.civicdashboards.com/assets/img/icons/civicdashboards/favicon.ico">
+			
+	
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"  charset="utf-8"></script>
 		<script src="//listjs.com/no-cdn/list.js"></script>
 		<script src="//listjs.com/no-cdn/list.pagination.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+		<script src='//cdn.jsdelivr.net/jquery.nouislider/8.0.2/nouislider.min.js'></script>
+		<script src="{{ STATIC_URL }}projects/moviero/js/app.js"></script>
+		
 		<link href="{{ STATIC_URL }}projects/moviero/css/moviero.css" rel="stylesheet" type="text/css"/>
 		<link href='//cdn.jsdelivr.net/jquery.nouislider/8.0.2/nouislider.min.css' rel="stylesheet"/>
-		<meta charset=utf-8 />
-		<title>Moviero</title>
 		<style>
 			#slider-container {
 				z-index: 2;
@@ -117,137 +123,31 @@
 			</div>
 		</div>
 		<!-- end of #container -->
-		<script src='//cdn.jsdelivr.net/jquery.nouislider/8.0.2/nouislider.min.js'></script>
-		<script>
-			var start_date = dateVal(new Date('01-01-2011'));
-			var end_date   = dateVal(new Date());
-			var dateSlider = document.getElementById('date-slider');
-
-			noUiSlider.create(dateSlider, {
-				// Create two timestamps to define a range.
-    			range: {
-        			min: start_date,
-        			max: end_date
-    			},
-
-				// Steps of one week
-    			step: 1,
-
-				// Two more timestamps indicate the handle starting positions.
-    			start: [ dateVal(new Date('01-01-2015')), end_date],
-
-				// Display a colored bar between the handles
-				connect: true,
-	
-				// Move handle on tap, bar is draggable
-				behaviour: 'tap-drag', 
-			});
-
-
-			var dateValues = [
-				document.getElementById('event-start'),
-				document.getElementById('event-end')
-			];
-
-			// Create a list of day and monthnames.
-			var months = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-
-
-			dateSlider.noUiSlider.on('update', function( values, handle ) {
-				var pre = ""
-				if(handle == 0) pre = "From:"
-				else pre = "To:"
-				dateValues[handle].innerHTML = pre + "&nbsp;&nbsp;<span style='display:inline-block;'>" +formatDate(+values[handle]) +  "</span>";
-			})
-
-			dateSlider.noUiSlider.on('change', function( values, handle ) {
-				start_date = +values[0];
-				end_date   = +values[1];
-				filterList(genre,start_date,end_date);
-			});
-
-			// Create a string representation of the date.
-			function formatDate ( date ) {
-				return 	months[date%12] + " " +
-						parseInt(date/12);
-			}
-
-			function dateVal(d) {
-				return d.getMonth() + d.getFullYear()*12
-			}
-		</script>
-		<script>
+		<script type="text/javascript">
 			// Field Mapping from csv file
 			var csv_file = '{{STATIC_URL}}projects/moviero/data/movies.csv'
-			var featureList = null;
-			var filterList  = null;
-			var genre = null;
 			
-			
-			d3.csv(csv_file, function(error, csv) {
-				console.log(csv[0])
-				csv.forEach(function(c, i) {
-					$('#list').append(
-						[
-							'<li>',
-							'<a href=' + c.url + ' target="_blank"><img height="140" width="200" src="{{STATIC_URL}}/projects/moviero/img/thumbnails/' + c.unique_id + '.png" class="thumb" /></a>',
-							'<a href=' + c.url + ' target="_blank"><h4><span class="name">' + c.title + '</span></h4></a>',
-							'<p>' + ((c.metascore != '')?('Metascore: <span class="metascore">' + c.metascore + '</span> | '):'') + c.run_time + ' min | <span class="genres">' + eval(c.genres).join(', ') + '</span> | <span>' + (months[c.month]||'') + '</span>, <span class="year">' + (c.year||'') + '</span></p></p>',
-							'<span class="month" style="display:none;">' + (c.month||0) + '</span><span class="air_date" style="display:none;">' + (parseInt((c.month||0)) + parseInt((c.year||0))*12)+ '</span>',
-							'<p><span class="description">' + c.description + '</span></p>',
-							'<p> D: <span class="director">' + c.director + '</span> | S: <span class="stars">' + eval(c.stars).join(', ') + '</span></p>',
-						].join('')
-					)
+			var isMobile = navigator.userAgent.match(/Mobi/);
+    		$( document ).ready(function() {
+				init();
+				d3.csv(csv_file, function(error, csv) {
+					csv.forEach(function(c, i) {
+						$('#list').append(
+							[
+								'<li>',
+								'<a href=' + c.url + ' target="_blank"><img height="140" width="200" src="'+ ((isMobile)?(''):('{{STATIC_URL}}/projects/moviero/img/thumbnails/' + c.unique_id + '.png')) +  '" class="thumb" /></a>',
+								'<a href=' + c.url + ' target="_blank"><h4><span class="name">' + c.title + '</span></h4></a>',
+								'<p>' + ((c.metascore != '')?('Metascore: <span class="metascore">' + c.metascore + '</span> | '):'') + c.run_time + ' min | <span class="genres">' + eval(c.genres).join(', ') + '</span> | <span>' + (months[c.month]||'') + '</span>, <span class="year">' + (c.year||'') + '</span></p></p>',
+								'<span class="month" style="display:none;">' + (c.month||0) + '</span><span class="air_date" style="display:none;">' + (parseInt((c.month||0)) + parseInt((c.year||0))*12)+ '</span>',
+								'<p><span class="description">' + c.description + '</span></p>',
+								'<p> D: <span class="director">' + c.director + '</span> | S: <span class="stars">' + eval(c.stars).join(', ') + '</span></p>',
+								'</li>'
+							].join('')
+						)
+					})
+					init_list();
 				})
-				init_list();
 			})
-		</script>
-		<script>
-			var init_list = function() {
-				var genres = ["Action","Adventure","Animation","Biography","Comedy","Crime","Documentary","Drama","Family","Fantasy",/*"Film-Noir",*/"History","Horror","Music","Musical","Mystery","Romance","Sci-Fi","Sport","Thriller","War","Western"]
-			
-				genres.forEach(function(g) {
-					$('.filter').append('<li class="btn">' + g + '</li>')
-				})
-			
-				var options = {
-					valueNames: [ 'name', 'description', 'metascore', 'genres', 'director', 'stars', 'month', 'year', 'air_date'],
-					page: 20,
-					plugins: [ ListPagination({'innerWindow': 1, 'outerWindow': 1}) ] 
-				};
-			
-				featureList = new List('lovely-things-list', options);
-				
-				filterList = function(gen,start,end) {
-					var g = gen||genre;
-					var s = start||start_date;
-					var e = end||end_date;
-					featureList.filter(function(item) {
-						var values = item.values()
-				 		if (!g || g == "All" || values.genres.search(g) >= 0) {
-				 			var air_date = parseInt(values.month) + parseInt(values.year)*12;
-				 			if( air_date >= start_date && air_date <= end_date) { 
-				 				//console.log(air_date + " " + start_date + " " + end_date)
-					   			return true;
-					   		}
-					   	}
-					 	return false;
-					});
-				}
-				
-				
-				$('.filter li.btn').click(function() {
-					genre = $(this).text();
-					$(".filter li").removeClass("highlight");
-					$(this).addClass("highlight");
-					filterList(genre)
-					return false;
-				})
-				
-				start_date = dateVal(new Date('01-01-2014'))
-				filterList('All',start_date,end_date);
-				featureList.sort('metascore', { order: "desc" });
-			}
 		</script>
 	</body>
 </html>

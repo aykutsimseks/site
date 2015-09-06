@@ -73,9 +73,6 @@ function init_list() {
 		return false;
 	})
 	
-	start_date = dateVal(new Date('01/01/2014'))
-	filterList('All',start_date,end_date);
-	featureList.sort('metascore', { order: "desc" });
 	
 
 	// Slider
@@ -87,7 +84,7 @@ function init_list() {
 		},
 
 		// Steps of one week
-		step: 1,
+		step: 12,
 
 		// Two more timestamps indicate the handle starting positions.
 		start: [ dateVal(new Date('01/01/2015')), end_date],
@@ -113,5 +110,8 @@ function init_list() {
 	});
 	
 	
+	start_date = dateVal(new Date('01/01/2014'))
+	filterList('All',start_date,end_date);
+	featureList.sort('metascore', { order: "desc" });
 }
 

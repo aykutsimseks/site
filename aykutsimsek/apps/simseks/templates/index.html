@@ -75,7 +75,7 @@
 
     <div class="slider-text">
     	
-    	<img style="margin-top:-70px;" height="70px" width="70px" src="{{ STATIC_URL }}img/logo/logo.png"/>
+    	<!-- <img style="margin-top:-70px;" height="70px" width="70px" src="{{ STATIC_URL }}img/logo/logo.png"/> -->
     	<div id="slidecaption"></div>
     	<div id="social-area">
             <nav id="social">
@@ -148,7 +148,7 @@
             	<!-- Filter -->
                 <nav id="options" class="work-nav">
                     <ul id="filters" class="option-set" data-option-key="filter">
-                    	<li class="type-work">Type of Work</li>
+                    	<li class="type-work"></li>
                         <li><a href="#filter" data-option-value="*" class="selected">All</a></li>
                         <li><a href="#filter" data-option-value=".maps">Maps</a></li>
                         <li><a href="#filter" data-option-value=".visualization">Visualization</a></li>
@@ -166,13 +166,13 @@
                     		<!-- Item Project and Filter Name -->
                         	<li class="item-thumbs span3 data misc">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="<a href='{% url 'moviero' %}' target='_blank'>Moviero</a>" href="{{ STATIC_URL }}img/work/full/moviero-full.jpg">
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="<a href='{% url 'moviera' %}' target='_blank'>Moviera</a>" href="{{ STATIC_URL }}img/work/full/moviera-full.jpg">
                                 	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></br>Moviero</span>
+                                    <span class="overlay-img-thumb"></br>Moviera</span>
                                 </a>
                                 <!-- Thumb Image and Description -->
                                 
-                                <img src="{{ STATIC_URL }}img/work/thumbs/moviero-thumb.jpg" alt="Browsing and exploring movies, never been easier.">
+                                <img src="{{ STATIC_URL }}img/work/thumbs/moviera-thumb.jpg" alt="Browsing and exploring movies, never been easier.">
                             </li>
                         	<!-- End Item Project -->
                     	
@@ -181,7 +181,7 @@
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
                             	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="<a href='{% url 'altug_firarda' %}' target='_blank'>Altug Firarda</a>" href="{{ STATIC_URL }}img/work/full/altug-firarda-full.jpg">
                                 	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></br>Altug Firarda</span>
+                                    <span class="overlay-img-thumb"></br>Altug Firarda</span>
                                 </a>
                                 <!-- Thumb Image and Description -->
                                 
@@ -195,7 +195,7 @@
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
                             	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="<a href='{% url 'world_bank_indicators' %}' target='_blank'>World Bank Indicators</a>" href="{{ STATIC_URL }}img/work/full/world-bank-indicators-full.jpg">
                                 	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></br>World Bank Indicators</span>
+                                    <span class="overlay-img-thumb"></br>World Bank Indicators</span>
                                 </a>
                                 <!-- Thumb Image and Description -->
                                 
@@ -209,7 +209,7 @@
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
                             	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="<a href='http://data.ci.newark.nj.us/base/maps/snowplows.html' target='_blank'>Newark Snow Plow Trucks</a>" href="{{ STATIC_URL }}img/work/full/newark-snowplows-full.jpg">
                                 	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></br>Newark Snow Plow Trucks</span>
+                                    <span class="overlay-img-thumb"></br>Newark Snow Plow Trucks</span>
                                 </a>
                                 <!-- Thumb Image and Description -->
                                 <img src="{{ STATIC_URL }}img/work/thumbs/newark-snowplows-thumb.jpg" alt="A Day for Newark Snow Plow Trucks.">
@@ -221,7 +221,7 @@
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
                             	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="<a href='http://nyc.pediacities.com/fsmaps/RoofPiano/' target='_blank'>Roof Piano</a>" href="{{ STATIC_URL }}img/work/full/roofpiano-full.jpg">
                                 	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></br>Roof Piano</span>
+                                    <span class="overlay-img-thumb"></br>Roof Piano</span>
                                 </a>
                                 <!-- Thumb Image and Description -->
                                 <img src="{{ STATIC_URL }}img/work/thumbs/roofpiano-thumb.jpg" alt="A Sonification & Visualization project, using NYC building footprint data.">
@@ -233,7 +233,7 @@
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
                             	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="<a href='http://nyc.pediacities.com/fsmaps/VisionZero/' target='_blank'>Vision Zero</a>" href="{{ STATIC_URL }}img/work/full/vision-zero-full.jpg">
                                 	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></br>Vision Zero</span>
+                                    <span class="overlay-img-thumb"></br>Vision Zero</span>
                                 </a>
                                 <!-- Thumb Image and Description -->
                                 <img src="{{ STATIC_URL }}img/work/thumbs/vision-zero-thumb.jpg" alt="Visualizing Traffic-Related Fatalities in NYC.">
@@ -245,7 +245,7 @@
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
                             	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="<a href='http://nyc.pediacities.com/fsmaps/NYCCrimeMap/' target='_blank'>NYC Crime Map</a>" href="{{ STATIC_URL }}img/work/full/nyc-crime-map-full.jpg">
                                 	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></br>NYC Crime Map</span>
+                                    <span class="overlay-img-thumb"></br>NYC Crime Map</span>
                                 </a>
                                 <!-- Thumb Image and Description -->
                                 
@@ -258,7 +258,7 @@
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
                             	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="<a href='{% url 'aid_indicators' %}' target='_blank'>International Aid Indicators</a>" href="{{ STATIC_URL }}img/work/full/aid-indicators-full.jpg">
                                 	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></br>International Aid Indicators</span>
+                                    <span class="overlay-img-thumb"></br>International Aid Indicators</span>
                                 </a>
                                 <!-- Thumb Image and Description -->
                                 

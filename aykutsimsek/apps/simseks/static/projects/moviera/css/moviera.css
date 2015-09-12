@@ -87,12 +87,30 @@ html[xmlns] .clearfix {
 * html .clearfix {
   height: 1%;
 }
+
+
+[class*="col-"] {
+    float: left;
+    padding: 10px 0px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
 /* * * * * * * * * * * * * * * * * * * * *
 * General
 * * * * * * * * * * * * * * * * * * * * */
 body {
   background: #333;
-  font: normal .9em/1.3 'helvetica neue', helvetica, arial;
+  font: normal .9em 'helvetica neue', helvetica, arial;
   color: #bbb;
   text-shadow: #262729 0 -1px 0;
   -webkit-font-smoothing: antialiased;
@@ -167,37 +185,34 @@ h3 {
   color: #3a3a3a;
   margin-bottom: 8px;
 }
+
+
 .search {
-  font: normal .9em/1.3 'helvetica neue', helvetica, arial;
-  font-size: 1.8em;
-  padding: 2px 10px;
+  font-size: 1.3em;
+  padding: .4em .5em;
   border-radius: 10px;
-  border: solid 1px #555;
+  vertical-align: -.2em;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  color : #fff;
   float: left;
-  
-  /* margin-right: 10px; */
-  margin-bottom: 15px;
-  width:100%;
+  width: 100%;
 }
 input:focus {
   border: none;
   outline: none;
-  background-color: #eee;
-  border-top: solid 1px #aaa;
-  border-right: solid 1px #e6e6e6;
-  border-bottom: solid 1px #e6e6e6;
-  border-left: solid 1px #aaa;
+  background-color: rgba(255, 255, 255, 0.05);
 }
 .btn {
   color: #ccc;
   margin-right: 5px;
   margin-bottom: 5px;
-  padding: 5px 10px;
+  padding: 5px 9px;
   border-radius: 3px;
   border: solid 1px #444;
   display: block;
   float: left;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
   cursor: pointer;
   cursor: hand;
 }
@@ -328,7 +343,7 @@ input:focus {
 .control-head {
 	display: block;
 	float: left;
-	width: 5em;
+	width: 4.6em;
 	margin-top:5px;
 }
 
@@ -341,30 +356,77 @@ input:focus {
     clear: both;
     display: block;
 }
-[class*="col-"] {
-    float: left;
-    padding: 10px 5px;
-}
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
 
+
+			#slider-container {
+				z-index: 2;
+			}
+
+			#date-slider {
+				height: 10px;
+				background: #444;
+			}
+	
+			.noUi-connect {
+				background: #DE5E60;
+			}
+	
+			.date-val {
+				float: left;
+			}
+	
+			.noUi-target {
+				border-radius: 20px;
+				border: 1px solid rgba(0, 0, 0, 0.05);
+				box-shadow: none;
+			}
+	
+			.noUi-background {
+				background: #444;
+				box-shadow: none;
+			}
+	
+			.noUi-horizontal .noUi-handle {
+				width: 20px;
+				height: 20px;
+				left: -17px;
+				top: -8px;
+				border-radius: 20px;
+                                rgba(0, 0, 0, 0.2);
+			}
+
+			.noUi-handle:after, .noUi-handle:before{
+				display:none;
+			}
+                        
+                        #cover {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+    background-color: #333;
+    font-size: 40px;
+    margin: auto;
+    text-align: center;
+}
+
+.title {
+  
+  font-size:1.8em;
+  font-weight:800;
+  letter-spacing: 2px;
+}
+
+.fa-spin-custom {
+    -webkit-animation: spin 400ms infinite linear;
+    animation: fa-spin-custom 4s infinite linear;
+}
 
 @media only screen and (max-device-width: 768px) {
   #lovely-things-list p,
   p,
   body {
-    font: normal 1.1em/1.3 'helvetica neue', helvetica, arial;
-    font-size: 1.1em
+    font-size: 1.1em;
   }
   
   h3 {
@@ -373,11 +435,10 @@ input:focus {
   }
   .c1,
   #container {
-    width: 98%;
+    width: 99%;
   }
   
   .search {
-    font: normal 1.9em/1.3 'helvetica neue', helvetica, arial;
     font-size: 2.2em;
     padding: 12px 20px;
   
@@ -393,7 +454,18 @@ input:focus {
     font-size: 1.45em;
     width: 100%;
     padding: 1em 0 0 0;
-    
+  }
+  
+  #date-slider {
+    height: 1.8em;
+    margin: 0 1em;
+  }
+  
+  .noUi-horizontal .noUi-handle {
+    width: 2.1em;
+    height: 2.1em;
+    top: -.12em;
+    border-radius: 1em;
   }
   
   .col-5,
@@ -404,15 +476,11 @@ input:focus {
   .col-12 {width: 100%;}
   
   .btn {
-    padding: 10px 15px;
+    padding: 15px 15px;
     margin-right: 20px;
     margin-bottom: 20px;
   }
-  
-  .noUi-horizontal .noUi-handle {
-    height: 10em;
-    width: 10em;
-  }
+
   
   .control-head {
       line-height: 2em;

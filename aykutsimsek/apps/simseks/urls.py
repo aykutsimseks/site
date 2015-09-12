@@ -18,5 +18,6 @@ urlpatterns = patterns('',
     url(r'^project/altug-firarda/', TemplateView.as_view(template_name='altug_firarda/altug_firarda.html'), name="altug_firarda"),
     url(r'^altug-firarda/', TemplateView.as_view(template_name='altug_firarda/altug_firarda.html'), name="altug_firarda"),
     url(r'^project/altug-firarda\?l=(?P<language>\w+)$', TemplateView.as_view(template_name='altug_firarda/altug_firarda.html'), name="altug_firarda"),
-    url(r'^project/moviero$', TemplateView.as_view(template_name='moviero/moviero.html'), name="moviero"),
+    url(r'^project/moviero$', TemplateView.as_view(template_name='moviera/moviera.html'), name="moviera"),
+    url(r'^project/moviera$', TemplateView.as_view(template_name='moviera/moviera.html'), name="moviera"),
 )

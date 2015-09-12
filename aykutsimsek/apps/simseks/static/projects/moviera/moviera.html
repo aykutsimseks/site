@@ -3,62 +3,23 @@
 <html>
 	<head>
 		<meta charset='utf-8' />
-		<title>Moviero | Aykut Simsek</title>
+		<title>Moviera | Aykut Simsek</title>
 		<link rel="shortcut icon" href="{{ STATIC_URL }}img/logo/favicon.ico">
-			
-	
+		
+		<link rel="stylesheet"  href='//cdn.jsdelivr.net/jquery.nouislider/8.0.2/nouislider.min.css'/>
+		<link rel="stylesheet" href="{{ STATIC_URL }}projects/moviera/css/moviera.css" rel="stylesheet" type="text/css"/>
+		
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"  charset="utf-8"></script>
 		<script src="//listjs.com/no-cdn/list.js"></script>
 		<script src="//listjs.com/no-cdn/list.pagination.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
 		<script src="//cdn.jsdelivr.net/jquery.unveiljs/1.3.0/jquery.unveil.min.js"></script>
 		<script src='//cdn.jsdelivr.net/jquery.nouislider/8.0.2/nouislider.min.js'></script>
-		<script src="{{ STATIC_URL }}projects/moviero/js/app.js"></script>
+		<script src="{{ STATIC_URL }}projects/moviera/js/app.js"></script>
 		
-		<link href="{{ STATIC_URL }}projects/moviero/css/moviero.css" rel="stylesheet" type="text/css"/>
-		<link href='//cdn.jsdelivr.net/jquery.nouislider/8.0.2/nouislider.min.css' rel="stylesheet"/>
-		<style>
-			#slider-container {
-				z-index: 2;
-			}
-
-			#date-slider {
-				height: 10px;
-				background: #444;
-			}
-	
-			.noUi-connect {
-				background: #DE5E60;
-			}
-	
-			.date-val {
-				float: left;
-			}
-	
-			.noUi-target {
-				border-radius: 20px;
-				border: 1px solid rgba(0, 0, 0, 0.05);
-				box-shadow: none;
-			}
-	
-			.noUi-background {
-				background: #444;
-				box-shadow: none;
-			}
-	
-			.noUi-horizontal .noUi-handle {
-				width: 20px;
-				height: 20px;
-				left: -17px;
-				top: -8px;
-				border-radius: 20px;
-			}
-
-			.noUi-handle:after, .noUi-handle:before{
-				display:none;
-			}
-		</style>
 		
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<script>
   			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -69,54 +30,56 @@
 		</script>
 	</head>
 	<body>
+		<div id="cover"><div style='position:fixed;top:40%;text-align:center;width:100%;font-weight:800;'><i class="fa fa-refresh fa-spin" style='font-size:100px;'></i></br>Loading...</div></div>
 		<div id="container">
 			<div class="example-page">
 				<div id="main">
 					<div class="c1">
 						<div id="lovely-things-list" style='display:inline-block'>
-							<div class="col-12">
-								<input class="search" placeholder="Search Title, Artist, Director or Plot..."></input>
-							</div>
-							<div class="col-7">
-								<ul class="sort-by">
-									<li class='control-head'> Sort by:</li>
-									<li class="sort btn" data-sort="metascore">Metascore</li>
-									<li class="sort btn" data-sort="name">Name</li>
-									<li class="sort btn" data-sort="air_date">Air Date</li>
+							<div class="col-12" style='background:rgba(255,255,255,.1);padding: 10px 15px;margin: 30px 0;border-radius: 10px;'>
+								<div class="col-4 title" style=''>Moviera</div>
+								<div class="col-8">
+									<input class="search" placeholder="Search Title, Artist, Director or Plot..."></input>
+								</div>
+								<div class="col-7">
+									<ul class="sort-by">
+										<li class='control-head'> Sort by:</li>
+										<li class="sort btn" data-sort="metascore">Metascore</li>
+										<li class="sort btn" data-sort="name">Name</li>
+										<li class="sort btn" data-sort="air_date">Air Date</li>
+									</ul>
+								</div>
+								<div id='slider-container' class='col-5' >
+									<div>
+										<div id="date-slider"></div>
+									</div>
+									<div class='col-12'>
+										<span class="date-val" id="event-start"></span>
+										<span class="date-val" id="event-end" style='float: right;'></span>
+									</div>
+								</div>
+								<!--
+								<ul class="sort-order">
+									<li class='control-head'> Sort Order:</li>
+									<li class="btn highlight" id="filter-none"><input type="radio" name="group4"/></li>
+									<li class="btn" id="filter-none"><input type="radio" name="group4"/></li>
 								</ul>
-							</div>
-							<div id='slider-container' class='col-5' >
-								<div>
-									<div id="date-slider"></div>
+								-->
+								<div class="col-12">
+									<ul class="filter">
+										<li class='control-head'>Genre:&nbsp;&nbsp;&nbsp;</li>
+										<li class="btn highlight">All</li>
+									</ul>
 								</div>
-								<div class='col-6'>
-									<span class="date-val" id="event-start"></span>
+								<div class="col-12">
+									<ul class="pagination"></ul>
 								</div>
-								<div class='col-6'> 	
-									<span class="date-val" id="event-end" style='float: right;'></span>
-								</div>
-							</div>
-							<!--
-							<ul class="sort-order">
-								<li class='control-head'> Sort Order:</li>
-								<li class="btn highlight" id="filter-none"><input type="radio" name="group4"/></li>
-								<li class="btn" id="filter-none"><input type="radio" name="group4"/></li>
-							</ul>
-							-->
-							<div class="col-12">
-								<ul class="filter">
-									<li class='control-head'>Genre:&nbsp;&nbsp;&nbsp;</li>
-									<li class="btn highlight">All</li>
-								</ul>
-							</div>
-							<div class="col-12">
-								<ul class="pagination"></ul>
 							</div>
 							<div class="col-12">
 								<ul class="list" id='list'></ul>
 							</div>
 							<div class="col-12" style='text-align:center'>
-								&copy;2015<a href="http://aykutsimseks.com">Aykut Simsek</a> | Data from <a href='http://www.imdb.com' target='_blank'><img height=20  style='vertical-align:-5px;' src="{{STATIC_URL}}projects/moviero/img/imdb.png"></img></a> | Using <a href='http://www.listjs.com/' target='_blank'>List.js</a>
+								&copy;2015&nbsp;<a href="http://aykutsimseks.com">Aykut Simsek</a> | Data from <a href='http://www.imdb.com' target='_blank'><img height=20  style='vertical-align:-5px;' src="{{STATIC_URL}}projects/moviera/img/imdb.png"></img></a> | Using <a href='http://www.listjs.com/' target='_blank'>List.js</a>
 							</div>
 						</div>
 					</div>
@@ -126,7 +89,7 @@
 		<!-- end of #container -->
 		<script type="text/javascript">
 			// Field Mapping from csv file
-			var csv_file = '{{STATIC_URL}}projects/moviero/data/movies.csv'
+			var csv_file = '{{STATIC_URL}}projects/moviera/data/movies.csv'
 			
 			//var isMobile = navigator.userAgent.match(/Mobi/);
 			var isMobile = false
@@ -137,7 +100,7 @@
 						$('#list').append(
 							[
 								'<li>',
-								'<a href=' + c.url + ' target="_blank"><img height="140" width="200" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"  data-src="'+ ((isMobile)?(''):('{{STATIC_URL}}/projects/moviero/img/thumbnails/' + c.unique_id + '.png')) +  '" class="thumb" /></a>',
+								'<a href=' + c.url + ' target="_blank"><img height="140" width="200" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"  data-src="'+ ((isMobile)?(''):('{{STATIC_URL}}/projects/moviera/img/thumbnails/' + c.unique_id + '.png')) +  '" class="thumb" /></a>',
 								'<a href=' + c.url + ' target="_blank"><h4><span class="name">' + c.title + '</span></h4></a>',
 								'<p>' + ((c.metascore != '')?('Metascore: <span class="metascore">' + c.metascore + '</span> | '):'') + c.run_time + ' min | <span class="genres">' + eval(c.genres).join(', ') + '</span> | <span>' + (months[c.month]||'') + '</span>' + (months[c.month]?', ':'') +  '<span class="year">' + (c.year||'') + '</span></p></p>',
 								'<span class="month" style="display:none;">' + (c.month||0) + '</span><span class="air_date" style="display:none;">' + (parseInt((c.month||0)) + parseInt((c.year||0))*12)+ '</span>',
@@ -147,9 +110,9 @@
 							].join('')
 						)
 					})
-					
 					$("img").unveil();
 					init_list();
+					$('#cover').fadeOut(500);			
 				})
 			})
 		</script>

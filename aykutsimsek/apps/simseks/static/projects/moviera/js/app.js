@@ -28,7 +28,7 @@ function formatDate ( date ) {
 }
 
 function dateVal(d) {
-	return d.getMonth() + d.getFullYear()*12
+	return (d.getMonth()+1) + d.getFullYear()*12
 }
 
 

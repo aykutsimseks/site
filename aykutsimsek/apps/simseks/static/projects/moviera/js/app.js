@@ -28,7 +28,7 @@ function formatDate ( date ) {
 }
 
 function dateVal(d) {
-	return (d.getMonth()+1) + d.getFullYear()*12
+	return d.getMonth() + d.getFullYear()*12
 }
 
 
@@ -54,7 +54,7 @@ function init_list() {
 		featureList.filter(function(item) {
 			var values = item.values()
 			if (!g || g == "All" || values.genres.search(g) >= 0) {
-				var air_date = parseInt(values.month) + parseInt(values.year)*12;
+				var air_date = parseInt(values.month-1) + parseInt(values.year)*12;
 				if( air_date >= start_date && air_date <= end_date) { 
 					//console.log(air_date + " " + start_date + " " + end_date)
 					return true;

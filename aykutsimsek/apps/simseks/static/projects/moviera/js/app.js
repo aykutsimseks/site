@@ -73,6 +73,20 @@ function init_list() {
 		return false;
 	})
 	
+	$('.sort-by li.btn').click(function() {
+		sort_by = $(this).data('sort');
+		$(".sort-by li").removeClass("highlight");
+		$(".sort-by li i").remove()
+		old_order = ($(this).hasClass("asc"))?'asc':'desc';
+		new_order = ($(this).hasClass("asc"))?'desc':'asc';
+		$(this).prepend('<i class="fa fa-sort-'+ new_order + '"></i>')
+		$(this).addClass("highlight");
+		$(this).removeClass(old_order);
+		$(this).addClass(new_order);
+		featureList.sort(sort_by, { order: new_order });
+		return false;
+	})
+	
 	
 
 	// Slider
@@ -110,7 +124,7 @@ function init_list() {
 	});
 	
 	
-	start_date = dateVal(new Date('01/01/2014'))
+	start_date = dateVal(new Date('01/01/2015'))
 	filterList('All',start_date,end_date);
 	featureList.sort('metascore', { order: "desc" });
 }

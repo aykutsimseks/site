@@ -112,9 +112,9 @@ body {
   background: #333;
   font: normal .9em 'helvetica neue', helvetica, arial;
   color: #bbb;
-  text-shadow: #262729 0 -1px 0;
+  /* text-shadow: #262729 0 -1px 0; */
   -webkit-font-smoothing: antialiased;
-  padding: 0px 0 120px 0;
+  /* padding: 0px 0 120px 0; */
 }
 body.clearfix {
   display: block;
@@ -125,10 +125,13 @@ header {
   width: 100%;
 }
 #container {
-  width: 900px;
+  /* width: 900px; */
+  width: 100%;
+  /*
   padding: 10px;
   max-width:calc(100% - 20px);
   margin: 0 auto 80px;
+  */
 }
 #container a {
   color: #eee;
@@ -138,7 +141,8 @@ header {
   color: #fff;
 }
 .c1 {
-  width: 900px;
+  /* width: 900px; */
+  width: 100%;
   max-width:100%;
   float: left;
 }
@@ -224,7 +228,8 @@ input:focus {
 * Examples
 * * * * * * * * * * * * * * * * * * * * */
 #lovely-things-list {
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
+  width: 100%;
 }
 #lovely-things-list .thumb {
   width: 70px;
@@ -243,11 +248,19 @@ input:focus {
 }
 #lovely-things-list .list li:nth-child(2n+1) {
   background-color: rgba(0, 0, 0, 0.1);
-  border: solid 1px rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
+  /* border: solid 1px rgba(255, 255, 255, 0.1); */
+  /* border-radius: 10px; */
 }
 #lovely-things-list .list li:nth-child(2n+1) .thumb {
-  border: solid 1px #666;
+  /* border: solid 1px #666; */
+}
+
+#lovely-things-list .netflix-icon {
+  float:right;
+  opacity: .8;
+}
+#lovely-things-list .netflix-icon:hover{
+  opacity: 1;
 }
 #lovely-things-list h4 {
   color: #fafafa;
@@ -259,23 +272,27 @@ input:focus {
   color: #aaa;
   text-align: left;
 }
+#lovely-things-list .filter ,
 #lovely-things-list .sort-by {
   margin-bottom: 10px;
   width: 100%;
   float: left;
   clear: both;
 }
-#lovely-things-list .filter {
-  margin-bottom: 10px;
-  width: 100%;
-  float: left;
-  clear: both;
-}
 
-#lovely-things-list .filter li.highlight,li.sort.btn.asc,li.sort.btn.desc {
+#lovely-things-list li.highlight,li.sort.btn.asc,li.sort.btn.desc {
   color: #fff;
   background: #DE5E60;
   border: solid 1px #DE5E60;
+}
+#lovely-things-list .sort-by li:not(:first-child){
+  padding-right: 1em;
+  padding-left : 1.5em;
+}
+#lovely-things-list .sort-by li i{
+    position:absolute;
+    margin-left: -.8em;
+    margin-top: 2px;
 }
 #contacts input {
   font-size: .9em;

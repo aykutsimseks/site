@@ -6,6 +6,9 @@ import time
 import datetime
 import csv,json
 
+from netflix import Netflix
+nflix = Netflix("")
+
 # http://www.imdb.com/movies-coming-soon/2015-05
 url_base = 'http://www.imdb.com/movies-coming-soon'
 
@@ -13,6 +16,8 @@ start = ['2011','1']
 end   = [datetime.datetime.now().strftime("%Y"),datetime.datetime.now().strftime("%m")]
 
 sleep_time = 10
+
+
 
 def mk_int(s):
     try:
@@ -129,6 +134,11 @@ def main():
 	    except:
 		image_url = ''
 		
+	    try:
+		netflix_url = nflix.isNetflix(title.split("(")[0]).get('playerUrl')
+	    except:
+	    	netflix_url = ''
+		
 	    json = {
 		'title': title,
 		'url': url,
@@ -141,7 +151,8 @@ def main():
 		'description': description,
 		'director'  : director,
 		'stars'	    : stars,
-		'image_url' : image_url
+		'image_url' : image_url,
+		'netflix_url' : netflix_url
 	    }
 	    movie_list.append(json)
 	if current[1] == '12':
@@ -153,7 +164,7 @@ def main():
     f = csv.writer(open("data/movies.csv", "wb+"))
 
     # Write CSV Header, If you dont need that, remove this line
-    f.writerow(["title","url", "unique_id", "run_time", "metascore", "genres", "month", "year", "description","director","stars","image_url"])
+    f.writerow(["title","url", "unique_id", "run_time", "metascore", "genres", "month", "year", "description","director","stars","image_url","netflix_url"])
     
     ids = set()
     
@@ -172,6 +183,7 @@ def main():
 		    str(x["director"]),
 		    str(x["stars"]),
 		    str(x["image_url"]),
+		    str(x["netflix_url"]),
 		 ])
     
     

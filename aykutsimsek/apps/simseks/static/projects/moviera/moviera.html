@@ -36,12 +36,12 @@
 				<div id="main">
 					<div class="c1">
 						<div id="lovely-things-list" style='display:inline-block'>
-							<div class="col-12" style='background:rgba(255,255,255,.1);padding: 10px 15px;margin: 30px 0;border-radius: 10px;'>
-								<div class="col-4 title" style=''>Moviera</div>
-								<div class="col-8">
+							<div class="col-4" style='position:fixed; background-color: rgba(0, 0, 0, 0.1);padding: 10px 20px;height:100%;'>
+								<div class="col-12 title" style=''>Moviera</div>
+								<div class="col-12">
 									<input class="search" placeholder="Search Title, Artist, Director or Plot..."></input>
 								</div>
-								<div class="col-7">
+								<div class="col-12">
 									<ul class="sort-by">
 										<li class='control-head'> Sort by:</li>
 										<li class="sort btn" data-sort="metascore">Metascore</li>
@@ -49,7 +49,7 @@
 										<li class="sort btn" data-sort="air_date">Air Date</li>
 									</ul>
 								</div>
-								<div id='slider-container' class='col-5' >
+								<div id='slider-container' class='col-12' >
 									<div>
 										<div id="date-slider"></div>
 									</div>
@@ -74,12 +74,13 @@
 								<div class="col-12">
 									<ul class="pagination"></ul>
 								</div>
+								<div class="col-12" style='position:absolute; bottom: 0px;font-size:.8em;'>
+									&copy;&nbsp;2015&nbsp;<a href="http://aykutsimseks.com">Aykut Simsek</a> | Data from <a href='http://www.imdb.com' target='_blank'><img height=14  style='vertical-align:-3px;' src="{{STATIC_URL}}projects/moviera/img/imdb.png"></img></a> | Using <a href='http://www.listjs.com/' target='_blank'>List.js</a>
+								</div>
 							</div>
-							<div class="col-12">
+							<div class="col-4"></div>
+							<div class="col-8" style='padding:0;'>
 								<ul class="list" id='list'></ul>
-							</div>
-							<div class="col-12" style='text-align:center'>
-								&copy;2015&nbsp;<a href="http://aykutsimseks.com">Aykut Simsek</a> | Data from <a href='http://www.imdb.com' target='_blank'><img height=20  style='vertical-align:-5px;' src="{{STATIC_URL}}projects/moviera/img/imdb.png"></img></a> | Using <a href='http://www.listjs.com/' target='_blank'>List.js</a>
 							</div>
 						</div>
 					</div>
@@ -102,7 +103,7 @@
 								'<li>',
 								'<a href=' + c.url + ' target="_blank"><img height="140" width="200" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"  data-src="'+ ((isMobile)?(''):('{{STATIC_URL}}/projects/moviera/img/thumbnails/' + c.unique_id + '.png')) +  '" class="thumb" /></a>',
 								'<a href=' + c.url + ' target="_blank"><h4><span class="name">' + c.title + '</span></h4></a>',
-								'<p>' + ((c.metascore != '')?('Metascore: <span class="metascore">' + c.metascore + '</span> | '):'') + c.run_time + ' min | <span class="genres">' + eval(c.genres).join(', ') + '</span> | <span>' + (months[c.month]||'') + '</span>' + (months[c.month]?', ':'') +  '<span class="year">' + (c.year||'') + '</span></p></p>',
+								'<p>' + ((c.metascore != '')?('Metascore: <span class="metascore">' + c.metascore + '</span> | '):'') + c.run_time + ' min | <span class="genres">' + eval(c.genres).join(', ') + '</span> | <span>' + (months[c.month-1]||'') + '</span>' + (months[c.month-1]?', ':'') +  '<span class="year">' + (c.year||'') + '</span></p></p>',
 								'<span class="month" style="display:none;">' + (c.month||0) + '</span><span class="air_date" style="display:none;">' + (parseInt((c.month||0)) + parseInt((c.year||0))*12)+ '</span>',
 								'<p><span class="description">' + c.description + '</span></p>',
 								'<p> D: <span class="director">' + c.director + '</span> | S: <span class="stars">' + eval(c.stars).join(', ') + '</span></p>',

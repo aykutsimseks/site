@@ -17,12 +17,7 @@ end   = [datetime.datetime.now().strftime("%Y"),datetime.datetime.now().strftime
 
 sleep_time = 10
 
-<<<<<<< HEAD
-
-=======
 pwd = os.path.dirname(os.path.realpath(__file__))
-print pwd
->>>>>>> c4ad2870ba6a310e1c7e30e0a50f2a4938f3d01f
 
 def mk_int(s):
     try:

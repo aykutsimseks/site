@@ -36,7 +36,10 @@ function dateVal(d) {
 
 function init_list() {
 	genres.forEach(function(g) {
-		$('.filter').append('<li class="btn">' + g + '</li>')
+		//$('.filter').append('<li class="btn">' + g + '</li>')
+		$(".custom-dropdown select").append(
+			"<option value='" + g + "'>" + g + "</option>"
+		)
 	})
 
 	var options = {
@@ -64,14 +67,11 @@ function init_list() {
 		});
 	}
 	
-
-	$('.filter li.btn').click(function() {
-		genre = $(this).text();
-		$(".filter li").removeClass("highlight");
-		$(this).addClass("highlight");
+	$(".custom-dropdown select").change(function(){
+		genre = $(this).val();
 		filterList(genre)
-		return false;
 	})
+
 	
 	$('.sort-by li.btn').click(function() {
 		sort_by = $(this).data('sort');

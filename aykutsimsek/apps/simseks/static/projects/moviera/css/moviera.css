@@ -192,7 +192,8 @@ h3 {
 
 
 .search {
-  font-size: 1.3em;
+  font-size: 1em;
+  line-height: 1.4em;
   padding: .4em .5em;
   border-radius: 10px;
   vertical-align: -.2em;
@@ -276,7 +277,7 @@ input:focus {
 #lovely-things-list .sort-by {
   margin-bottom: 10px;
   width: 100%;
-  float: left;
+  float: right;
   clear: both;
 }
 
@@ -437,6 +438,60 @@ input:focus {
 .fa-spin-custom {
     -webkit-animation: spin 400ms infinite linear;
     animation: fa-spin-custom 4s infinite linear;
+}
+
+.custom-dropdown {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	/* margin: -5px 10px 5px 10px; */
+}
+
+.custom-dropdown select {
+	background-color: #DE5E60;
+	color: #fff;
+	font-size: inherit;
+	padding: .4em .6em;
+	padding-right: 2.5em;	
+	border: 0;
+	margin: 0;
+	border-radius: 3px;
+	text-indent: 0.01px;
+	text-overflow: '';
+	-webkit-appearance: button; /* hide default arrow in chrome OSX */
+}
+
+.custom-dropdown::before,
+.custom-dropdown::after {
+	content: "";
+	position: absolute;
+	pointer-events: none;
+}
+
+.custom-dropdown::after { /*  Custom dropdown arrow */
+	content: "\25BC";
+	height: 1em;
+	font-size: .625em;
+	line-height: 1;
+	right: 1em;
+	top: 50%;
+	margin-top: -.5em;
+}
+
+.custom-dropdown::before { /*  Custom dropdown arrow cover */
+	width: 2em;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border-radius: 0 3px 3px 0;
+}
+
+.custom-dropdown::before {
+	background-color: rgba(0,0,0,.15);
+}
+
+.custom-dropdown::after {
+	color: rgba(0,0,0,.4);
 }
 
 @media only screen and (max-device-width: 768px) {

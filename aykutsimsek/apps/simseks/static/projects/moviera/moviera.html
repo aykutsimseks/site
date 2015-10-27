@@ -36,10 +36,23 @@
 				<div id="main">
 					<div class="c1">
 						<div id="lovely-things-list" style='display:inline-block'>
-							<div style='position:fixed;width:360px; background-color: rgba(0, 0, 0, 0.1);padding: 10px 20px;height:100%;'>
+							<div style='position:fixed;width:314px; background-color: rgba(0, 0, 0, 0.1);padding: 10px 20px;height:100%;'>
 								<div class="col-12 title" style=''>Moviera</div>
 								<div class="col-12">
 									<input class="search" placeholder="Search Title, Artist, Director or Plot..."></input>
+								</div>
+								<div class="col-12">
+									<div class="filter">
+										<li class='control-head'>Genre:</li>
+										<span class="custom-dropdown">
+											<select>
+												<option value='All'>All</option>
+											</select>
+										</span>
+										<!--
+										<li class="btn highlight">All</li>
+										-->
+									</div>
 								</div>
 								<div class="col-12">
 									<!--
@@ -74,12 +87,6 @@
 								</ul>
 								-->
 								<div class="col-12">
-									<div class="filter">
-										<li class='control-head'>Genre:&nbsp;&nbsp;&nbsp;</li>
-										<li class="btn highlight">All</li>
-									</div>
-								</div>
-								<div class="col-12">
 									<ul class="pagination"></ul>
 								</div>
 								<div class="col-12" style='position:absolute;bottom:0;font-size:.85em;'>
@@ -87,7 +94,7 @@
 								</div>
 							</div>
 							<div></div>
-							<div style='padding: 0;margin-left:360px;'>
+							<div style='padding: 0;margin-left:314px;'>
 								<ul class="list" id='list'></ul>
 							</div>
 						</div>

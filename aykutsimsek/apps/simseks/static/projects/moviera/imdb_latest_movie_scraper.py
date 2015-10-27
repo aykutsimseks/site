@@ -17,7 +17,12 @@ end   = [datetime.datetime.now().strftime("%Y"),datetime.datetime.now().strftime
 
 sleep_time = 10
 
+<<<<<<< HEAD
 
+=======
+pwd = os.path.dirname(os.path.realpath(__file__))
+print pwd
+>>>>>>> c4ad2870ba6a310e1c7e30e0a50f2a4938f3d01f
 
 def mk_int(s):
     try:
@@ -27,8 +32,8 @@ def mk_int(s):
 	return ''
     
 def get_url_content(url,page_id, loc='html', ext='html', s=sleep_time):
-    outdir=os.getcwd()+"/html"
-    filepath = os.getcwd() + "/" + loc  +"/"+ page_id + '.' + ext
+    outdir	= pwd + "/html"
+    filepath 	= pwd + "/" + loc  +"/"+ page_id + '.' + ext
     
     if not os.path.exists(outdir):
         os.makedirs(outdir);
@@ -84,7 +89,7 @@ def main():
 	print handle
 	url = url_base + '/' + handle
         content = get_url_content(url,handle)
-        soup = BeautifulSoup(content)
+        soup = BeautifulSoup(content, "html.parser")
 	movies = html_scraper(soup,[['tag_class','td','overview-top']])
 	images = html_scraper(soup,[['other','td','id', 'img_primary']])
 	for idx, movie in enumerate(movies):
@@ -161,7 +166,7 @@ def main():
 	
 	
     
-    f = csv.writer(open("data/movies.csv", "wb+"))
+    f = csv.writer(open(pwd + "/data/movies.csv", "wb+"))
 
     # Write CSV Header, If you dont need that, remove this line
     f.writerow(["title","url", "unique_id", "run_time", "metascore", "genres", "month", "year", "description","director","stars","image_url","netflix_url"])

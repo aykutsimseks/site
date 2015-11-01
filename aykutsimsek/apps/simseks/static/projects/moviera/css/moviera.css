@@ -156,6 +156,22 @@ header {
   max-width:40%;
   float: left;
 }
+
+.control-panel {
+	position:fixed;
+	width:24em; 
+	background-color: rgba(0, 0, 0, 0.1);
+	padding: 10px 20px;
+	height:100%;
+}
+.control-panel .control {
+	padding: 10px 0;
+}
+
+.list-panel {
+	padding: 0;
+	margin-left:24em;
+}
 .m10l {
   margin-left: 10px;
 }
@@ -195,7 +211,7 @@ h3 {
   font-size: 1em;
   line-height: 1.4em;
   padding: .4em .5em;
-  border-radius: 10px;
+  border-radius: 4px;
   vertical-align: -.2em;
   border: none;
   background-color: rgba(0, 0, 0, 0.2);
@@ -212,7 +228,7 @@ input:focus {
   color: #ccc;
   margin-right: 5px;
   margin-bottom: 5px;
-  padding: 5px 9px;
+  padding: .4em .6em;
   border-radius: 3px;
   border: solid 1px #444;
   display: block;
@@ -331,6 +347,12 @@ input:focus {
 .pagination li a:hover {
   color: #DE5E60;
 }
+
+.attribution {
+	position:absolute;
+	bottom:0;
+	font-size:.85em;
+}
 /* * * * * * * * * * * * * * * * * * * * *
 * Syntax coloring
 * * * * * * * * * * * * * * * * * * * * */
@@ -394,7 +416,7 @@ input:focus {
 			}
 	
 			.noUi-target {
-				border-radius: 20px;
+				border-radius: 4px;
 				border: 1px solid rgba(0, 0, 0, 0.05);
 				box-shadow: none;
 			}
@@ -494,69 +516,62 @@ input:focus {
 	color: rgba(0,0,0,.4);
 }
 
-@media only screen and (max-device-width: 768px) {
-  #lovely-things-list p,
-  p,
-  body {
-    font-size: 1.1em;
-  }
-  
-  h3 {
-    font-size: 1.6em;
-    
-  }
-  .c1,
-  #container {
-    width: 99%;
-  }
-  
-  .search {
-    font-size: 2.2em;
-    padding: 12px 20px;
-  
-    margin-top: 20px;
-    margin-bottom: 25px;
-    width:100%;
-  }
-  
-  .sort-by,
-  .filter,
-  .pagination,
-  #slider-container{
-    font-size: 1.45em;
-    width: 100%;
-    padding: 1em 0 0 0;
-  }
-  
-  #date-slider {
-    height: 1.8em;
-    margin: 0 1em;
+@media only screen and (max-device-width: 768px) { */
+	body {
+		font-size: 1.4em;
+	}
+	
+	.title {
+		text-align: left;
+	}
+	
+	.control-panel {
+		position:fixed;
+		width:100%;
+		max-height: 15em; 
+		background: #333;
+		float:left;
+		display: inline-block;
+		font-size: 1.6em;
+	}
+
+	.list-panel {
+		margin-top:25em;
+		margin-left: 0;
+		width: 100%;
+	}
+	
+	
+	#lovely-things-list .filter ,
+	#lovely-things-list .sort-by,
+	#lovely-things-list .search,
+	#lovely-things-list #slider-container {
+		width: 47%;
+		float: left;
+		clear: none;
+	}
+	
+	
+	#lovely-things-list .sort-by,
+	#lovely-things-list #slider-container {
+		margin-left: 3%;
+	}
+	
+	.attribution {
+		font-size: .8em;
+		right: 3%;
+	}
+	
+	#date-slider {
+    height: 1.2em;
+    margin: 0 0em;
   }
   
   .noUi-horizontal .noUi-handle {
     width: 2.1em;
     height: 2.1em;
-    top: -.12em;
+    top: -.45em;
     border-radius: 1em;
   }
-  
-  .col-5,
-  .col-6,
-  .col-7,
-  .col-8,
-  .col-9,
-  .col-12 {width: 100%;}
-  
-  .btn {
-    padding: 15px 15px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-  }
-
-  
-  .control-head {
-      line-height: 2em;
-      font-weight: 800;
-      
-  }
+	
 }

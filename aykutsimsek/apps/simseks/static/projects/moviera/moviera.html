@@ -36,65 +36,36 @@
 				<div id="main">
 					<div class="c1">
 						<div id="lovely-things-list" style='display:inline-block'>
-							<div style='position:fixed;width:24em; background-color: rgba(0, 0, 0, 0.1);padding: 10px 20px;height:100%;'>
-								<div class="col-12 title" style=''>Moviera</div>
-								<div class="col-12">
-									<input class="search" placeholder="Search Title, Artist, Director or Plot..."></input>
-								</div>
-								<div class="col-12">
-									<div class="filter">
+							<div class="control-panel">
+								<div class="title" style=''><img height=64 style='vertical-align:-3px;' src="{{STATIC_URL}}projects/moviera/img/moviera_logo.png"></img></a></div>
+								<div class="control filter">
 										<li class='control-head'>Genre:</li>
 										<span class="custom-dropdown">
 											<select>
 												<option value='All'>All</option>
 											</select>
 										</span>
-										<!--
-										<li class="btn highlight">All</li>
-										-->
 									</div>
-								</div>
-								<div class="col-12">
-									<!--
-									<ul class="sort-by">
-										<li class='control-head'> Sort by:</li>
-										<li class="sort btn" data-sort="metascore">Metascore</li>
-										<li class="sort btn" data-sort="name">Name</li>
-										<li class="sort btn" data-sort="air_date">Air Date</li>
-									</ul>
-									-->
-									<ul class="sort-by">
-										<li class='control-head'> Sort by:</li>
-										<li class="btn highlight desc" data-sort="metascore"><i class="fa fa-sort-desc"></i>Metascore</li>
-										<!-- <li class="btn desc" data-sort="name">Name</li> -->
-										<li class="btn desc" data-sort="air_date">Air Date</li>
-									</ul>
-								</div>
-								<div id='slider-container' class='col-12' >
-									<div>
-										<div id="date-slider"></div>
-									</div>
+								<ul  class="control sort-by">
+									<li class='control-head'> Sort by:</li>
+									<li class="btn highlight desc" data-sort="metascore"><i class="fa fa-sort-desc"></i>Metascore</li>
+									<!-- <li class="btn desc" data-sort="name">Name</li> -->
+									<li class="btn desc" data-sort="air_date">Air Date</li>
+								</ul>
+								<input class="search" placeholder="Search Title, Artist, Director or Plot..."></input>
+								<div id='slider-container' class='col-12'>
+									<div id="date-slider"></div>
 									<div class='col-12'>
 										<span class="date-val" id="event-start"></span>
 										<span class="date-val" id="event-end" style='float: right;'></span>
 									</div>
 								</div>
-								<!--
-								<ul class="sort-order">
-									<li class='control-head'> Sort Order:</li>
-									<li class="btn highlight" id="filter-none"><input type="radio" name="group4"/></li>
-									<li class="btn" id="filter-none"><input type="radio" name="group4"/></li>
-								</ul>
-								-->
-								<div class="col-12">
-									<ul class="pagination"></ul>
-								</div>
-								<div class="col-12" style='position:absolute;bottom:0;font-size:.85em;'>
+								<ul class="control pagination"></ul>
+								<div class="control attribution">
 									&copy;2015&nbsp;<a href="http://aykutsimseks.com">Aykut Simsek</a> | Data from <a href='http://www.imdb.com' target='_blank'><img height=14  style='vertical-align:-3px;' src="{{STATIC_URL}}projects/moviera/img/imdb.png"></img></a> | Using <a href='http://www.listjs.com/' target='_blank'>List.js</a>
 								</div>
 							</div>
-							<div></div>
-							<div style='padding: 0;margin-left:24em;'>
+							<div class="list-panel">
 								<ul class="list" id='list'></ul>
 							</div>
 						</div>

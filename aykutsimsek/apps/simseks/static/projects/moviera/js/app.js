@@ -1,38 +1,66 @@
-function init() {
-	// Initialize Variables
-	featureList = null;
-	filterList  = null;
-	genre = null;
 
-	// Create a list of day and monthnames.
-	months = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-	genres = ["Action","Adventure","Animation","Biography","Comedy","Crime","Documentary","Drama","Family","Fantasy","History","Horror","Music","Musical","Mystery","Romance","Sci-Fi","Sport","Thriller","War","Western"]
-
-
-	start_date = dateVal(new Date(Date.parse('01/01/2011')));
-	end_date   = dateVal(new Date());
-
-
-	dateSlider = document.getElementById('date-slider');
-	dateValues = [
-		document.getElementById('event-start'),
-		document.getElementById('event-end')
-	];
-}
-
-
-// Create a string representation of the date.
-function formatDate ( date ) {
-	return 	months[date%12] + " " +
-			parseInt(date/12);
-}
-
-function dateVal(d) {
-	return d.getMonth() + d.getFullYear()*12
-}
-
-
-
+var list_item_template = function(data) {
+			var html = "\
+				<div class='list-group-item' style='cursor:default;float:none'>	\
+					<div class='col-md-10'> \
+						<a href='" + data.url + "' target='_blank'>\
+						<figure class='pull-left' style='padding:0 10px 0 0px;margin-left:-15px;'>	\
+							<img class='media-object img-responsive' width=80 height=100 src='/static/projects/moviera/img/movie-placeholder.png' data-src='/static/projects/moviera/img/thumbnails/" + data.unique_id + ".png'  alt='" + data.title +"' >\
+						</figure>	\
+						</a>\
+						<div style='padding-left:80px;width:calc(100%-80px);'> \
+							<h4 class='list-group-item-heading col-md-12'  style='padding-left:0;'><a href='" + data.url + "' target='_blank' class='list-group-item-heading'><span class='m_title'>" + data.title + "</span></a>\
+								<div  class='small pull-right' style='vertical-align:5px;'> \
+									<span class='m_genres'>" + eval(data.genres).join(', ') + "</span> &nbsp; | <span style=''> " + data.run_time + " min</span>\
+								</div> \
+							</h4> \
+							<div class='list-group-item-text col-md-12' style='padding:10px 0px'> \
+								<span class='m_description'>" + data.description + "</span>\
+							</div> \
+							<div class='col-md-4' style='padding:0'> \
+								<p class='list-group-item-text'> \
+									<small>Director: <span class='m_director'>" + data.director + "</span></small> \
+								</p> \
+							</div> \
+							<div class='col-md-8' style='padding:0'> \
+								<p class='list-group-item-text'> \
+									<small> Stars: <span class='m_stars'>" + String(eval(data.stars).join(', ')) + "</span></small> \
+								</p> \
+							</div> \
+						</div> \
+					</div> \
+					<div class='col-md-2 text-center record-card'> \
+						<!-- <h2> 14240 <small> votes </small></h2> --> \
+						<!-- <button type='button' class='btn btn-primary btn-lg btn-block'> Vote Now! </button> --> \
+						<div><span class='m_air_date' style='display:none;'>" + (parseInt(data.year||0)*1200 + parseInt(data.month||0)*100 + parseInt(data.metascore||0)) + "</span><span class='m_month' style='display:none;'>" + (data.month||0) + "</span>" + months[data.month-1] + ", <span class='m_year' style='display:none;'>" + (data.year||0) + "</span>" + data.year +"</div> \
+						<div class='stars'> \
+					"
+					var stars = Math.round((data.metascore||0)/10)
+					
+					for( var i=1; i <= 10; ) {
+						var diff = stars-i;
+						if(diff > 0) {
+							if(diff > 1) {
+								html += " <i class='fa fa-star'></i>"
+							} 
+							else {
+								html += " <i class='fa fa-star-half-o'></i>"
+							}
+						} 
+						else {
+							html += " <i class='fa fa-star-o'></i>"
+						}
+						i += 2;
+					}
+					
+					html += "\
+						</div> \
+						<div><span class='m_metascore' style='display:none'>" + (parseInt(data.metascore||0)*30000 + parseInt(data.year||0)*12 + parseInt(data.month||0)) +"</span>" + data.metascore +" <small> / </small> 100 </div> \
+					</div> \
+				</div>\
+				"
+			return html;
+		}
 
 function init_list() {
 	genres.forEach(function(g) {
@@ -43,12 +71,12 @@ function init_list() {
 	})
 
 	var options = {
-		valueNames: [ 'name', 'description', 'metascore', 'genres', 'director', 'stars', 'month', 'year', 'air_date'],
-		page: 20,
+		valueNames: [ 'm_title','m_genres','m_month', 'm_year', 'm_metascore', 'm_air_date', 'm_description', 'm_director', 'm_stars'],
+		page: 25,
 		plugins: [ ListPagination({'innerWindow': 1, 'outerWindow': 1}) ] 
 	};
 
-	featureList = new List('lovely-things-list', options);
+	featureList = new List('list-panel', options);
 	
 	filterList = function(gen,start,end) {
 		var g = gen||genre;
@@ -56,8 +84,8 @@ function init_list() {
 		var e = end||end_date;
 		featureList.filter(function(item) {
 			var values = item.values()
-			if (!g || g == "All" || values.genres.search(g) >= 0) {
-				var air_date = parseInt(values.month-1) + parseInt(values.year)*12;
+			if (!g || g == "All" || values.m_genres.search(g) >= 0) {
+				var air_date = parseInt(values.m_month-1) + parseInt(values.m_year)*12;
 				if( air_date >= start_date && air_date <= end_date) { 
 					//console.log(air_date + " " + start_date + " " + end_date)
 					return true;
@@ -66,30 +94,56 @@ function init_list() {
 			return false;
 		});
 	}
-	
-	$(".custom-dropdown select").change(function(){
-		genre = $(this).val();
-		filterList(genre)
-	})
+}
 
-	
-	$('.sort-by li.btn').click(function() {
-		sort_by = $(this).data('sort');
-		$(".sort-by li").removeClass("highlight");
-		$(".sort-by li i").remove()
-		old_order = ($(this).hasClass("asc"))?'asc':'desc';
-		new_order = ($(this).hasClass("asc"))?'desc':'asc';
-		$(this).prepend('<i class="fa fa-sort-'+ new_order + '"></i>')
-		$(this).addClass("highlight");
-		$(this).removeClass(old_order);
-		$(this).addClass(new_order);
-		featureList.sort(sort_by, { order: new_order });
-		return false;
-	})
-	
-	
 
-	// Slider
+
+function dynamicSort(property) { 
+    return function (obj1,obj2) {
+        return obj1[property] > obj2[property] ? 1
+            : obj1[property] < obj2[property] ? -1 : 0;
+    }
+}
+
+function dynamicSortMultiple() {
+    /*
+     * save the arguments object as it will be overwritten
+     * note that arguments object is an array-like object
+     * consisting of the names of the properties to sort by
+     */
+    var props = arguments;
+    return function (obj1, obj2) {
+        var i = 0, result = 0, numberOfProperties = props.length;
+        /* try getting a different result from 0 (equal)
+         * as long as we have extra properties to compare
+         */
+        while(result === 0 && i < numberOfProperties) {
+            result = dynamicSort(props[i])(obj1, obj2);
+            i++;
+        }
+        return result;
+    }
+}
+
+function formatDate ( date ) {
+	return 	months[date%12] + ", " +
+			parseInt(date/12);
+}
+
+function dateVal(d) {
+	return d.getMonth() + d.getFullYear()*12
+}	
+		
+var init_date_slider = function() {
+	start_date = dateVal(new Date(Date.parse('01/01/2011')));
+	end_date   = dateVal(new Date());
+
+
+	dateSlider = document.getElementById('date-slider');
+	dateValues = [
+		document.getElementById('event-start'),
+		document.getElementById('event-end')
+	];
 	noUiSlider.create(dateSlider, {
 		// Create two timestamps to define a range.
 		range: {
@@ -122,10 +176,8 @@ function init_list() {
 		end_date   = +values[1];
 		filterList(genre,start_date,end_date);
 	});
-	
-	
-	start_date = dateVal(new Date('01/01/2015'))
-	filterList('All',start_date,end_date);
-	featureList.sort('metascore', { order: "desc" });
-}
 
+
+	start_date = dateVal(new Date('01/01/2015'))
+
+}

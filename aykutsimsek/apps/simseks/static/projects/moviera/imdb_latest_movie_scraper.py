@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup,NavigableString
 from HTMLParser import HTMLParser
 import urllib2
 import time
+from random import betavariate
 import datetime
 import csv,json
 
@@ -15,9 +16,12 @@ url_base = 'http://www.imdb.com/movies-coming-soon'
 start = ['2011','1']
 end   = [datetime.datetime.now().strftime("%Y"),datetime.datetime.now().strftime("%m")]
 
-sleep_time = 10
 
 pwd = os.path.dirname(os.path.realpath(__file__))
+
+def randomsleep(t):
+    'Sleep between zero and t seconds.'
+    time.sleep(t * betavariate(0.7, 8))
 
 def mk_int(s):
     try:
@@ -25,6 +29,8 @@ def mk_int(s):
         return int(s) if s else 0
     except:
 	return ''
+    
+sleep_time=10;
     
 def get_url_content(url,page_id, loc='html', ext='html', s=sleep_time):
     outdir	= pwd + "/html"
@@ -39,7 +45,7 @@ def get_url_content(url,page_id, loc='html', ext='html', s=sleep_time):
 	    contents = urllib2.urlopen(url).read()
 	    with open(filepath, 'wb') as html:
 	        html.write(contents)
-		time.sleep(s)
+		randomsleep(sleep_time)
 	except:
 	    print "ERROR!!!"
 	    return ""

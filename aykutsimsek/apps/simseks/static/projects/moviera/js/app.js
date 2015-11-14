@@ -7,6 +7,7 @@ var list_item_template = function(data) {
 			};
 		
 			var parse_str_as_array = function(str) {
+				if(!str) return []
 				var array_match = /['"]([^'"]*)['"]/gi;
 				var match = str.match(array_match);
 				if(match) {

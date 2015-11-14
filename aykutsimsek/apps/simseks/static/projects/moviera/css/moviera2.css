@@ -273,8 +273,7 @@ input:focus {
 }
 
 #lovely-things-list .netflix-icon {
-  float:right;
-  opacity: .8;
+  opacity: .6;
 }
 #lovely-things-list .netflix-icon:hover{
   opacity: 1;

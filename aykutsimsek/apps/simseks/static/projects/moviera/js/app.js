@@ -1,5 +1,20 @@
 
 var list_item_template = function(data) {
+			String.prototype.parseHex = function(){
+				return this.replace(/\\x([a-fA-F0-9]{2})/g, function(a,b){
+					return String.fromCharCode(parseInt(b,16));
+				});
+			};
+		
+			var parse_str_as_array = function(str) {
+				var array_match = /['"]([^'"]*)['"]/gi;
+				var match = str.match(array_match);
+				if(match) {
+					return match.map(function(str) { return str.slice(1, -1).parseHex()})
+				}
+				return []
+			}
+		
 			var html = "\
 				<div class='list-group-item' style='cursor:default;float:none'>	\
 					<div class='col-md-10'> \
@@ -11,7 +26,7 @@ var list_item_template = function(data) {
 						<div style='padding-left:80px;width:calc(100%-80px);'> \
 							<h4 class='list-group-item-heading col-md-12'  style='padding-left:0;'><a href='" + data.url + "' target='_blank' class='list-group-item-heading'><span class='m_title'>" + data.title + "</span></a>\
 								<div  class='small pull-right' style='vertical-align:5px;'> \
-									<span class='m_genres'>" + eval(data.genres).join(', ') + "</span> &nbsp; | <span style=''> " + data.run_time + " min</span>\
+									<span class='m_genres'>" +parse_str_as_array(data.genres).join(', ') + "</span> | <span style=''> " + data.run_time + " min</span>\
 								</div> \
 							</h4> \
 							<div class='list-group-item-text col-md-12' style='padding:10px 0px'> \
@@ -24,7 +39,7 @@ var list_item_template = function(data) {
 							</div> \
 							<div class='col-md-8' style='padding:0'> \
 								<p class='list-group-item-text'> \
-									<small> Stars: <span class='m_stars'>" + String(eval(data.stars).join(', ')) + "</span></small> \
+									<small> Stars: <span class='m_stars'>" + parse_str_as_array(data.stars).join(', ') + "</span></small> \
 								</p> \
 							</div> \
 						</div> \
@@ -56,6 +71,7 @@ var list_item_template = function(data) {
 					html += "\
 						</div> \
 						<div><span class='m_metascore' style='display:none'>" + (parseInt(data.metascore||0)*30000 + parseInt(data.year||0)*12 + parseInt(data.month||0)) +"</span>" + data.metascore +" <small> / </small> 100 </div> \
+						" + ((data.netflix_url != "")?"<span class='m_netflix' style='display:none'>netflix</span><a title='Available on Netflix' href='" + data.netflix_url + "'><img height=20 class='netflix-icon' src='/static/projects/moviera/img/netflix_red.png'></img></a>":"") + "\
 					</div> \
 				</div>\
 				"
@@ -71,22 +87,24 @@ function init_list() {
 	})
 
 	var options = {
-		valueNames: [ 'm_title','m_genres','m_month', 'm_year', 'm_metascore', 'm_air_date', 'm_description', 'm_director', 'm_stars'],
+		valueNames: [ 'm_title','m_genres','m_month', 'm_year', 'm_metascore', 'm_air_date', 'm_description', 'm_director', 'm_stars', 'm_netflix'],
 		page: 25,
 		plugins: [ ListPagination({'innerWindow': 1, 'outerWindow': 1}) ] 
 	};
 
 	featureList = new List('list-panel', options);
 	
-	filterList = function(gen,start,end) {
+	filterList = function(gen,start,end,nf) {
 		var g = gen||genre;
 		var s = start||start_date;
 		var e = end||end_date;
+		var n = nf||netflix;
+		
 		featureList.filter(function(item) {
 			var values = item.values()
 			if (!g || g == "All" || values.m_genres.search(g) >= 0) {
 				var air_date = parseInt(values.m_month-1) + parseInt(values.m_year)*12;
-				if( air_date >= start_date && air_date <= end_date) { 
+				if( air_date >= start_date && air_date <= end_date && (!n||values.m_netflix == 'netflix')) { 
 					//console.log(air_date + " " + start_date + " " + end_date)
 					return true;
 				}

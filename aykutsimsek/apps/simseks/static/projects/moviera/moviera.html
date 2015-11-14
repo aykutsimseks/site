@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 		<title>Moviera | Aykut Simsek</title>
 		<link rel="shortcut icon" href="/static/img/logo/favicon.ico">
 		
@@ -25,20 +26,20 @@
 	</head>
 	<body id="list-panel">
 		<div class="container col-md-3 control-panel">
-			<div class="col-md-12 row text-center">
-				<img height=64 src="/static/projects/moviera/img/moviera_logo.png"></img>
+			<div class="col-md-12 row app-title">
+				<img src="/static/projects/moviera/img/moviera_logo.png"></img>
 			</div>
-			<div class="col-md-12 row control-half" style='padding:20px 0 0 0;'>
+			<div class="col-md-12 row control-half" style='padding:0px 0 0 0;'>
 				<div class="col-md-3" style='line-height:2em;'>Genre:</div>
 				<div class="col-md-9">
-					<span class="custom-dropdown list-group-item-heading">
+					<span class="custom-dropdown">
 						<select>
 							<option value='All'>All</option>
 						</select>
 					</span>
 				</div>
 			</div>	
-			<div class="col-md-12 row control-half" style='padding:20px 0 0 0;'>
+			<div class="col-md-12 row control-half" style='padding:10px 0 0 0;'>
 			  <div class="col-md-3" style='line-height:2em;'>Sort:</div>
 			  <div class="col-md-9">
 			  	<div class="switch-toggle">
@@ -50,8 +51,22 @@
 					<a></a>
 				</div>
 			  </div>
+			</div>
+			<div class="col-md-12 row control-half" style='padding:10px 0 0 0;'>
+			 <div class="col-md-3" style='line-height:2em;'>Select:</div>
+			  <div class="col-md-9">
+			  	<div class="switch-toggle">
+					<input id="all_movies" name="view-n" type="radio" checked>
+					<label for="all_movies" onclick="netflix=false;filterList()">All</label>
+
+					<input id="netflix_movies" name="view-n" type="radio">
+					<label for="netflix_movies" onclick="netflix=true;filterList()">Netflix</label>
+					<a></a>
+				</div>
+			  </div>
 			</div>	
-			<div class="col-md-12 row" style='padding:20px 0 0 0;'>
+			<div class="col-md-12 row" style='padding:0;'>
+				<div class="col-md-12" style='line-height:2em;'>&nbsp;</div>
             	<div class='col-md-12'>
 					<div id="date-slider"></div>
 					<div style='padding-top:6px;'>
@@ -60,21 +75,28 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-12 row" style='padding:20px 0 0; 0;'>
+			<div class="col-md-12 row" style='padding:0;'>
+				<div class="col-md-12" style='line-height:2em;'>&nbsp;</div>
 				<div id="custom-search-input" class="col-md-12">
 					<div style='display:flex'>
 						<input type="text" class="search-query form-control search" placeholder="Search" />
-						<span class="input-group-btn">
-							<button class="btn" type="button" style='margin-top:6px;'>
-								<i class="fa fa-search"></i>
+						<span class="input-group-btn" style='width:0'>
+							<button class="btn" type="button">
+								<i class="fa fa-search" style='vertical-align: middle;'></i>
 							</button>
 						</span>
 					</div>
 				</div>
             </div>
-            <div class="col-md-12 row" style='padding:20px 0 20px; 0;'>
+            <div class="col-md-12 row" style='padding:0 0 2em 0;'>
+            	<div class="col-md-12" style='line-height:2em;'>&nbsp;</div>
             	<ul class="pagination" style='min-height:40px;'></ul>
             </div>
+            <div class="col-md-12 row attribution" style='padding-bottom:10px; width: 100%;'>
+            	<div class='col-md-12'>
+					&copy;2015&nbsp;<a href="http://aykutsimseks.com">Aykut Simsek</a>&nbsp;|&nbsp;Data from <a href="http://imdb.com" targe="_blank" class="imdb-logo">IMDb</a>&nbsp;|&nbsp;Using <a href='http://www.listjs.com/' target='_blank'>List.js</a>
+				</div>
+			</div>
 		</div>
 		<div class="container col-md-9 list-panel">
 			<div class="row">
@@ -88,7 +110,7 @@
 	</body>
 	<script type="text/javascript">
 		// Field Mapping from csv file
-		var csv_file = '/static/projects/moviera/data/movies.csv'
+		var csv_file = '/static/projects/moviera/data/movies.csv.gz'
 		//var isMobile = navigator.userAgent.match(/Mobi/);
 		var isMobile = false;
 		
@@ -101,6 +123,7 @@
 		
 		start_date = dateVal(new Date(Date.parse('01/01/2011')));
 		end_date   = dateVal(new Date());
+		netflix	   = false;
 		
 		genres.forEach(function(g) {
 			//$('.filter').append('<li class="btn">' + g + '</li>')

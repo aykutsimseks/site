@@ -5,7 +5,8 @@ import urllib2
 import time
 from random import betavariate
 import datetime
-import csv,json
+import csv,gzip,json
+import shutil
 
 from netflix import Netflix
 nflix = Netflix("")
@@ -191,7 +192,9 @@ def main():
 		    str(x["image_url"]),
 		    str(x["netflix_url"]),
 		 ])
-    
+
+    with open(pwd + "/data/movies.csv", 'rb') as f_in, gzip.open(pwd + "/data/movies.csv.gz", 'wb') as f_out:
+	shutil.copyfileobj(f_in, f_out)
     
 if __name__ == "__main__":
     main()

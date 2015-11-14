@@ -2,6 +2,20 @@ body {
     color: #ccc;
     background-color: #333;
 }
+.app-title {
+	text-align: left;
+	padding-bottom: 20px;
+}
+.app-title img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+a {
+	color: #DE5E60;
+}
+
 .list-group-item {
     min-height: 140px;
     background: rgba(0, 0, 0, 0);
@@ -39,31 +53,48 @@ body {
 .record-card {
     padding-top: 32px;
 }
-@media (min-width: 992px) {
-    .control-panel {
-        position: fixed;
-        height: 100%;
-    }
-    .list-panel {
-        margin-left: 25%;
-    }
+
+.list-group-item img.netflix-icon{
+  filter: gray; /* IE6-9 */
+  filter: grayscale(.5); /* Firefox 35+ */
+  -webkit-filter: grayscale(.5); /* Google Chrome, Safari 6+ & Opera 15+ */
+  vertical-align: middle;
 }
-@media (max-width: 992px) {
-    .control-half {
-        width: 50%;
-        display: inline-flex;
-    }
-    .record-card {
-        display: inline-flex;
-        width: 100%;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .record-card div {
-        float: left;
-        margin: auto
-    }
+.list-group-item:hover img.netflix-icon {
+  filter: none;
+  -webkit-filter: grayscale(0);
 }
+
+.attribution {
+	font-size: .75em;
+	position: absolute;
+	bottom: 0px;
+	text-align: left;
+	color: rgba(255,255,255,.5);
+}
+.attribution a {
+	color: rgba(255,255,255,.8);
+}
+
+a.imdb-logo {
+  font: 1em/1 Impact, HelveticaNeue-CondensedBold, sans-serif; 
+  color: #000;
+  text-shadow: 0 0 .15em #fff;
+  text-decoration: none;
+
+  display: inline-block;
+  vertical-align: bottom;
+  padding: .25em .35em;
+  border-radius: .15em;
+  background: radial-gradient(#ffffb8, #ce981d);
+    
+  &:hover {
+    background: radial-gradient(lighten(#ffffb8, 10%), lighten(#ce981d, 10%));
+  }
+}
+
+
+
 /* CSS PAGINATION */
 
 .pagination {
@@ -115,12 +146,14 @@ body {
 .custom-dropdown {
     position: relative;
     display: inline-block;
+    width: 100%;
     vertical-align: middle;
     /* margin: -5px 10px 5px 10px; */
 }
 .custom-dropdown select {
     cursor: pointer;
     background-color: #DE5E60;
+    width: 100%;
     color: #fff;
     font-size: inherit;
     padding: .4em .6em;
@@ -182,6 +215,8 @@ body {
 */
 
 .switch-toggle {
+	
+    width: 100%;
     display: block;
     cursor: pointer;
     position: relative;
@@ -220,6 +255,10 @@ body {
     height: 100%;
 }
 .switch-toggle input:last-of-type:checked ~ a {
+	
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
     left: 50%;
 }
 /* SEARCH BAR  */
@@ -305,4 +344,65 @@ body {
 .noUi-handle:after,
 .noUi-handle:before {
     display: none;
+}
+
+
+@media (min-width: 992px) {
+    .control-panel {
+        position: fixed;
+        height: 100%;
+    }
+    .list-panel {
+        margin-left: 25%;
+    }
+}
+@media (max-width: 992px) {
+	/*
+    .control-half {
+        width: 50%;
+        display: inline-flex;
+    }
+    */
+    .app-title {
+		text-align: center;
+	}
+	.app-title img {
+		max-width: 40%;
+		height: auto;
+		width: auto\9; /* ie8 */
+	}
+    
+    .record-card {
+        display: inline-flex;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .record-card div {
+        float: left;
+        margin: auto
+    }
+    
+    #date-slider {
+		height: 1.2em;
+		margin: 0 0em;
+	}
+  
+	.noUi-horizontal .noUi-handle {
+		width: 2.2em;
+		height: 2.2em;
+		left: -1.1em;
+		right: -1.1em;
+		top: -.7em;
+		border-radius: 2em;
+	}
+    
+    #custom-search-input input {
+    	min-height: 2.4em;
+    }
+    
+    .attribution {
+    	float: right;
+    	text-align: right;
+    }
 }

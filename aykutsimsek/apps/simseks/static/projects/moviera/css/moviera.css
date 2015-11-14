@@ -365,6 +365,7 @@ a.imdb-logo {
     */
     .app-title {
 		text-align: center;
+		padding-bottom: 0px;
 	}
 	.app-title img {
 		max-width: 40%;

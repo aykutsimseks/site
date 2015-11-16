@@ -5,11 +5,14 @@ import urllib2
 import time
 from random import betavariate
 import datetime
-import csv,gzip,json
+import gzip,json
+import unicodecsv as csv 
 import shutil
+from netflix_scraper import Netflix
 
-from netflix import Netflix
-nflix = Netflix("")
+reload(sys)  
+sys.setdefaultencoding('utf8')
+
 
 # http://www.imdb.com/movies-coming-soon/2015-05
 url_base = 'http://www.imdb.com/movies-coming-soon'
@@ -19,6 +22,8 @@ end   = [datetime.datetime.now().strftime("%Y"),datetime.datetime.now().strftime
 
 
 pwd = os.path.dirname(os.path.realpath(__file__))
+netflix = Netflix()
+
 
 def randomsleep(t):
     'Sleep between zero and t seconds.'
@@ -120,7 +125,7 @@ def main():
 		stars = ''
 
 	    try:
-		run_time   = html_scraper(movie,[['other','time', 'itemprop','duration']])[0].text.encode('utf-8').strip()
+		run_time   = html_scraper(movie,[['other','time', 'itemprop','duration']])[0].text.encode('utf-8').strip().split(' min')[0]
 	    except:
 		run_time  = ''
 	    
@@ -142,59 +147,61 @@ def main():
 		image_url = ''
 		
 	    try:
-		netflix_url = nflix.isNetflix(title.split("(")[0]).get('playerUrl')
+		netflix_id = netflix.isNetflix(title).get('id')
 	    except:
-	    	netflix_url = ''
+	    	netflix_id = ''
 		
 	    json = {
-		'title': title,
-		'url': url,
-		'unique_id': unique_id,
-		'run_time': run_time,
-		'genres': genres,
-		'metascore': metascore,
-		'month' : current[1],
-		'year' : current[0],
-		'description': description,
-		'director'  : director,
-		'stars'	    : stars,
-		'image_url' : image_url,
-		'netflix_url' : netflix_url
+		'title'		: title,
+		#'url'		: url,
+		'unique_id'	: unique_id,
+		'run_time'	: run_time,
+		'genres'	: genres,
+		'metascore'	: metascore,
+		'month' 	: current[1],
+		'year' 		: current[0],
+		'description'	: description,
+		'director'  	: director,
+		'stars'	    	: stars,
+		#'image_url' 	: image_url,
+		'netflix_id' 	: netflix_id
 	    }
 	    movie_list.append(json)
 	if current[1] == '12':
 	    current[0] = str(int(current[0])+1);
 	current[1] = str((int(current[1])%12)+1);
 	
-	
-    
-    f = csv.writer(open(pwd + "/data/movies.csv", "wb+"))
+    def map_to(d):
+	for k, v in d.items():
+	    # catch None's
+	    if v is not None:
+	        d[k] = ",".join(v).encode("utf-8") if isinstance(v, list) else v.encode("utf-8")
 
-    # Write CSV Header, If you dont need that, remove this line
-    f.writerow(["title","url", "unique_id", "run_time", "metascore", "genres", "month", "year", "description","director","stars","image_url","netflix_url"])
+    with open(pwd + "/data/movies.csv", "w") as csvfile:
+	header = ["title",
+		#"url",
+		"unique_id",
+		"run_time",
+		"metascore",
+		"genres",
+		"month",
+		"year",
+		"description",
+		"director",
+		"stars",
+		#"image_url",
+		"netflix_id"]
+	writer = csv.DictWriter(csvfile, fieldnames=header)
+	writer.writeheader()
+	# get each dict from the list
+	for d in movie_list:
+	    # run the encode func
+	    map_to(d)
+	    writer.writerow(d)
     
-    ids = set()
-    
-    for x in movie_list:
-	if x["unique_id"] in ids: continue # skip duplicate
-	ids.add(x["unique_id"])
-        f.writerow([str(x["title"]),
-		    str(x["url"]),
-		    str(x["unique_id"]),
-                    mk_int(x["run_time"]), 
-		    mk_int(x["metascore"]), 
-		    str(x["genres"]),
-		    mk_int(x["month"]), 
-		    mk_int(x["year"]),
-		    str(x["description"]),
-		    str(x["director"]),
-		    str(x["stars"]),
-		    str(x["image_url"]),
-		    str(x["netflix_url"]),
-		 ])
-
     with open(pwd + "/data/movies.csv", 'rb') as f_in, gzip.open(pwd + "/data/movies.csv.gz", 'wb') as f_out:
 	shutil.copyfileobj(f_in, f_out)
     
 if __name__ == "__main__":
     main()
+   

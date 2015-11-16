@@ -93,6 +93,12 @@ a.imdb-logo {
   }
 }
 
+#cover {
+	position:absolute;
+	width:100%;
+	text-align:center;
+	margin-top:20%;
+}
 
 
 /* CSS PAGINATION */
@@ -254,6 +260,7 @@ a.imdb-logo {
     width: 50%;
     height: 100%;
 }
+/*
 .switch-toggle input:last-of-type:checked ~ a {
 	
     -webkit-transition: all 0.2s ease-out;
@@ -261,6 +268,7 @@ a.imdb-logo {
     transition: all 0.2s ease-out;
     left: 50%;
 }
+*/
 /* SEARCH BAR  */
 
 #custom-search-input .search-query {
@@ -363,6 +371,10 @@ a.imdb-logo {
         display: inline-flex;
     }
     */
+    #cover {
+    	margin-top:0%;
+    }
+    
     .app-title {
 		text-align: center;
 		padding-bottom: 0px;

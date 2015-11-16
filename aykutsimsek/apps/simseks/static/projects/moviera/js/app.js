@@ -1,5 +1,5 @@
-
 var list_item_template = function(data) {
+			/*
 			String.prototype.parseHex = function(){
 				return this.replace(/\\x([a-fA-F0-9]{2})/g, function(a,b){
 					return String.fromCharCode(parseInt(b,16));
@@ -15,19 +15,20 @@ var list_item_template = function(data) {
 				}
 				return []
 			}
+			*/
 		
 			var html = "\
 				<div class='list-group-item' style='cursor:default;float:none'>	\
 					<div class='col-md-10'> \
-						<a href='" + data.url + "' target='_blank'>\
+						<a href='http://www.imdb.com/title/" +  data.unique_id + "/' target='_blank'>\
 						<figure class='pull-left' style='padding:0 10px 0 0px;margin-left:-15px;'>	\
 							<img class='media-object img-responsive' width=80 height=100 src='/static/projects/moviera/img/movie-placeholder.png' data-src='/static/projects/moviera/img/thumbnails/" + data.unique_id + ".png'  alt='" + data.title +"' >\
 						</figure>	\
 						</a>\
 						<div style='padding-left:80px;width:calc(100%-80px);'> \
-							<h4 class='list-group-item-heading col-md-12'  style='padding-left:0;'><a href='" + data.url + "' target='_blank' class='list-group-item-heading'><span class='m_title'>" + data.title + "</span></a>\
+							<h4 class='list-group-item-heading col-md-12'  style='padding-left:0;'><a href='http://www.imdb.com/title/" +  data.unique_id + "/' target='_blank' class='list-group-item-heading'><span class='m_title'>" + data.title + "</span></a>\
 								<div  class='small pull-right' style='vertical-align:5px;'> \
-									<span class='m_genres'>" +parse_str_as_array(data.genres).join(', ') + "</span> | <span style=''> " + data.run_time + " min</span>\
+									<span class='m_genres'>" + data.genres.split(',').join(', ') + "</span> | <span style=''> " + data.run_time + " min</span>\
 								</div> \
 							</h4> \
 							<div class='list-group-item-text col-md-12' style='padding:10px 0px'> \
@@ -40,7 +41,7 @@ var list_item_template = function(data) {
 							</div> \
 							<div class='col-md-8' style='padding:0'> \
 								<p class='list-group-item-text'> \
-									<small> Stars: <span class='m_stars'>" + parse_str_as_array(data.stars).join(', ') + "</span></small> \
+									<small> Stars: <span class='m_stars'>" + data.stars.split(',').join(', ') + "</span></small> \
 								</p> \
 							</div> \
 						</div> \
@@ -72,7 +73,7 @@ var list_item_template = function(data) {
 					html += "\
 						</div> \
 						<div><span class='m_metascore' style='display:none'>" + (parseInt(data.metascore||0)*30000 + parseInt(data.year||0)*12 + parseInt(data.month||0)) +"</span>" + data.metascore +" <small> / </small> 100 </div> \
-						" + ((data.netflix_url != "")?"<span class='m_netflix' style='display:none'>netflix</span><a title='Available on Netflix' href='" + data.netflix_url + "'><img height=20 class='netflix-icon' src='/static/projects/moviera/img/netflix_red.png'></img></a>":"") + "\
+						" + ((data.netflix_id != "")?"<span class='m_netflix' style='display:none'>netflix</span><a title='Available on Netflix' target='_blank' href='http://www.netflix.com/WiPlayer?movieid=" + data.netflix_id + "'><img height=20 class='netflix-icon' src='/static/projects/moviera/img/netflix_red.png'></img></a>":"") + "\
 					</div> \
 				</div>\
 				"
@@ -153,7 +154,7 @@ function dateVal(d) {
 	return d.getMonth() + d.getFullYear()*12
 }	
 		
-var init_date_slider = function() {
+function init_date_slider() {
 	start_date = dateVal(new Date(Date.parse('01/01/2011')));
 	end_date   = dateVal(new Date());
 

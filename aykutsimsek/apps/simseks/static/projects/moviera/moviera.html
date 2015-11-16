@@ -43,10 +43,10 @@
 			  <div class="col-md-3" style='line-height:2em;'>Sort:</div>
 			  <div class="col-md-9">
 			  	<div class="switch-toggle">
-					<input id="sort_metascore" name="view-d" type="radio" checked>
+					<input id="sort_metascore"  value="1" name="view-d" type="radio" checked>
 					<label for="sort_metascore" onclick="featureList.sort('m_metascore', { order: 'desc' });">Metascore</label>
 
-					<input id="sort_air_date" name="view-d" type="radio">
+					<input id="sort_air_date"   value="2" name="view-d" type="radio">
 					<label for="sort_air_date" onclick="featureList.sort('m_air_date', { order: 'desc' });">Date</label>
 					<a></a>
 				</div>
@@ -56,10 +56,10 @@
 			 <div class="col-md-3" style='line-height:2em;'>Select:</div>
 			  <div class="col-md-9">
 			  	<div class="switch-toggle">
-					<input id="all_movies" name="view-n" type="radio" checked>
+					<input id="all_movies"     value="1" name="view-n" type="radio" checked>
 					<label for="all_movies" onclick="netflix=false;filterList()">All</label>
 
-					<input id="netflix_movies" name="view-n" type="radio">
+					<input id="netflix_movies"  value="2" name="view-n" type="radio">
 					<label for="netflix_movies" onclick="netflix=true;filterList()">Netflix</label>
 					<a></a>
 				</div>
@@ -88,7 +88,7 @@
 					</div>
 				</div>
             </div>
-            <div class="col-md-12 row" style='padding:0 0 2em 0;'>
+            <div class="col-md-12 row" style='padding:0 0 20px 0;'>
             	<div class="col-md-12" style='line-height:2em;'>&nbsp;</div>
             	<ul class="pagination" style='min-height:40px;'></ul>
             </div>
@@ -100,7 +100,7 @@
 		</div>
 		<div class="container col-md-9 list-panel">
 			<div class="row">
-				<div id="cover" style='position:absolute;width:100%;text-align:center;margin-top:30%;'>
+				<div id="cover">
 					<i class="fa fa-refresh fa-spin" style='font-size:100px;'></i></br>Loading...</div>
 				</div>
 				<ul id="list" class="list list-group">
@@ -134,6 +134,17 @@
 		
 		init_date_slider()
 		
+		$('.switch-toggle input:radio').change(function(){
+			var val = $(this).val()
+			if(val == '2') {
+				$(this).siblings('a').animate({ left: '50%' }, 0, 'swing');
+			}
+			else {
+				$(this).siblings('a').animate({ left: '0' }, 0, 'swing');
+			}
+
+		})
+			
 		
 		$( document ).ready(function() {
 			//init();

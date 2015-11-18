@@ -1,0 +1,674 @@
+[
+    {
+        "description": "Movie star Vincent Chase, together with his boys Eric, Turtle, and Johnny, are back - and back in business with super agent-turned-studio head Ari Gold on a risky project that will serve as Vince's directorial debut.", 
+        "metascore": "38", 
+        "month": "6", 
+        "director": "Doug Ellin", 
+        "netflix_id": "", 
+        "run_time": "104", 
+        "year": "2015", 
+        "genres": [
+            "Comedy"
+        ], 
+        "title": "Entourage (2015)", 
+        "stars": [
+            "Adrian Grenier", 
+            "Kevin Connolly", 
+            "Jerry Ferrara", 
+            "Kevin Dillon"
+        ], 
+        "unique_id": "tt1674771"
+    }, 
+    {
+        "description": "A desk-bound CIA analyst volunteers to go undercover to infiltrate the world of a deadly arms dealer, and prevent diabolical global disaster.", 
+        "metascore": "75", 
+        "month": "6", 
+        "director": "Paul Feig", 
+        "netflix_id": "", 
+        "run_time": "119", 
+        "year": "2015", 
+        "genres": [
+            "Action", 
+            "Comedy", 
+            "Crime"
+        ], 
+        "title": "Spy (2015)", 
+        "stars": [
+            "Melissa McCarthy", 
+            "Rose Byrne", 
+            "Jude Law", 
+            "Jason Statham"
+        ], 
+        "unique_id": "tt3079380"
+    }, 
+    {
+        "description": "A prequel set before the haunting of the Lambert family that reveals how gifted psychic Elise Rainier reluctantly agrees to use her ability to contact the dead in order to help a teenage girl who has been targeted by a dangerous supernatural entity.", 
+        "metascore": "52", 
+        "month": "6", 
+        "director": "Leigh Whannell", 
+        "netflix_id": "", 
+        "run_time": "97", 
+        "year": "2015", 
+        "genres": [
+            "Horror", 
+            "Thriller"
+        ], 
+        "title": "Insidious: Chapter 3 (2015)", 
+        "stars": [
+            "Dermot Mulroney", 
+            "Stefanie Scott", 
+            "Angus Sampson", 
+            "Leigh Whannell"
+        ], 
+        "unique_id": "tt3195644"
+    }, 
+    {
+        "description": "In the 1960s, Beach Boys leader Brian Wilson struggles with emerging psychosis as he attempts to craft his avant-garde pop masterpiece. In the 1980s, he is a broken, confused man under the 24-hour watch of shady therapist Dr. Eugene Landy.", 
+        "metascore": "80", 
+        "month": "6", 
+        "director": "Bill Pohlad", 
+        "netflix_id": "", 
+        "run_time": "121", 
+        "year": "2015", 
+        "genres": [
+            "Biography", 
+            "Drama", 
+            "Music"
+        ], 
+        "title": "Love & Mercy (2014)", 
+        "stars": [
+            "John Cusack", 
+            "Paul Dano", 
+            "Elizabeth Banks", 
+            "Paul Giamatti"
+        ], 
+        "unique_id": "tt0903657"
+    }, 
+    {
+        "description": "A British woman recalls coming of age during World War I - a story of young love, the futility of war, and how to make sense of the darkest times.", 
+        "metascore": "76", 
+        "month": "6", 
+        "director": "James Kent", 
+        "netflix_id": "", 
+        "run_time": "129", 
+        "year": "2015", 
+        "genres": [
+            "Biography", 
+            "Drama", 
+            "History", 
+            "War"
+        ], 
+        "title": "Testament of Youth (2014)", 
+        "stars": [
+            "Alicia Vikander", 
+            "Kit Harington", 
+            "Taron Egerton", 
+            "Dominic West"
+        ], 
+        "unique_id": "tt1441953"
+    }, 
+    {
+        "description": "Sam and Jonathan, a pair of hapless novelty salesman, embark on a tour of the human condition in reality and fantasy that unfold in a series of absurdist episodes.", 
+        "metascore": "81", 
+        "month": "6", 
+        "director": "Roy Andersson", 
+        "netflix_id": "", 
+        "run_time": "101", 
+        "year": "2015", 
+        "genres": [
+            "Comedy", 
+            "Drama"
+        ], 
+        "title": "En duva satt p\u00e5 en gren och funderade p\u00e5 tillvaron (2014)", 
+        "stars": [
+            "Holger Andersson", 
+            "Nils Westblom", 
+            "Viktor Gyllenberg", 
+            "Lotti T\u00f6rnros"
+        ], 
+        "unique_id": "tt1883180"
+    }, 
+    {
+        "description": "The relationship of a couple who meet by chance in New York City is put to the test when they encounter a life or death circumstance.", 
+        "metascore": "48", 
+        "month": "6", 
+        "director": "Saverio Costanzo", 
+        "netflix_id": "80015791", 
+        "run_time": "109", 
+        "year": "2015", 
+        "genres": [
+            "Drama", 
+            "Thriller"
+        ], 
+        "title": "Hungry Hearts (2014)", 
+        "stars": [
+            "Adam Driver", 
+            "Alba Rohrwacher", 
+            "Roberta Maxwell", 
+            "Al Roffe"
+        ], 
+        "unique_id": "tt3344922"
+    }, 
+    {
+        "description": "A man looking for the release of a long-time prisoner takes a police officer, his daughter, and a group of strangers hostage.", 
+        "metascore": "44", 
+        "month": "6", 
+        "director": "Sheng Ding", 
+        "netflix_id": "80028532", 
+        "run_time": "110", 
+        "year": "2015", 
+        "genres": [
+            "Action", 
+            "Crime", 
+            "Drama", 
+            "Thriller"
+        ], 
+        "title": "Police Story: Lockdown (2013)", 
+        "stars": [
+            "Jackie Chan", 
+            "Ye Liu", 
+            "Tian Jing", 
+            "Tao Yin"
+        ], 
+        "unique_id": "tt2599716"
+    }, 
+    {
+        "description": "A new theme park is built on the original site of Jurassic Park. Everything is going well until the park's newest attraction--a genetically modified giant stealth killing machine--escapes containment and goes on a killing spree.", 
+        "metascore": "59", 
+        "month": "6", 
+        "director": "Colin Trevorrow", 
+        "netflix_id": "", 
+        "run_time": "124", 
+        "year": "2015", 
+        "genres": [
+            "Action", 
+            "Adventure", 
+            "Sci-Fi", 
+            "Thriller"
+        ], 
+        "title": "Jurassic World (2015)", 
+        "stars": [
+            "Chris Pratt", 
+            "Bryce Dallas Howard", 
+            "Ty Simpkins", 
+            "Judy Greer"
+        ], 
+        "unique_id": "tt0369610"
+    }, 
+    {
+        "description": "High schooler Greg, who spends most of his time making parodies of classic movies with his co-worker Earl, finds his outlook forever altered after befriending a classmate who has just been diagnosed with cancer.", 
+        "metascore": "74", 
+        "month": "6", 
+        "director": "Alfonso Gomez-Rejon", 
+        "netflix_id": "", 
+        "run_time": "105", 
+        "year": "2015", 
+        "genres": [
+            "Comedy", 
+            "Drama"
+        ], 
+        "title": "Me and Earl and the Dying Girl (2015)", 
+        "stars": [
+            "Thomas Mann", 
+            "RJ Cyler", 
+            "Olivia Cooke", 
+            "Nick Offerman"
+        ], 
+        "unique_id": "tt2582496"
+    }, 
+    {
+        "description": "Locked away from society in an apartment on the Lower East Side of Manhattan, the Angulo brothers learn about the outside world through the films that they watch. Nicknamed, 'The Wolfpack,' the brothers spend their childhood reenacting their favorite films using elaborate homemade props and costumes. Their world is shaken up when one of the brothers escapes and everything changes.", 
+        "metascore": "75", 
+        "month": "6", 
+        "director": "Crystal Moselle", 
+        "netflix_id": "", 
+        "run_time": "90", 
+        "year": "2015", 
+        "genres": [
+            "Documentary", 
+            "Biography"
+        ], 
+        "title": "The Wolfpack (2015)", 
+        "stars": [
+            "Bhagavan Angulo", 
+            "Govinda Angulo", 
+            "Jagadisa Angulo", 
+            "Krsna Angulo"
+        ], 
+        "unique_id": "tt2415458"
+    }, 
+    {
+        "description": "An aspiring poet in 1950s New York has his ordered world shaken when he embarks on a week-long retreat to save his hell raising hero, Dylan Thomas.", 
+        "metascore": "49", 
+        "month": "6", 
+        "director": "Andy Goddard", 
+        "netflix_id": "80039426", 
+        "run_time": "97", 
+        "year": "2015", 
+        "genres": [
+            "Biography", 
+            "Drama"
+        ], 
+        "title": "Set Fire to the Stars (2014)", 
+        "stars": [
+            "Elijah Wood", 
+            "Celyn Jones", 
+            "Kelly Reilly", 
+            "Steven Mackintosh"
+        ], 
+        "unique_id": "tt3455740"
+    }, 
+    {
+        "description": "Tom Grant, a private investigator once hired by Courtney Love, reveals his take on the death of Kurt Cobain.", 
+        "metascore": "50", 
+        "month": "6", 
+        "director": "Benjamin Statler", 
+        "netflix_id": "", 
+        "run_time": "90", 
+        "year": "2015", 
+        "genres": [
+            "Documentary", 
+            "Crime", 
+            "Drama", 
+            "Music", 
+            "Mystery"
+        ], 
+        "title": "Soaked in Bleach (2015)", 
+        "stars": [
+            "Ryan Aigner", 
+            "Pat Asanti", 
+            "Brett Ball", 
+            "John Ball"
+        ], 
+        "unique_id": "tt3253624"
+    }, 
+    {
+        "description": "Successful businesswoman Maria has achieved everything except what she wants the most - a baby of her own. She decides to deal with the matter by herself and embarks on a desperate and dangerous journey in order to make her dream come true.", 
+        "metascore": "32", 
+        "month": "6", 
+        "director": "Anders Morgenthaler", 
+        "netflix_id": "", 
+        "run_time": "97", 
+        "year": "2015", 
+        "genres": [
+            "Drama", 
+            "Thriller"
+        ], 
+        "title": "The 11th Hour (2014)", 
+        "stars": [
+            "Kim Basinger", 
+            "Jordan Prentice", 
+            "Sebastian Schipper", 
+            "Peter Stormare"
+        ], 
+        "unique_id": "tt3004746"
+    }, 
+    {
+        "description": "After young Riley is uprooted from her Midwest life and moved to San Francisco, her emotions - Joy, Fear, Anger, Disgust and Sadness - conflict on how best to navigate a new city, house, and school.", 
+        "metascore": "94", 
+        "month": "6", 
+        "director": "Pete Docter", 
+        "netflix_id": "", 
+        "run_time": "94", 
+        "year": "2015", 
+        "genres": [
+            "Animation", 
+            "Adventure", 
+            "Comedy", 
+            "Drama", 
+            "Family", 
+            "Fantasy"
+        ], 
+        "title": "Inside Out (2015)", 
+        "stars": [
+            "Amy Poehler", 
+            "Bill Hader", 
+            "Lewis Black", 
+            "Mindy Kaling"
+        ], 
+        "unique_id": "tt2096673"
+    }, 
+    {
+        "description": "Life changes for Malcolm, a geek who's surviving life in a tough neighborhood, after a chance invitation to an underground party leads him and his friends into a Los Angeles adventure.", 
+        "metascore": "72", 
+        "month": "6", 
+        "director": "Rick Famuyiwa", 
+        "netflix_id": "", 
+        "run_time": "103", 
+        "year": "2015", 
+        "genres": [
+            "Comedy", 
+            "Crime", 
+            "Drama"
+        ], 
+        "title": "Dope (2015)", 
+        "stars": [
+            "Shameik Moore", 
+            "Tony Revolori", 
+            "Kiersey Clemons", 
+            "Kimberly Elise"
+        ], 
+        "unique_id": "tt3850214"
+    }, 
+    {
+        "description": "A manic-depressive mess of a father tries to win back his wife by attempting to take full responsibility of their two young, spirited daughters, who don't make the overwhelming task any easier.", 
+        "metascore": "64", 
+        "month": "6", 
+        "director": "Maya Forbes", 
+        "netflix_id": "", 
+        "run_time": "90", 
+        "year": "2015", 
+        "genres": [
+            "Comedy", 
+            "Drama"
+        ], 
+        "title": "Infinitely Polar Bear (2014)", 
+        "stars": [
+            "Mark Ruffalo", 
+            "Zoe Saldana", 
+            "Imogene Wolodarsky", 
+            "Ashley Aufderheide"
+        ], 
+        "unique_id": "tt1969062"
+    }, 
+    {
+        "description": "Left heartbroken by the woman he loved and lost many years ago, Manglehorn, an eccentric small-town locksmith, tries to start his life over again with the help of a new friend.", 
+        "metascore": "56", 
+        "month": "6", 
+        "director": "David Gordon Green", 
+        "netflix_id": "", 
+        "run_time": "97", 
+        "year": "2015", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "Manglehorn (2014)", 
+        "stars": [
+            "Al Pacino", 
+            "Holly Hunter", 
+            "Harmony Korine", 
+            "Chris Messina"
+        ], 
+        "unique_id": "tt2893490"
+    }, 
+    {
+        "description": "Paul, a teenager in the underground scene of early-nineties Paris, forms a DJ collective with his friends and together they plunge into the nightlife of sex, drugs, and endless music.", 
+        "metascore": "82", 
+        "month": "6", 
+        "director": "Mia Hansen-L\u00f8ve", 
+        "netflix_id": "", 
+        "run_time": "131", 
+        "year": "2015", 
+        "genres": [
+            "Drama", 
+            "Music"
+        ], 
+        "title": "Eden (2014)", 
+        "stars": [
+            "F\u00e9lix de Givry", 
+            "Pauline Etienne", 
+            "Vincent Macaigne", 
+            "Hugo Conzelmann"
+        ], 
+        "unique_id": "tt3090634"
+    }, 
+    {
+        "description": "A troubled young man searches obsessively for his first love, risking everything in an increasingly desperate pursuit.", 
+        "metascore": "67", 
+        "month": "6", 
+        "director": "Lou Howe", 
+        "netflix_id": "", 
+        "run_time": "85", 
+        "year": "2015", 
+        "genres": [
+            "Drama", 
+            "Family", 
+            "Thriller"
+        ], 
+        "title": "Gabriel (2014)", 
+        "stars": [
+            "Rory Culkin", 
+            "David Call", 
+            "Deirdre O'Connell", 
+            "Lynn Cohen"
+        ], 
+        "unique_id": "tt2393805"
+    }, 
+    {
+        "description": "Alex, Emily, and their son, RJ, are new to Los Angeles. A chance meeting at the park introduces them to the mysterious Kurt, Charlotte, and Max. A family \"playdate\" becomes increasingly interesting as the night goes on.", 
+        "metascore": "65", 
+        "month": "6", 
+        "director": "Patrick Brice", 
+        "netflix_id": "", 
+        "run_time": "79", 
+        "year": "2015", 
+        "genres": [
+            "Comedy", 
+            "Mystery"
+        ], 
+        "title": "The Overnight (2015)", 
+        "stars": [
+            "Adam Scott", 
+            "Taylor Schilling", 
+            "Jason Schwartzman", 
+            "Judith Godr\u00e8che"
+        ], 
+        "unique_id": "tt3844362"
+    }, 
+    {
+        "description": "A deaf teenager struggles to fit into the boarding school system.", 
+        "metascore": "78", 
+        "month": "6", 
+        "director": "Miroslav Slaboshpitsky", 
+        "netflix_id": "", 
+        "run_time": "126", 
+        "year": "2015", 
+        "genres": [
+            "Crime", 
+            "Drama"
+        ], 
+        "title": "Plemya (2014)", 
+        "stars": [
+            "Grigoriy Fesenko", 
+            "Yana Novikova", 
+            "Rosa Babiy", 
+            "Alexander Dsiadevich"
+        ], 
+        "unique_id": "tt1745787"
+    }, 
+    {
+        "description": "Newlywed couple Ted and Tami-Lynn want to have a baby, but in order to qualify to be a parent, Ted will have to prove he's a person in a court of law.", 
+        "metascore": "48", 
+        "month": "6", 
+        "director": "Seth MacFarlane", 
+        "netflix_id": "", 
+        "run_time": "115", 
+        "year": "2015", 
+        "genres": [
+            "Comedy"
+        ], 
+        "title": "Ted 2 (2015)", 
+        "stars": [
+            "Mark Wahlberg", 
+            "Seth MacFarlane", 
+            "Amanda Seyfried", 
+            "Jessica Barth"
+        ], 
+        "unique_id": "tt2637276"
+    }, 
+    {
+        "description": "A dog that helped US Marines in Afghanistan returns to the U.S. and is adopted by his handler's family after suffering a traumatic experience.", 
+        "metascore": "47", 
+        "month": "6", 
+        "director": "Boaz Yakin", 
+        "netflix_id": "", 
+        "run_time": "111", 
+        "year": "2015", 
+        "genres": [
+            "Adventure", 
+            "Family"
+        ], 
+        "title": "Max (2015)", 
+        "stars": [
+            "Thomas Haden Church", 
+            "Josh Wiggins", 
+            "Luke Kleintank", 
+            "Lauren Graham"
+        ], 
+        "unique_id": "tt3369806"
+    }, 
+    {
+        "description": "Two talented landscape artists become romantically entangled while building a garden in King Louis XIV's palace at Versailles.", 
+        "metascore": "51", 
+        "month": "6", 
+        "director": "Alan Rickman", 
+        "netflix_id": "", 
+        "run_time": "117", 
+        "year": "2015", 
+        "genres": [
+            "Drama", 
+            "Romance"
+        ], 
+        "title": "A Little Chaos (2014)", 
+        "stars": [
+            "Kate Winslet", 
+            "Alan Rickman", 
+            "Stanley Tucci", 
+            "Matthias Schoenaerts"
+        ], 
+        "unique_id": "tt2639254"
+    }, 
+    {
+        "description": "In Colombia, a young surfer meets the woman of his dreams - and then he meets her uncle, Pablo Escobar.", 
+        "metascore": "56", 
+        "month": "6", 
+        "director": "Andrea Di Stefano", 
+        "netflix_id": "", 
+        "run_time": "120", 
+        "year": "2015", 
+        "genres": [
+            "Crime", 
+            "Drama", 
+            "Romance", 
+            "Thriller"
+        ], 
+        "title": "Escobar: Paradise Lost (2014)", 
+        "stars": [
+            "Benicio Del Toro", 
+            "Josh Hutcherson", 
+            "Claudia Traisac", 
+            "Brady Corbet"
+        ], 
+        "unique_id": "tt2515030"
+    }, 
+    {
+        "description": "A young teenager camping in the woods helps rescue the President of the United States when Air Force One is shot down near his campsite.", 
+        "metascore": "53", 
+        "month": "6", 
+        "director": "Jalmari Helander", 
+        "netflix_id": "", 
+        "run_time": "110", 
+        "year": "2015", 
+        "genres": [
+            "Action", 
+            "Adventure"
+        ], 
+        "title": "Big Game (2014)", 
+        "stars": [
+            "Samuel L. Jackson", 
+            "Onni Tommila", 
+            "Ray Stevenson", 
+            "Victor Garber"
+        ], 
+        "unique_id": "tt2088003"
+    }, 
+    {
+        "description": "On one day, in one city, the world comes together to grant one 5 year old cancer patient his wish. Batkid Begins looks at the 'why' of this flash phenomenon.", 
+        "metascore": "63", 
+        "month": "6", 
+        "director": "Dana Nachman", 
+        "netflix_id": "", 
+        "run_time": "87", 
+        "year": "2015", 
+        "genres": [
+            "Documentary", 
+            "Biography", 
+            "Family"
+        ], 
+        "title": "Batkid Begins (2015)", 
+        "stars": [
+            "Teresa Clovicko", 
+            "Audrey Copper", 
+            "Katie Cotton", 
+            "James Coyne"
+        ], 
+        "unique_id": "tt3884528"
+    }, 
+    {
+        "description": "The secret lives of five suburban couples living in Sydney reveal both the fetishes and the repercussions that come with sharing them.", 
+        "metascore": "46", 
+        "month": "6", 
+        "director": "Josh Lawson", 
+        "netflix_id": "80018346", 
+        "run_time": "96", 
+        "year": "2015", 
+        "genres": [
+            "Comedy", 
+            "Drama", 
+            "Romance"
+        ], 
+        "title": "The Little Death (2014)", 
+        "stars": [
+            "Bojana Novakovic", 
+            "Damon Herriman", 
+            "Josh Lawson", 
+            "Ben Lawson"
+        ], 
+        "unique_id": "tt2785032"
+    }, 
+    {
+        "description": "Documentary filmmakers assert that Anthony Porter - a former death-row inmate who was spared the death penalty thanks to the efforts of a college journalism program - was actually guilty, and an innocent man was sent to prison.", 
+        "metascore": "69", 
+        "month": "6", 
+        "director": "Christopher S. Rech", 
+        "netflix_id": "", 
+        "run_time": "91", 
+        "year": "2015", 
+        "genres": [
+            "Documentary", 
+            "Crime", 
+            "History", 
+            "News"
+        ], 
+        "title": "A Murder in the Park (2014)", 
+        "stars": [
+            "Dexter Hammett", 
+            "Joseph Alex", 
+            "Jason Patrick", 
+            "Denny Castiglione"
+        ], 
+        "unique_id": "tt3168808"
+    }, 
+    {
+        "description": "A woman creates an alter ego in hopes of overcoming the trauma inflicted by men in her life.", 
+        "metascore": "54", 
+        "month": "6", 
+        "director": "Jason Banker", 
+        "netflix_id": "80019073", 
+        "run_time": "80", 
+        "year": "2015", 
+        "genres": [
+            "Horror", 
+            "Romance", 
+            "Thriller"
+        ], 
+        "title": "Felt (2014)", 
+        "stars": [
+            "Amy Everson", 
+            "Kentucker Audley", 
+            "Ryan Creighton", 
+            "Elisabeth Ferrara"
+        ], 
+        "unique_id": "tt3854104"
+    }
+]

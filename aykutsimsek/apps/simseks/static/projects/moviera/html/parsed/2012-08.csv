@@ -1,0 +1,958 @@
+[
+    {
+        "description": "A factory worker, Douglas Quaid, begins to suspect that he is a spy after visiting Rekall - a company that provides its clients with implanted fake memories of a life they would like to have led - goes wrong and he finds himself on the run.", 
+        "metascore": "43", 
+        "month": "8", 
+        "director": "Len Wiseman", 
+        "netflix_id": "", 
+        "run_time": "118", 
+        "year": "2012", 
+        "genres": [
+            "Action", 
+            "Adventure", 
+            "Mystery", 
+            "Sci-Fi", 
+            "Thriller"
+        ], 
+        "title": "Total Recall (2012)", 
+        "stars": [
+            "Colin Farrell", 
+            "Bokeem Woodbine", 
+            "Bryan Cranston", 
+            "Kate Beckinsale"
+        ], 
+        "unique_id": "tt1386703"
+    }, 
+    {
+        "description": "School's out. Summer vacation is on. However, Greg may not have the best summer vacation ever. What could go wrong?", 
+        "metascore": "54", 
+        "month": "8", 
+        "director": "David Bowers", 
+        "netflix_id": "", 
+        "run_time": "94", 
+        "year": "2012", 
+        "genres": [
+            "Comedy", 
+            "Family"
+        ], 
+        "title": "Diary of a Wimpy Kid: Dog Days (2012)", 
+        "stars": [
+            "Zachary Gordon", 
+            "Robert Capron", 
+            "Devon Bostick", 
+            "Steve Zahn"
+        ], 
+        "unique_id": "tt2023453"
+    }, 
+    {
+        "description": "A divorcing couple tries to maintain their friendship while they both pursue other people.", 
+        "metascore": "59", 
+        "month": "8", 
+        "director": "Lee Toland Krieger", 
+        "netflix_id": "", 
+        "run_time": "92", 
+        "year": "2012", 
+        "genres": [
+            "Comedy", 
+            "Drama", 
+            "Romance"
+        ], 
+        "title": "Celeste & Jesse Forever (2012)", 
+        "stars": [
+            "Rashida Jones", 
+            "Andy Samberg", 
+            "Elijah Wood", 
+            "Emma Roberts"
+        ], 
+        "unique_id": "tt1405365"
+    }, 
+    {
+        "description": "A dramatic thriller that weaves together the stories of an array of people from disparate social backgrounds through their intersecting relationships.", 
+        "metascore": "43", 
+        "month": "8", 
+        "director": "Fernando Meirelles", 
+        "netflix_id": "70209165", 
+        "run_time": "110", 
+        "year": "2012", 
+        "genres": [
+            "Drama", 
+            "Romance"
+        ], 
+        "title": "360 (2011)", 
+        "stars": [
+            "Rachel Weisz", 
+            "Jude Law", 
+            "Anthony Hopkins", 
+            "Ben Foster"
+        ], 
+        "unique_id": "tt1680045"
+    }, 
+    {
+        "description": "After failing to get his wife pregnant, a guy (Schneider) recruits his pals to steal the deposit he left at a sperm bank years ago.", 
+        "metascore": "30", 
+        "month": "8", 
+        "director": "Jay Chandrasekhar", 
+        "netflix_id": "70234444", 
+        "run_time": "95", 
+        "year": "2012", 
+        "genres": [
+            "Comedy"
+        ], 
+        "title": "The Babymakers (2012)", 
+        "stars": [
+            "Paul Schneider", 
+            "Olivia Munn", 
+            "Kevin Heffernan", 
+            "Wood Harris"
+        ], 
+        "unique_id": "tt0835418"
+    }, 
+    {
+        "description": "In this David and Goliath story for the 21st century, a group of proud Scottish homeowners take on celebrity tycoon Donald Trump as he buys up one of Scotland's last wilderness areas to build a golf resort.", 
+        "metascore": "57", 
+        "month": "8", 
+        "director": "Anthony Baxter", 
+        "netflix_id": "", 
+        "run_time": "95", 
+        "year": "2012", 
+        "genres": [
+            "Documentary"
+        ], 
+        "title": "You've Been Trumped (2011)", 
+        "stars": [
+            "Michael Forbes", 
+            "Donald Trump", 
+            "Anthony Baxter", 
+            "Sheila Forbes"
+        ], 
+        "unique_id": "tt1943873"
+    }, 
+    {
+        "description": "After being assigned as study partners, two Chicana high schoolers find a bond that confuses them at times.", 
+        "metascore": "66", 
+        "month": "8", 
+        "director": "Aurora Guerrero", 
+        "netflix_id": "70229065", 
+        "run_time": "85", 
+        "year": "2012", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "Mosquita y Mari (2012)", 
+        "stars": [
+            "Venecia Troncoso", 
+            "Fenessa Pineda", 
+            "Joaqu\u00edn Garrido", 
+            "Laura Patalano"
+        ], 
+        "unique_id": "tt1978480"
+    }, 
+    {
+        "description": "In a time when America's economy was crumbling and sense of community was in question, one guy left everything behind to see if he could survive solely on the support and goodwill of the 21st century's new town square: Craigslist.", 
+        "metascore": "45", 
+        "month": "8", 
+        "director": "Joseph Garner", 
+        "netflix_id": "", 
+        "run_time": "90", 
+        "year": "2012", 
+        "genres": [
+            "Documentary", 
+            "Adventure"
+        ], 
+        "title": "Craigslist Joe (2012)", 
+        "stars": [
+            "Joseph Garner", 
+            "Kristos Andrews", 
+            "Gina Keatley", 
+            "Michael T. Kuciak"
+        ], 
+        "unique_id": "tt1486616"
+    }, 
+    {
+        "description": "An expansion of the universe from Robert Ludlum's novels, centered on a new hero whose stakes have been triggered by the events of the previous three films.", 
+        "metascore": "61", 
+        "month": "8", 
+        "director": "Tony Gilroy", 
+        "netflix_id": "", 
+        "run_time": "135", 
+        "year": "2012", 
+        "genres": [
+            "Action", 
+            "Adventure", 
+            "Mystery", 
+            "Thriller"
+        ], 
+        "title": "The Bourne Legacy (2012)", 
+        "stars": [
+            "Jeremy Renner", 
+            "Rachel Weisz", 
+            "Edward Norton", 
+            "Scott Glenn"
+        ], 
+        "unique_id": "tt1194173"
+    }, 
+    {
+        "description": "An incumbent congressman embroiled in personal scandal faces a no-holds-barred challenge from a naive newcomer funded by two unscrupulous billionaire lobbyist brothers.", 
+        "metascore": "50", 
+        "month": "8", 
+        "director": "Jay Roach", 
+        "netflix_id": "", 
+        "run_time": "85", 
+        "year": "2012", 
+        "genres": [
+            "Comedy"
+        ], 
+        "title": "The Campaign (2012)", 
+        "stars": [
+            "Will Ferrell", 
+            "Zach Galifianakis", 
+            "Jason Sudeikis", 
+            "Dylan McDermott"
+        ], 
+        "unique_id": "tt1790886"
+    }, 
+    {
+        "description": "After thirty years of marriage, a middle-aged couple attends an intense, week-long counseling session to work on their relationship.", 
+        "metascore": "65", 
+        "month": "8", 
+        "director": "David Frankel", 
+        "netflix_id": "", 
+        "run_time": "100", 
+        "year": "2012", 
+        "genres": [
+            "Comedy", 
+            "Drama", 
+            "Romance"
+        ], 
+        "title": "Hope Springs (2012)", 
+        "stars": [
+            "Meryl Streep", 
+            "Tommy Lee Jones", 
+            "Steve Carell", 
+            "Jean Smart"
+        ], 
+        "unique_id": "tt1535438"
+    }, 
+    {
+        "description": "Manhattan couple Marion and Mingus, who each have children from prior relationships, find their comfortable family dynamic jostled by a visit from Marion's relatives.", 
+        "metascore": "61", 
+        "month": "8", 
+        "director": "Julie Delpy", 
+        "netflix_id": "70227643", 
+        "run_time": "96", 
+        "year": "2012", 
+        "genres": [
+            "Comedy", 
+            "Drama", 
+            "Romance"
+        ], 
+        "title": "2 Days in New York (2012)", 
+        "stars": [
+            "Julie Delpy", 
+            "Chris Rock", 
+            "Albert Delpy", 
+            "Alexia Landeau"
+        ], 
+        "unique_id": "tt1602472"
+    }, 
+    {
+        "description": "A middle-class boy from Atlanta finds his worldview changed as he spends the summer with his deeply religious grandfather in the housing projects of Red Hook, Brooklyn.", 
+        "metascore": "48", 
+        "month": "8", 
+        "director": "Spike Lee", 
+        "netflix_id": "70227653", 
+        "run_time": "121", 
+        "year": "2012", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "Red Hook Summer (2012)", 
+        "stars": [
+            "Jules Brown", 
+            "Thomas Jefferson Byrd", 
+            "Toni Lysaith", 
+            "Limary Agosto"
+        ], 
+        "unique_id": "tt1989593"
+    }, 
+    {
+        "description": "Travis Pastrana and his tight-knit, highly-skilled, adrenaline-addicted friends bring their impossible, ridiculous, insane and hysterical adventures to the big screen for the first time.", 
+        "metascore": "43", 
+        "month": "8", 
+        "director": "Gregg Godfrey", 
+        "netflix_id": "", 
+        "run_time": "92", 
+        "year": "2012", 
+        "genres": [
+            "Documentary", 
+            "Action", 
+            "Comedy"
+        ], 
+        "title": "Nitro Circus: The Movie (2012)", 
+        "stars": [
+            "Travis Pastrana", 
+            "Tommy Passemante", 
+            "Jeremy Rawle", 
+            "Gregg Godfrey"
+        ], 
+        "unique_id": "tt1815852"
+    }, 
+    {
+        "description": "The son of a slain NYPD officer joins the force, where he falls in with his father's former partner and a team of rogue cops.", 
+        "metascore": "", 
+        "month": "8", 
+        "director": "Jessy Terrero", 
+        "netflix_id": "", 
+        "run_time": "96", 
+        "year": "2012", 
+        "genres": [
+            "Action", 
+            "Crime", 
+            "Drama", 
+            "Mystery"
+        ], 
+        "title": "Freelancers (2012)", 
+        "stars": [
+            "50 Cent", 
+            "Robert De Niro", 
+            "Forest Whitaker", 
+            "Malcolm Goodwin"
+        ], 
+        "unique_id": "tt1815708"
+    }, 
+    {
+        "description": "Mr. Church reunites the Expendables for what should be an easy paycheck, but when one of their men is murdered on the job, their quest for revenge puts them deep in enemy territory and up against an unexpected threat.", 
+        "metascore": "51", 
+        "month": "8", 
+        "director": "Simon West", 
+        "netflix_id": "", 
+        "run_time": "103", 
+        "year": "2012", 
+        "genres": [
+            "Action", 
+            "Adventure", 
+            "Thriller"
+        ], 
+        "title": "The Expendables 2 (2012)", 
+        "stars": [
+            "Sylvester Stallone", 
+            "Liam Hemsworth", 
+            "Randy Couture", 
+            "Jean-Claude Van Damme"
+        ], 
+        "unique_id": "tt1764651"
+    }, 
+    {
+        "description": "A misunderstood boy takes on ghosts, zombies and grown-ups to save his town from a centuries-old curse.", 
+        "metascore": "72", 
+        "month": "8", 
+        "director": "Chris Butler", 
+        "netflix_id": "", 
+        "run_time": "92", 
+        "year": "2012", 
+        "genres": [
+            "Animation", 
+            "Adventure", 
+            "Comedy", 
+            "Family", 
+            "Fantasy"
+        ], 
+        "title": "ParaNorman (2012)", 
+        "stars": [
+            "Kodi Smit-McPhee", 
+            "Anna Kendrick", 
+            "Christopher Mintz-Plasse", 
+            "Tucker Albrizzi"
+        ], 
+        "unique_id": "tt1623288"
+    }, 
+    {
+        "description": "In the 1960s, three sisters form a girl group and soon become local sensations with major label interest, but fame becomes a challenge as the close-knit family begins to fall apart.", 
+        "metascore": "54", 
+        "month": "8", 
+        "director": "Salim Akil", 
+        "netflix_id": "", 
+        "run_time": "116", 
+        "year": "2012", 
+        "genres": [
+            "Drama", 
+            "Music"
+        ], 
+        "title": "Sparkle (2012)", 
+        "stars": [
+            "Jordin Sparks", 
+            "Carmen Ejogo", 
+            "Whitney Houston", 
+            "Derek Luke"
+        ], 
+        "unique_id": "tt1876451"
+    }, 
+    {
+        "description": "A childless couple bury a box in their backyard, containing all of their wishes for an infant. Soon, a child is born, though Timothy Green is not all that he appears.", 
+        "metascore": "47", 
+        "month": "8", 
+        "director": "Peter Hedges", 
+        "netflix_id": "", 
+        "run_time": "105", 
+        "year": "2012", 
+        "genres": [
+            "Comedy", 
+            "Drama", 
+            "Family", 
+            "Fantasy"
+        ], 
+        "title": "The Odd Life of Timothy Green (2012)", 
+        "stars": [
+            "Jennifer Garner", 
+            "Joel Edgerton", 
+            "CJ Adams", 
+            "Odeya Rush"
+        ], 
+        "unique_id": "tt1462769"
+    }, 
+    {
+        "description": "Riding across Manhattan in a stretch limo in order to get a haircut, a 28-year-old billionaire asset manager's day devolves into an odyssey with a cast of characters that start to tear his world apart.", 
+        "metascore": "58", 
+        "month": "8", 
+        "director": "David Cronenberg", 
+        "netflix_id": "70242545", 
+        "run_time": "109", 
+        "year": "2012", 
+        "genres": [
+            "Drama", 
+            "Thriller"
+        ], 
+        "title": "Cosmopolis (2012)", 
+        "stars": [
+            "Robert Pattinson", 
+            "Juliette Binoche", 
+            "Sarah Gadon", 
+            "Mathieu Amalric"
+        ], 
+        "unique_id": "tt1480656"
+    }, 
+    {
+        "description": "When a prank caller claiming to be a police officer convinces a fast food restaurant manager to interrogate an innocent young employee, no one is left unharmed.", 
+        "metascore": "68", 
+        "month": "8", 
+        "director": "Craig Zobel", 
+        "netflix_id": "70229062", 
+        "run_time": "90", 
+        "year": "2012", 
+        "genres": [
+            "Crime", 
+            "Drama", 
+            "Thriller"
+        ], 
+        "title": "Compliance (2012)", 
+        "stars": [
+            "Ann Dowd", 
+            "Dreama Walker", 
+            "Pat Healy", 
+            "Bill Camp"
+        ], 
+        "unique_id": "tt1971352"
+    }, 
+    {
+        "description": "Set in the near future, an ex-jewel thief receives a gift from his son: a robot butler programmed to look after him. But soon the two companions try their luck as a heist team.", 
+        "metascore": "67", 
+        "month": "8", 
+        "director": "Jake Schreier", 
+        "netflix_id": "", 
+        "run_time": "89", 
+        "year": "2012", 
+        "genres": [
+            "Comedy", 
+            "Crime", 
+            "Drama", 
+            "Sci-Fi"
+        ], 
+        "title": "Robot & Frank (2012)", 
+        "stars": [
+            "Peter Sarsgaard", 
+            "Frank Langella", 
+            "Susan Sarandon", 
+            "Liv Tyler"
+        ], 
+        "unique_id": "tt1990314"
+    }, 
+    {
+        "description": "In 1921, England is overwhelmed by the loss and grief of World War I. Hoax exposer Florence Cathcart visits a boarding school to explain sightings of a child ghost. Everything she believes unravels as the 'missing' begin to show themselves.", 
+        "metascore": "53", 
+        "month": "8", 
+        "director": "Nick Murphy", 
+        "netflix_id": "70208816", 
+        "run_time": "107", 
+        "year": "2012", 
+        "genres": [
+            "Horror", 
+            "Thriller"
+        ], 
+        "title": "The Awakening (2011)", 
+        "stars": [
+            "Rebecca Hall", 
+            "Dominic West", 
+            "Imelda Staunton", 
+            "Lucy Cohu"
+        ], 
+        "unique_id": "tt1687901"
+    }, 
+    {
+        "description": "When a college piano prodigy tries to check his mother into rehab, he is taken hostage by her drug dealer and swept along on a wild adventure.", 
+        "metascore": "36", 
+        "month": "8", 
+        "director": "Phil Dorling", 
+        "netflix_id": "70244441", 
+        "run_time": "85", 
+        "year": "2012", 
+        "genres": [
+            "Comedy", 
+            "Drama"
+        ], 
+        "title": "Why Stop Now? (2012)", 
+        "stars": [
+            "Jesse Eisenberg", 
+            "Melissa Leo", 
+            "Tracy Morgan", 
+            "Isiah Whitlock Jr."
+        ], 
+        "unique_id": "tt1853643"
+    }, 
+    {
+        "description": "In Manhattan, a bike messenger picks up an envelope that attracts the interest of a dirty cop, who pursues the cyclist throughout the city.", 
+        "metascore": "66", 
+        "month": "8", 
+        "director": "David Koepp", 
+        "netflix_id": "", 
+        "run_time": "91", 
+        "year": "2012", 
+        "genres": [
+            "Action", 
+            "Crime", 
+            "Thriller"
+        ], 
+        "title": "Premium Rush (2012)", 
+        "stars": [
+            "Joseph Gordon-Levitt", 
+            "Michael Shannon", 
+            "Dania Ramirez", 
+            "Sean Kennedy"
+        ], 
+        "unique_id": "tt1547234"
+    }, 
+    {
+        "description": "A couple is haunted by a supernatural presence that is unleashed during a college experiment.", 
+        "metascore": "18", 
+        "month": "8", 
+        "director": "Todd Lincoln", 
+        "netflix_id": "", 
+        "run_time": "82", 
+        "year": "2012", 
+        "genres": [
+            "Horror", 
+            "Thriller"
+        ], 
+        "title": "The Apparition (2012)", 
+        "stars": [
+            "Ashley Greene", 
+            "Sebastian Stan", 
+            "Tom Felton", 
+            "Julianna Guill"
+        ], 
+        "unique_id": "tt1433822"
+    }, 
+    {
+        "description": "Former getaway driver Charlie Bronson jeopardizes his Witness Protection Plan identity in order to help his girlfriend get to Los Angeles. The feds and Charlie's former gang chase them on the road.", 
+        "metascore": "50", 
+        "month": "8", 
+        "director": "David Palmer", 
+        "netflix_id": "", 
+        "run_time": "100", 
+        "year": "2012", 
+        "genres": [
+            "Action", 
+            "Comedy", 
+            "Romance"
+        ], 
+        "title": "Hit and Run (2012)", 
+        "stars": [
+            "Dax Shepard", 
+            "Kristen Bell", 
+            "Bradley Cooper", 
+            "Kristin Chenoweth"
+        ], 
+        "unique_id": "tt2097307"
+    }, 
+    {
+        "description": "A documentary that examines the question, \"If Barack Obama wins a second term, where will we be in 2016?\"", 
+        "metascore": "28", 
+        "month": "8", 
+        "director": "Dinesh D'Souza", 
+        "netflix_id": "", 
+        "run_time": "87", 
+        "year": "2012", 
+        "genres": [
+            "Documentary"
+        ], 
+        "title": "2016: Obama's America (2012)", 
+        "stars": [
+            "Jay Bastian", 
+            "Joe Biden", 
+            "Cait Brasel", 
+            "Gene Burris Jr."
+        ], 
+        "unique_id": "tt2247692"
+    }, 
+    {
+        "description": "Filmed over nearly five years in twenty-five countries on five continents, and shot on seventy-millimetre film, Samsara transports us to the varied worlds of sacred grounds, disaster zones, industrial complexes, and natural wonders.", 
+        "metascore": "65", 
+        "month": "8", 
+        "director": "Ron Fricke", 
+        "netflix_id": "", 
+        "run_time": "102", 
+        "year": "2012", 
+        "genres": [
+            "Documentary", 
+            "Music"
+        ], 
+        "title": "Samsara (2011)", 
+        "stars": [
+            "Balinese Tari Legong Dancers", 
+            "Ni Made Megahadi Pratiwi", 
+            "Puti Sri Candra Dewi", 
+            "Putu Dinda Pratika"
+        ], 
+        "unique_id": "tt0770802"
+    }, 
+    {
+        "description": "A burgeoning stand-up comedian struggles with the stress of a stalled career, a stale relationship, and the wild spurts of severe sleepwalking he is desperate to ignore.", 
+        "metascore": "71", 
+        "month": "8", 
+        "director": "Mike Birbiglia", 
+        "netflix_id": "70229069", 
+        "run_time": "81", 
+        "year": "2012", 
+        "genres": [
+            "Comedy"
+        ], 
+        "title": "Sleepwalk with Me (2012)", 
+        "stars": [
+            "Mike Birbiglia", 
+            "Lauren Ambrose", 
+            "James Rebhorn", 
+            "Carol Kane"
+        ], 
+        "unique_id": "tt2077851"
+    }, 
+    {
+        "description": "A near-fatal accident leaves one friend in the hospital while the rest go on their annual vacation. But their secrets and personal grief threaten to drive them apart.", 
+        "metascore": "50", 
+        "month": "8", 
+        "director": "Guillaume Canet", 
+        "netflix_id": "", 
+        "run_time": "154", 
+        "year": "2012", 
+        "genres": [
+            "Comedy", 
+            "Drama"
+        ], 
+        "title": "Les petits mouchoirs (2010)", 
+        "stars": [
+            "Fran\u00e7ois Cluzet", 
+            "Marion Cotillard", 
+            "Beno\u00eet Magimel", 
+            "Jean Dujardin"
+        ], 
+        "unique_id": "tt1440232"
+    }, 
+    {
+        "description": "Two young men who have been raised as brothers look to their soccer skills as a way of getting out of their slum. While a scout is in town, an act of violence threatens to tear them apart.", 
+        "metascore": "", 
+        "month": "8", 
+        "director": "Marcel Rasquin", 
+        "netflix_id": "", 
+        "run_time": "97", 
+        "year": "2012", 
+        "genres": [
+            "Drama", 
+            "Family", 
+            "Sport"
+        ], 
+        "title": "Hermano (2010)", 
+        "stars": [
+            "Fernando Moreno", 
+            "Eli\u00fa Armas", 
+            "Al\u00ed Rond\u00f3n", 
+            "Beto Benites"
+        ], 
+        "unique_id": "tt1588358"
+    }, 
+    {
+        "description": "In Los Angeles, a fallen soldier who has joined the ranks of the living dead reunites with his best friend in order to deal with the city's drug dealers and killers - a perfect way to collect the blood that one of them so desperately needs.", 
+        "metascore": "57", 
+        "month": "8", 
+        "director": "D. Kerry Prior", 
+        "netflix_id": "", 
+        "run_time": "117", 
+        "year": "2012", 
+        "genres": [
+            "Comedy", 
+            "Horror"
+        ], 
+        "title": "The Revenant (2009)", 
+        "stars": [
+            "David Anders", 
+            "Chris Wylde", 
+            "Louise Griffiths", 
+            "Jacy King"
+        ], 
+        "unique_id": "tt1336006"
+    }, 
+    {
+        "description": "Levi Collins is set to go to the local University on a tennis scholarship, but he forgot to tell his parents one thing - he didn't graduate. As a result, he must take summer school before his mom and dad discover he's failed senior science. At school, Levi falls in love with his classmate, Katie, and learns that he has to make a choice between playing tennis and receiving a proper education. General Education is a quirky comedy about a family learning to grow together.", 
+        "metascore": "21", 
+        "month": "8", 
+        "director": "Tom Morris", 
+        "netflix_id": "", 
+        "run_time": "94", 
+        "year": "2012", 
+        "genres": [
+            "Comedy"
+        ], 
+        "title": "General Education (2012)", 
+        "stars": [
+            "Chris Sheffield", 
+            "Maiara Walsh", 
+            "Larry Miller", 
+            "Janeane Garofalo"
+        ], 
+        "unique_id": "tt1971403"
+    }, 
+    {
+        "description": "Set in Depression-era Franklin County, Virginia, a trio of bootlegging brothers are threatened by a new special deputy and other authorities angling for a cut of their profits.", 
+        "metascore": "58", 
+        "month": "8", 
+        "director": "John Hillcoat", 
+        "netflix_id": "70213471", 
+        "run_time": "116", 
+        "year": "2012", 
+        "genres": [
+            "Crime", 
+            "Drama"
+        ], 
+        "title": "Lawless (2012)", 
+        "stars": [
+            "Tom Hardy", 
+            "Shia LaBeouf", 
+            "Guy Pearce", 
+            "Jason Clarke"
+        ], 
+        "unique_id": "tt1212450"
+    }, 
+    {
+        "description": "A young girl buys an antique box at a yard sale, unaware that inside the collectible lives a malicious ancient spirit. The girl's father teams with his ex-wife to find a way to end the curse upon their child.", 
+        "metascore": "45", 
+        "month": "8", 
+        "director": "Ole Bornedal", 
+        "netflix_id": "", 
+        "run_time": "92", 
+        "year": "2012", 
+        "genres": [
+            "Horror", 
+            "Thriller"
+        ], 
+        "title": "The Possession (2012)", 
+        "stars": [
+            "Natasha Calis", 
+            "Kyra Sedgwick", 
+            "Jeffrey Dean Morgan", 
+            "Madison Davenport"
+        ], 
+        "unique_id": "tt0431021"
+    }, 
+    {
+        "description": "Former college frenemies Lauren and Katie move into a fabulous Gramercy Park apartment, and in order to make ends meet, the unlikely pair start a phone sex line together.", 
+        "metascore": "55", 
+        "month": "8", 
+        "director": "Jamie Travis", 
+        "netflix_id": "70227648", 
+        "run_time": "85", 
+        "year": "2012", 
+        "genres": [
+            "Comedy"
+        ], 
+        "title": "For a Good Time, Call... (2012)", 
+        "stars": [
+            "Ari Graynor", 
+            "Lauren Miller", 
+            "Justin Long", 
+            "James Wolk"
+        ], 
+        "unique_id": "tt1996264"
+    }, 
+    {
+        "description": "Set three years after Dragon Inn, innkeeper Jade has disappeared and a new inn has risen from the ashes - one that's staffed by marauders masquerading as law-abiding citizens, who hope to unearth the fabled lost city buried in the desert.", 
+        "metascore": "57", 
+        "month": "8", 
+        "director": "Hark Tsui", 
+        "netflix_id": "", 
+        "run_time": "122", 
+        "year": "2012", 
+        "genres": [
+            "Action", 
+            "Adventure"
+        ], 
+        "title": "Long men fei jia (2011)", 
+        "stars": [
+            "Jet Li", 
+            "Xun Zhou", 
+            "Kun Chen", 
+            "Lun Mei Gwei"
+        ], 
+        "unique_id": "tt1686784"
+    }, 
+    {
+        "description": "Danish journalist Mads Br\u00fcgger goes undercover as a Liberian Ambassador to embark on a dangerous yet hysterical journey to uncover the blood diamond trade in Africa.", 
+        "metascore": "67", 
+        "month": "8", 
+        "director": "Mads Br\u00fcgger", 
+        "netflix_id": "", 
+        "run_time": "93", 
+        "year": "2012", 
+        "genres": [
+            "Documentary"
+        ], 
+        "title": "The Ambassador (2011)", 
+        "stars": [
+            "Mads Br\u00fcgger"
+        ], 
+        "unique_id": "tt2048877"
+    }, 
+    {
+        "description": "Lily and Alison face a life-changing event after they leave their Salton Sea home and follow the boys they meet back to Los Angeles.", 
+        "metascore": "41", 
+        "month": "8", 
+        "director": "Elgin James", 
+        "netflix_id": "", 
+        "run_time": "94", 
+        "year": "2012", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "Little Birds (2011)", 
+        "stars": [
+            "Juno Temple", 
+            "Kay Panabaker", 
+            "Leslie Mann", 
+            "Kate Bosworth"
+        ], 
+        "unique_id": "tt1623745"
+    }, 
+    {
+        "description": "When her child goes missing, a mother looks to unravel the legend of the Tall Man, an entity who allegedly abducts children.", 
+        "metascore": "52", 
+        "month": "8", 
+        "director": "Pascal Laugier", 
+        "netflix_id": "", 
+        "run_time": "106", 
+        "year": "2012", 
+        "genres": [
+            "Crime", 
+            "Drama", 
+            "Horror", 
+            "Mystery", 
+            "Thriller"
+        ], 
+        "title": "The Tall Man (2012)", 
+        "stars": [
+            "Jessica Biel", 
+            "Jodelle Ferland", 
+            "William B. Davis", 
+            "Stephen McHattie"
+        ], 
+        "unique_id": "tt1658837"
+    }, 
+    {
+        "description": "A young doctor goes to unconscionable extremes in order to remain in the service of a female patient with a kidney disorder.", 
+        "metascore": "52", 
+        "month": "8", 
+        "director": "Lance Daly", 
+        "netflix_id": "70184148", 
+        "run_time": "93", 
+        "year": "2012", 
+        "genres": [
+            "Drama", 
+            "Thriller"
+        ], 
+        "title": "The Good Doctor (2011)", 
+        "stars": [
+            "Orlando Bloom", 
+            "Riley Keough", 
+            "Taraji P. Henson", 
+            "Rob Morrow"
+        ], 
+        "unique_id": "tt1582271"
+    }, 
+    {
+        "description": "Through his work at a morgue, an incarcerated young man trying to build a new life starts to come to terms with the crime he committed.", 
+        "metascore": "66", 
+        "month": "8", 
+        "director": "Karl Markovics", 
+        "netflix_id": "", 
+        "run_time": "94", 
+        "year": "2012", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "Breathing (2011)", 
+        "stars": [
+            "Thomas Schubert", 
+            "Karin Lischka", 
+            "Georg Friedrich", 
+            "Gerhard Liebmann"
+        ], 
+        "unique_id": "tt1680679"
+    }, 
+    {
+        "description": "The Oogieloves -- Goobie, Zoozie and Toofie -- set out to find five magical balloons that will make their good friend Schluufy's surprise birthday party extra-special.", 
+        "metascore": "32", 
+        "month": "8", 
+        "director": "Matthew Diamond", 
+        "netflix_id": "70251900", 
+        "run_time": "88", 
+        "year": "2012", 
+        "genres": [
+            "Adventure", 
+            "Family"
+        ], 
+        "title": "The Oogieloves in the Big Balloon Adventure (2012)", 
+        "stars": [
+            "Jaime Pressly", 
+            "Cloris Leachman", 
+            "Christopher Lloyd", 
+            "Chazz Palminteri"
+        ], 
+        "unique_id": "tt1520498"
+    }, 
+    {
+        "description": "Since his beloved violin was broken, Nasser Ali Khan, one of the most renowned musicians of his day, has lost all taste for life. Finding no instrument worthy of replacing it, he decides to confine himself to bed to await death.", 
+        "metascore": "69", 
+        "month": "8", 
+        "director": "Vincent Paronnaud", 
+        "netflix_id": "", 
+        "run_time": "93", 
+        "year": "2012", 
+        "genres": [
+            "Comedy", 
+            "Drama"
+        ], 
+        "title": "Poulet aux prunes (2011)", 
+        "stars": [
+            "Mathieu Amalric", 
+            "Edouard Baer", 
+            "Maria de Medeiros", 
+            "Golshifteh Farahani"
+        ], 
+        "unique_id": "tt1663321"
+    }
+]

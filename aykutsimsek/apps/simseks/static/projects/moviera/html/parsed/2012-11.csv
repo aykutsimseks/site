@@ -1,0 +1,886 @@
+[
+    {
+        "description": "A video game villain wants to be a hero and sets out to fulfill his dream, but his quest brings havoc to the whole arcade where he lives.", 
+        "metascore": "72", 
+        "month": "11", 
+        "director": "Rich Moore", 
+        "netflix_id": "", 
+        "run_time": "101", 
+        "year": "2012", 
+        "genres": [
+            "Animation", 
+            "Adventure", 
+            "Comedy", 
+            "Family"
+        ], 
+        "title": "Wreck-It Ralph (2012)", 
+        "stars": [
+            "John C. Reilly", 
+            "Jack McBrayer", 
+            "Jane Lynch", 
+            "Sarah Silverman"
+        ], 
+        "unique_id": "tt1772341"
+    }, 
+    {
+        "description": "On the hunt for a fabled treasure of gold, a band of warriors, assassins, and a rogue British soldier descend upon a village in feudal China, where a humble blacksmith looks to defend himself and his fellow villagers.", 
+        "metascore": "51", 
+        "month": "11", 
+        "director": "RZA", 
+        "netflix_id": "", 
+        "run_time": "95", 
+        "year": "2012", 
+        "genres": [
+            "Action"
+        ], 
+        "title": "The Man with the Iron Fists (2012)", 
+        "stars": [
+            "Russell Crowe", 
+            "Cung Le", 
+            "Lucy Liu", 
+            "RZA"
+        ], 
+        "unique_id": "tt1258972"
+    }, 
+    {
+        "description": "An airline pilot saves almost all his passengers on his malfunctioning airliner which eventually crashed, but an investigation into the accident reveals something troubling.", 
+        "metascore": "76", 
+        "month": "11", 
+        "director": "Robert Zemeckis", 
+        "netflix_id": "", 
+        "run_time": "138", 
+        "year": "2012", 
+        "genres": [
+            "Drama", 
+            "Thriller"
+        ], 
+        "title": "Flight (2012)", 
+        "stars": [
+            "Denzel Washington", 
+            "Nadine Velazquez", 
+            "Don Cheadle", 
+            "John Goodman"
+        ], 
+        "unique_id": "tt1907668"
+    }, 
+    {
+        "description": "Cheyenne, a retired rock star living off his royalties in Dublin, returns to New York City to find the man responsible for a humiliation suffered by his recently deceased father during W.W.II.", 
+        "metascore": "61", 
+        "month": "11", 
+        "director": "Paolo Sorrentino", 
+        "netflix_id": "70181626", 
+        "run_time": "118", 
+        "year": "2012", 
+        "genres": [
+            "Comedy", 
+            "Drama"
+        ], 
+        "title": "This Must Be the Place (2011)", 
+        "stars": [
+            "Sean Penn", 
+            "Frances McDormand", 
+            "Judd Hirsch", 
+            "Eve Hewson"
+        ], 
+        "unique_id": "tt1440345"
+    }, 
+    {
+        "description": "Members of a world-renowned string quartet struggle to stay together in the face of death, competing egos and insuppressible lust.", 
+        "metascore": "67", 
+        "month": "11", 
+        "director": "Yaron Zilberman", 
+        "netflix_id": "70254749", 
+        "run_time": "105", 
+        "year": "2012", 
+        "genres": [
+            "Drama", 
+            "Music"
+        ], 
+        "title": "A Late Quartet (2012)", 
+        "stars": [
+            "Philip Seymour Hoffman", 
+            "Christopher Walken", 
+            "Catherine Keener", 
+            "Mark Ivanir"
+        ], 
+        "unique_id": "tt1226240"
+    }, 
+    {
+        "description": "When a family of raccoons discover worms living underneath the sod in Jeff and Nealy's backyard, this pest problem begins a darkly comic and wild chain reaction of domestic tension, infidelity and murder.", 
+        "metascore": "56", 
+        "month": "11", 
+        "director": "Jacob Aaron Estes", 
+        "netflix_id": "", 
+        "run_time": "91", 
+        "year": "2012", 
+        "genres": [
+            "Comedy", 
+            "Drama"
+        ], 
+        "title": "The Details (2011)", 
+        "stars": [
+            "Tobey Maguire", 
+            "Elizabeth Banks", 
+            "Laura Linney", 
+            "Ray Liotta"
+        ], 
+        "unique_id": "tt1433207"
+    }, 
+    {
+        "description": "Diane's feelings for Jack -- the girl she met over the summer -- begin to manifest themselves in terrifying ways when she learns that her friend will soon be moving away.", 
+        "metascore": "45", 
+        "month": "11", 
+        "director": "Bradley Rust Gray", 
+        "netflix_id": "70230563", 
+        "run_time": "110", 
+        "year": "2012", 
+        "genres": [
+            "Drama", 
+            "Horror", 
+            "Romance"
+        ], 
+        "title": "Jack & Diane (2012)", 
+        "stars": [
+            "Riley Keough", 
+            "Juno Temple", 
+            "Kylie Minogue", 
+            "Jackson Ning"
+        ], 
+        "unique_id": "tt0850677"
+    }, 
+    {
+        "description": "Two female vampires in modern-day New York City are faced with daunting romantic possibilities.", 
+        "metascore": "57", 
+        "month": "11", 
+        "director": "Amy Heckerling", 
+        "netflix_id": "", 
+        "run_time": "92", 
+        "year": "2012", 
+        "genres": [
+            "Comedy", 
+            "Horror", 
+            "Romance"
+        ], 
+        "title": "Vamps (2012)", 
+        "stars": [
+            "Alicia Silverstone", 
+            "Krysten Ritter", 
+            "Larry Wilmore", 
+            "Bettina Bresnan"
+        ], 
+        "unique_id": "tt1545106"
+    }, 
+    {
+        "description": "A documentary that follows a team of veterans returning from combat in Afghanistan and Iraq as they set out to climb a towering Himalayan peak to overcome challenges and heal the mental and emotional ravages of war.", 
+        "metascore": "77", 
+        "month": "11", 
+        "director": "Michael Brown", 
+        "netflix_id": "", 
+        "run_time": "92", 
+        "year": "2012", 
+        "genres": [
+            "Documentary"
+        ], 
+        "title": "High Ground (2012)", 
+        "stars": [
+            "Steve Baskis", 
+            "Dan Sidles", 
+            "Katherine Ragazzino", 
+            "Matt Nyman"
+        ], 
+        "unique_id": "tt2081261"
+    }, 
+    {
+        "description": "Bond's loyalty to M is tested when her past comes back to haunt her. Whilst MI6 comes under attack, 007 must track down and destroy the threat, no matter how personal the cost.", 
+        "metascore": "81", 
+        "month": "11", 
+        "director": "Sam Mendes", 
+        "netflix_id": "", 
+        "run_time": "143", 
+        "year": "2012", 
+        "genres": [
+            "Action", 
+            "Adventure", 
+            "Thriller"
+        ], 
+        "title": "Skyfall (2012)", 
+        "stars": [
+            "Daniel Craig", 
+            "Javier Bardem", 
+            "Naomie Harris", 
+            "Judi Dench"
+        ], 
+        "unique_id": "tt1074638"
+    }, 
+    {
+        "description": "As the Civil War continues to rage, America's president struggles with continuing carnage on the battlefield as he fights with many inside his own cabinet on the decision to emancipate the slaves.", 
+        "metascore": "86", 
+        "month": "11", 
+        "director": "Steven Spielberg", 
+        "netflix_id": "", 
+        "run_time": "150", 
+        "year": "2012", 
+        "genres": [
+            "Biography", 
+            "Drama", 
+            "History", 
+            "War"
+        ], 
+        "title": "Lincoln (2012)", 
+        "stars": [
+            "Daniel Day-Lewis", 
+            "Sally Field", 
+            "David Strathairn", 
+            "Joseph Gordon-Levitt"
+        ], 
+        "unique_id": "tt0443272"
+    }, 
+    {
+        "description": "Indifferent to the notion of inheriting his father's estate, a restless, aging New Yorker passes time with his friends in games of mock sincerity and irreverence.", 
+        "metascore": "46", 
+        "month": "11", 
+        "director": "Rick Alverson", 
+        "netflix_id": "70227936", 
+        "run_time": "95", 
+        "year": "2012", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "The Comedy (2012)", 
+        "stars": [
+            "Tim Heidecker", 
+            "Eric Wareheim", 
+            "James Murphy", 
+            "Jeffrey Jensen"
+        ], 
+        "unique_id": "tt2112293"
+    }, 
+    {
+        "description": "In Shanghai, an aging socialite's infatuation with her ex-boyfriend manifests itself as a risky game, where her former lover agrees to seduce, then abandon a naive young woman.", 
+        "metascore": "59", 
+        "month": "11", 
+        "director": "Jin-ho Hur", 
+        "netflix_id": "", 
+        "run_time": "110", 
+        "year": "2012", 
+        "genres": [
+            "Drama", 
+            "Mystery", 
+            "Romance"
+        ], 
+        "title": "Wi-heom-han gyan-gye (2012)", 
+        "stars": [
+            "Cecilia Cheung", 
+            "Dong-gun Jang", 
+            "Ziyi Zhang", 
+            "Shawn Dou"
+        ], 
+        "unique_id": "tt2071441"
+    }, 
+    {
+        "description": "A young queen, who is married to an insane king, falls secretly in love with her physician - and together they start a revolution that changes a nation forever.", 
+        "metascore": "73", 
+        "month": "11", 
+        "director": "Nikolaj Arcel", 
+        "netflix_id": "70232004", 
+        "run_time": "137", 
+        "year": "2012", 
+        "genres": [
+            "Biography", 
+            "Drama", 
+            "History", 
+            "Romance"
+        ], 
+        "title": "A Royal Affair (2012)", 
+        "stars": [
+            "Alicia Vikander", 
+            "Mads Mikkelsen", 
+            "Mikkel Boe F\u00f8lsgaard", 
+            "Trine Dyrholm"
+        ], 
+        "unique_id": "tt1276419"
+    }, 
+    {
+        "description": "Polar-opposite brothers Randy and Kirk never saw eye-to-eye, but their rivalry is taken to a new level when Randy hijacks Kirk's son's sleepover, taking the boys on a Scout Trip to remember.", 
+        "metascore": "30", 
+        "month": "11", 
+        "director": "Todd Rohal", 
+        "netflix_id": "70234427", 
+        "run_time": "79", 
+        "year": "2012", 
+        "genres": [
+            "Comedy"
+        ], 
+        "title": "Nature Calls (2012)", 
+        "stars": [
+            "Patton Oswalt", 
+            "Johnny Knoxville", 
+            "Rob Riggle", 
+            "Maura Tierney"
+        ], 
+        "unique_id": "tt1493157"
+    }, 
+    {
+        "description": "The Hughes cottage vacation is violently interrupted by a family on a murderous and identity stealing journey, in search of the \"perfect\" life.", 
+        "metascore": "", 
+        "month": "11", 
+        "director": "Jeremy Power Regimbal", 
+        "netflix_id": "", 
+        "run_time": "97", 
+        "year": "2012", 
+        "genres": [
+            "Horror", 
+            "Thriller"
+        ], 
+        "title": "In Their Skin (2012)", 
+        "stars": [
+            "Selma Blair", 
+            "Joshua Close", 
+            "James D'Arcy", 
+            "Rachel Miner"
+        ], 
+        "unique_id": "tt1790869"
+    }, 
+    {
+        "description": "An unlikely friendship forms between 21 year-old Jane and the elderly Sadie after Jane discovers a hidden stash of money inside an object at Sadie's yard sale.", 
+        "metascore": "74", 
+        "month": "11", 
+        "director": "Sean Baker", 
+        "netflix_id": "70234491", 
+        "run_time": "103", 
+        "year": "2012", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "Starlet (2012)", 
+        "stars": [
+            "Dree Hemingway", 
+            "Besedka Johnson", 
+            "Boonee", 
+            "Stella Maeve"
+        ], 
+        "unique_id": "tt2035630"
+    }, 
+    {
+        "description": "After the birth of Renesmee, the Cullens gather other vampire clans in order to protect the child from a false allegation that puts the family in front of the Volturi.", 
+        "metascore": "52", 
+        "month": "11", 
+        "director": "Bill Condon", 
+        "netflix_id": "", 
+        "run_time": "115", 
+        "year": "2012", 
+        "genres": [
+            "Adventure", 
+            "Drama", 
+            "Fantasy", 
+            "Romance"
+        ], 
+        "title": "The Twilight Saga: Breaking Dawn - Part 2 (2012)", 
+        "stars": [
+            "Kristen Stewart", 
+            "Robert Pattinson", 
+            "Taylor Lautner", 
+            "Peter Facinelli"
+        ], 
+        "unique_id": "tt1673434"
+    }, 
+    {
+        "description": "In late-19th-century Russian high society, St. Petersburg aristocrat Anna Karenina enters into a life-changing affair with the dashing Count Alexei Vronsky.", 
+        "metascore": "63", 
+        "month": "11", 
+        "director": "Joe Wright", 
+        "netflix_id": "70243443", 
+        "run_time": "129", 
+        "year": "2012", 
+        "genres": [
+            "Drama", 
+            "Romance"
+        ], 
+        "title": "Anna Karenina (2012)", 
+        "stars": [
+            "Keira Knightley", 
+            "Jude Law", 
+            "Aaron Taylor-Johnson", 
+            "Matthew Macfadyen"
+        ], 
+        "unique_id": "tt1781769"
+    }, 
+    {
+        "description": "After a stint in a mental institution, former teacher Pat Solitano moves back in with his parents and tries to reconcile with his ex-wife. Things get more challenging when Pat meets Tiffany, a mysterious girl with problems of her own.", 
+        "metascore": "81", 
+        "month": "11", 
+        "director": "David O. Russell", 
+        "netflix_id": "70244164", 
+        "run_time": "122", 
+        "year": "2012", 
+        "genres": [
+            "Comedy", 
+            "Drama", 
+            "Romance"
+        ], 
+        "title": "Silver Linings Playbook (2012)", 
+        "stars": [
+            "Bradley Cooper", 
+            "Jennifer Lawrence", 
+            "Robert De Niro", 
+            "Jacki Weaver"
+        ], 
+        "unique_id": "tt1045658"
+    }, 
+    {
+        "description": "As the Civil War continues to rage, America's president struggles with continuing carnage on the battlefield as he fights with many inside his own cabinet on the decision to emancipate the slaves.", 
+        "metascore": "86", 
+        "month": "11", 
+        "director": "Steven Spielberg", 
+        "netflix_id": "", 
+        "run_time": "150", 
+        "year": "2012", 
+        "genres": [
+            "Biography", 
+            "Drama", 
+            "History", 
+            "War"
+        ], 
+        "title": "Lincoln (2012)", 
+        "stars": [
+            "Daniel Day-Lewis", 
+            "Sally Field", 
+            "David Strathairn", 
+            "Joseph Gordon-Levitt"
+        ], 
+        "unique_id": "tt0443272"
+    }, 
+    {
+        "description": "After finding and losing his true love in London, Samar Anand defies death by becoming a bomb disposal expert for the Indian Army. Returning to London after 10 years, he suffers amnesia after an accident. Will he be reunited with his love?", 
+        "metascore": "", 
+        "month": "11", 
+        "director": "Yash Chopra", 
+        "netflix_id": "70258134", 
+        "run_time": "176", 
+        "year": "2012", 
+        "genres": [
+            "Drama", 
+            "Romance"
+        ], 
+        "title": "Jab Tak Hai Jaan (2012)", 
+        "stars": [
+            "Shah Rukh Khan", 
+            "Katrina Kaif", 
+            "Anushka Sharma", 
+            "Kumud Pant"
+        ], 
+        "unique_id": "tt2176013"
+    }, 
+    {
+        "description": "Peter, a family man who works for a failing supermarket chain finds his life shaken up by his new boss, Susan, who starts to groom him for an executive position. Money and opportunities are within his grasp, but at what price?", 
+        "metascore": "67", 
+        "month": "11", 
+        "director": "Michael Walker", 
+        "netflix_id": "70227652", 
+        "run_time": "92", 
+        "year": "2012", 
+        "genres": [
+            "Comedy", 
+            "Drama"
+        ], 
+        "title": "Price Check (2012)", 
+        "stars": [
+            "Parker Posey", 
+            "Eric Mabius", 
+            "Annie Parisse", 
+            "Matt Servitto"
+        ], 
+        "unique_id": "tt1845849"
+    }, 
+    {
+        "description": "An agoraphobic father teams up with a renegade priest to save his daughter from the clutches of a gang of twisted feral children who committed an act of violence against his family years earlier.", 
+        "metascore": "60", 
+        "month": "11", 
+        "director": "Ciar\u00e1n Foy", 
+        "netflix_id": "", 
+        "run_time": "84", 
+        "year": "2012", 
+        "genres": [
+            "Drama", 
+            "Horror", 
+            "Thriller"
+        ], 
+        "title": "Citadel (2012)", 
+        "stars": [
+            "Aneurin Barnard", 
+            "James Cosmo", 
+            "Wunmi Mosaku", 
+            "Jake Wilson"
+        ], 
+        "unique_id": "tt1641975"
+    }, 
+    {
+        "description": "A young man who survives a disaster at sea is hurtled into an epic journey of adventure and discovery. While cast away, he forms an unexpected connection with another survivor: a fearsome Bengal tiger.", 
+        "metascore": "79", 
+        "month": "11", 
+        "director": "Ang Lee", 
+        "netflix_id": "", 
+        "run_time": "127", 
+        "year": "2012", 
+        "genres": [
+            "Adventure", 
+            "Drama", 
+            "Fantasy"
+        ], 
+        "title": "Life of Pi (2012)", 
+        "stars": [
+            "Suraj Sharma", 
+            "Irrfan Khan", 
+            "Adil Hussain", 
+            "Tabu"
+        ], 
+        "unique_id": "tt0454876"
+    }, 
+    {
+        "description": "A group of teenagers look to save their town from an invasion of North Korean soldiers.", 
+        "metascore": "31", 
+        "month": "11", 
+        "director": "Dan Bradley", 
+        "netflix_id": "", 
+        "run_time": "93", 
+        "year": "2012", 
+        "genres": [
+            "Action", 
+            "Thriller", 
+            "War"
+        ], 
+        "title": "Red Dawn (2012)", 
+        "stars": [
+            "Chris Hemsworth", 
+            "Isabel Lucas", 
+            "Josh Hutcherson", 
+            "Josh Peck"
+        ], 
+        "unique_id": "tt1234719"
+    }, 
+    {
+        "description": "When the evil spirit Pitch launches an assault on Earth, the Immortal Guardians team up to protect the innocence of children all around the world.", 
+        "metascore": "57", 
+        "month": "11", 
+        "director": "Peter Ramsey", 
+        "netflix_id": "", 
+        "run_time": "97", 
+        "year": "2012", 
+        "genres": [
+            "Animation", 
+            "Adventure", 
+            "Family", 
+            "Fantasy"
+        ], 
+        "title": "Rise of the Guardians (2012)", 
+        "stars": [
+            "Hugh Jackman", 
+            "Alec Baldwin", 
+            "Isla Fisher", 
+            "Chris Pine"
+        ], 
+        "unique_id": "tt1446192"
+    }, 
+    {
+        "description": "A love story between the influential filmmaker Alfred Hitchcock and his wife Alma Reville during the filming of Psycho (1960) in 1959.", 
+        "metascore": "55", 
+        "month": "11", 
+        "director": "Sacha Gervasi", 
+        "netflix_id": "", 
+        "run_time": "98", 
+        "year": "2012", 
+        "genres": [
+            "Biography", 
+            "Drama"
+        ], 
+        "title": "Hitchcock (2012)", 
+        "stars": [
+            "Anthony Hopkins", 
+            "Helen Mirren", 
+            "Scarlett Johansson", 
+            "Danny Huston"
+        ], 
+        "unique_id": "tt0975645"
+    }, 
+    {
+        "description": "Put in charge of his young son, Alain leaves Belgium for Antibes to live with his sister and her husband as a family. Alain's bond with Stephanie, a killer whale trainer, grows deeper after Stephanie suffers a horrible accident.", 
+        "metascore": "73", 
+        "month": "11", 
+        "director": "Jacques Audiard", 
+        "netflix_id": "", 
+        "run_time": "120", 
+        "year": "2012", 
+        "genres": [
+            "Drama", 
+            "Romance"
+        ], 
+        "title": "Rust and Bone (2012)", 
+        "stars": [
+            "Marion Cotillard", 
+            "Matthias Schoenaerts", 
+            "Armand Verdure", 
+            "C\u00e9line Sallette"
+        ], 
+        "unique_id": "tt2053425"
+    }, 
+    {
+        "description": "A documentary that examines the 1989 case of five black and Latino teenagers who were convicted of raping a white woman in Central Park. After having spent between 6 and 13 years each in prison, a serial rapist confessed to the crime.", 
+        "metascore": "79", 
+        "month": "11", 
+        "director": "Ken Burns", 
+        "netflix_id": "", 
+        "run_time": "119", 
+        "year": "2012", 
+        "genres": [
+            "Documentary"
+        ], 
+        "title": "The Central Park Five (2012)", 
+        "stars": [
+            "Antron McCray", 
+            "Kevin Richardson", 
+            "Kharey Wise", 
+            "Raymond Santana"
+        ], 
+        "unique_id": "tt2380247"
+    }, 
+    {
+        "description": "After a stint in a mental institution, former teacher Pat Solitano moves back in with his parents and tries to reconcile with his ex-wife. Things get more challenging when Pat meets Tiffany, a mysterious girl with problems of her own.", 
+        "metascore": "81", 
+        "month": "11", 
+        "director": "David O. Russell", 
+        "netflix_id": "70244164", 
+        "run_time": "122", 
+        "year": "2012", 
+        "genres": [
+            "Comedy", 
+            "Drama", 
+            "Romance"
+        ], 
+        "title": "Silver Linings Playbook (2012)", 
+        "stars": [
+            "Bradley Cooper", 
+            "Jennifer Lawrence", 
+            "Robert De Niro", 
+            "Jacki Weaver"
+        ], 
+        "unique_id": "tt1045658"
+    }, 
+    {
+        "description": "Jackie Cogan is an enforcer hired to restore order after three dumb guys rob a Mob protected card game, causing the local criminal economy to collapse.", 
+        "metascore": "64", 
+        "month": "11", 
+        "director": "Andrew Dominik", 
+        "netflix_id": "70209252", 
+        "run_time": "97", 
+        "year": "2012", 
+        "genres": [
+            "Crime", 
+            "Thriller"
+        ], 
+        "title": "Killing Them Softly (2012)", 
+        "stars": [
+            "Brad Pitt", 
+            "Ray Liotta", 
+            "Richard Jenkins", 
+            "Scoot McNairy"
+        ], 
+        "unique_id": "tt1764234"
+    }, 
+    {
+        "description": "A man who escapes from the vicious grips of the serial killer known as \"The Collector\" is blackmailed to rescue an innocent girl from the killer's booby-trapped warehouse.", 
+        "metascore": "36", 
+        "month": "11", 
+        "director": "Marcus Dunstan", 
+        "netflix_id": "", 
+        "run_time": "82", 
+        "year": "2012", 
+        "genres": [
+            "Horror", 
+            "Thriller"
+        ], 
+        "title": "The Collection (2012)", 
+        "stars": [
+            "Josh Stewart", 
+            "Emma Fitzpatrick", 
+            "Christopher McDonald", 
+            "Randall Archer"
+        ], 
+        "unique_id": "tt1748227"
+    }, 
+    {
+        "description": "John looks to take down Luc Deveraux after a home invasion claims his wife and daughter. The fight pits John against Andrew Scott and an army of genetically enhanced warriors; meanwhile, he must contend with a UniSol in relentless pursuit.", 
+        "metascore": "58", 
+        "month": "11", 
+        "director": "John Hyams", 
+        "netflix_id": "70229178", 
+        "run_time": "114", 
+        "year": "2012", 
+        "genres": [
+            "Action", 
+            "Horror", 
+            "Mystery", 
+            "Sci-Fi", 
+            "Thriller"
+        ], 
+        "title": "Universal Soldier: Day of Reckoning (2012)", 
+        "stars": [
+            "Jean-Claude Van Damme", 
+            "Dolph Lundgren", 
+            "Scott Adkins", 
+            "Andrei Arlovski"
+        ], 
+        "unique_id": "tt1659343"
+    }, 
+    {
+        "description": "A cop, investigating the mysterious death of a filmstar, meets a sex-worker, while he faces some personal problems psychologically. The mystery connects these people in a way, that ultimately changes their lives.", 
+        "metascore": "65", 
+        "month": "11", 
+        "director": "Reema Kagti", 
+        "netflix_id": "70262614", 
+        "run_time": "140", 
+        "year": "2012", 
+        "genres": [
+            "Crime", 
+            "Drama", 
+            "Mystery", 
+            "Thriller"
+        ], 
+        "title": "Talaash (2012)", 
+        "stars": [
+            "Aamir Khan", 
+            "Kareena Kapoor", 
+            "Rani Mukerji", 
+            "Rajkummar Rao"
+        ], 
+        "unique_id": "tt1787988"
+    }, 
+    {
+        "description": "A papermaker gets involved with a murder case concerning two criminals leading to a determined detective suspecting him and the former's vicious father searching for him.", 
+        "metascore": "62", 
+        "month": "11", 
+        "director": "Peter Chan", 
+        "netflix_id": "70189287", 
+        "run_time": "98", 
+        "year": "2012", 
+        "genres": [
+            "Action", 
+            "Crime", 
+            "Drama", 
+            "Thriller"
+        ], 
+        "title": "Dragon (2011)", 
+        "stars": [
+            "Donnie Yen", 
+            "Takeshi Kaneshiro", 
+            "Wei Tang", 
+            "Yu Wang"
+        ], 
+        "unique_id": "tt1718199"
+    }, 
+    {
+        "description": "A former Britpop rocker who now works on a farm gets caught driving drunk and faces deportation after living in Los Angeles for many years. His efforts to stay in the U.S. force him to confront the past and current demons in his life.", 
+        "metascore": "62", 
+        "month": "11", 
+        "director": "Marshall Lewy", 
+        "netflix_id": "", 
+        "run_time": "94", 
+        "year": "2012", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "California Solo (2012)", 
+        "stars": [
+            "Robert Carlyle", 
+            "Alexia Rasmussen", 
+            "Kathleen Wilhoite", 
+            "A Martinez"
+        ], 
+        "unique_id": "tt1918727"
+    }, 
+    {
+        "description": "A documentary on some of contemporary Mexico's most iconic artists and performers.", 
+        "metascore": "", 
+        "month": "11", 
+        "director": "Duncan Bridgeman", 
+        "netflix_id": "", 
+        "run_time": "98", 
+        "year": "2012", 
+        "genres": [
+            "Documentary", 
+            "History", 
+            "Music", 
+            "Musical"
+        ], 
+        "title": "Hecho en M\u00e9xico (2012)", 
+        "stars": [
+            "Diego Luna", 
+            "Kinky", 
+            "Lila Downs", 
+            "Molotov"
+        ], 
+        "unique_id": "tt2062645"
+    }, 
+    {
+        "description": "Ginger Baker looks back on his musical career with Cream and Blind Faith; his introduction to Fela Kuti; his self-destructive patterns and losses of fortune; and his current life inside a fortified South African compound.", 
+        "metascore": "78", 
+        "month": "11", 
+        "director": "Jay Bulger", 
+        "netflix_id": "", 
+        "run_time": "100", 
+        "year": "2012", 
+        "genres": [
+            "Documentary"
+        ], 
+        "title": "Beware of Mr. Baker (2012)", 
+        "stars": [
+            "Ginger Baker", 
+            "Femi Kuti", 
+            "Eric Clapton", 
+            "Stewart Copeland"
+        ], 
+        "unique_id": "tt1931388"
+    }, 
+    {
+        "description": "A deadly drought in 1942 takes its toll on central China's Henan province during the war against Japan.", 
+        "metascore": "41", 
+        "month": "11", 
+        "director": "Xiaogang Feng", 
+        "netflix_id": "", 
+        "run_time": "145", 
+        "year": "2012", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "Yi jiu si er (2012)", 
+        "stars": [
+            "Guoli Zhang", 
+            "Hanyu Zhang", 
+            "Wei Fan", 
+            "Yuanzheng Feng"
+        ], 
+        "unique_id": "tt2113822"
+    }, 
+    {
+        "description": "A documentary that goes behind the scenes of the movie 'Illegal Aliens', and a film-maker's journey from obscurity to moral blindness in the seductive glare of the media spotlight.", 
+        "metascore": "36", 
+        "month": "11", 
+        "director": "David Giancola", 
+        "netflix_id": "", 
+        "run_time": "89", 
+        "year": "2012", 
+        "genres": [
+            "Documentary", 
+            "Biography", 
+            "Comedy", 
+            "News"
+        ], 
+        "title": "Addicted to Fame (2012)", 
+        "stars": [
+            "Anna Nicole Smith", 
+            "David Giancola", 
+            "John James", 
+            "Chyna"
+        ], 
+        "unique_id": "tt1999125"
+    }
+]

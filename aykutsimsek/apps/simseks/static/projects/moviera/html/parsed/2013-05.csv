@@ -1,0 +1,872 @@
+[
+    {
+        "description": "When Tony Stark's world is torn apart by a formidable terrorist called the Mandarin, he starts an odyssey of rebuilding and retribution.", 
+        "metascore": "62", 
+        "month": "5", 
+        "director": "Shane Black", 
+        "netflix_id": "", 
+        "run_time": "130", 
+        "year": "2013", 
+        "genres": [
+            "Action", 
+            "Adventure", 
+            "Sci-Fi"
+        ], 
+        "title": "Iron Man 3 (2013)", 
+        "stars": [
+            "Robert Downey Jr.", 
+            "Guy Pearce", 
+            "Gwyneth Paltrow", 
+            "Don Cheadle"
+        ], 
+        "unique_id": "tt1300854"
+    }, 
+    {
+        "description": "A hairdresser who has lost her hair to cancer finds out her husband is having an affair, travels to Italy for her daughter's wedding and meets a widower who still blames the world for the loss of his wife.", 
+        "metascore": "60", 
+        "month": "5", 
+        "director": "Susanne Bier", 
+        "netflix_id": "", 
+        "run_time": "116", 
+        "year": "2013", 
+        "genres": [
+            "Comedy", 
+            "Romance"
+        ], 
+        "title": "Den skaldede fris\u00f8r (2012)", 
+        "stars": [
+            "Pierce Brosnan", 
+            "Trine Dyrholm", 
+            "Molly Blixt Egelind", 
+            "Sebastian Jessen"
+        ], 
+        "unique_id": "tt1854236"
+    }, 
+    {
+        "description": "A documentary on the Manhattan department store with interviews from an array of fashion designers, style icons, and celebrities.", 
+        "metascore": "55", 
+        "month": "5", 
+        "director": "Matthew Miele", 
+        "netflix_id": "", 
+        "run_time": "93", 
+        "year": "2013", 
+        "genres": [
+            "Documentary"
+        ], 
+        "title": "Scatter My Ashes at Bergdorf's (2013)", 
+        "stars": [
+            "Rachel Zoe", 
+            "Candice Bergen", 
+            "Ashley Olsen", 
+            "Mary-Kate Olsen"
+        ], 
+        "unique_id": "tt1893326"
+    }, 
+    {
+        "description": "The story of Richard Kuklinski, the notorious contract killer and family man. When finally arrested in 1986, neither his wife nor daughters have any clue about his real profession.", 
+        "metascore": "60", 
+        "month": "5", 
+        "director": "Ariel Vromen", 
+        "netflix_id": "", 
+        "run_time": "106", 
+        "year": "2013", 
+        "genres": [
+            "Biography", 
+            "Crime", 
+            "Drama"
+        ], 
+        "title": "The Iceman (2012)", 
+        "stars": [
+            "Michael Shannon", 
+            "Chris Evans", 
+            "James Franco", 
+            "Winona Ryder"
+        ], 
+        "unique_id": "tt1491044"
+    }, 
+    {
+        "description": "In the months after the heady weeks of May '68, a group of young Europeans search for a way to continue the revolution believed to be just beginning.", 
+        "metascore": "76", 
+        "month": "5", 
+        "director": "Olivier Assayas", 
+        "netflix_id": "", 
+        "run_time": "122", 
+        "year": "2013", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "Something in the Air (2012)", 
+        "stars": [
+            "Cl\u00e9ment M\u00e9tayer", 
+            "Andr\u00e9 Marcon", 
+            "Lola Cr\u00e9ton", 
+            "Felix Armand"
+        ], 
+        "unique_id": "tt1846472"
+    }, 
+    {
+        "description": "In New York City, a young girl is caught in the middle of her parents' bitter custody battle.", 
+        "metascore": "74", 
+        "month": "5", 
+        "director": "Scott McGehee", 
+        "netflix_id": "", 
+        "run_time": "99", 
+        "year": "2013", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "What Maisie Knew (2012)", 
+        "stars": [
+            "Julianne Moore", 
+            "Alexander Skarsg\u00e5rd", 
+            "Steve Coogan", 
+            "Joanna Vanderham"
+        ], 
+        "unique_id": "tt1932767"
+    }, 
+    {
+        "description": "The vampire Djuna resists the advances of Paolo, but soon gives in to their passion. When her trouble-making sister unexpectedly comes to visit, Djuna's love is threatened, and the whole vampire community becomes endangered.", 
+        "metascore": "48", 
+        "month": "5", 
+        "director": "Xan Cassavetes", 
+        "netflix_id": "70257839", 
+        "run_time": "97", 
+        "year": "2013", 
+        "genres": [
+            "Drama", 
+            "Horror", 
+            "Romance"
+        ], 
+        "title": "Kiss of the Damned (2012)", 
+        "stars": [
+            "Jos\u00e9phine de La Baume", 
+            "Milo Ventimiglia", 
+            "Roxane Mesquida", 
+            "Anna Mouglalis"
+        ], 
+        "unique_id": "tt1959438"
+    }, 
+    {
+        "description": "A chronicle of the days leading up to Jeff Buckley's performance at his father's tribute concert in 1991.", 
+        "metascore": "57", 
+        "month": "5", 
+        "director": "Daniel Algrant", 
+        "netflix_id": "", 
+        "run_time": "99", 
+        "year": "2013", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "Greetings from Tim Buckley (2012)", 
+        "stars": [
+            "Penn Badgley", 
+            "Imogen Poots", 
+            "Norbert Leo Butz", 
+            "Ben Rosenfield"
+        ], 
+        "unique_id": "tt1823125"
+    }, 
+    {
+        "description": "Three adults during a single day in New York City, one filled with sex, drugs, and indecision.", 
+        "metascore": "25", 
+        "month": "5", 
+        "director": "Mark Mann", 
+        "netflix_id": "70271598", 
+        "run_time": "97", 
+        "year": "2013", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "Generation Um... (2012)", 
+        "stars": [
+            "Keanu Reeves", 
+            "Bojana Novakovic", 
+            "Adelaide Clemens", 
+            "Daniel Sunjata"
+        ], 
+        "unique_id": "tt1718158"
+    }, 
+    {
+        "description": "A western set on the New Mexico frontier a few years after the Civil War and centered on a struggling young family and the mining company who wants to buy their land.", 
+        "metascore": "76", 
+        "month": "5", 
+        "director": "Jared Moshe", 
+        "netflix_id": "", 
+        "run_time": "93", 
+        "year": "2013", 
+        "genres": [
+            "Drama", 
+            "Western"
+        ], 
+        "title": "Dead Man's Burden (2012)", 
+        "stars": [
+            "Barlow Jacobs", 
+            "Clare Bowen", 
+            "David Call", 
+            "Joseph Lyle Taylor"
+        ], 
+        "unique_id": "tt2094155"
+    }, 
+    {
+        "description": "Adam is a rich industrialist, who aspires to a more cultured world. Spurred on by playful jibes that he is little more than a city suit living the capitalist's dream, this frustrated amateur opera singer decides to throw an opera in his lavish country retreat. Once his friends see him belting out the notes, he feels sure it will spell the end to their shallow taunts. In fact, it might even help him win the hand of a female conductor he has been pursuing whom - it just so happens - is the first to be recruited for his showpiece.", 
+        "metascore": "29", 
+        "month": "5", 
+        "director": "Christopher Menaul", 
+        "netflix_id": "70287002", 
+        "run_time": "116", 
+        "year": "2013", 
+        "genres": [
+            "Comedy", 
+            "Musical", 
+            "Romance"
+        ], 
+        "title": "First Night (2010)", 
+        "stars": [
+            "Richard E. Grant", 
+            "Sarah Brightman", 
+            "M\u00eda Maestro", 
+            "Julian Ovenden"
+        ], 
+        "unique_id": "tt1536053"
+    }, 
+    {
+        "description": "On May 5th, 1862, a few thousand Mexican soldiers put their lives on the line against the world's largest and most powerful army in one legendary battle for freedom and for Mexico.", 
+        "metascore": "", 
+        "month": "5", 
+        "director": "Rafa Lara", 
+        "netflix_id": "70272747", 
+        "run_time": "125", 
+        "year": "2013", 
+        "genres": [
+            "Drama", 
+            "History", 
+            "War"
+        ], 
+        "title": "Cinco de Mayo, La Batalla (2013)", 
+        "stars": [
+            "Christian Vazquez", 
+            "Ang\u00e9lica Arag\u00f3n", 
+            "Liz Gallardo", 
+            "Kuno Becker"
+        ], 
+        "unique_id": "tt2553908"
+    }, 
+    {
+        "description": "A writer and wall street trader, Nick, finds himself drawn to the past and lifestyle of his millionaire neighbor, Jay Gatsby.", 
+        "metascore": "55", 
+        "month": "5", 
+        "director": "Baz Luhrmann", 
+        "netflix_id": "", 
+        "run_time": "143", 
+        "year": "2013", 
+        "genres": [
+            "Drama", 
+            "Romance"
+        ], 
+        "title": "The Great Gatsby (2013)", 
+        "stars": [
+            "Leonardo DiCaprio", 
+            "Carey Mulligan", 
+            "Joel Edgerton", 
+            "Tobey Maguire"
+        ], 
+        "unique_id": "tt1343092"
+    }, 
+    {
+        "description": "Sparks fly when Wade Walker crashes the Peeples annual reunion in the Hamptons to ask for their precious daughter Grace's hand in marriage.", 
+        "metascore": "52", 
+        "month": "5", 
+        "director": "Tina Gordon Chism", 
+        "netflix_id": "", 
+        "run_time": "95", 
+        "year": "2013", 
+        "genres": [
+            "Comedy", 
+            "Romance"
+        ], 
+        "title": "Peeples (2013)", 
+        "stars": [
+            "Craig Robinson", 
+            "Kerry Washington", 
+            "David Alan Grier", 
+            "S. Epatha Merkerson"
+        ], 
+        "unique_id": "tt1699755"
+    }, 
+    {
+        "description": "Chris wants to show girlfriend Tina his world, but events soon conspire against the couple and their dream caravan holiday takes a very wrong turn.", 
+        "metascore": "69", 
+        "month": "5", 
+        "director": "Ben Wheatley", 
+        "netflix_id": "70243245", 
+        "run_time": "88", 
+        "year": "2013", 
+        "genres": [
+            "Adventure", 
+            "Comedy", 
+            "Crime", 
+            "Horror"
+        ], 
+        "title": "Sightseers (2012)", 
+        "stars": [
+            "Alice Lowe", 
+            "Kenneth Hadley", 
+            "Steve Oram", 
+            "Eileen Davies"
+        ], 
+        "unique_id": "tt2023690"
+    }, 
+    {
+        "description": "Ever since Venus and Serena Williams started playing in tennis tournaments, they've provoked strong reactions - from awe and admiration to suspicion and resentment. They've been winning championships for over a decade, pushing the limits of longevity in such a demanding sport. How long can they last? In Venus & Serena, we gain unprecedented access into their lives during the most intimidating year of their career. Over the course of 2011, Venus grappled with an energy-sapping autoimmune disease while Serena battled back from a life-threatening pulmonary embolism. Neither Venus nor Serena let their adversities hold them back. They drew their greatest strength from each other.", 
+        "metascore": "65", 
+        "month": "5", 
+        "director": "Maiken Baird", 
+        "netflix_id": "", 
+        "run_time": "99", 
+        "year": "2013", 
+        "genres": [
+            "Documentary"
+        ], 
+        "title": "Venus and Serena (2012)", 
+        "stars": [
+            "Billie Jean King", 
+            "John McEnroe", 
+            "Richard Williams", 
+            "Serena Williams"
+        ], 
+        "unique_id": "tt2376024"
+    }, 
+    {
+        "description": "In Chile, a group of travelers who are in an underground nightclub when a massive earthquake hits quickly learn that reaching the surface is just the beginning of their nightmare.", 
+        "metascore": "39", 
+        "month": "5", 
+        "director": "Nicol\u00e1s L\u00f3pez", 
+        "netflix_id": "", 
+        "run_time": "89", 
+        "year": "2013", 
+        "genres": [
+            "Action", 
+            "Adventure", 
+            "Horror", 
+            "Thriller"
+        ], 
+        "title": "Aftershock (2012)", 
+        "stars": [
+            "Eli Roth", 
+            "Ariel Levy", 
+            "Nicol\u00e1s Mart\u00ednez", 
+            "Andrea Osv\u00e1rt"
+        ], 
+        "unique_id": "tt1780762"
+    }, 
+    {
+        "description": "A gang of ruthless highway killers kidnap a wealthy couple traveling cross country only to shockingly discover that things are not what they seem.", 
+        "metascore": "26", 
+        "month": "5", 
+        "director": "Ry\u00fbhei Kitamura", 
+        "netflix_id": "", 
+        "run_time": "86", 
+        "year": "2013", 
+        "genres": [
+            "Horror", 
+            "Thriller"
+        ], 
+        "title": "No One Lives (2012)", 
+        "stars": [
+            "Luke Evans", 
+            "Gary Grubbs", 
+            "Adelaide Clemens", 
+            "Derek Magyar"
+        ], 
+        "unique_id": "tt1763264"
+    }, 
+    {
+        "description": "Krishna Das is on a journey to India to discover legendary spiritual teacher Neem Karoli Baba, through drug addiction and depression, to his eventual emergence as a world-famous Kirtan singer.", 
+        "metascore": "49", 
+        "month": "5", 
+        "director": "Jeremy Frindel", 
+        "netflix_id": "", 
+        "run_time": "74", 
+        "year": "2013", 
+        "genres": [
+            "Documentary", 
+            "Biography", 
+            "Music"
+        ], 
+        "title": "One Track Heart: The Story of Krishna Das (2012)", 
+        "stars": [
+            "Krishna Das", 
+            "Ram Dass", 
+            "Rick Rubin", 
+            "Neem Karoli Baba"
+        ], 
+        "unique_id": "tt2010939"
+    }, 
+    {
+        "description": "A Muslim detective teams with an American posing as a graduate student to find the man behind a series of deadly terrorist bombings in Indonesia.", 
+        "metascore": "35", 
+        "month": "5", 
+        "director": "Conor Allyn", 
+        "netflix_id": "70269482", 
+        "run_time": "104", 
+        "year": "2013", 
+        "genres": [
+            "Action", 
+            "Crime", 
+            "Drama", 
+            "Thriller"
+        ], 
+        "title": "Java Heat (2013)", 
+        "stars": [
+            "Kellan Lutz", 
+            "Verdi Solaiman", 
+            "Mickey Rourke", 
+            "Ario Bayu"
+        ], 
+        "unique_id": "tt2083231"
+    }, 
+    {
+        "description": "After the crew of the Enterprise find an unstoppable force of terror from within their own organization, Captain Kirk leads a manhunt to a war-zone world to capture a one-man weapon of mass destruction.", 
+        "metascore": "72", 
+        "month": "5", 
+        "director": "J.J. Abrams", 
+        "netflix_id": "", 
+        "run_time": "132", 
+        "year": "2013", 
+        "genres": [
+            "Action", 
+            "Adventure", 
+            "Sci-Fi"
+        ], 
+        "title": "Star Trek Into Darkness (2013)", 
+        "stars": [
+            "Chris Pine", 
+            "Zachary Quinto", 
+            "Zoe Saldana", 
+            "Benedict Cumberbatch"
+        ], 
+        "unique_id": "tt1408101"
+    }, 
+    {
+        "description": "A story that follows a New York woman (who doesn't really have an apartment), apprentices for a dance company (though she's not really a dancer), and throws herself headlong into her dreams, even as their possibility dwindles.", 
+        "metascore": "82", 
+        "month": "5", 
+        "director": "Noah Baumbach", 
+        "netflix_id": "70257412", 
+        "run_time": "86", 
+        "year": "2013", 
+        "genres": [
+            "Comedy", 
+            "Drama", 
+            "Romance"
+        ], 
+        "title": "Frances Ha (2012)", 
+        "stars": [
+            "Greta Gerwig", 
+            "Mickey Sumner", 
+            "Adam Driver", 
+            "Michael Zegen"
+        ], 
+        "unique_id": "tt2347569"
+    }, 
+    {
+        "description": "A film that excavates layers of myth and memory to find the elusive truth at the core of a family of storytellers.", 
+        "metascore": "91", 
+        "month": "5", 
+        "director": "Sarah Polley", 
+        "netflix_id": "", 
+        "run_time": "108", 
+        "year": "2013", 
+        "genres": [
+            "Documentary"
+        ], 
+        "title": "Stories We Tell (2012)", 
+        "stars": [
+            "Michael Polley", 
+            "John Buchan", 
+            "Mark Polley", 
+            "Joanna Polley"
+        ], 
+        "unique_id": "tt2366450"
+    }, 
+    {
+        "description": "An ex-CIA agent and his estranged daughter are forced on the run when his employers erase all records of his existence, and mark them both for termination as part of a wide-reaching international conspiracy.", 
+        "metascore": "34", 
+        "month": "5", 
+        "director": "Philipp St\u00f6lzl", 
+        "netflix_id": "", 
+        "run_time": "100", 
+        "year": "2013", 
+        "genres": [
+            "Action", 
+            "Thriller"
+        ], 
+        "title": "Erased (2012)", 
+        "stars": [
+            "Aaron Eckhart", 
+            "Nick Alachiotis", 
+            "Liana Liberato", 
+            "Olga Kurylenko"
+        ], 
+        "unique_id": "tt1645155"
+    }, 
+    {
+        "description": "An English teacher's life is disrupted when a former student returns to her small town after failing as a playwright in New York.", 
+        "metascore": "42", 
+        "month": "5", 
+        "director": "Craig Zisk", 
+        "netflix_id": "70272460", 
+        "run_time": "93", 
+        "year": "2013", 
+        "genres": [
+            "Comedy", 
+            "Drama"
+        ], 
+        "title": "The English Teacher (2013)", 
+        "stars": [
+            "Julianne Moore", 
+            "Michael Angarano", 
+            "Greg Kinnear", 
+            "Lily Collins"
+        ], 
+        "unique_id": "tt2055765"
+    }, 
+    {
+        "description": "A look at the relationship between pioneering 19th century French neurologist Dr. Jean-Martin Charcot and his star teenage patient, a kitchen maid who is left partially paralyzed after a seizure.", 
+        "metascore": "74", 
+        "month": "5", 
+        "director": "Alice Winocour", 
+        "netflix_id": "", 
+        "run_time": "102", 
+        "year": "2013", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "Augustine (2012)", 
+        "stars": [
+            "Vincent Lindon", 
+            "St\u00e9phan Wojtowicz", 
+            "Soko", 
+            "Chiara Mastroianni"
+        ], 
+        "unique_id": "tt2098628"
+    }, 
+    {
+        "description": "Three childhood friends set aside their personal issues and reunite for a girls' weekend on a remote island off the coast of Maine. One wrong move turns their weekend getaway into a deadly fight for survival.", 
+        "metascore": "46", 
+        "month": "5", 
+        "director": "Katie Aselton", 
+        "netflix_id": "", 
+        "run_time": "83", 
+        "year": "2013", 
+        "genres": [
+            "Horror", 
+            "Thriller"
+        ], 
+        "title": "Black Rock (2012)", 
+        "stars": [
+            "Katie Aselton", 
+            "Lake Bell", 
+            "Kate Bosworth", 
+            "Will Bouvier"
+        ], 
+        "unique_id": "tt1930294"
+    }, 
+    {
+        "description": "A look deep inside Israel and Palestine at the men and women trying to seize a historic opportunity to end the conflict and make implementing the two-state solution a reality.", 
+        "metascore": "63", 
+        "month": "5", 
+        "director": "Dan Setton", 
+        "netflix_id": "", 
+        "run_time": "98", 
+        "year": "2013", 
+        "genres": [
+            "Documentary"
+        ], 
+        "title": "State 194 (2012)", 
+        "stars": [
+            "Salam Fayyad", 
+            "Mahmoud Abbas", 
+            "Tzipi Livni", 
+            "Avi Dichter"
+        ], 
+        "unique_id": "tt2324918"
+    }, 
+    {
+        "description": "Hobbs has Dominic and Brian reassemble their crew to take down a team of mercenaries: Dominic unexpectedly gets convoluted also facing his presumed deceased girlfriend, Letty.", 
+        "metascore": "61", 
+        "month": "5", 
+        "director": "Justin Lin", 
+        "netflix_id": "", 
+        "run_time": "130", 
+        "year": "2013", 
+        "genres": [
+            "Action", 
+            "Crime", 
+            "Thriller"
+        ], 
+        "title": "Furious 6 (2013)", 
+        "stars": [
+            "Vin Diesel", 
+            "Paul Walker", 
+            "Dwayne Johnson", 
+            "Michelle Rodriguez"
+        ], 
+        "unique_id": "tt1905041"
+    }, 
+    {
+        "description": "When one of their own is kidnapped by an angry gangster, the Wolf Pack must track down Mr. Chow, who has escaped from prison and is on the lam.", 
+        "metascore": "30", 
+        "month": "5", 
+        "director": "Todd Phillips", 
+        "netflix_id": "", 
+        "run_time": "100", 
+        "year": "2013", 
+        "genres": [
+            "Comedy"
+        ], 
+        "title": "The Hangover Part III (2013)", 
+        "stars": [
+            "Bradley Cooper", 
+            "Zach Galifianakis", 
+            "Ed Helms", 
+            "Justin Bartha"
+        ], 
+        "unique_id": "tt1951261"
+    }, 
+    {
+        "description": "A teenager finds herself transported to a deep forest setting where a battle between the forces of good and the forces of evil is taking place. She bands together with a rag-tag group of characters in order to save their world -- and ours.", 
+        "metascore": "52", 
+        "month": "5", 
+        "director": "Chris Wedge", 
+        "netflix_id": "", 
+        "run_time": "102", 
+        "year": "2013", 
+        "genres": [
+            "Animation", 
+            "Adventure", 
+            "Family", 
+            "Fantasy"
+        ], 
+        "title": "Epic (2013)", 
+        "stars": [
+            "Amanda Seyfried", 
+            "Josh Hutcherson", 
+            "Beyonc\u00e9 Knowles", 
+            "Colin Farrell"
+        ], 
+        "unique_id": "tt0848537"
+    }, 
+    {
+        "description": "We meet Jesse and Celine nine years on in Greece. Almost two decades have passed since their first meeting on that train bound for Vienna.", 
+        "metascore": "94", 
+        "month": "5", 
+        "director": "Richard Linklater", 
+        "netflix_id": "", 
+        "run_time": "109", 
+        "year": "2013", 
+        "genres": [
+            "Drama", 
+            "Romance"
+        ], 
+        "title": "Before Midnight (2013)", 
+        "stars": [
+            "Ethan Hawke", 
+            "Julie Delpy", 
+            "Seamus Davey-Fitzpatrick", 
+            "Ariane Labed"
+        ], 
+        "unique_id": "tt2209418"
+    }, 
+    {
+        "description": "A young Hasidic Jewish woman is pressured into an arranged levirate marriage to an older widower.", 
+        "metascore": "79", 
+        "month": "5", 
+        "director": "Rama Burshtein", 
+        "netflix_id": "", 
+        "run_time": "90", 
+        "year": "2013", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "Lemale et ha'halal (2012)", 
+        "stars": [
+            "Hadas Yaron", 
+            "Yiftach Klein", 
+            "Irit Sheleg", 
+            "Chayim Sharir"
+        ], 
+        "unique_id": "tt2219514"
+    }, 
+    {
+        "description": "A documentary that details the creation of Julian Assange's controversial website, which facilitated the largest security breach in U.S. history.", 
+        "metascore": "76", 
+        "month": "5", 
+        "director": "Alex Gibney", 
+        "netflix_id": "", 
+        "run_time": "130", 
+        "year": "2013", 
+        "genres": [
+            "Documentary"
+        ], 
+        "title": "We Steal Secrets: The Story of WikiLeaks (2013)", 
+        "stars": [
+            "Julian Assange", 
+            "Adrian Lamo", 
+            "John 'FuzzFace' McMahon", 
+            "Alex Gibney"
+        ], 
+        "unique_id": "tt1824254"
+    }, 
+    {
+        "description": "A crash landing leaves Kitai Raige and his father Cypher stranded on Earth, a millennium after events forced humanity's escape. With Cypher injured, Kitai must embark on a perilous journey to signal for help.", 
+        "metascore": "33", 
+        "month": "5", 
+        "director": "M. Night Shyamalan", 
+        "netflix_id": "", 
+        "run_time": "100", 
+        "year": "2013", 
+        "genres": [
+            "Action", 
+            "Adventure", 
+            "Sci-Fi"
+        ], 
+        "title": "After Earth (2013)", 
+        "stars": [
+            "Jaden Smith", 
+            "David Denman", 
+            "Will Smith", 
+            "Sophie Okonedo"
+        ], 
+        "unique_id": "tt1815862"
+    }, 
+    {
+        "description": "An FBI agent and an Interpol detective track a team of illusionists who pull off bank heists during their performances and reward their audiences with the money.", 
+        "metascore": "50", 
+        "month": "5", 
+        "director": "Louis Leterrier", 
+        "netflix_id": "", 
+        "run_time": "115", 
+        "year": "2013", 
+        "genres": [
+            "Crime", 
+            "Mystery", 
+            "Thriller"
+        ], 
+        "title": "Now You See Me (2013)", 
+        "stars": [
+            "Jesse Eisenberg", 
+            "Common", 
+            "Mark Ruffalo", 
+            "Woody Harrelson"
+        ], 
+        "unique_id": "tt1670345"
+    }, 
+    {
+        "description": "Three teenage friends, in the ultimate act of independence, decide to spend their summer building a house in the woods and living off the land.", 
+        "metascore": "61", 
+        "month": "5", 
+        "director": "Jordan Vogt-Roberts", 
+        "netflix_id": "", 
+        "run_time": "95", 
+        "year": "2013", 
+        "genres": [
+            "Adventure", 
+            "Comedy", 
+            "Drama"
+        ], 
+        "title": "The Kings of Summer (2013)", 
+        "stars": [
+            "Nick Robinson", 
+            "Gabriel Basso", 
+            "Moises Arias", 
+            "Nick Offerman"
+        ], 
+        "unique_id": "tt2179116"
+    }, 
+    {
+        "description": "An operative for an elite private intelligence firm finds her priorities changing dramatically after she is tasked with infiltrating an anarchist group known for executing covert attacks upon major corporations.", 
+        "metascore": "68", 
+        "month": "5", 
+        "director": "Zal Batmanglij", 
+        "netflix_id": "", 
+        "run_time": "116", 
+        "year": "2013", 
+        "genres": [
+            "Drama", 
+            "Thriller"
+        ], 
+        "title": "The East (2013)", 
+        "stars": [
+            "Brit Marling", 
+            "Alexander Skarsg\u00e5rd", 
+            "Ellen Page", 
+            "Toby Kebbell"
+        ], 
+        "unique_id": "tt1869716"
+    }, 
+    {
+        "description": "Set in 1990s Belfast, an active member of the IRA becomes an informant for MI5 in order to protect her son's welfare.", 
+        "metascore": "71", 
+        "month": "5", 
+        "director": "James Marsh", 
+        "netflix_id": "70227655", 
+        "run_time": "101", 
+        "year": "2013", 
+        "genres": [
+            "Drama", 
+            "Thriller"
+        ], 
+        "title": "Shadow Dancer (2012)", 
+        "stars": [
+            "Clive Owen", 
+            "Andrea Riseborough", 
+            "Gillian Anderson", 
+            "Aidan Gillen"
+        ], 
+        "unique_id": "tt1770734"
+    }, 
+    {
+        "description": "A look at the life of philosopher and political theorist Hannah Arendt, who reported for The New Yorker on the war crimes trial of the Nazi Adolf Eichmann.", 
+        "metascore": "69", 
+        "month": "5", 
+        "director": "Margarethe von Trotta", 
+        "netflix_id": "70259401", 
+        "run_time": "113", 
+        "year": "2013", 
+        "genres": [
+            "Biography", 
+            "Drama"
+        ], 
+        "title": "Hannah Arendt (2012)", 
+        "stars": [
+            "Barbara Sukowa", 
+            "Axel Milberg", 
+            "Janet McTeer", 
+            "Julia Jentsch"
+        ], 
+        "unique_id": "tt1674773"
+    }, 
+    {
+        "description": "The possibly exaggerated origin story of the real life alien bluegrass band, Future Folk, that has been playing for NYC audiences for the better part of a decade.", 
+        "metascore": "67", 
+        "month": "5", 
+        "director": "John Mitchell", 
+        "netflix_id": "70245246", 
+        "run_time": "86", 
+        "year": "2013", 
+        "genres": [
+            "Comedy", 
+            "Music", 
+            "Sci-Fi"
+        ], 
+        "title": "The History of Future Folk (2012)", 
+        "stars": [
+            "Nils d'Aulaire", 
+            "Jay Klaitz", 
+            "Julie Ann Emery", 
+            "April L. Hernandez"
+        ], 
+        "unique_id": "tt2245195"
+    }
+]

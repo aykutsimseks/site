@@ -1,0 +1,598 @@
+[
+    {
+        "description": "A chronicle of one woman's 1,100-mile solo hike undertaken as a way to recover from a recent personal tragedy.", 
+        "metascore": "76", 
+        "month": "12", 
+        "director": "Jean-Marc Vall\u00e9e", 
+        "netflix_id": "", 
+        "run_time": "115", 
+        "year": "2014", 
+        "genres": [
+            "Adventure", 
+            "Biography", 
+            "Drama", 
+            "History"
+        ], 
+        "title": "Wild (2014)", 
+        "stars": [
+            "Reese Witherspoon", 
+            "Laura Dern", 
+            "Gaby Hoffmann", 
+            "Michiel Huisman"
+        ], 
+        "unique_id": "tt2305051"
+    }, 
+    {
+        "description": "An archaeological team attempts to unlock the secrets of a lost pyramid only to find themselves hunted by an insidious creature.", 
+        "metascore": "24", 
+        "month": "12", 
+        "director": "Gr\u00e9gory Levasseur", 
+        "netflix_id": "", 
+        "run_time": "89", 
+        "year": "2014", 
+        "genres": [
+            "Action", 
+            "Adventure", 
+            "Horror", 
+            "Thriller"
+        ], 
+        "title": "The Pyramid (2014)", 
+        "stars": [
+            "Ashley Hinshaw", 
+            "James Buckley", 
+            "Denis O'Hare", 
+            "Christa Nicola"
+        ], 
+        "unique_id": "tt2799166"
+    }, 
+    {
+        "description": "A unit of female Israeli soldiers at a remote desert base bide their time as they count down the minutes until they can return to civilian life.", 
+        "metascore": "69", 
+        "month": "12", 
+        "director": "Talya Lavie", 
+        "netflix_id": "80000347", 
+        "run_time": "97", 
+        "year": "2014", 
+        "genres": [
+            "Comedy", 
+            "Drama"
+        ], 
+        "title": "Zero Motivation (2014)", 
+        "stars": [
+            "Dana Ivgy", 
+            "Nelly Tagar", 
+            "Shani Klein", 
+            "Heli Twito"
+        ], 
+        "unique_id": "tt3576084"
+    }, 
+    {
+        "description": "A thriller set at the beginning of the 1980's Norwegian Oil Boom and centered on a diver whose obsession with reaching the bottom of the Norwegian Sea leads to tragedy.", 
+        "metascore": "58", 
+        "month": "12", 
+        "director": "Erik Skjoldbj\u00e6rg", 
+        "netflix_id": "", 
+        "run_time": "111", 
+        "year": "2014", 
+        "genres": [
+            "Thriller"
+        ], 
+        "title": "Pioneer (2013)", 
+        "stars": [
+            "Aksel Hennie", 
+            "Wes Bentley", 
+            "Stephen Lang", 
+            "Stephanie Sigman"
+        ], 
+        "unique_id": "tt2369205"
+    }, 
+    {
+        "description": "Set in a parallel universe, Comet bounces back and forth over the course of an unlikely but perfectly paired couple's six-year relationship.", 
+        "metascore": "52", 
+        "month": "12", 
+        "director": "Sam Esmail", 
+        "netflix_id": "80011630", 
+        "run_time": "91", 
+        "year": "2014", 
+        "genres": [
+            "Comedy", 
+            "Drama", 
+            "Romance", 
+            "Sci-Fi"
+        ], 
+        "title": "Comet (2014)", 
+        "stars": [
+            "Justin Long", 
+            "Emmy Rossum", 
+            "Kayla Servi", 
+            "Eric Winter"
+        ], 
+        "unique_id": "tt2965412"
+    }, 
+    {
+        "description": "Sasha and Paige's co-dependent friendship is tested as Paige gets serious with a guy for the first time.", 
+        "metascore": "57", 
+        "month": "12", 
+        "director": "Susanna Fogel", 
+        "netflix_id": "70309690", 
+        "run_time": "93", 
+        "year": "2014", 
+        "genres": [
+            "Comedy", 
+            "Romance"
+        ], 
+        "title": "Life Partners (2014)", 
+        "stars": [
+            "Leighton Meester", 
+            "Gillian Jacobs", 
+            "Adam Brody", 
+            "Gabourey Sidibe"
+        ], 
+        "unique_id": "tt2870808"
+    }, 
+    {
+        "description": "A documentary that resurrects the buried history of the outrageous, often brilliant women who founded the modern women's movement from 1966 to 1971.", 
+        "metascore": "80", 
+        "month": "12", 
+        "director": "Mary Dore", 
+        "netflix_id": "", 
+        "run_time": "92", 
+        "year": "2014", 
+        "genres": [
+            "Documentary", 
+            "History"
+        ], 
+        "title": "She's Beautiful When She's Angry (2014)", 
+        "stars": [
+            "Chude Pamela Allen", 
+            "Alta", 
+            "Judith Arcana", 
+            "Nona Willis Aronowitz"
+        ], 
+        "unique_id": "tt3319508"
+    }, 
+    {
+        "description": "The defiant leader Moses rises up against the Egyptian Pharaoh Ramses, setting 600,000 slaves on a monumental journey of escape from Egypt and its terrifying cycle of deadly plagues.", 
+        "metascore": "52", 
+        "month": "12", 
+        "director": "Ridley Scott", 
+        "netflix_id": "", 
+        "run_time": "150", 
+        "year": "2014", 
+        "genres": [
+            "Action", 
+            "Adventure", 
+            "Drama"
+        ], 
+        "title": "Exodus: Gods and Kings (2014)", 
+        "stars": [
+            "Christian Bale", 
+            "Joel Edgerton", 
+            "Ben Kingsley", 
+            "Sigourney Weaver"
+        ], 
+        "unique_id": "tt1528100"
+    }, 
+    {
+        "description": "A comedian tries to make it as a serious actor when his reality-TV star fianc\u00e9e talks him into broadcasting their wedding on her TV show.", 
+        "metascore": "81", 
+        "month": "12", 
+        "director": "Chris Rock", 
+        "netflix_id": "", 
+        "run_time": "102", 
+        "year": "2014", 
+        "genres": [
+            "Comedy", 
+            "Romance"
+        ], 
+        "title": "Top Five (2014)", 
+        "stars": [
+            "Chris Rock", 
+            "Rosario Dawson", 
+            "Gabrielle Union", 
+            "Kevin Hart"
+        ], 
+        "unique_id": "tt2784678"
+    }, 
+    {
+        "description": "In 1970, drug-fueled Los Angeles private investigator Larry \"Doc\" Sportello investigates the disappearance of a former girlfriend.", 
+        "metascore": "81", 
+        "month": "12", 
+        "director": "Paul Thomas Anderson", 
+        "netflix_id": "", 
+        "run_time": "148", 
+        "year": "2014", 
+        "genres": [
+            "Comedy", 
+            "Crime", 
+            "Drama", 
+            "Mystery", 
+            "Romance"
+        ], 
+        "title": "Inherent Vice (2014)", 
+        "stars": [
+            "Joaquin Phoenix", 
+            "Josh Brolin", 
+            "Owen Wilson", 
+            "Katherine Waterston"
+        ], 
+        "unique_id": "tt1791528"
+    }, 
+    {
+        "description": "In New York City, a small group of passionate women launch a revolution movement to \"Free the Nipple\" and decriminalize the female body. Based on a true story, this mass movement of topless women, armed with First Amendment lawyers, graffiti installations and national publicity stunts, invade New York City to protest the backwards censorship laws in the USA. The film centers on a liberal journalist, named With, who sees potential in a story and hooks herself up with the group of women, led by the idealistic and eccentric Liv, and works with the close-knit of to follow the group in their quest.", 
+        "metascore": "33", 
+        "month": "12", 
+        "director": "Lina Esco", 
+        "netflix_id": "80021685", 
+        "run_time": "78", 
+        "year": "2014", 
+        "genres": [
+            "Comedy", 
+            "Drama"
+        ], 
+        "title": "Free the Nipple (2014)", 
+        "stars": [
+            "Lina Esco", 
+            "Lola Kirke", 
+            "Monique Coleman", 
+            "Zach Grenier"
+        ], 
+        "unique_id": "tt2298394"
+    }, 
+    {
+        "description": "A poetic road trip through Pulitzer prize-winning CK Williams' life.", 
+        "metascore": "34", 
+        "month": "12", 
+        "director": "Edna Luise Biesold", 
+        "netflix_id": "", 
+        "run_time": "73", 
+        "year": "2014", 
+        "genres": [
+            "Biography", 
+            "Drama", 
+            "Romance"
+        ], 
+        "title": "The Color of Time (2012)", 
+        "stars": [
+            "James Franco", 
+            "Mila Kunis", 
+            "Jessica Chastain", 
+            "Zach Braff"
+        ], 
+        "unique_id": "tt2133333"
+    }, 
+    {
+        "description": "A chronicle of one woman's 1,100-mile solo hike undertaken as a way to recover from a recent personal tragedy.", 
+        "metascore": "76", 
+        "month": "12", 
+        "director": "Jean-Marc Vall\u00e9e", 
+        "netflix_id": "", 
+        "run_time": "115", 
+        "year": "2014", 
+        "genres": [
+            "Adventure", 
+            "Biography", 
+            "Drama", 
+            "History"
+        ], 
+        "title": "Wild (2014)", 
+        "stars": [
+            "Reese Witherspoon", 
+            "Laura Dern", 
+            "Gaby Hoffmann", 
+            "Michiel Huisman"
+        ], 
+        "unique_id": "tt2305051"
+    }, 
+    {
+        "description": "Bilbo and Company are forced to engage in a war against an array of combatants and keep the Lonely Mountain from falling into the hands of a rising darkness.", 
+        "metascore": "59", 
+        "month": "12", 
+        "director": "Peter Jackson", 
+        "netflix_id": "", 
+        "run_time": "144", 
+        "year": "2014", 
+        "genres": [
+            "Adventure", 
+            "Fantasy"
+        ], 
+        "title": "The Hobbit: The Battle of the Five Armies (2014)", 
+        "stars": [
+            "Ian McKellen", 
+            "Martin Freeman", 
+            "Richard Armitage", 
+            "Cate Blanchett"
+        ], 
+        "unique_id": "tt2310332"
+    }, 
+    {
+        "description": "A foster kid, who lives with her mean foster mom, sees her life change when business tycoon and New York mayoral candidate Will Stacks makes a thinly-veiled campaign move and takes her in.", 
+        "metascore": "33", 
+        "month": "12", 
+        "director": "Will Gluck", 
+        "netflix_id": "", 
+        "run_time": "118", 
+        "year": "2014", 
+        "genres": [
+            "Comedy", 
+            "Drama", 
+            "Family", 
+            "Musical"
+        ], 
+        "title": "Annie (2014)", 
+        "stars": [
+            "Quvenzhan\u00e9 Wallis", 
+            "Cameron Diaz", 
+            "Jamie Foxx", 
+            "Rose Byrne"
+        ], 
+        "unique_id": "tt1823664"
+    }, 
+    {
+        "description": "Larry spans the globe, uniting favorite and new characters while embarking on an epic quest to save the magic before it is gone forever.", 
+        "metascore": "47", 
+        "month": "12", 
+        "director": "Shawn Levy", 
+        "netflix_id": "", 
+        "run_time": "98", 
+        "year": "2014", 
+        "genres": [
+            "Adventure", 
+            "Comedy", 
+            "Family", 
+            "Fantasy"
+        ], 
+        "title": "Night at the Museum: Secret of the Tomb (2014)", 
+        "stars": [
+            "Ben Stiller", 
+            "Robin Williams", 
+            "Owen Wilson", 
+            "Dick Van Dyke"
+        ], 
+        "unique_id": "tt2692250"
+    }, 
+    {
+        "description": "An exploration of the last quarter century of the great, if eccentric, British painter J.M.W. Turner's life.", 
+        "metascore": "94", 
+        "month": "12", 
+        "director": "Mike Leigh", 
+        "netflix_id": "", 
+        "run_time": "144", 
+        "year": "2014", 
+        "genres": [
+            "Biography", 
+            "Drama", 
+            "History"
+        ], 
+        "title": "Mr. Turner (2014)", 
+        "stars": [
+            "Timothy Spall", 
+            "Paul Jesson", 
+            "Dorothy Atkinson", 
+            "Marion Bailey"
+        ], 
+        "unique_id": "tt2473794"
+    }, 
+    {
+        "description": "When his wife unexpectedly informs him that she wants a divorce, well-meaning but oblivious husband Otto Wall finds himself thrust back into bachelorhood, where he searches for the real thing amidst a string of one night stands.", 
+        "metascore": "62", 
+        "month": "12", 
+        "director": "Angus MacLachlan", 
+        "netflix_id": "70309679", 
+        "run_time": "87", 
+        "year": "2014", 
+        "genres": [
+            "Comedy", 
+            "Drama", 
+            "Romance"
+        ], 
+        "title": "Goodbye to All That (2014)", 
+        "stars": [
+            "Paul Schneider", 
+            "Melanie Lynskey", 
+            "Anna Camp", 
+            "Heather Graham"
+        ], 
+        "unique_id": "tt2437548"
+    }, 
+    {
+        "description": "After a near-fatal plane crash in WWII, Olympian Louis Zamperini spends a harrowing 47 days in a raft with two fellow crewmen before he's caught by the Japanese navy and sent to a prisoner-of-war camp.", 
+        "metascore": "59", 
+        "month": "12", 
+        "director": "Angelina Jolie", 
+        "netflix_id": "", 
+        "run_time": "137", 
+        "year": "2014", 
+        "genres": [
+            "Biography", 
+            "Drama", 
+            "Sport", 
+            "War"
+        ], 
+        "title": "Unbroken (2014)", 
+        "stars": [
+            "Jack O'Connell", 
+            "Miyavi", 
+            "Domhnall Gleeson", 
+            "Garrett Hedlund"
+        ], 
+        "unique_id": "tt1809398"
+    }, 
+    {
+        "description": "A witch tasks a childless baker and his wife with procuring magical items from classic fairy tales to reverse the curse put on their family tree.", 
+        "metascore": "69", 
+        "month": "12", 
+        "director": "Rob Marshall", 
+        "netflix_id": "", 
+        "run_time": "125", 
+        "year": "2014", 
+        "genres": [
+            "Adventure", 
+            "Fantasy", 
+            "Musical"
+        ], 
+        "title": "Into the Woods (2014)", 
+        "stars": [
+            "Anna Kendrick", 
+            "Meryl Streep", 
+            "Chris Pine", 
+            "Emily Blunt"
+        ], 
+        "unique_id": "tt2180411"
+    }, 
+    {
+        "description": "Lit professor and gambler Jim Bennett's debt causes him to borrow money from his mother and a loan shark. Further complicating his situation is his relationship with one of his students. Will Bennett risk his life for a second chance?", 
+        "metascore": "55", 
+        "month": "12", 
+        "director": "Rupert Wyatt", 
+        "netflix_id": "", 
+        "run_time": "111", 
+        "year": "2014", 
+        "genres": [
+            "Crime", 
+            "Drama", 
+            "Thriller"
+        ], 
+        "title": "The Gambler (2014)", 
+        "stars": [
+            "Mark Wahlberg", 
+            "Jessica Lange", 
+            "John Goodman", 
+            "Brie Larson"
+        ], 
+        "unique_id": "tt2039393"
+    }, 
+    {
+        "description": "Dave Skylark and producer Aaron Rapoport run the celebrity tabloid show \"Skylark Tonight.\" When they land an interview with a surprise fan, North Korean dictator Kim Jong-un, they are recruited by the CIA to turn their trip to Pyongyang into an assassination mission.", 
+        "metascore": "52", 
+        "month": "12", 
+        "director": "Evan Goldberg", 
+        "netflix_id": "70305895", 
+        "run_time": "112", 
+        "year": "2014", 
+        "genres": [
+            "Action", 
+            "Comedy"
+        ], 
+        "title": "The Interview (2014)", 
+        "stars": [
+            "James Franco", 
+            "Seth Rogen", 
+            "Randall Park", 
+            "Lizzy Caplan"
+        ], 
+        "unique_id": "tt2788710"
+    }, 
+    {
+        "description": "A chronicle of Martin Luther King's campaign to secure equal voting rights via an epic march from Selma to Montgomery, Alabama in 1965.", 
+        "metascore": "89", 
+        "month": "12", 
+        "director": "Ava DuVernay", 
+        "netflix_id": "", 
+        "run_time": "128", 
+        "year": "2014", 
+        "genres": [
+            "Biography", 
+            "Drama", 
+            "History"
+        ], 
+        "title": "Selma (2014)", 
+        "stars": [
+            "David Oyelowo", 
+            "Carmen Ejogo", 
+            "Tim Roth", 
+            "Lorraine Toussaint"
+        ], 
+        "unique_id": "tt1020072"
+    }, 
+    {
+        "description": "Navy S.E.A.L. sniper Chris Kyle's pinpoint accuracy saves countless lives on the battlefield and turns him into a legend. Back home to his wife and kids after four tours of duty, however, Chris finds that it is the war he can't leave behind.", 
+        "metascore": "72", 
+        "month": "12", 
+        "director": "Clint Eastwood", 
+        "netflix_id": "", 
+        "run_time": "133", 
+        "year": "2014", 
+        "genres": [
+            "Action", 
+            "Biography", 
+            "Drama", 
+            "History", 
+            "Thriller", 
+            "War"
+        ], 
+        "title": "American Sniper (2014)", 
+        "stars": [
+            "Bradley Cooper", 
+            "Sienna Miller", 
+            "Kyle Gallner", 
+            "Cole Konis"
+        ], 
+        "unique_id": "tt2179136"
+    }, 
+    {
+        "description": "A drama about the awakening of the painter Margaret Keane, her phenomenal success in the 1950s, and the subsequent legal difficulties she had with her husband, who claimed credit for her works in the 1960s.", 
+        "metascore": "62", 
+        "month": "12", 
+        "director": "Tim Burton", 
+        "netflix_id": "", 
+        "run_time": "106", 
+        "year": "2014", 
+        "genres": [
+            "Biography", 
+            "Crime", 
+            "Drama", 
+            "Romance"
+        ], 
+        "title": "Big Eyes (2014)", 
+        "stars": [
+            "Amy Adams", 
+            "Christoph Waltz", 
+            "Danny Huston", 
+            "Krysten Ritter"
+        ], 
+        "unique_id": "tt1126590"
+    }, 
+    {
+        "description": "Sandra, a young Belgian mother, discovers that her workmates have opted for a significant pay bonus, in exchange for her dismissal. She has only one weekend to convince her colleagues to give up their bonuses so that she can keep her job.", 
+        "metascore": "89", 
+        "month": "12", 
+        "director": "Jean-Pierre Dardenne", 
+        "netflix_id": "", 
+        "run_time": "95", 
+        "year": "2014", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "Deux jours, une nuit (2014)", 
+        "stars": [
+            "Marion Cotillard", 
+            "Fabrizio Rongione", 
+            "Catherine Sal\u00e9e", 
+            "Batiste Sornin"
+        ], 
+        "unique_id": "tt2737050"
+    }, 
+    {
+        "description": "The aristocratic sisters Charlotte and Caroline both fall in love with the controversial young writer and hothead Friedrich Schiller. Defying the conventions of their time, the sisters decide to share their love with Schiller. What begins playfully, almost as a game among the three of them, soon turns serious as it leads to the end of a pact.", 
+        "metascore": "66", 
+        "month": "12", 
+        "director": "Dominik Graf", 
+        "netflix_id": "", 
+        "run_time": "138", 
+        "year": "2014", 
+        "genres": [
+            "Drama", 
+            "History", 
+            "Romance"
+        ], 
+        "title": "Beloved Sisters (2014)", 
+        "stars": [
+            "Hannah Herzsprung", 
+            "Florian Stetter", 
+            "Henriette Confurius", 
+            "Claudia Messner"
+        ], 
+        "unique_id": "tt2790236"
+    }
+]

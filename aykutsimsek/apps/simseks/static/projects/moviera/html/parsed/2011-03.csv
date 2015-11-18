@@ -1,0 +1,551 @@
+[
+    {
+        "description": "Rango is an ordinary chameleon who accidentally winds up in the town of Dirt, a lawless outpost in the Wild West in desperate need of a new sheriff.", 
+        "metascore": "75", 
+        "month": "3", 
+        "director": "Gore Verbinski", 
+        "netflix_id": "", 
+        "run_time": "107", 
+        "year": "2011", 
+        "genres": [
+            "Animation", 
+            "Adventure", 
+            "Comedy", 
+            "Family", 
+            "Western"
+        ], 
+        "title": "Rango (2011)", 
+        "stars": [
+            "Johnny Depp", 
+            "Isla Fisher", 
+            "Timothy Olyphant", 
+            "Abigail Breslin"
+        ], 
+        "unique_id": "tt1192628"
+    }, 
+    {
+        "description": "The affair between a politician and a ballerina is affected by mysterious forces keeping the lovers apart.", 
+        "metascore": "60", 
+        "month": "3", 
+        "director": "George Nolfi", 
+        "netflix_id": "", 
+        "run_time": "106", 
+        "year": "2011", 
+        "genres": [
+            "Romance", 
+            "Sci-Fi", 
+            "Thriller"
+        ], 
+        "title": "The Adjustment Bureau (2011)", 
+        "stars": [
+            "Matt Damon", 
+            "Emily Blunt", 
+            "Lisa Thoreson", 
+            "Florence Kastriner"
+        ], 
+        "unique_id": "tt1385826"
+    }, 
+    {
+        "description": "Four years after graduation, an awkward high school genius uses his sister's boyfriend's Labor Day party as the perfect opportunity to make his move on his high school crush.", 
+        "metascore": "42", 
+        "month": "3", 
+        "director": "Michael Dowse", 
+        "netflix_id": "", 
+        "run_time": "97", 
+        "year": "2011", 
+        "genres": [
+            "Comedy", 
+            "Drama", 
+            "Romance"
+        ], 
+        "title": "Take Me Home Tonight (2011)", 
+        "stars": [
+            "Topher Grace", 
+            "Anna Faris", 
+            "Dan Fogler", 
+            "Teresa Palmer"
+        ], 
+        "unique_id": "tt0810922"
+    }, 
+    {
+        "description": "Set in Middle America, a group of teens receive an online invitation for sex, though they soon encounter fundamentalists with a much more sinister agenda.", 
+        "metascore": "50", 
+        "month": "3", 
+        "director": "Kevin Smith", 
+        "netflix_id": "", 
+        "run_time": "88", 
+        "year": "2011", 
+        "genres": [
+            "Action", 
+            "Crime", 
+            "Horror", 
+            "Thriller"
+        ], 
+        "title": "Red State (2011)", 
+        "stars": [
+            "Michael Parks", 
+            "Melissa Leo", 
+            "John Goodman", 
+            "Michael Angarano"
+        ], 
+        "unique_id": "tt0873886"
+    }, 
+    {
+        "description": "A modern-day take on the \"Beauty and the Beast\" tale where a New York teen is transformed into a hideous monster in order to find true love.", 
+        "metascore": "40", 
+        "month": "3", 
+        "director": "Daniel Barnz", 
+        "netflix_id": "", 
+        "run_time": "86", 
+        "year": "2011", 
+        "genres": [
+            "Drama", 
+            "Fantasy", 
+            "Romance"
+        ], 
+        "title": "Beastly (2011)", 
+        "stars": [
+            "Alex Pettyfer", 
+            "Vanessa Hudgens", 
+            "Mary-Kate Olsen", 
+            "Justin Bradley"
+        ], 
+        "unique_id": "tt1152398"
+    }, 
+    {
+        "description": "Captures a generational moment - young people on the cusp of truly growing up, tiring of their reflexive cynicism, each in their own ways struggling to connect and define what it means to love and be loved.", 
+        "metascore": "45", 
+        "month": "3", 
+        "director": "Josh Radnor", 
+        "netflix_id": "", 
+        "run_time": "100", 
+        "year": "2011", 
+        "genres": [
+            "Comedy", 
+            "Drama", 
+            "Romance"
+        ], 
+        "title": "Happythankyoumoreplease (2010)", 
+        "stars": [
+            "Josh Radnor", 
+            "Malin Akerman", 
+            "Zoe Kazan", 
+            "Michael Algieri"
+        ], 
+        "unique_id": "tt1481572"
+    }, 
+    {
+        "description": "On his deathbed, Uncle Boonmee recalls his many past lives.", 
+        "metascore": "87", 
+        "month": "3", 
+        "director": "Apichatpong Weerasethakul", 
+        "netflix_id": "", 
+        "run_time": "114", 
+        "year": "2011", 
+        "genres": [
+            "Drama", 
+            "Fantasy"
+        ], 
+        "title": "Loong Boonmee raleuk chat (2010)", 
+        "stars": [
+            "Thanapat Saisaymar", 
+            "Jenjira Pongpas", 
+            "Sakda Kaewbuadee", 
+            "Natthakarn Aphaiwonk"
+        ], 
+        "unique_id": "tt1588895"
+    }, 
+    {
+        "description": "A secret agent exacts revenge on a serial killer through a series of captures and releases.", 
+        "metascore": "67", 
+        "month": "3", 
+        "director": "Jee-woon Kim", 
+        "netflix_id": "", 
+        "run_time": "141", 
+        "year": "2011", 
+        "genres": [
+            "Crime", 
+            "Drama", 
+            "Horror", 
+            "Thriller"
+        ], 
+        "title": "I Saw the Devil (2010)", 
+        "stars": [
+            "Byung-hun Lee", 
+            "Min-sik Choi", 
+            "In-seo Kim", 
+            "Ho-jin Chun"
+        ], 
+        "unique_id": "tt1588170"
+    }, 
+    {
+        "description": "About a peculiar young boy who, as he blurs reality and fantasy, takes over the responsibilities of a family man in his father's absence.", 
+        "metascore": "", 
+        "month": "3", 
+        "director": "Diego Luna", 
+        "netflix_id": "", 
+        "run_time": "82", 
+        "year": "2011", 
+        "genres": [
+            "Comedy", 
+            "Drama"
+        ], 
+        "title": "Abel (2010)", 
+        "stars": [
+            "Christopher Ru\u00edz-Esparza", 
+            "Karina Gidi", 
+            "Jos\u00e9 Mar\u00eda Yazpik", 
+            "Carlos Arag\u00f3n"
+        ], 
+        "unique_id": "tt1479668"
+    }, 
+    {
+        "description": "A squadron of U.S. Marines becomes the last line of defense against a global invasion.", 
+        "metascore": "37", 
+        "month": "3", 
+        "director": "Jonathan Liebesman", 
+        "netflix_id": "", 
+        "run_time": "116", 
+        "year": "2011", 
+        "genres": [
+            "Action", 
+            "Sci-Fi"
+        ], 
+        "title": "Battle Los Angeles (2011)", 
+        "stars": [
+            "Aaron Eckhart", 
+            "Michelle Rodriguez", 
+            "Bridget Moynahan", 
+            "Ramon Rodriguez"
+        ], 
+        "unique_id": "tt1217613"
+    }, 
+    {
+        "description": "A mousy governess who softens the heart of her employer soon discovers that he's hiding a terrible secret.", 
+        "metascore": "76", 
+        "month": "3", 
+        "director": "Cary Joji Fukunaga", 
+        "netflix_id": "70142825", 
+        "run_time": "120", 
+        "year": "2011", 
+        "genres": [
+            "Drama", 
+            "Romance"
+        ], 
+        "title": "Jane Eyre (2011)", 
+        "stars": [
+            "Mia Wasikowska", 
+            "Michael Fassbender", 
+            "Jamie Bell", 
+            "Su Elliot"
+        ], 
+        "unique_id": "tt1229822"
+    }, 
+    {
+        "description": "Set in a medieval village that is haunted by a werewolf, a young girl falls for an orphaned woodcutter, much to her family's displeasure.", 
+        "metascore": "29", 
+        "month": "3", 
+        "director": "Catherine Hardwicke", 
+        "netflix_id": "", 
+        "run_time": "100", 
+        "year": "2011", 
+        "genres": [
+            "Fantasy", 
+            "Horror", 
+            "Mystery", 
+            "Thriller"
+        ], 
+        "title": "Red Riding Hood (2011)", 
+        "stars": [
+            "Amanda Seyfried", 
+            "Lukas Haas", 
+            "Gary Oldman", 
+            "Billy Burke"
+        ], 
+        "unique_id": "tt1486185"
+    }, 
+    {
+        "description": "A young boy named Milo gains a deeper appreciation for his mom after Martians come to Earth to take her away.", 
+        "metascore": "49", 
+        "month": "3", 
+        "director": "Simon Wells", 
+        "netflix_id": "", 
+        "run_time": "88", 
+        "year": "2011", 
+        "genres": [
+            "Animation", 
+            "Action", 
+            "Adventure", 
+            "Comedy", 
+            "Family", 
+            "Sci-Fi"
+        ], 
+        "title": "Mars Needs Moms (2011)", 
+        "stars": [
+            "Seth Green", 
+            "Joan Cusack", 
+            "Dan Fogler", 
+            "Elisabeth Harnois"
+        ], 
+        "unique_id": "tt1305591"
+    }, 
+    {
+        "description": "In Tuscany to promote his latest book, a middle-aged British writer meets a French woman who leads him to the village of Lucignano. While there, a chance question reveals something deeper.", 
+        "metascore": "82", 
+        "month": "3", 
+        "director": "Abbas Kiarostami", 
+        "netflix_id": "", 
+        "run_time": "106", 
+        "year": "2011", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "Certified Copy (2010)", 
+        "stars": [
+            "Juliette Binoche", 
+            "William Shimell", 
+            "Jean-Claude Carri\u00e8re", 
+            "Agathe Natanson"
+        ], 
+        "unique_id": "tt1020773"
+    }, 
+    {
+        "description": "Set during the time of the first outbreak of bubonic plague in England, a young monk is given the task of learning the truth about reports of people being brought back to life in a small village.", 
+        "metascore": "71", 
+        "month": "3", 
+        "director": "Christopher Smith", 
+        "netflix_id": "70122631", 
+        "run_time": "102", 
+        "year": "2011", 
+        "genres": [
+            "Action", 
+            "Adventure", 
+            "Drama", 
+            "History", 
+            "Horror", 
+            "Mystery"
+        ], 
+        "title": "Black Death (2010)", 
+        "stars": [
+            "Eddie Redmayne", 
+            "Sean Bean", 
+            "Carice van Houten", 
+            "Kimberley Nixon"
+        ], 
+        "unique_id": "tt1181791"
+    }, 
+    {
+        "description": "The true story of Danny Greene, a tough Irish thug working for mobsters in Cleveland during the 1970's.", 
+        "metascore": "50", 
+        "month": "3", 
+        "director": "Jonathan Hensleigh", 
+        "netflix_id": "", 
+        "run_time": "106", 
+        "year": "2011", 
+        "genres": [
+            "Action", 
+            "Biography", 
+            "Crime", 
+            "Drama", 
+            "Thriller"
+        ], 
+        "title": "Kill the Irishman (2011)", 
+        "stars": [
+            "Ray Stevenson", 
+            "Christopher Walken", 
+            "Vincent D'Onofrio", 
+            "Val Kilmer"
+        ], 
+        "unique_id": "tt1416801"
+    }, 
+    {
+        "description": "With the help of a mysterious pill that enables the user to access 100 percent of his brain abilities, a struggling writer becomes a financial wizard, but it also puts him in a new world with lots of dangers.", 
+        "metascore": "59", 
+        "month": "3", 
+        "director": "Neil Burger", 
+        "netflix_id": "", 
+        "run_time": "105", 
+        "year": "2011", 
+        "genres": [
+            "Mystery", 
+            "Sci-Fi", 
+            "Thriller"
+        ], 
+        "title": "Limitless (2011)", 
+        "stars": [
+            "Bradley Cooper", 
+            "Anna Friel", 
+            "Abbie Cornish", 
+            "Robert De Niro"
+        ], 
+        "unique_id": "tt1219289"
+    }, 
+    {
+        "description": "Two British comic-book geeks traveling across the U.S. encounter an alien outside Area 51.", 
+        "metascore": "57", 
+        "month": "3", 
+        "director": "Greg Mottola", 
+        "netflix_id": "", 
+        "run_time": "104", 
+        "year": "2011", 
+        "genres": [
+            "Adventure", 
+            "Comedy", 
+            "Sci-Fi"
+        ], 
+        "title": "Paul (2011)", 
+        "stars": [
+            "Simon Pegg", 
+            "Nick Frost", 
+            "Seth Rogen", 
+            "Mia Stallard"
+        ], 
+        "unique_id": "tt1092026"
+    }, 
+    {
+        "description": "A defense attorney has a crisis of conscience when he represents a wealthy client who has a foolproof plan to beat the system.", 
+        "metascore": "63", 
+        "month": "3", 
+        "director": "Brad Furman", 
+        "netflix_id": "", 
+        "run_time": "118", 
+        "year": "2011", 
+        "genres": [
+            "Crime", 
+            "Drama", 
+            "Thriller"
+        ], 
+        "title": "The Lincoln Lawyer (2011)", 
+        "stars": [
+            "Matthew McConaughey", 
+            "Marisa Tomei", 
+            "Ryan Phillippe", 
+            "William H. Macy"
+        ], 
+        "unique_id": "tt1189340"
+    }, 
+    {
+        "description": "A young girl is institutionalized by her abusive stepfather. Retreating to an alternative reality as a coping strategy, she envisions a plan which will help her escape from the mental facility.", 
+        "metascore": "33", 
+        "month": "3", 
+        "director": "Zack Snyder", 
+        "netflix_id": "", 
+        "run_time": "110", 
+        "year": "2011", 
+        "genres": [
+            "Action", 
+            "Adventure", 
+            "Fantasy"
+        ], 
+        "title": "Sucker Punch (2011)", 
+        "stars": [
+            "Emily Browning", 
+            "Vanessa Hudgens", 
+            "Abbie Cornish", 
+            "Jena Malone"
+        ], 
+        "unique_id": "tt0978764"
+    }, 
+    {
+        "description": "Back in middle school after summer vacation, Greg Heffley and his older brother Rodrick must deal with their parents' misguided attempts to have them bond.", 
+        "metascore": "51", 
+        "month": "3", 
+        "director": "David Bowers", 
+        "netflix_id": "", 
+        "run_time": "99", 
+        "year": "2011", 
+        "genres": [
+            "Comedy", 
+            "Family"
+        ], 
+        "title": "Diary of a Wimpy Kid: Rodrick Rules (2011)", 
+        "stars": [
+            "Zachary Gordon", 
+            "Devon Bostick", 
+            "Robert Capron", 
+            "Rachael Harris"
+        ], 
+        "unique_id": "tt1650043"
+    }, 
+    {
+        "description": "A drama centered on an orphaned Palestinian girl growing up in the wake of Arab-Israeli war who finds herself drawn into the conflict.", 
+        "metascore": "45", 
+        "month": "3", 
+        "director": "Julian Schnabel", 
+        "netflix_id": "", 
+        "run_time": "112", 
+        "year": "2011", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "Miral (2010)", 
+        "stars": [
+            "Freida Pinto", 
+            "Hiam Abbass", 
+            "Willem Dafoe", 
+            "Asma Al Shiukhy"
+        ], 
+        "unique_id": "tt1366409"
+    }, 
+    {
+        "description": "When her husband is taken hostage by his striking employees, a trophy wife (Deneuve) takes the reins of the family business and proves to be a remarkably effective leader. Business and personal complications arrive in the form of her ex-lover (Depardieu), a former union leader.", 
+        "metascore": "68", 
+        "month": "3", 
+        "director": "Fran\u00e7ois Ozon", 
+        "netflix_id": "", 
+        "run_time": "103", 
+        "year": "2011", 
+        "genres": [
+            "Comedy"
+        ], 
+        "title": "Potiche (2010)", 
+        "stars": [
+            "Catherine Deneuve", 
+            "G\u00e9rard Depardieu", 
+            "Fabrice Luchini", 
+            "Karin Viard"
+        ], 
+        "unique_id": "tt1521848"
+    }, 
+    {
+        "description": "Four siblings implode after the release of a book written about them.", 
+        "metascore": "27", 
+        "month": "3", 
+        "director": "Barry W. Blaustein", 
+        "netflix_id": "70120144", 
+        "run_time": "79", 
+        "year": "2011", 
+        "genres": [
+            "Comedy", 
+            "Drama"
+        ], 
+        "title": "Peep World (2010)", 
+        "stars": [
+            "Michael C. Hall", 
+            "Sarah Silverman", 
+            "Rainn Wilson", 
+            "Lewis Black"
+        ], 
+        "unique_id": "tt1103273"
+    }, 
+    {
+        "description": "Brooklyn, 1975: two brothers looking for a way out of their working-class neighborhood make a pact to rob a local theater on the night of a Rolling Stones concert.", 
+        "metascore": "51", 
+        "month": "3", 
+        "director": "John Gray", 
+        "netflix_id": "", 
+        "run_time": "109", 
+        "year": "2011", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "White Irish Drinkers (2010)", 
+        "stars": [
+            "Nick Thurston", 
+            "Geoffrey Wigdor", 
+            "Stephen Lang", 
+            "Karen Allen"
+        ], 
+        "unique_id": "tt1550524"
+    }
+]

@@ -1,0 +1,473 @@
+[
+    {
+        "description": "An underwater cave diving team experiences a life-threatening crisis during an expedition to the unexplored and least accessible cave system in the world.", 
+        "metascore": "42", 
+        "month": "2", 
+        "director": "Alister Grierson", 
+        "netflix_id": "70142826", 
+        "run_time": "108", 
+        "year": "2011", 
+        "genres": [
+            "Adventure", 
+            "Drama", 
+            "Thriller"
+        ], 
+        "title": "Sanctum (2011)", 
+        "stars": [
+            "Rhys Wakefield", 
+            "Allison Cratchley", 
+            "Christopher James Baker", 
+            "Richard Roxburgh"
+        ], 
+        "unique_id": "tt0881320"
+    }, 
+    {
+        "description": "College student Sara finds that her new roommate Rebecca has an obsession with her, which quickly turns violent.", 
+        "metascore": "23", 
+        "month": "2", 
+        "director": "Christian E. Christiansen", 
+        "netflix_id": "", 
+        "run_time": "91", 
+        "year": "2011", 
+        "genres": [
+            "Drama", 
+            "Horror", 
+            "Thriller"
+        ], 
+        "title": "The Roommate (2011)", 
+        "stars": [
+            "Minka Kelly", 
+            "Leighton Meester", 
+            "Cam Gigandet", 
+            "Aly Michalka"
+        ], 
+        "unique_id": "tt1265990"
+    }, 
+    {
+        "description": "A guy who moves back to Portland, Oregon becomes involved in the mystery of his ex-girlfriend's disappearance.", 
+        "metascore": "64", 
+        "month": "2", 
+        "director": "Aaron Katz", 
+        "netflix_id": "", 
+        "run_time": "96", 
+        "year": "2011", 
+        "genres": [
+            "Comedy", 
+            "Drama", 
+            "Mystery"
+        ], 
+        "title": "Cold Weather (2010)", 
+        "stars": [
+            "Cris Lankenau", 
+            "Ra\u00fal Castillo", 
+            "Robyn Rikoon", 
+            "Trieste Kelly Dunn"
+        ], 
+        "unique_id": "tt1497874"
+    }, 
+    {
+        "description": "A drama that details the story of a woman's difficult relationship with her stepson.", 
+        "metascore": "37", 
+        "month": "2", 
+        "director": "Don Roos", 
+        "netflix_id": "70122302", 
+        "run_time": "102", 
+        "year": "2011", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "The Other Woman (2009)", 
+        "stars": [
+            "Natalie Portman", 
+            "Scott Cohen", 
+            "Lisa Kudrow", 
+            "Charlie Tahan"
+        ], 
+        "unique_id": "tt1032825"
+    }, 
+    {
+        "description": "On a weekend trip to Hawaii, a plastic surgeon convinces his loyal assistant to pose as his soon-to-be-divorced wife in order to cover up a careless lie he told to his much-younger girlfriend.", 
+        "metascore": "33", 
+        "month": "2", 
+        "director": "Dennis Dugan", 
+        "netflix_id": "", 
+        "run_time": "117", 
+        "year": "2011", 
+        "genres": [
+            "Comedy", 
+            "Romance"
+        ], 
+        "title": "Just Go with It (2011)", 
+        "stars": [
+            "Adam Sandler", 
+            "Jennifer Aniston", 
+            "Brooklyn Decker", 
+            "Nicole Kidman"
+        ], 
+        "unique_id": "tt1564367"
+    }, 
+    {
+        "description": "The neighboring gardens of Montague and Capulet are at war, but the gnomes, Gnomeo and Juliet, are in love.", 
+        "metascore": "53", 
+        "month": "2", 
+        "director": "Kelly Asbury", 
+        "netflix_id": "", 
+        "run_time": "84", 
+        "year": "2011", 
+        "genres": [
+            "Animation", 
+            "Comedy", 
+            "Family", 
+            "Romance"
+        ], 
+        "title": "Gnomeo & Juliet (2011)", 
+        "stars": [
+            "James McAvoy", 
+            "Emily Blunt", 
+            "Maggie Smith", 
+            "Ashley Jensen"
+        ], 
+        "unique_id": "tt0377981"
+    }, 
+    {
+        "description": "Tim Lippe has no idea what he's in for when he's sent to Cedar Rapids, Iowa to represent his company at an annual insurance convention, where he soon finds himself under the \"guidance\" of three convention veterans.", 
+        "metascore": "70", 
+        "month": "2", 
+        "director": "Miguel Arteta", 
+        "netflix_id": "", 
+        "run_time": "87", 
+        "year": "2011", 
+        "genres": [
+            "Comedy"
+        ], 
+        "title": "Cedar Rapids (2011)", 
+        "stars": [
+            "Ed Helms", 
+            "John C. Reilly", 
+            "Anne Heche", 
+            "Isiah Whitlock Jr."
+        ], 
+        "unique_id": "tt1477837"
+    }, 
+    {
+        "description": "In Roman-ruled Britain, a young Roman soldier endeavors to honor his father's memory by finding his lost legion's golden emblem.", 
+        "metascore": "55", 
+        "month": "2", 
+        "director": "Kevin Macdonald", 
+        "netflix_id": "70130141", 
+        "run_time": "114", 
+        "year": "2011", 
+        "genres": [
+            "Action", 
+            "Adventure", 
+            "Drama"
+        ], 
+        "title": "The Eagle (2011)", 
+        "stars": [
+            "Channing Tatum", 
+            "Jamie Bell", 
+            "Donald Sutherland", 
+            "Istv\u00e1n G\u00f6z"
+        ], 
+        "unique_id": "tt1034389"
+    }, 
+    {
+        "description": "Follows Justin Bieber with some footage of performances from his 2010 concert tour.", 
+        "metascore": "52", 
+        "month": "2", 
+        "director": "Jon M. Chu", 
+        "netflix_id": "", 
+        "run_time": "105", 
+        "year": "2011", 
+        "genres": [
+            "Documentary", 
+            "Music"
+        ], 
+        "title": "Justin Bieber: Never Say Never (2011)", 
+        "stars": [
+            "Justin Bieber", 
+            "Boys II Men", 
+            "Miley Cyrus", 
+            "Sean Kingston"
+        ], 
+        "unique_id": "tt1702443"
+    }, 
+    {
+        "description": "Aliens and their Guardians are hiding on Earth from intergalactic bounty hunters. They can only be killed in numerical order, and Number Four is next on the list. This is his story.", 
+        "metascore": "36", 
+        "month": "2", 
+        "director": "D.J. Caruso", 
+        "netflix_id": "", 
+        "run_time": "109", 
+        "year": "2011", 
+        "genres": [
+            "Action", 
+            "Adventure", 
+            "Sci-Fi", 
+            "Thriller"
+        ], 
+        "title": "I Am Number Four (2011)", 
+        "stars": [
+            "Alex Pettyfer", 
+            "Timothy Olyphant", 
+            "Dianna Agron", 
+            "Teresa Palmer"
+        ], 
+        "unique_id": "tt1464540"
+    }, 
+    {
+        "description": "A man awakens from a coma, only to discover that someone has taken on his identity and that no one, (not even his wife), believes him. With the help of a young woman, he sets out to prove who he is.", 
+        "metascore": "56", 
+        "month": "2", 
+        "director": "Jaume Collet-Serra", 
+        "netflix_id": "", 
+        "run_time": "113", 
+        "year": "2011", 
+        "genres": [
+            "Action", 
+            "Mystery", 
+            "Thriller"
+        ], 
+        "title": "Unknown (2011)", 
+        "stars": [
+            "Liam Neeson", 
+            "Diane Kruger", 
+            "January Jones", 
+            "Aidan Quinn"
+        ], 
+        "unique_id": "tt1401152"
+    }, 
+    {
+        "description": "Malcolm Turner (Martin Lawrence) and his stepson Trent (Brandon T. Jackson) go under cover at an girls school to flush out a killer.", 
+        "metascore": "22", 
+        "month": "2", 
+        "director": "John Whitesell", 
+        "netflix_id": "", 
+        "run_time": "107", 
+        "year": "2011", 
+        "genres": [
+            "Action", 
+            "Comedy", 
+            "Crime"
+        ], 
+        "title": "Big Mommas: Like Father, Like Son (2011)", 
+        "stars": [
+            "Martin Lawrence", 
+            "Brandon T. Jackson", 
+            "Jessica Lucas", 
+            "Michelle Ang"
+        ], 
+        "unique_id": "tt1464174"
+    }, 
+    {
+        "description": "The population of Detroit has almost completely disappeared, but a few remain. As daylight disappears they realize that the Dark is coming for them.", 
+        "metascore": "50", 
+        "month": "2", 
+        "director": "Brad Anderson", 
+        "netflix_id": "70136080", 
+        "run_time": "92", 
+        "year": "2011", 
+        "genres": [
+            "Horror", 
+            "Mystery", 
+            "Thriller"
+        ], 
+        "title": "Vanishing on 7th Street (2010)", 
+        "stars": [
+            "Hayden Christensen", 
+            "Thandie Newton", 
+            "John Leguizamo", 
+            "Jacob Latimore"
+        ], 
+        "unique_id": "tt1452628"
+    }, 
+    {
+        "description": "Director Tom Shadyac speaks with intellectual and spiritual leaders about what's wrong with our world and how we can improve both it and the way we live in it.", 
+        "metascore": "38", 
+        "month": "2", 
+        "director": "Tom Shadyac", 
+        "netflix_id": "", 
+        "run_time": "78", 
+        "year": "2011", 
+        "genres": [
+            "Documentary"
+        ], 
+        "title": "I Am (2010)", 
+        "stars": [
+            "Tom Shadyac", 
+            "Desmond Tutu", 
+            "Noam Chomsky", 
+            "Ray Anderson"
+        ], 
+        "unique_id": "tt1741225"
+    }, 
+    {
+        "description": "An American couple and a foreign couple test the limits of friendship and love when they switch partners and get married for green cards.", 
+        "metascore": "28", 
+        "month": "2", 
+        "director": "David Burton Morris", 
+        "netflix_id": "", 
+        "run_time": "92", 
+        "year": "2011", 
+        "genres": [
+            "Comedy"
+        ], 
+        "title": "Immigration Tango (2010)", 
+        "stars": [
+            "Elika Portnoy", 
+            "McCaleb Burnett", 
+            "Carlos Leon", 
+            "Ashley Wolfe"
+        ], 
+        "unique_id": "tt1415269"
+    }, 
+    {
+        "description": "As a director and his crew shoot a controversial film about Christopher Columbus in Cochabamba, Bolivia, local people rise up against plans to privatize the water supply.", 
+        "metascore": "69", 
+        "month": "2", 
+        "director": "Iciar Bollain", 
+        "netflix_id": "", 
+        "run_time": "103", 
+        "year": "2011", 
+        "genres": [
+            "Drama", 
+            "History"
+        ], 
+        "title": "Tambi\u00e9n la lluvia (2010)", 
+        "stars": [
+            "Gael Garc\u00eda Bernal", 
+            "Luis Tosar", 
+            "Karra Elejalde", 
+            "Juan Carlos Aduviri"
+        ], 
+        "unique_id": "tt1422032"
+    }, 
+    {
+        "description": "Adam Buckley finds himself in the middle of a convenience store robbery during his last night as a pledge for a college fraternity. When the initiation ritual goes horribly wrong, and every move proves disastrous, Adam is forced to confront a new challenge all together, and he has to take a stand.", 
+        "metascore": "52", 
+        "month": "2", 
+        "director": "Will Canon", 
+        "netflix_id": "", 
+        "run_time": "76", 
+        "year": "2011", 
+        "genres": [
+            "Crime", 
+            "Drama", 
+            "Thriller"
+        ], 
+        "title": "Brotherhood (2010)", 
+        "stars": [
+            "Trevor Morgan", 
+            "Lou Taylor Pucci", 
+            "Arlen Escarpeta", 
+            "Jon Foster"
+        ], 
+        "unique_id": "tt1273241"
+    }, 
+    {
+        "description": "A vengeful father escapes from hell and chases after the men who killed his daughter and kidnapped his granddaughter.", 
+        "metascore": "44", 
+        "month": "2", 
+        "director": "Patrick Lussier", 
+        "netflix_id": "", 
+        "run_time": "104", 
+        "year": "2011", 
+        "genres": [
+            "Action", 
+            "Comedy", 
+            "Fantasy", 
+            "Thriller"
+        ], 
+        "title": "Drive Angry (2011)", 
+        "stars": [
+            "Nicolas Cage", 
+            "Amber Heard", 
+            "William Fichtner", 
+            "Billy Burke"
+        ], 
+        "unique_id": "tt1502404"
+    }, 
+    {
+        "description": "Rick and Fred, two husbands who are having difficulty in their marriages, are given a Hall Pass by their wives: for one week, they can do whatever they want.", 
+        "metascore": "45", 
+        "month": "2", 
+        "director": "Bobby Farrelly", 
+        "netflix_id": "", 
+        "run_time": "105", 
+        "year": "2011", 
+        "genres": [
+            "Comedy", 
+            "Romance"
+        ], 
+        "title": "Hall Pass (2011)", 
+        "stars": [
+            "Owen Wilson", 
+            "Jason Sudeikis", 
+            "Christina Applegate", 
+            "Jenna Fischer"
+        ], 
+        "unique_id": "tt0480687"
+    }, 
+    {
+        "description": "Under threat by fundamentalist terrorists, a group of Trappist monks stationed with an impoverished Algerian community must decide whether to leave or stay.", 
+        "metascore": "86", 
+        "month": "2", 
+        "director": "Xavier Beauvois", 
+        "netflix_id": "", 
+        "run_time": "122", 
+        "year": "2011", 
+        "genres": [
+            "Drama", 
+            "History"
+        ], 
+        "title": "Des hommes et des dieux (2010)", 
+        "stars": [
+            "Lambert Wilson", 
+            "Michael Lonsdale", 
+            "Olivier Rabourdin", 
+            "Philippe Laudenbach"
+        ], 
+        "unique_id": "tt1588337"
+    }, 
+    {
+        "description": "The story of three close friends who are involved in a love-triangle.", 
+        "metascore": "70", 
+        "month": "2", 
+        "director": "Xavier Dolan", 
+        "netflix_id": "", 
+        "run_time": "101", 
+        "year": "2011", 
+        "genres": [
+            "Drama", 
+            "Romance"
+        ], 
+        "title": "Heartbeats (2010)", 
+        "stars": [
+            "Xavier Dolan", 
+            "Monia Chokri", 
+            "Niels Schneider", 
+            "Anne Dorval"
+        ], 
+        "unique_id": "tt1600524"
+    }, 
+    {
+        "description": "Everything can change in an instant...and take a lifetime to unravel. Every day, we have the opportunity to rebuild relationships by extending and receiving God's grace. Offer The Grace Card, and never underestimate the power of God's love.", 
+        "metascore": "43", 
+        "month": "2", 
+        "director": "David G. Evans", 
+        "netflix_id": "", 
+        "run_time": "101", 
+        "year": "2011", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "The Grace Card (2010)", 
+        "stars": [
+            "Michael Joiner", 
+            "Michael Higgenbottom", 
+            "Louis Gossett Jr.", 
+            "Joy Parmer Moore"
+        ], 
+        "unique_id": "tt1544600"
+    }
+]

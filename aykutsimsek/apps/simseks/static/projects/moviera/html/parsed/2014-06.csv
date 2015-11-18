@@ -1,0 +1,620 @@
+[
+    {
+        "description": "A military officer is brought into an alien war against an extraterrestrial enemy who can reset the day and know the future. When this officer is enabled with the same power, he teams up with a Special Forces warrior to try and end the war.", 
+        "metascore": "71", 
+        "month": "6", 
+        "director": "Doug Liman", 
+        "netflix_id": "", 
+        "run_time": "113", 
+        "year": "2014", 
+        "genres": [
+            "Action", 
+            "Adventure", 
+            "Sci-Fi"
+        ], 
+        "title": "Edge of Tomorrow (2014)", 
+        "stars": [
+            "Tom Cruise", 
+            "Emily Blunt", 
+            "Bill Paxton", 
+            "Brendan Gleeson"
+        ], 
+        "unique_id": "tt1631867"
+    }, 
+    {
+        "description": "Two teenage cancer patients begin a life-affirming journey to visit a reclusive author in Amsterdam.", 
+        "metascore": "69", 
+        "month": "6", 
+        "director": "Josh Boone", 
+        "netflix_id": "", 
+        "run_time": "126", 
+        "year": "2014", 
+        "genres": [
+            "Drama", 
+            "Romance"
+        ], 
+        "title": "The Fault in Our Stars (2014)", 
+        "stars": [
+            "Shailene Woodley", 
+            "Ansel Elgort", 
+            "Nat Wolff", 
+            "Laura Dern"
+        ], 
+        "unique_id": "tt2582846"
+    }, 
+    {
+        "description": "A twenty-something comedienne's unplanned pregnancy forces her to confront the realities of independent womanhood for the first time.", 
+        "metascore": "76", 
+        "month": "6", 
+        "director": "Gillian Robespierre", 
+        "netflix_id": "", 
+        "run_time": "84", 
+        "year": "2014", 
+        "genres": [
+            "Comedy", 
+            "Drama"
+        ], 
+        "title": "Obvious Child (2014)", 
+        "stars": [
+            "Jenny Slate", 
+            "Jake Lacy", 
+            "Gaby Hoffmann", 
+            "Gabe Liedman"
+        ], 
+        "unique_id": "tt2910274"
+    }, 
+    {
+        "description": "A vagrant enters the lives of an arrogant upper-class family, turning their lives into a psychological nightmare in the process.", 
+        "metascore": "66", 
+        "month": "6", 
+        "director": "Alex van Warmerdam", 
+        "netflix_id": "", 
+        "run_time": "113", 
+        "year": "2014", 
+        "genres": [
+            "Drama", 
+            "Thriller"
+        ], 
+        "title": "Borgman (2013)", 
+        "stars": [
+            "Jan Bijvoet", 
+            "Hadewych Minis", 
+            "Jeroen Perceval", 
+            "Alex van Warmerdam"
+        ], 
+        "unique_id": "tt1954315"
+    }, 
+    {
+        "description": "The life and career of the legendary Hollywood insider, Shep Gordon.", 
+        "metascore": "64", 
+        "month": "6", 
+        "director": "Beth Aala", 
+        "netflix_id": "", 
+        "run_time": "85", 
+        "year": "2014", 
+        "genres": [
+            "Documentary", 
+            "Biography", 
+            "Music"
+        ], 
+        "title": "Supermensch: The Legend of Shep Gordon (2013)", 
+        "stars": [
+            "Shep Gordon", 
+            "Sylvester Stallone", 
+            "Michael Douglas", 
+            "Alice Cooper"
+        ], 
+        "unique_id": "tt3074780"
+    }, 
+    {
+        "description": "A news team trails a man as he travels into the world of Eden Parish to find his missing sister, where it becomes apparent that this paradise may not be as it seems.", 
+        "metascore": "49", 
+        "month": "6", 
+        "director": "Ti West", 
+        "netflix_id": "70293414", 
+        "run_time": "99", 
+        "year": "2014", 
+        "genres": [
+            "Horror", 
+            "Thriller"
+        ], 
+        "title": "The Sacrament (2013)", 
+        "stars": [
+            "Joe Swanberg", 
+            "AJ Bowen", 
+            "Kentucker Audley", 
+            "Amy Seimetz"
+        ], 
+        "unique_id": "tt2383068"
+    }, 
+    {
+        "description": "A family vacation during the summer of 1985 changes everything for a teenage boy obsessed with ping pong.", 
+        "metascore": "52", 
+        "month": "6", 
+        "director": "Michael Tully", 
+        "netflix_id": "", 
+        "run_time": "92", 
+        "year": "2014", 
+        "genres": [
+            "Comedy", 
+            "Family"
+        ], 
+        "title": "Ping Pong Summer (2014)", 
+        "stars": [
+            "Marcello Conte", 
+            "Judah Friedlander", 
+            "Amy Sedaris", 
+            "Lea Thompson"
+        ], 
+        "unique_id": "tt2402985"
+    }, 
+    {
+        "description": "In an attempt to sign a Hollywood starlet, struggling talent agent and former child star Howard Holloway must contend with her volatile father, a scheming long-time rival, and a producer and casting director who despise him.", 
+        "metascore": "51", 
+        "month": "6", 
+        "director": "Clark Gregg", 
+        "netflix_id": "", 
+        "run_time": "90", 
+        "year": "2014", 
+        "genres": [
+            "Comedy", 
+            "Drama"
+        ], 
+        "title": "Trust Me (2013)", 
+        "stars": [
+            "Clark Gregg", 
+            "Felicity Huffman", 
+            "Allison Janney", 
+            "William H. Macy"
+        ], 
+        "unique_id": "tt2421416"
+    }, 
+    {
+        "description": "A man with the ability to enter peoples' memories takes on the case of a brilliant, troubled sixteen-year-old girl to determine whether she is a sociopath or a victim of trauma.", 
+        "metascore": "42", 
+        "month": "6", 
+        "director": "Jorge Dorado", 
+        "netflix_id": "", 
+        "run_time": "99", 
+        "year": "2014", 
+        "genres": [
+            "Drama", 
+            "Thriller"
+        ], 
+        "title": "Anna (2013)", 
+        "stars": [
+            "Mark Strong", 
+            "Taissa Farmiga", 
+            "Brian Cox", 
+            "Saskia Reeves"
+        ], 
+        "unique_id": "tt1715336"
+    }, 
+    {
+        "description": "After making their way through high school (twice), big changes are in store for officers Schmidt and Jenko when they go deep undercover at a local college.", 
+        "metascore": "71", 
+        "month": "6", 
+        "director": "Phil Lord", 
+        "netflix_id": "", 
+        "run_time": "112", 
+        "year": "2014", 
+        "genres": [
+            "Action", 
+            "Comedy", 
+            "Crime"
+        ], 
+        "title": "22 Jump Street (2014)", 
+        "stars": [
+            "Channing Tatum", 
+            "Jonah Hill", 
+            "Ice Cube", 
+            "Nick Offerman"
+        ], 
+        "unique_id": "tt2294449"
+    }, 
+    {
+        "description": "When Hiccup and Toothless discover an ice cave that is home to hundreds of new wild dragons and the mysterious Dragon Rider, the two friends find themselves at the center of a battle to protect the peace.", 
+        "metascore": "76", 
+        "month": "6", 
+        "director": "Dean DeBlois", 
+        "netflix_id": "70298991", 
+        "run_time": "102", 
+        "year": "2014", 
+        "genres": [
+            "Animation", 
+            "Action", 
+            "Adventure", 
+            "Comedy", 
+            "Family", 
+            "Fantasy"
+        ], 
+        "title": "How to Train Your Dragon 2 (2014)", 
+        "stars": [
+            "Jay Baruchel", 
+            "Cate Blanchett", 
+            "Gerard Butler", 
+            "Craig Ferguson"
+        ], 
+        "unique_id": "tt1646971"
+    }, 
+    {
+        "description": "When motocross and heavy metal obsessed thirteen-year-old Jacob's increasing delinquent behavior forces CPS to place his little brother, Wes, with his aunt, Jacob and his emotionally absent father, Hollis, must finally take responsibility for their actions and for each other in order to bring Wes home.", 
+        "metascore": "55", 
+        "month": "6", 
+        "director": "Kat Candler", 
+        "netflix_id": "", 
+        "run_time": "99", 
+        "year": "2014", 
+        "genres": [
+            "Drama", 
+            "Thriller"
+        ], 
+        "title": "Hellion (2014)", 
+        "stars": [
+            "Aaron Paul", 
+            "Juliette Lewis", 
+            "Josh Wiggins", 
+            "Deke Garner"
+        ], 
+        "unique_id": "tt3186318"
+    }, 
+    {
+        "description": "10 years after a global economic collapse, a hardened loner pursues the men who stole his only possession, his car. Along the way, he captures one of the thieves' brother, and the duo form an uneasy bond during the dangerous journey.", 
+        "metascore": "64", 
+        "month": "6", 
+        "director": "David Mich\u00f4d", 
+        "netflix_id": "", 
+        "run_time": "103", 
+        "year": "2014", 
+        "genres": [
+            "Crime", 
+            "Drama"
+        ], 
+        "title": "The Rover (2014)", 
+        "stars": [
+            "Guy Pearce", 
+            "Robert Pattinson", 
+            "Scoot McNairy", 
+            "David Field"
+        ], 
+        "unique_id": "tt2345737"
+    }, 
+    {
+        "description": "On a road trip, Nic and two friends are drawn to an isolated area by a computer genius. When everything suddenly goes dark, Nic regains consciousness - only to find himself in a waking nightmare.", 
+        "metascore": "54", 
+        "month": "6", 
+        "director": "William Eubank", 
+        "netflix_id": "", 
+        "run_time": "97", 
+        "year": "2014", 
+        "genres": [
+            "Sci-Fi", 
+            "Thriller"
+        ], 
+        "title": "The Signal (2014)", 
+        "stars": [
+            "Brenton Thwaites", 
+            "Olivia Cooke", 
+            "Beau Knapp", 
+            "Laurence Fishburne"
+        ], 
+        "unique_id": "tt2910814"
+    }, 
+    {
+        "description": "All the couples are back for a wedding in Las Vegas, but plans for a romantic weekend go awry when their various misadventures get them into some compromising situations that threaten to derail the big event.", 
+        "metascore": "38", 
+        "month": "6", 
+        "director": "Tim Story", 
+        "netflix_id": "", 
+        "run_time": "106", 
+        "year": "2014", 
+        "genres": [
+            "Comedy", 
+            "Romance"
+        ], 
+        "title": "Think Like a Man Too (2014)", 
+        "stars": [
+            "Kevin Hart", 
+            "Gabrielle Union", 
+            "Wendi McLendon-Covey", 
+            "La La Anthony"
+        ], 
+        "unique_id": "tt2239832"
+    }, 
+    {
+        "description": "The story of four young men from the wrong side of the tracks in New Jersey who came together to form the iconic 1960s rock group The Four Seasons.", 
+        "metascore": "54", 
+        "month": "6", 
+        "director": "Clint Eastwood", 
+        "netflix_id": "", 
+        "run_time": "134", 
+        "year": "2014", 
+        "genres": [
+            "Biography", 
+            "Drama", 
+            "Music"
+        ], 
+        "title": "Jersey Boys (2014)", 
+        "stars": [
+            "John Lloyd Young", 
+            "Erich Bergen", 
+            "Michael Lomenda", 
+            "Vincent Piazza"
+        ], 
+        "unique_id": "tt1742044"
+    }, 
+    {
+        "description": "Three interlocking love stories involving three couples in three cities: Rome, Paris, and New York.", 
+        "metascore": "38", 
+        "month": "6", 
+        "director": "Paul Haggis", 
+        "netflix_id": "", 
+        "run_time": "137", 
+        "year": "2014", 
+        "genres": [
+            "Drama", 
+            "Romance"
+        ], 
+        "title": "Third Person (2013)", 
+        "stars": [
+            "Liam Neeson", 
+            "Mila Kunis", 
+            "Adrien Brody", 
+            "Olivia Wilde"
+        ], 
+        "unique_id": "tt2343793"
+    }, 
+    {
+        "description": "An actress attempts to convince a director how she's perfect for a role in his upcoming production.", 
+        "metascore": "69", 
+        "month": "6", 
+        "director": "Roman Polanski", 
+        "netflix_id": "", 
+        "run_time": "96", 
+        "year": "2014", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "La V\u00e9nus \u00e0 la fourrure (2013)", 
+        "stars": [
+            "Emmanuelle Seigner", 
+            "Mathieu Amalric"
+        ], 
+        "unique_id": "tt2406252"
+    }, 
+    {
+        "description": "A veteran chef faces off against his restaurant group's new CEO, who wants to the establishment to lose a star from its rating in order to bring in a younger chef who specializes in molecular gastronomy.", 
+        "metascore": "43", 
+        "month": "6", 
+        "director": "Daniel Cohen", 
+        "netflix_id": "70233307", 
+        "run_time": "84", 
+        "year": "2014", 
+        "genres": [
+            "Comedy"
+        ], 
+        "title": "Le Chef (2012)", 
+        "stars": [
+            "Jean Reno", 
+            "Micha\u00ebl Youn", 
+            "Rapha\u00eblle Agogu\u00e9", 
+            "Julien Boisselier"
+        ], 
+        "unique_id": "tt1911553"
+    }, 
+    {
+        "description": "A story based on the life of journalist Torgny Segerstedt, who alerted the Swedish public to the threat of Fascism in the 1930s.", 
+        "metascore": "60", 
+        "month": "6", 
+        "director": "Jan Troell", 
+        "netflix_id": "", 
+        "run_time": "126", 
+        "year": "2014", 
+        "genres": [
+            "Biography", 
+            "Drama"
+        ], 
+        "title": "Dom \u00f6ver d\u00f6d man (2012)", 
+        "stars": [
+            "Jesper Christensen", 
+            "Pernilla August", 
+            "Ulla Skoog", 
+            "Bj\u00f6rn Granath"
+        ], 
+        "unique_id": "tt1590013"
+    }, 
+    {
+        "description": "A shy maths graduate takes a holiday in Dinard before starting his first job. He hopes his sort-of girlfriend will join him, but soon strikes up a friendship with another girl working in town. She in turn introduces him to a further young lady who fancies him. Thus the quiet young lad finds he is having to do some tricky juggling in territory new to him.", 
+        "metascore": "91", 
+        "month": "6", 
+        "director": "Eric Rohmer", 
+        "netflix_id": "60002173", 
+        "run_time": "113", 
+        "year": "2014", 
+        "genres": [
+            "Comedy", 
+            "Drama", 
+            "Romance"
+        ], 
+        "title": "A Summer's Tale (1996)", 
+        "stars": [
+            "Melvil Poupaud", 
+            "Amanda Langlet", 
+            "Gwena\u00eblle Simon", 
+            "Aurelia Nolin"
+        ], 
+        "unique_id": "tt0115940"
+    }, 
+    {
+        "description": "An embittered law student commits a brutal double murder; a family man takes the fall and is forced into a harsh prison sentence; a mother and her two children wander the countryside looking for some kind of redemption.", 
+        "metascore": "81", 
+        "month": "6", 
+        "director": "Lav Diaz", 
+        "netflix_id": "", 
+        "run_time": "250", 
+        "year": "2014", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "Norte, hangganan ng kasaysayan (2013)", 
+        "stars": [
+            "Sid Lucero", 
+            "Angeli Bayani", 
+            "Archie Alemania", 
+            "Soliman Cruz"
+        ], 
+        "unique_id": "tt2852432"
+    }, 
+    {
+        "description": "Autobots must escape sight from a bounty hunter who has taken control of the human serendipity: Unexpectedly, Optimus Prime and his remaining gang turn to a mechanic (Mark Wahlberg), his daughter (Nicola Peltz), and her back street racing boyfriend (Jack Reynor) for help.", 
+        "metascore": "32", 
+        "month": "6", 
+        "director": "Michael Bay", 
+        "netflix_id": "", 
+        "run_time": "165", 
+        "year": "2014", 
+        "genres": [
+            "Action", 
+            "Adventure", 
+            "Sci-Fi"
+        ], 
+        "title": "Transformers: Age of Extinction (2014)", 
+        "stars": [
+            "Mark Wahlberg", 
+            "Nicola Peltz", 
+            "Jack Reynor", 
+            "Stanley Tucci"
+        ], 
+        "unique_id": "tt2109248"
+    }, 
+    {
+        "description": "A chance encounter between a disgraced music-business executive and a young singer-songwriter new to Manhattan turns into a promising collaboration between the two talents.", 
+        "metascore": "62", 
+        "month": "6", 
+        "director": "John Carney", 
+        "netflix_id": "", 
+        "run_time": "104", 
+        "year": "2014", 
+        "genres": [
+            "Drama", 
+            "Music"
+        ], 
+        "title": "Begin Again (2013)", 
+        "stars": [
+            "Keira Knightley", 
+            "Mark Ruffalo", 
+            "Adam Levine", 
+            "Hailee Steinfeld"
+        ], 
+        "unique_id": "tt1980929"
+    }, 
+    {
+        "description": "Set in a future where a failed climate-change experiment kills all life on the planet except for a lucky few who boarded the Snowpiercer, a train that travels around the globe, where a class system emerges.", 
+        "metascore": "84", 
+        "month": "6", 
+        "director": "Joon-ho Bong", 
+        "netflix_id": "70270364", 
+        "run_time": "126", 
+        "year": "2014", 
+        "genres": [
+            "Action", 
+            "Drama", 
+            "Sci-Fi", 
+            "Thriller"
+        ], 
+        "title": "Snowpiercer (2013)", 
+        "stars": [
+            "Chris Evans", 
+            "Jamie Bell", 
+            "Tilda Swinton", 
+            "Ed Harris"
+        ], 
+        "unique_id": "tt1706620"
+    }, 
+    {
+        "description": "A small business owner is about to lose her shop to a major corporate development.", 
+        "metascore": "60", 
+        "month": "6", 
+        "director": "David Wain", 
+        "netflix_id": "", 
+        "run_time": "83", 
+        "year": "2014", 
+        "genres": [
+            "Comedy"
+        ], 
+        "title": "They Came Together (2014)", 
+        "stars": [
+            "Paul Rudd", 
+            "Amy Poehler", 
+            "Bill Hader", 
+            "Cobie Smulders"
+        ], 
+        "unique_id": "tt2398249"
+    }, 
+    {
+        "description": "A look at James 'Whitey' Bulger, one of the most infamous criminals in American history.", 
+        "metascore": "71", 
+        "month": "6", 
+        "director": "Joe Berlinger", 
+        "netflix_id": "", 
+        "run_time": "107", 
+        "year": "2014", 
+        "genres": [
+            "Documentary", 
+            "Biography", 
+            "Crime"
+        ], 
+        "title": "Whitey: United States of America v. James J. Bulger (2014)", 
+        "stars": [
+            "Stephen Rakes", 
+            "James 'Whitey' Bulger", 
+            "Tommy Donahue", 
+            "David Boeri"
+        ], 
+        "unique_id": "tt3326366"
+    }, 
+    {
+        "description": "The story of programming prodigy and information activist Aaron Swartz, who took his own life at the age of 26.", 
+        "metascore": "72", 
+        "month": "6", 
+        "director": "Brian Knappenberger", 
+        "netflix_id": "", 
+        "run_time": "105", 
+        "year": "2014", 
+        "genres": [
+            "Documentary", 
+            "Biography", 
+            "Crime", 
+            "News"
+        ], 
+        "title": "The Internet's Own Boy: The Story of Aaron Swartz (2014)", 
+        "stars": [
+            "Aaron Swartz", 
+            "Tim Berners-Lee", 
+            "Cindy Cohn", 
+            "Gabriella Coleman"
+        ], 
+        "unique_id": "tt3268458"
+    }, 
+    {
+        "description": "A look at the life of French designer Yves Saint Laurent from the beginning of his career in 1958 when he met his lover and business partner, Pierre Berge.", 
+        "metascore": "51", 
+        "month": "6", 
+        "director": "Jalil Lespert", 
+        "netflix_id": "70307649", 
+        "run_time": "106", 
+        "year": "2014", 
+        "genres": [
+            "Biography", 
+            "Drama"
+        ], 
+        "title": "Yves Saint Laurent (2014)", 
+        "stars": [
+            "Pierre Niney", 
+            "Guillaume Gallienne", 
+            "Charlotte Le Bon", 
+            "Laura Smet"
+        ], 
+        "unique_id": "tt2707858"
+    }
+]

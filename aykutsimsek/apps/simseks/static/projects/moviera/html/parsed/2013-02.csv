@@ -1,0 +1,525 @@
+[
+    {
+        "description": "After a highly unusual zombie saves a still-living girl from an attack, the two form a relationship that sets in motion events that might transform the entire lifeless world.", 
+        "metascore": "59", 
+        "month": "2", 
+        "director": "Jonathan Levine", 
+        "netflix_id": "", 
+        "run_time": "98", 
+        "year": "2013", 
+        "genres": [
+            "Comedy", 
+            "Horror", 
+            "Romance"
+        ], 
+        "title": "Warm Bodies (2013)", 
+        "stars": [
+            "Nicholas Hoult", 
+            "Teresa Palmer", 
+            "John Malkovich", 
+            "Analeigh Tipton"
+        ], 
+        "unique_id": "tt1588173"
+    }, 
+    {
+        "description": "After watching their respective partners die, a New Orleans hitman and a Washington D.C. detective form an alliance in order to bring down their common enemy.", 
+        "metascore": "48", 
+        "month": "2", 
+        "director": "Walter Hill", 
+        "netflix_id": "", 
+        "run_time": "92", 
+        "year": "2013", 
+        "genres": [
+            "Action", 
+            "Crime", 
+            "Thriller"
+        ], 
+        "title": "Bullet to the Head (2012)", 
+        "stars": [
+            "Sylvester Stallone", 
+            "Jason Momoa", 
+            "Christian Slater", 
+            "Sung Kang"
+        ], 
+        "unique_id": "tt1308729"
+    }, 
+    {
+        "description": "A pair of aging stickup men try to get the old gang back together for one last hurrah before one of the guys takes his last assignment - to kill his comrade.", 
+        "metascore": "41", 
+        "month": "2", 
+        "director": "Fisher Stevens", 
+        "netflix_id": "", 
+        "run_time": "95", 
+        "year": "2013", 
+        "genres": [
+            "Comedy", 
+            "Crime", 
+            "Thriller"
+        ], 
+        "title": "Stand Up Guys (2012)", 
+        "stars": [
+            "Al Pacino", 
+            "Christopher Walken", 
+            "Alan Arkin", 
+            "Julianna Margulies"
+        ], 
+        "unique_id": "tt1389096"
+    }, 
+    {
+        "description": "A documentary featuring interviews with all surviving former heads of Shin Bet, the Israeli security agency whose activities and membership are closely held state secrets.", 
+        "metascore": "91", 
+        "month": "2", 
+        "director": "Dror Moreh", 
+        "netflix_id": "", 
+        "run_time": "101", 
+        "year": "2013", 
+        "genres": [
+            "Documentary"
+        ], 
+        "title": "The Gatekeepers (2012)", 
+        "stars": [
+            "Ami Ayalon", 
+            "Avraham Shalom", 
+            "Avi Dichter", 
+            "Yaakov Peri"
+        ], 
+        "unique_id": "tt2309788"
+    }, 
+    {
+        "description": "A young family moves into a historic home in Georgia, only to learn they are not the house's only inhabitants. Soon they find themselves in the presence of a secret rising from underground and threatening to bring down anyone in its path.", 
+        "metascore": "26", 
+        "month": "2", 
+        "director": "Tom Elkins", 
+        "netflix_id": "", 
+        "run_time": "100", 
+        "year": "2013", 
+        "genres": [
+            "Drama", 
+            "Horror", 
+            "Mystery", 
+            "Thriller"
+        ], 
+        "title": "The Haunting in Connecticut 2: Ghosts of Georgia (2013)", 
+        "stars": [
+            "Abigail Spencer", 
+            "Chad Michael Murray", 
+            "Katee Sackhoff", 
+            "Emily Alyn Lind"
+        ], 
+        "unique_id": "tt1457765"
+    }, 
+    {
+        "description": "A documentary on the fabled recording studio that was located in Van Nuys, California.", 
+        "metascore": "76", 
+        "month": "2", 
+        "director": "Dave Grohl", 
+        "netflix_id": "", 
+        "run_time": "107", 
+        "year": "2013", 
+        "genres": [
+            "Documentary", 
+            "Music"
+        ], 
+        "title": "Sound City (2013)", 
+        "stars": [
+            "Trent Reznor", 
+            "Tom Petty", 
+            "Mick Fleetwood", 
+            "Vinny Appice"
+        ], 
+        "unique_id": "tt2306745"
+    }, 
+    {
+        "description": "A documentary on Ed Koch, the mayor of New York City from 1978 to 1989.", 
+        "metascore": "71", 
+        "month": "2", 
+        "director": "Neil Barsky", 
+        "netflix_id": "", 
+        "run_time": "100", 
+        "year": "2013", 
+        "genres": [
+            "Documentary", 
+            "Biography", 
+            "History"
+        ], 
+        "title": "Koch (2012)", 
+        "stars": [
+            "Ed Koch", 
+            "Michael Bloomberg", 
+            "Calvin O. Butts III", 
+            "Carl McCall"
+        ], 
+        "unique_id": "tt2237822"
+    }, 
+    {
+        "description": "Mild mannered businessman Sandy Patterson travels from Denver to Florida to confront the deceptively harmless looking woman who has been living it up after stealing Sandy's identity.", 
+        "metascore": "35", 
+        "month": "2", 
+        "director": "Seth Gordon", 
+        "netflix_id": "", 
+        "run_time": "111", 
+        "year": "2013", 
+        "genres": [
+            "Comedy", 
+            "Crime"
+        ], 
+        "title": "Identity Thief (2013)", 
+        "stars": [
+            "Jason Bateman", 
+            "Melissa McCarthy", 
+            "John Cho", 
+            "Amanda Peet"
+        ], 
+        "unique_id": "tt2024432"
+    }, 
+    {
+        "description": "A young woman's world unravels when a drug prescribed by her psychiatrist has unexpected side effects.", 
+        "metascore": "75", 
+        "month": "2", 
+        "director": "Steven Soderbergh", 
+        "netflix_id": "70243447", 
+        "run_time": "106", 
+        "year": "2013", 
+        "genres": [
+            "Crime", 
+            "Drama", 
+            "Thriller"
+        ], 
+        "title": "Side Effects (2013)", 
+        "stars": [
+            "Rooney Mara", 
+            "Channing Tatum", 
+            "Jude Law", 
+            "Catherine Zeta-Jones"
+        ], 
+        "unique_id": "tt2053463"
+    }, 
+    {
+        "description": "As the Allies sweep across Germany, Lore leads her siblings on a journey that exposes them to the truth of their parents' beliefs. An encounter with a mysterious refugee forces Lore to rely on a person she has always been taught to hate.", 
+        "metascore": "76", 
+        "month": "2", 
+        "director": "Cate Shortland", 
+        "netflix_id": "", 
+        "run_time": "109", 
+        "year": "2013", 
+        "genres": [
+            "Drama", 
+            "Romance", 
+            "Thriller", 
+            "War"
+        ], 
+        "title": "Lore (2012)", 
+        "stars": [
+            "Saskia Rosendahl", 
+            "Kai-Peter Malina", 
+            "Nele Trebs", 
+            "Ursina Lardi"
+        ], 
+        "unique_id": "tt1996310"
+    }, 
+    {
+        "description": "As students at the United States Navy's elite fighter weapons school compete to be best in the class, one daring young pilot learns a few things from a civilian instructor that are not taught in the classroom.", 
+        "metascore": "", 
+        "month": "2", 
+        "director": "Tony Scott", 
+        "netflix_id": "1056189", 
+        "run_time": "110", 
+        "year": "2013", 
+        "genres": [
+            "Action", 
+            "Drama", 
+            "Romance"
+        ], 
+        "title": "Top Gun (1986)", 
+        "stars": [
+            "Tom Cruise", 
+            "Tim Robbins", 
+            "Kelly McGillis", 
+            "Val Kilmer"
+        ], 
+        "unique_id": "tt0092099"
+    }, 
+    {
+        "description": "John McClane travels to Russia to help out his seemingly wayward son, Jack, only to discover that Jack is a CIA operative working undercover, causing the father and son to team up against underworld forces.", 
+        "metascore": "28", 
+        "month": "2", 
+        "director": "John Moore", 
+        "netflix_id": "", 
+        "run_time": "98", 
+        "year": "2013", 
+        "genres": [
+            "Action", 
+            "Crime", 
+            "Thriller"
+        ], 
+        "title": "A Good Day to Die Hard (2013)", 
+        "stars": [
+            "Bruce Willis", 
+            "Jai Courtney", 
+            "Sebastian Koch", 
+            "Mary Elizabeth Winstead"
+        ], 
+        "unique_id": "tt1606378"
+    }, 
+    {
+        "description": "Ethan longs to escape his small Southern town. He meets a mysterious new girl, Lena. Together, they uncover dark secrets about their respective families, their history and their town.", 
+        "metascore": "52", 
+        "month": "2", 
+        "director": "Richard LaGravenese", 
+        "netflix_id": "", 
+        "run_time": "124", 
+        "year": "2013", 
+        "genres": [
+            "Drama", 
+            "Fantasy", 
+            "Romance"
+        ], 
+        "title": "Beautiful Creatures (2013)", 
+        "stars": [
+            "Alice Englert", 
+            "Viola Davis", 
+            "Emma Thompson", 
+            "Alden Ehrenreich"
+        ], 
+        "unique_id": "tt1559547"
+    }, 
+    {
+        "description": "A young woman with a mysterious past lands in Southport, North Carolina where her bond with a widower forces her to confront the dark secret that haunts her.", 
+        "metascore": "34", 
+        "month": "2", 
+        "director": "Lasse Hallstr\u00f6m", 
+        "netflix_id": "", 
+        "run_time": "115", 
+        "year": "2013", 
+        "genres": [
+            "Drama", 
+            "Romance", 
+            "Thriller"
+        ], 
+        "title": "Safe Haven (2013)", 
+        "stars": [
+            "Julianne Hough", 
+            "Josh Duhamel", 
+            "Cobie Smulders", 
+            "David Lyons"
+        ], 
+        "unique_id": "tt1702439"
+    }, 
+    {
+        "description": "An ad executive comes up with a campaign to defeat Augusto Pinochet in Chile's 1988 referendum.", 
+        "metascore": "81", 
+        "month": "2", 
+        "director": "Pablo Larra\u00edn", 
+        "netflix_id": "", 
+        "run_time": "118", 
+        "year": "2013", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "No (2012)", 
+        "stars": [
+            "Gael Garc\u00eda Bernal", 
+            "Alfredo Castro", 
+            "Antonia Zegers", 
+            "Luis Gnecco"
+        ], 
+        "unique_id": "tt2059255"
+    }, 
+    {
+        "description": "A graphic designer's enviable life slides into despair when his girlfriend breaks up with him.", 
+        "metascore": "28", 
+        "month": "2", 
+        "director": "Roman Coppola", 
+        "netflix_id": "", 
+        "run_time": "86", 
+        "year": "2013", 
+        "genres": [
+            "Comedy"
+        ], 
+        "title": "A Glimpse Inside the Mind of Charles Swan III (2012)", 
+        "stars": [
+            "Charlie Sheen", 
+            "Jason Schwartzman", 
+            "Bill Murray", 
+            "Katheryn Winnick"
+        ], 
+        "unique_id": "tt2044729"
+    }, 
+    {
+        "description": "Astronaut Scorch Supernova finds himself caught in a trap when he responds to an SOS from a notoriously dangerous alien planet.", 
+        "metascore": "35", 
+        "month": "2", 
+        "director": "Cal Brunker", 
+        "netflix_id": "", 
+        "run_time": "89", 
+        "year": "2013", 
+        "genres": [
+            "Animation", 
+            "Adventure", 
+            "Comedy", 
+            "Family", 
+            "Sci-Fi"
+        ], 
+        "title": "Escape from Planet Earth (2013)", 
+        "stars": [
+            "Brendan Fraser", 
+            "Sarah Jessica Parker", 
+            "Jessica Alba", 
+            "Rob Corddry"
+        ], 
+        "unique_id": "tt0765446"
+    }, 
+    {
+        "description": "In Tokyo, a young sex worker develops an unexpected connection with a widower over a period of two days.", 
+        "metascore": "76", 
+        "month": "2", 
+        "director": "Abbas Kiarostami", 
+        "netflix_id": "70242555", 
+        "run_time": "109", 
+        "year": "2013", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "Like Someone in Love (2012)", 
+        "stars": [
+            "Rin Takanashi", 
+            "Tadashi Okuno", 
+            "Ry\u00f4 Kase", 
+            "Denden"
+        ], 
+        "unique_id": "tt1843287"
+    }, 
+    {
+        "description": "Religious conspiracy collides with urban crime in a story told from multiple perspectives.", 
+        "metascore": "", 
+        "month": "2", 
+        "director": "Leone Marucci", 
+        "netflix_id": "70270733", 
+        "run_time": "96", 
+        "year": "2013", 
+        "genres": [
+            "Action", 
+            "Crime", 
+            "Drama", 
+            "Mystery", 
+            "Thriller"
+        ], 
+        "title": "The Power of Few (2013)", 
+        "stars": [
+            "Christopher Walken", 
+            "Juvenile", 
+            "Christian Slater", 
+            "Q'orianka Kilcher"
+        ], 
+        "unique_id": "tt0817545"
+    }, 
+    {
+        "description": "A father goes undercover for the DEA in order to free his son who was imprisoned after being set up in drug deal.", 
+        "metascore": "51", 
+        "month": "2", 
+        "director": "Ric Roman Waugh", 
+        "netflix_id": "", 
+        "run_time": "112", 
+        "year": "2013", 
+        "genres": [
+            "Action", 
+            "Drama", 
+            "Thriller"
+        ], 
+        "title": "Snitch (2013)", 
+        "stars": [
+            "Dwayne Johnson", 
+            "Susan Sarandon", 
+            "Jon Bernthal", 
+            "Rafi Gavron"
+        ], 
+        "unique_id": "tt0882977"
+    }, 
+    {
+        "description": "As the Barret family's peaceful suburban life is rocked by an escalating series of disturbing events, they come to learn that a terrifying and deadly force is after them.", 
+        "metascore": "50", 
+        "month": "2", 
+        "director": "Scott Stewart", 
+        "netflix_id": "70259395", 
+        "run_time": "97", 
+        "year": "2013", 
+        "genres": [
+            "Horror", 
+            "Sci-Fi", 
+            "Thriller"
+        ], 
+        "title": "Dark Skies (2013)", 
+        "stars": [
+            "Keri Russell", 
+            "Jake Brennan", 
+            "Josh Hamilton", 
+            "Dakota Goyo"
+        ], 
+        "unique_id": "tt2387433"
+    }, 
+    {
+        "description": "Years after he left Damascus under suspicious circumstances, Adib Abdel Kareem must confront what he left behind when his daughter goes missing.", 
+        "metascore": "37", 
+        "month": "2", 
+        "director": "Ruba Nadda", 
+        "netflix_id": "70259257", 
+        "run_time": "93", 
+        "year": "2013", 
+        "genres": [
+            "Drama", 
+            "Mystery", 
+            "Romance", 
+            "Thriller"
+        ], 
+        "title": "Inescapable (2012)", 
+        "stars": [
+            "Alexander Siddig", 
+            "Joshua Jackson", 
+            "Marisa Tomei", 
+            "Oded Fehr"
+        ], 
+        "unique_id": "tt1844203"
+    }, 
+    {
+        "description": "A drama set in New Mexico during WWII, centered on the relationship between a young man and an elderly medicine woman who helps him contend with the battle between good and evil that rages in his village.", 
+        "metascore": "65", 
+        "month": "2", 
+        "director": "Carl Franklin", 
+        "netflix_id": "", 
+        "run_time": "106", 
+        "year": "2013", 
+        "genres": [
+            "Drama", 
+            "War"
+        ], 
+        "title": "Bless Me, Ultima (2013)", 
+        "stars": [
+            "Luke Ganalon", 
+            "Joseph A. Garcia", 
+            "Miriam Colon", 
+            "Benito Martinez"
+        ], 
+        "unique_id": "tt1390398"
+    }, 
+    {
+        "description": "Three friends growing up in India at the turn of the millennium set out to open a training academy to produce the country's next cricket stars.", 
+        "metascore": "40", 
+        "month": "2", 
+        "director": "Abhishek Kapoor", 
+        "netflix_id": "", 
+        "run_time": "120", 
+        "year": "2013", 
+        "genres": [
+            "Drama", 
+            "Sport"
+        ], 
+        "title": "Kai po che! (2013)", 
+        "stars": [
+            "Amit Sadh", 
+            "Sushant Singh Rajput", 
+            "Rajkummar Rao", 
+            "Amrita Puri"
+        ], 
+        "unique_id": "tt2213054"
+    }
+]

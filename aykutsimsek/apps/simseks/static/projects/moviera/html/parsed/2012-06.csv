@@ -1,0 +1,796 @@
+[
+    {
+        "description": "In a twist to the fairy tale, the Huntsman ordered to take Snow White into the woods to be killed winds up becoming her protector and mentor in a quest to vanquish the Evil Queen.", 
+        "metascore": "57", 
+        "month": "6", 
+        "director": "Rupert Sanders", 
+        "netflix_id": "", 
+        "run_time": "127", 
+        "year": "2012", 
+        "genres": [
+            "Action", 
+            "Adventure", 
+            "Drama", 
+            "Fantasy"
+        ], 
+        "title": "Snow White and the Huntsman (2012)", 
+        "stars": [
+            "Kristen Stewart", 
+            "Chris Hemsworth", 
+            "Charlize Theron", 
+            "Sam Claflin"
+        ], 
+        "unique_id": "tt1735898"
+    }, 
+    {
+        "description": "After the events at Lake Victoria, the pre-historic school of blood-thirsty piranhas make their way into a newly opened waterpark.", 
+        "metascore": "24", 
+        "month": "6", 
+        "director": "John Gulager", 
+        "netflix_id": "", 
+        "run_time": "83", 
+        "year": "2012", 
+        "genres": [
+            "Comedy", 
+            "Horror"
+        ], 
+        "title": "Piranha 3DD (2012)", 
+        "stars": [
+            "Danielle Panabaker", 
+            "Ving Rhames", 
+            "David Hasselhoff", 
+            "Matt Bush"
+        ], 
+        "unique_id": "tt1714203"
+    }, 
+    {
+        "description": "A young businessman who lands a community service sentence falls in with a group of misfit kids who need mentoring. With the help of a pro instructor, he works to get the kids ready for a big underground dance competition.", 
+        "metascore": "31", 
+        "month": "6", 
+        "director": "Chris Stokes", 
+        "netflix_id": "", 
+        "run_time": "106", 
+        "year": "2012", 
+        "genres": [
+            "Drama", 
+            "Musical"
+        ], 
+        "title": "Battlefield America (2012)", 
+        "stars": [
+            "Marques Houston", 
+            "Mekia Cox", 
+            "Christopher Jones", 
+            "Lynn Whitfield"
+        ], 
+        "unique_id": "tt1995260"
+    }, 
+    {
+        "description": "A high school valedictorian who gets baked with the local stoner finds himself the subject of a drug test. The situation causes him to concoct an ambitious plan to get his entire graduating class to face the same fate, and fail.", 
+        "metascore": "31", 
+        "month": "6", 
+        "director": "John Stalberg Jr.", 
+        "netflix_id": "", 
+        "run_time": "99", 
+        "year": "2012", 
+        "genres": [
+            "Comedy"
+        ], 
+        "title": "High School (2010)", 
+        "stars": [
+            "Matt Bush", 
+            "Sean Marquette", 
+            "Adrien Brody", 
+            "Colin Hanks"
+        ], 
+        "unique_id": "tt1247667"
+    }, 
+    {
+        "description": "When Brent turns down his classmate Lola's invitation to the prom, she concocts a wildly violent plan for revenge.", 
+        "metascore": "", 
+        "month": "6", 
+        "director": "Sean Byrne", 
+        "netflix_id": "", 
+        "run_time": "84", 
+        "year": "2012", 
+        "genres": [
+            "Horror", 
+            "Thriller"
+        ], 
+        "title": "The Loved Ones (2009)", 
+        "stars": [
+            "Xavier Samuel", 
+            "Robin McLeavy", 
+            "Victoria Thaine", 
+            "Jessica McNamee"
+        ], 
+        "unique_id": "tt1316536"
+    }, 
+    {
+        "description": "A team of parapsychologists try to figure out a strange phenomenon occurring in an apartment building.", 
+        "metascore": "", 
+        "month": "6", 
+        "director": "Carles Torrens", 
+        "netflix_id": "70230634", 
+        "run_time": "80", 
+        "year": "2012", 
+        "genres": [
+            "Horror", 
+            "Thriller"
+        ], 
+        "title": "Apartment 143 (2011)", 
+        "stars": [
+            "Kai Lennox", 
+            "Gia Mantegna", 
+            "Michael O'Keefe", 
+            "Fiona Glascott"
+        ], 
+        "unique_id": "tt1757742"
+    }, 
+    {
+        "description": "A successful businessman attempting to resurrect his life buys and boards a dilapidated sailboat.", 
+        "metascore": "34", 
+        "month": "6", 
+        "director": "Chris Eyre", 
+        "netflix_id": "", 
+        "run_time": "88", 
+        "year": "2012", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "Hide Away (2011)", 
+        "stars": [
+            "Josh Lucas", 
+            "Ayelet Zurer", 
+            "James Cromwell", 
+            "Jon Tenney"
+        ], 
+        "unique_id": "tt1536374"
+    }, 
+    {
+        "description": "A chronicle of the Cristeros War (1926-1929); a war by the people of Mexico against the atheistic Mexican government.", 
+        "metascore": "35", 
+        "month": "6", 
+        "director": "Dean Wright", 
+        "netflix_id": "", 
+        "run_time": "145", 
+        "year": "2012", 
+        "genres": [
+            "Drama", 
+            "History", 
+            "War"
+        ], 
+        "title": "For Greater Glory: The True Story of Cristiada (2012)", 
+        "stars": [
+            "Andy Garcia", 
+            "Oscar Isaac", 
+            "Catalina Sandino Moreno", 
+            "Santiago Cabrera"
+        ], 
+        "unique_id": "tt1566501"
+    }, 
+    {
+        "description": "Following clues to the origin of mankind a team journey across the universe and find a structure on a distant planet containing a monolithic statue of a humanoid head and stone cylinders of alien blood but they soon find they are not alone.", 
+        "metascore": "65", 
+        "month": "6", 
+        "director": "Ridley Scott", 
+        "netflix_id": "", 
+        "run_time": "124", 
+        "year": "2012", 
+        "genres": [
+            "Adventure", 
+            "Mystery", 
+            "Sci-Fi"
+        ], 
+        "title": "Prometheus (2012)", 
+        "stars": [
+            "Noomi Rapace", 
+            "Logan Marshall-Green", 
+            "Michael Fassbender", 
+            "Charlize Theron"
+        ], 
+        "unique_id": "tt1446714"
+    }, 
+    {
+        "description": "Alex, Marty, Gloria and Melman are still fighting to get home to their beloved Big Apple. Their journey takes them through Europe where they find the perfect cover: a traveling circus, which they reinvent - Madagascar style.", 
+        "metascore": "60", 
+        "month": "6", 
+        "director": "Eric Darnell", 
+        "netflix_id": "", 
+        "run_time": "93", 
+        "year": "2012", 
+        "genres": [
+            "Animation", 
+            "Adventure", 
+            "Comedy", 
+            "Family"
+        ], 
+        "title": "Madagascar 3: Europe's Most Wanted (2012)", 
+        "stars": [
+            "Ben Stiller", 
+            "Jada Pinkett Smith", 
+            "Chris Rock", 
+            "David Schwimmer"
+        ], 
+        "unique_id": "tt1277953"
+    }, 
+    {
+        "description": "Dumped by her boyfriend just three weeks before their wedding, Lola enlists her close friends for a series of adventures she hopes will help her come to terms with approaching 30 as a single woman.", 
+        "metascore": "49", 
+        "month": "6", 
+        "director": "Daryl Wein", 
+        "netflix_id": "", 
+        "run_time": "87", 
+        "year": "2012", 
+        "genres": [
+            "Comedy"
+        ], 
+        "title": "Lola Versus (2012)", 
+        "stars": [
+            "Greta Gerwig", 
+            "Zoe Lister-Jones", 
+            "Hamish Linklater", 
+            "Joel Kinnaman"
+        ], 
+        "unique_id": "tt1710417"
+    }, 
+    {
+        "description": "Three magazine employees head out on an assignment to interview a guy who placed a classified ad seeking a companion for time travel.", 
+        "metascore": "72", 
+        "month": "6", 
+        "director": "Colin Trevorrow", 
+        "netflix_id": "", 
+        "run_time": "86", 
+        "year": "2012", 
+        "genres": [
+            "Comedy", 
+            "Drama", 
+            "Romance"
+        ], 
+        "title": "Safety Not Guaranteed (2012)", 
+        "stars": [
+            "Aubrey Plaza", 
+            "Mark Duplass", 
+            "Jake Johnson", 
+            "Karan Soni"
+        ], 
+        "unique_id": "tt1862079"
+    }, 
+    {
+        "description": "A chronicle of a young man's rise to power in Paris via his manipulation of the city's wealthiest and most influential women.", 
+        "metascore": "42", 
+        "month": "6", 
+        "director": "Declan Donnellan", 
+        "netflix_id": "70140920", 
+        "run_time": "102", 
+        "year": "2012", 
+        "genres": [
+            "Drama", 
+            "History", 
+            "Romance"
+        ], 
+        "title": "Bel Ami (2012)", 
+        "stars": [
+            "Robert Pattinson", 
+            "Uma Thurman", 
+            "Kristin Scott Thomas", 
+            "Christina Ricci"
+        ], 
+        "unique_id": "tt1440732"
+    }, 
+    {
+        "description": "An uptight NYC lawyer takes her two teenagers to her hippie mother's farmhouse upstate for a family vacation.", 
+        "metascore": "45", 
+        "month": "6", 
+        "director": "Bruce Beresford", 
+        "netflix_id": "70209148", 
+        "run_time": "96", 
+        "year": "2012", 
+        "genres": [
+            "Comedy", 
+            "Drama", 
+            "Music", 
+            "Romance"
+        ], 
+        "title": "Peace, Love, & Misunderstanding (2011)", 
+        "stars": [
+            "Jane Fonda", 
+            "Catherine Keener", 
+            "Elizabeth Olsen", 
+            "Nat Wolff"
+        ], 
+        "unique_id": "tt1649780"
+    }, 
+    {
+        "description": "Romance blooms between two thirty-somethings in arrested development: an avid toy collector who is the dark horse of his family and a depressed woman on the rebound.", 
+        "metascore": "66", 
+        "month": "6", 
+        "director": "Todd Solondz", 
+        "netflix_id": "70209143", 
+        "run_time": "86", 
+        "year": "2012", 
+        "genres": [
+            "Comedy", 
+            "Drama"
+        ], 
+        "title": "Dark Horse (2011)", 
+        "stars": [
+            "Jordan Gelber", 
+            "Selma Blair", 
+            "Christopher Walken", 
+            "Mia Farrow"
+        ], 
+        "unique_id": "tt1690455"
+    }, 
+    {
+        "description": "A documentary about legendary songwriter and 70's icon Paul Williams.", 
+        "metascore": "72", 
+        "month": "6", 
+        "director": "Stephen Kessler", 
+        "netflix_id": "", 
+        "run_time": "87", 
+        "year": "2012", 
+        "genres": [
+            "Documentary", 
+            "Biography", 
+            "Comedy", 
+            "Musical"
+        ], 
+        "title": "Paul Williams Still Alive (2011)", 
+        "stars": [
+            "Paul Williams", 
+            "Robert Blake", 
+            "Karen Carpenter", 
+            "Johnny Carson"
+        ], 
+        "unique_id": "tt1956594"
+    }, 
+    {
+        "description": "A small town girl and a city boy meet on the Sunset Strip, while pursuing their Hollywood dreams.", 
+        "metascore": "47", 
+        "month": "6", 
+        "director": "Adam Shankman", 
+        "netflix_id": "", 
+        "run_time": "123", 
+        "year": "2012", 
+        "genres": [
+            "Comedy", 
+            "Drama", 
+            "Musical", 
+            "Romance"
+        ], 
+        "title": "Rock of Ages (2012)", 
+        "stars": [
+            "Julianne Hough", 
+            "Diego Boneta", 
+            "Tom Cruise", 
+            "Alec Baldwin"
+        ], 
+        "unique_id": "tt1336608"
+    }, 
+    {
+        "description": "While in his teens, Donny fathered a son, Todd, and raised him as a single parent up until Todd's 18th birthday. Now, after not seeing each other for years, Todd's world comes crashing down when Donny resurfaces just before Todd's wedding.", 
+        "metascore": "31", 
+        "month": "6", 
+        "director": "Sean Anders", 
+        "netflix_id": "", 
+        "run_time": "116", 
+        "year": "2012", 
+        "genres": [
+            "Comedy"
+        ], 
+        "title": "That's My Boy (2012)", 
+        "stars": [
+            "Adam Sandler", 
+            "Andy Samberg", 
+            "Leighton Meester", 
+            "Susan Sarandon"
+        ], 
+        "unique_id": "tt1232200"
+    }, 
+    {
+        "description": "A college lecturer flees to Paris after a scandal costs him his job. In the City of Light, he meets a widow who might be involved in a series of murders.", 
+        "metascore": "57", 
+        "month": "6", 
+        "director": "Pawel Pawlikowski", 
+        "netflix_id": "", 
+        "run_time": "85", 
+        "year": "2012", 
+        "genres": [
+            "Drama", 
+            "Mystery", 
+            "Thriller"
+        ], 
+        "title": "La femme du V\u00e8me (2011)", 
+        "stars": [
+            "Ethan Hawke", 
+            "Kristin Scott Thomas", 
+            "Joanna Kulig", 
+            "Samir Guesmi"
+        ], 
+        "unique_id": "tt1605777"
+    }, 
+    {
+        "description": "Iris invites her friend Jack to stay at her family's island getaway after the death of his brother. At their remote cabin, Jack's drunken encounter with Hannah, Iris' sister, kicks off a revealing stretch of days.", 
+        "metascore": "72", 
+        "month": "6", 
+        "director": "Lynn Shelton", 
+        "netflix_id": "70211043", 
+        "run_time": "90", 
+        "year": "2012", 
+        "genres": [
+            "Comedy", 
+            "Drama"
+        ], 
+        "title": "Your Sister's Sister (2011)", 
+        "stars": [
+            "Mark Duplass", 
+            "Emily Blunt", 
+            "Rosemarie DeWitt", 
+            "Mike Birbiglia"
+        ], 
+        "unique_id": "tt1742336"
+    }, 
+    {
+        "description": "A documentary that follows the Serbian performance artist as she prepares for a retrospective of her work at The Museum of Modern Art in New York.", 
+        "metascore": "74", 
+        "month": "6", 
+        "director": "Matthew Akers", 
+        "netflix_id": "", 
+        "run_time": "106", 
+        "year": "2012", 
+        "genres": [
+            "Documentary", 
+            "Biography", 
+            "History"
+        ], 
+        "title": "Marina Abramovic: The Artist Is Present (2012)", 
+        "stars": [
+            "Marina Abramovic", 
+            "Ulay", 
+            "Klaus Biesenbach", 
+            "David Balliano"
+        ], 
+        "unique_id": "tt2073029"
+    }, 
+    {
+        "description": "A documentary on rap music and its rise to global prominence.", 
+        "metascore": "66", 
+        "month": "6", 
+        "director": "Ice-T", 
+        "netflix_id": "", 
+        "run_time": "106", 
+        "year": "2012", 
+        "genres": [
+            "Documentary", 
+            "Music"
+        ], 
+        "title": "Something from Nothing: The Art of Rap (2012)", 
+        "stars": [
+            "Ice-T", 
+            "Dr. Dre", 
+            "Chuck D.", 
+            "Snoop Dogg"
+        ], 
+        "unique_id": "tt2062996"
+    }, 
+    {
+        "description": "Determined to make her own path in life, Princess Merida defies a custom that brings chaos to her kingdom. Granted one wish, Merida must rely on her bravery and her archery skills to undo a beastly curse.", 
+        "metascore": "69", 
+        "month": "6", 
+        "director": "Mark Andrews", 
+        "netflix_id": "", 
+        "run_time": "93", 
+        "year": "2012", 
+        "genres": [
+            "Animation", 
+            "Adventure", 
+            "Comedy", 
+            "Family", 
+            "Fantasy"
+        ], 
+        "title": "Brave (2012)", 
+        "stars": [
+            "Kelly Macdonald", 
+            "Billy Connolly", 
+            "Emma Thompson", 
+            "Julie Walters"
+        ], 
+        "unique_id": "tt1217209"
+    }, 
+    {
+        "description": "Abraham Lincoln, the 16th President of the United States, discovers vampires are planning to take over the United States. He makes it his mission to eliminate them.", 
+        "metascore": "42", 
+        "month": "6", 
+        "director": "Timur Bekmambetov", 
+        "netflix_id": "", 
+        "run_time": "105", 
+        "year": "2012", 
+        "genres": [
+            "Action", 
+            "Fantasy", 
+            "Horror", 
+            "Thriller"
+        ], 
+        "title": "Abraham Lincoln: Vampire Hunter (2012)", 
+        "stars": [
+            "Benjamin Walker", 
+            "Rufus Sewell", 
+            "Dominic Cooper", 
+            "Anthony Mackie"
+        ], 
+        "unique_id": "tt1611224"
+    }, 
+    {
+        "description": "As an asteroid nears Earth, a man finds himself alone after his wife leaves in a panic. He decides to take a road trip to reunite with his high school sweetheart. Accompanying him is a neighbor who inadvertently puts a wrench in his plan.", 
+        "metascore": "59", 
+        "month": "6", 
+        "director": "Lorene Scafaria", 
+        "netflix_id": "70228040", 
+        "run_time": "101", 
+        "year": "2012", 
+        "genres": [
+            "Adventure", 
+            "Comedy", 
+            "Drama", 
+            "Romance", 
+            "Sci-Fi"
+        ], 
+        "title": "Seeking a Friend for the End of the World (2012)", 
+        "stars": [
+            "Steve Carell", 
+            "Keira Knightley", 
+            "Melanie Lynskey", 
+            "Patton Oswalt"
+        ], 
+        "unique_id": "tt1307068"
+    }, 
+    {
+        "description": "The lives of some visitors and residents of Rome and the romances, adventures and predicaments they get into.", 
+        "metascore": "54", 
+        "month": "6", 
+        "director": "Woody Allen", 
+        "netflix_id": "", 
+        "run_time": "112", 
+        "year": "2012", 
+        "genres": [
+            "Comedy", 
+            "Romance"
+        ], 
+        "title": "To Rome with Love (2012)", 
+        "stars": [
+            "Woody Allen", 
+            "Pen\u00e9lope Cruz", 
+            "Jesse Eisenberg", 
+            "Ellen Page"
+        ], 
+        "unique_id": "tt1859650"
+    }, 
+    {
+        "description": "An investigative documentary about the epidemic of rape of soldiers within the US military.", 
+        "metascore": "75", 
+        "month": "6", 
+        "director": "Kirby Dick", 
+        "netflix_id": "", 
+        "run_time": "93", 
+        "year": "2012", 
+        "genres": [
+            "Documentary", 
+            "Crime", 
+            "Drama", 
+            "History"
+        ], 
+        "title": "The Invisible War (2012)", 
+        "stars": [
+            "Amy Ziering", 
+            "Kirby Dick", 
+            "Kori Cioca", 
+            "Jessica Hinves"
+        ], 
+        "unique_id": "tt2120152"
+    }, 
+    {
+        "description": "A documentary about a man who impersonates a wise Indian Guru and builds a following in Arizona. At the height of his popularity, the Guru Kumar\u00e9 must reveal his true identity to his disciples and unveil his greatest teaching of all.", 
+        "metascore": "60", 
+        "month": "6", 
+        "director": "Vikram Gandhi", 
+        "netflix_id": "", 
+        "run_time": "84", 
+        "year": "2012", 
+        "genres": [
+            "Documentary"
+        ], 
+        "title": "Kumar\u00e9 (2011)", 
+        "stars": [
+            "Vikram Gandhi", 
+            "Toby", 
+            "Greg", 
+            "Molly"
+        ], 
+        "unique_id": "tt1865425"
+    }, 
+    {
+        "description": "After losing his job, a journalist reluctantly agrees to help his oddball friend with his bid to earn a seat on the Seattle City Council.", 
+        "metascore": "41", 
+        "month": "6", 
+        "director": "Stephen Gyllenhaal", 
+        "netflix_id": "", 
+        "run_time": "98", 
+        "year": "2012", 
+        "genres": [
+            "Comedy", 
+            "Drama"
+        ], 
+        "title": "Grassroots (2012)", 
+        "stars": [
+            "Jason Biggs", 
+            "Joel David Moore", 
+            "Lauren Ambrose", 
+            "Cobie Smulders"
+        ], 
+        "unique_id": "tt1634286"
+    }, 
+    {
+        "description": "A small town cinema in rural Ireland becomes the setting for a dramatic struggle between faith and passion, Rome and Hollywood and a man and his conscience.", 
+        "metascore": "56", 
+        "month": "6", 
+        "director": "Thaddeus O'Sullivan", 
+        "netflix_id": "", 
+        "run_time": "100", 
+        "year": "2012", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "Stella Days (2011)", 
+        "stars": [
+            "Martin Sheen", 
+            "Stephen Rea", 
+            "Trystan Gravelle", 
+            "Marcella Plunkett"
+        ], 
+        "unique_id": "tt1773058"
+    }, 
+    {
+        "description": "A male stripper teaches a younger performer how to party, pick up women, and make easy money.", 
+        "metascore": "72", 
+        "month": "6", 
+        "director": "Steven Soderbergh", 
+        "netflix_id": "", 
+        "run_time": "110", 
+        "year": "2012", 
+        "genres": [
+            "Comedy", 
+            "Drama"
+        ], 
+        "title": "Magic Mike (2012)", 
+        "stars": [
+            "Channing Tatum", 
+            "Alex Pettyfer", 
+            "Olivia Munn", 
+            "Matthew McConaughey"
+        ], 
+        "unique_id": "tt1915581"
+    }, 
+    {
+        "description": "A Wall Street investment banker who has been set up as the linchpin of his company's mob-backed Ponzi scheme is relocated with his family to Aunt Madea's southern home.", 
+        "metascore": "42", 
+        "month": "6", 
+        "director": "Tyler Perry", 
+        "netflix_id": "", 
+        "run_time": "114", 
+        "year": "2012", 
+        "genres": [
+            "Comedy", 
+            "Crime", 
+            "Drama"
+        ], 
+        "title": "Madea's Witness Protection (2012)", 
+        "stars": [
+            "Tyler Perry", 
+            "Eugene Levy", 
+            "Denise Richards", 
+            "Tom Arnold"
+        ], 
+        "unique_id": "tt2215285"
+    }, 
+    {
+        "description": "From the creator of Family Guy comes a movie about John Bennett, whose wish of bringing his teddy bear to life came true. Now, John must decide between keeping the relationship with the teddy bear or his girlfriend, Lori.", 
+        "metascore": "62", 
+        "month": "6", 
+        "director": "Seth MacFarlane", 
+        "netflix_id": "", 
+        "run_time": "106", 
+        "year": "2012", 
+        "genres": [
+            "Comedy", 
+            "Fantasy"
+        ], 
+        "title": "Ted (2012)", 
+        "stars": [
+            "Mark Wahlberg", 
+            "Mila Kunis", 
+            "Seth MacFarlane", 
+            "Joel McHale"
+        ], 
+        "unique_id": "tt1637725"
+    }, 
+    {
+        "description": "Faced with both her hot-tempered father's fading health and melting ice-caps that flood her ramshackle bayou community and unleash ancient aurochs, six-year-old Hushpuppy must learn the ways of courage and love.", 
+        "metascore": "86", 
+        "month": "6", 
+        "director": "Benh Zeitlin", 
+        "netflix_id": "", 
+        "run_time": "93", 
+        "year": "2012", 
+        "genres": [
+            "Drama", 
+            "Fantasy"
+        ], 
+        "title": "Beasts of the Southern Wild (2012)", 
+        "stars": [
+            "Quvenzhan\u00e9 Wallis", 
+            "Dwight Henry", 
+            "Levy Easterly", 
+            "Lowell Landes"
+        ], 
+        "unique_id": "tt2125435"
+    }, 
+    {
+        "description": "A happily married woman falls for the artist who lives across the street.", 
+        "metascore": "68", 
+        "month": "6", 
+        "director": "Sarah Polley", 
+        "netflix_id": "70209166", 
+        "run_time": "116", 
+        "year": "2012", 
+        "genres": [
+            "Comedy", 
+            "Drama"
+        ], 
+        "title": "Take This Waltz (2011)", 
+        "stars": [
+            "Michelle Williams", 
+            "Seth Rogen", 
+            "Sarah Silverman", 
+            "Aaron Abrams"
+        ], 
+        "unique_id": "tt1592281"
+    }, 
+    {
+        "description": "While settling his recently deceased father's estate, a salesman discovers he has a sister whom he never knew about, leading both siblings to re-examine their perceptions about family and life choices.", 
+        "metascore": "49", 
+        "month": "6", 
+        "director": "Alex Kurtzman", 
+        "netflix_id": "", 
+        "run_time": "114", 
+        "year": "2012", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "People Like Us (2012)", 
+        "stars": [
+            "Chris Pine", 
+            "Elizabeth Banks", 
+            "Michelle Pfeiffer", 
+            "Olivia Wilde"
+        ], 
+        "unique_id": "tt1716777"
+    }, 
+    {
+        "description": "Neil Young returns to his birth Canadian province of Ontario to revisit his old haunts and to perform in Toronto's vintage Massey Hall.", 
+        "metascore": "74", 
+        "month": "6", 
+        "director": "Jonathan Demme", 
+        "netflix_id": "", 
+        "run_time": "87", 
+        "year": "2012", 
+        "genres": [
+            "Documentary", 
+            "Music"
+        ], 
+        "title": "Neil Young Journeys (2011)", 
+        "stars": [
+            "Neil Young"
+        ], 
+        "unique_id": "tt2043931"
+    }
+]

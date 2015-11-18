@@ -1,0 +1,635 @@
+[
+    {
+        "description": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.", 
+        "metascore": "74", 
+        "month": "11", 
+        "director": "Christopher Nolan", 
+        "netflix_id": "", 
+        "run_time": "169", 
+        "year": "2014", 
+        "genres": [
+            "Adventure", 
+            "Drama", 
+            "Sci-Fi"
+        ], 
+        "title": "Interstellar (2014)", 
+        "stars": [
+            "Matthew McConaughey", 
+            "Anne Hathaway", 
+            "Jessica Chastain", 
+            "Mackenzie Foy"
+        ], 
+        "unique_id": "tt0816692"
+    }, 
+    {
+        "description": "The special bond that develops between plus-sized inflatable robot Baymax, and prodigy Hiro Hamada, who team up with a group of friends to form a band of high-tech heroes.", 
+        "metascore": "74", 
+        "month": "11", 
+        "director": "Don Hall", 
+        "netflix_id": "", 
+        "run_time": "102", 
+        "year": "2014", 
+        "genres": [
+            "Animation", 
+            "Action", 
+            "Adventure", 
+            "Comedy", 
+            "Family", 
+            "Sci-Fi"
+        ], 
+        "title": "Big Hero 6 (2014)", 
+        "stars": [
+            "Ryan Potter", 
+            "Scott Adsit", 
+            "Jamie Chung", 
+            "T.J. Miller"
+        ], 
+        "unique_id": "tt2245084"
+    }, 
+    {
+        "description": "A look at the relationship between the famous physicist Stephen Hawking and his wife.", 
+        "metascore": "72", 
+        "month": "11", 
+        "director": "James Marsh", 
+        "netflix_id": "", 
+        "run_time": "123", 
+        "year": "2014", 
+        "genres": [
+            "Biography", 
+            "Drama", 
+            "Romance"
+        ], 
+        "title": "The Theory of Everything (2014)", 
+        "stars": [
+            "Eddie Redmayne", 
+            "Felicity Jones", 
+            "Tom Prior", 
+            "Sophie Perry"
+        ], 
+        "unique_id": "tt2980516"
+    }, 
+    {
+        "description": "Returning to her childhood home in Louisiana to recuperate from a horrific car accident, Jessabelle comes face to face with a long-tormented spirit that has been seeking her return -- and has no intention of letting her escape.", 
+        "metascore": "37", 
+        "month": "11", 
+        "director": "Kevin Greutert", 
+        "netflix_id": "", 
+        "run_time": "90", 
+        "year": "2014", 
+        "genres": [
+            "Horror", 
+            "Thriller"
+        ], 
+        "title": "Jessabelle (2014)", 
+        "stars": [
+            "Sarah Snook", 
+            "Mark Webber", 
+            "Joelle Carter", 
+            "David Andrews"
+        ], 
+        "unique_id": "tt2300975"
+    }, 
+    {
+        "description": "The story of Abraham Lincoln's childhood in the harsh wilderness of Indiana and the hardships that shaped him, the tragedy that marked him for ever and the two women who guided him to immortality.", 
+        "metascore": "53", 
+        "month": "11", 
+        "director": "A.J. Edwards", 
+        "netflix_id": "", 
+        "run_time": "95", 
+        "year": "2014", 
+        "genres": [
+            "Biography", 
+            "Drama", 
+            "History"
+        ], 
+        "title": "The Better Angels (2014)", 
+        "stars": [
+            "Jason Clarke", 
+            "Diane Kruger", 
+            "Brit Marling", 
+            "Wes Bentley"
+        ], 
+        "unique_id": "tt2316868"
+    }, 
+    {
+        "description": "A jilted fan soon finds himself pulled into a deadly game of cat-and-mouse after he accepts the opportunity to spy on his favorite actress via his laptop.", 
+        "metascore": "47", 
+        "month": "11", 
+        "director": "Nacho Vigalondo", 
+        "netflix_id": "80014966", 
+        "run_time": "100", 
+        "year": "2014", 
+        "genres": [
+            "Action", 
+            "Crime", 
+            "Thriller"
+        ], 
+        "title": "Open Windows (2014)", 
+        "stars": [
+            "Sasha Grey", 
+            "Elijah Wood", 
+            "Neil Maskell", 
+            "Michelle Jenner"
+        ], 
+        "unique_id": "tt2409818"
+    }, 
+    {
+        "description": "Inspired by Bruce Brown's 1971 documentary, \"On Any Sunday,\" chronicles the international sport of motorcycle racing.", 
+        "metascore": "53", 
+        "month": "11", 
+        "director": "Dana Brown", 
+        "netflix_id": "", 
+        "run_time": "90", 
+        "year": "2014", 
+        "genres": [
+            "Documentary", 
+            "Action", 
+            "Adventure", 
+            "Sport"
+        ], 
+        "title": "On Any Sunday: The Next Chapter (2014)", 
+        "stars": [
+            "Bo Derek", 
+            "Travis Pastrana", 
+            "Jimmy N. Roberts", 
+            "Ashley Fiolek"
+        ], 
+        "unique_id": "tt2872570"
+    }, 
+    {
+        "description": "A documentary that goes inside one of the great museums of the world: The National Gallery in London.", 
+        "metascore": "89", 
+        "month": "11", 
+        "director": "Frederick Wiseman", 
+        "netflix_id": "", 
+        "run_time": "180", 
+        "year": "2014", 
+        "genres": [
+            "Documentary"
+        ], 
+        "title": "National Gallery (2014)", 
+        "stars": [], 
+        "unique_id": "tt3720794"
+    }, 
+    {
+        "description": "A look at the relationship between the famous physicist Stephen Hawking and his wife.", 
+        "metascore": "72", 
+        "month": "11", 
+        "director": "James Marsh", 
+        "netflix_id": "", 
+        "run_time": "123", 
+        "year": "2014", 
+        "genres": [
+            "Biography", 
+            "Drama", 
+            "Romance"
+        ], 
+        "title": "The Theory of Everything (2014)", 
+        "stars": [
+            "Eddie Redmayne", 
+            "Felicity Jones", 
+            "Tom Prior", 
+            "Sophie Perry"
+        ], 
+        "unique_id": "tt2980516"
+    }, 
+    {
+        "description": "The greatest Olympic Wrestling Champion brother team joins Team Foxcatcher led by multimillionaire sponsor John E. du Pont as they train for the 1988 games in Seoul - a union that leads to unlikely circumstances.", 
+        "metascore": "81", 
+        "month": "11", 
+        "director": "Bennett Miller", 
+        "netflix_id": "", 
+        "run_time": "134", 
+        "year": "2014", 
+        "genres": [
+            "Biography", 
+            "Drama", 
+            "Sport"
+        ], 
+        "title": "Foxcatcher (2014)", 
+        "stars": [
+            "Steve Carell", 
+            "Channing Tatum", 
+            "Mark Ruffalo", 
+            "Vanessa Redgrave"
+        ], 
+        "unique_id": "tt1100089"
+    }, 
+    {
+        "description": "Twenty years since their first adventure, Lloyd and Harry go on a road trip to find Harry's newly discovered daughter, who was given up for adoption.", 
+        "metascore": "36", 
+        "month": "11", 
+        "director": "Bobby Farrelly", 
+        "netflix_id": "", 
+        "run_time": "109", 
+        "year": "2014", 
+        "genres": [
+            "Comedy"
+        ], 
+        "title": "Dumb and Dumber To (2014)", 
+        "stars": [
+            "Jim Carrey", 
+            "Jeff Daniels", 
+            "Rob Riggle", 
+            "Laurie Holden"
+        ], 
+        "unique_id": "tt2096672"
+    }, 
+    {
+        "description": "The pressures of fame have superstar singer Noni on the edge, until she meets Kaz, a young cop who works to help her find the courage to develop her own voice and break free to become the artist she was meant to be.", 
+        "metascore": "73", 
+        "month": "11", 
+        "director": "Gina Prince-Bythewood", 
+        "netflix_id": "70295409", 
+        "run_time": "116", 
+        "year": "2014", 
+        "genres": [
+            "Drama", 
+            "Music"
+        ], 
+        "title": "Beyond the Lights (2014)", 
+        "stars": [
+            "Gugu Mbatha-Raw", 
+            "Nate Parker", 
+            "Minnie Driver", 
+            "Danny Glover"
+        ], 
+        "unique_id": "tt3125324"
+    }, 
+    {
+        "description": "Kirk is enjoying the annual Christmas party extravaganza thrown by his sister until he realizes he needs to help out Christian, his brother-in-law who has a bad case of the bah-humbugs. Kirk's fresh look at Christmas provides Christians the chance to see Christ is where He has always been: at the center of our Christmas celebrations and traditions.", 
+        "metascore": "18", 
+        "month": "11", 
+        "director": "Darren Doane", 
+        "netflix_id": "", 
+        "run_time": "80", 
+        "year": "2014", 
+        "genres": [
+            "Comedy", 
+            "Family"
+        ], 
+        "title": "Saving Christmas (2014)", 
+        "stars": [
+            "Kirk Cameron", 
+            "Darren Doane", 
+            "Bridgette Cameron", 
+            "David Shannon"
+        ], 
+        "unique_id": "tt4009460"
+    }, 
+    {
+        "description": "Three women who have been driven mad by pioneer life are to be transported across the country by covered wagon by the pious, independent-minded Mary Bee Cuddy, who in turn employs low-life drifter George Briggs to assist her.", 
+        "metascore": "68", 
+        "month": "11", 
+        "director": "Tommy Lee Jones", 
+        "netflix_id": "70266680", 
+        "run_time": "122", 
+        "year": "2014", 
+        "genres": [
+            "Drama", 
+            "Western"
+        ], 
+        "title": "The Homesman (2014)", 
+        "stars": [
+            "Tommy Lee Jones", 
+            "Hilary Swank", 
+            "Grace Gummer", 
+            "Miranda Otto"
+        ], 
+        "unique_id": "tt2398231"
+    }, 
+    {
+        "description": "Iranian-Canadian journalist Maziar Bahari is detained by Iranian forces who brutally interrogate him under suspicion that he is a spy.", 
+        "metascore": "67", 
+        "month": "11", 
+        "director": "Jon Stewart", 
+        "netflix_id": "70295188", 
+        "run_time": "103", 
+        "year": "2014", 
+        "genres": [
+            "Biography", 
+            "Drama"
+        ], 
+        "title": "Rosewater (2014)", 
+        "stars": [
+            "Gael Garc\u00eda Bernal", 
+            "Kim Bodnia", 
+            "Dimitri Leonidas", 
+            "Haluk Bilginer"
+        ], 
+        "unique_id": "tt2752688"
+    }, 
+    {
+        "description": "Three Texas teens hope to make a break for it and escape their dead-end existence in a cotton-mill town but get sucked into the seedy underbelly of organized crime when one of them steals from the wrong man.", 
+        "metascore": "62", 
+        "month": "11", 
+        "director": "Simon Hawkins", 
+        "netflix_id": "70293415", 
+        "run_time": "92", 
+        "year": "2014", 
+        "genres": [
+            "Crime", 
+            "Drama", 
+            "Thriller"
+        ], 
+        "title": "Bad Turn Worse (2013)", 
+        "stars": [
+            "Mackenzie Davis", 
+            "Logan Huffman", 
+            "Jeremy Allen White", 
+            "William Devane"
+        ], 
+        "unique_id": "tt2873214"
+    }, 
+    {
+        "description": "On one evening in a decade of sex, drugs and rock 'n' roll, the innocence of youth and family unravels. Five lives will change forever on this final evening before their hangout, The Toy Soldiers Roller Rink, closes its doors.", 
+        "metascore": "", 
+        "month": "11", 
+        "director": "Erik Peter Carlson", 
+        "netflix_id": "", 
+        "run_time": "143", 
+        "year": "2014", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "The Toy Soldiers (2014)", 
+        "stars": [
+            "Najarra Townsend", 
+            "Constance Brenneman", 
+            "Chandler Rylko", 
+            "Jeanette May Steiner"
+        ], 
+        "unique_id": "tt2219214"
+    }, 
+    {
+        "description": "Katniss Everdeen is in District 13 after she shatters the games forever. Under the leadership of President Coin and the advice of her trusted friends, Katniss spreads her wings as she fights to save Peeta and a nation moved by her courage.", 
+        "metascore": "64", 
+        "month": "11", 
+        "director": "Francis Lawrence", 
+        "netflix_id": "", 
+        "run_time": "123", 
+        "year": "2014", 
+        "genres": [
+            "Adventure", 
+            "Sci-Fi", 
+            "Thriller"
+        ], 
+        "title": "The Hunger Games: Mockingjay - Part 1 (2014)", 
+        "stars": [
+            "Jennifer Lawrence", 
+            "Josh Hutcherson", 
+            "Liam Hemsworth", 
+            "Woody Harrelson"
+        ], 
+        "unique_id": "tt1951265"
+    }, 
+    {
+        "description": "A look at the relationship between the famous physicist Stephen Hawking and his wife.", 
+        "metascore": "72", 
+        "month": "11", 
+        "director": "James Marsh", 
+        "netflix_id": "", 
+        "run_time": "123", 
+        "year": "2014", 
+        "genres": [
+            "Biography", 
+            "Drama", 
+            "Romance"
+        ], 
+        "title": "The Theory of Everything (2014)", 
+        "stars": [
+            "Eddie Redmayne", 
+            "Felicity Jones", 
+            "Tom Prior", 
+            "Sophie Perry"
+        ], 
+        "unique_id": "tt2980516"
+    }, 
+    {
+        "description": "A documentary that observes the year after Pennsylvania State University assistant football coach Jerry Sandusky's arrest on child sex abuse charges.", 
+        "metascore": "76", 
+        "month": "11", 
+        "director": "Amir Bar-Lev", 
+        "netflix_id": "", 
+        "run_time": "98", 
+        "year": "2014", 
+        "genres": [
+            "Documentary", 
+            "Drama", 
+            "Sport"
+        ], 
+        "title": "Happy Valley (2014)", 
+        "stars": [], 
+        "unique_id": "tt2171902"
+    }, 
+    {
+        "description": "A young couple, Kaia and Andrew, are renovating Kaia's secluded family estate. Their lives are violently disrupted upon the unexpected arrival of Kaia's sister, Christine, and her fianc\u00e9, Ira.", 
+        "metascore": "57", 
+        "month": "11", 
+        "director": "Mona Fastvold", 
+        "netflix_id": "70299273", 
+        "run_time": "91", 
+        "year": "2014", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "The Sleepwalker (2014)", 
+        "stars": [
+            "Gitte Witt", 
+            "Christopher Abbott", 
+            "Stephanie Ellis", 
+            "Brady Corbet"
+        ], 
+        "unique_id": "tt2723576"
+    }, 
+    {
+        "description": "A Los Angeles police chase sends a fame-obsessed man on a wild ride to save his girlfriend from a cybernetic terror.", 
+        "metascore": "31", 
+        "month": "11", 
+        "director": "Justin Benson", 
+        "netflix_id": "80013943", 
+        "run_time": "81", 
+        "year": "2014", 
+        "genres": [
+            "Action", 
+            "Horror", 
+            "Thriller"
+        ], 
+        "title": "V/H/S: Viral (2014)", 
+        "stars": [
+            "Patrick Lawrie", 
+            "Emilia Ares Zoryan", 
+            "Celia K. Milius", 
+            "Steve Berens"
+        ], 
+        "unique_id": "tt3704538"
+    }, 
+    {
+        "description": "A group of friends on a weekend trip to a cabin in the woods find themselves terrorized by alien visitors.", 
+        "metascore": "38", 
+        "month": "11", 
+        "director": "Colin Minihan", 
+        "netflix_id": "70309261", 
+        "run_time": "101", 
+        "year": "2014", 
+        "genres": [
+            "Horror", 
+            "Sci-Fi"
+        ], 
+        "title": "Extraterrestrial (2014)", 
+        "stars": [
+            "Brittany Allen", 
+            "Freddie Stroma", 
+            "Jesse Moss", 
+            "Anja Savcic"
+        ], 
+        "unique_id": "tt2960930"
+    }, 
+    {
+        "description": "Dale, Kurt and Nick decide to start their own business but things don't go as planned because of a slick investor, prompting the trio to pull off a harebrained and misguided kidnapping scheme.", 
+        "metascore": "40", 
+        "month": "11", 
+        "director": "Sean Anders", 
+        "netflix_id": "", 
+        "run_time": "108", 
+        "year": "2014", 
+        "genres": [
+            "Comedy", 
+            "Crime"
+        ], 
+        "title": "Horrible Bosses 2 (2014)", 
+        "stars": [
+            "Jason Bateman", 
+            "Jason Sudeikis", 
+            "Charlie Day", 
+            "Jennifer Aniston"
+        ], 
+        "unique_id": "tt2170439"
+    }, 
+    {
+        "description": "Skipper, Kowalski, Rico and Private join forces with undercover organization The North Wind to stop the villainous Dr. Octavius Brine from destroying the world as we know it.", 
+        "metascore": "53", 
+        "month": "11", 
+        "director": "Eric Darnell", 
+        "netflix_id": "", 
+        "run_time": "92", 
+        "year": "2014", 
+        "genres": [
+            "Animation", 
+            "Adventure", 
+            "Comedy", 
+            "Family"
+        ], 
+        "title": "Penguins of Madagascar (2014)", 
+        "stars": [
+            "Tom McGrath", 
+            "Chris Miller", 
+            "Christopher Knights", 
+            "Conrad Vernon"
+        ], 
+        "unique_id": "tt1911658"
+    }, 
+    {
+        "description": "During World War II, mathematician Alan Turing tries to crack the enigma code with help from fellow mathematicians.", 
+        "metascore": "73", 
+        "month": "11", 
+        "director": "Morten Tyldum", 
+        "netflix_id": "", 
+        "run_time": "114", 
+        "year": "2014", 
+        "genres": [
+            "Biography", 
+            "Drama", 
+            "Thriller", 
+            "War"
+        ], 
+        "title": "The Imitation Game (2014)", 
+        "stars": [
+            "Benedict Cumberbatch", 
+            "Keira Knightley", 
+            "Matthew Goode", 
+            "Allen Leech"
+        ], 
+        "unique_id": "tt2084970"
+    }, 
+    {
+        "description": "At the lowest point of his life, Richie gets a call from his estranged sister, asking him to look after his eleven-year old niece, Sophia, for a few hours.", 
+        "metascore": "47", 
+        "month": "11", 
+        "director": "Shawn Christensen", 
+        "netflix_id": "70304983", 
+        "run_time": "93", 
+        "year": "2014", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "Before I Disappear (2014)", 
+        "stars": [
+            "Shawn Christensen", 
+            "Fatima Ptacek", 
+            "Emmy Rossum", 
+            "Paul Wesley"
+        ], 
+        "unique_id": "tt3060492"
+    }, 
+    {
+        "description": "A documentary on the annual three-day \"pop-up\" medical clinic organized by the non-profit Remote Area Medical (RAM) in Bristol, Tennessee's NASCAR speedway.", 
+        "metascore": "71", 
+        "month": "11", 
+        "director": "Jeff Reichert", 
+        "netflix_id": "", 
+        "run_time": "81", 
+        "year": "2014", 
+        "genres": [
+            "Documentary"
+        ], 
+        "title": "Remote Area Medical (2013)", 
+        "stars": [], 
+        "unique_id": "tt2180503"
+    }, 
+    {
+        "description": "A single mother, plagued by the violent death of her husband, battles with her son's fear of a monster lurking in the house, but soon discovers a sinister presence all around her.", 
+        "metascore": "86", 
+        "month": "11", 
+        "director": "Jennifer Kent", 
+        "netflix_id": "70300205", 
+        "run_time": "93", 
+        "year": "2014", 
+        "genres": [
+            "Drama", 
+            "Horror", 
+            "Thriller"
+        ], 
+        "title": "The Babadook (2014)", 
+        "stars": [
+            "Essie Davis", 
+            "Noah Wiseman", 
+            "Daniel Henshall", 
+            "Hayley McElhinney"
+        ], 
+        "unique_id": "tt2321549"
+    }, 
+    {
+        "description": "A visually stunning chronicle of what it is like to live in Antarctica for a full year, including winters isolated from the rest of the world, and enduring months of darkness in the coldest place on Earth.", 
+        "metascore": "69", 
+        "month": "11", 
+        "director": "Anthony Powell", 
+        "netflix_id": "", 
+        "run_time": "91", 
+        "year": "2014", 
+        "genres": [
+            "Documentary", 
+            "Adventure", 
+            "Biography", 
+            "Drama"
+        ], 
+        "title": "Antarctica: A Year on Ice (2013)", 
+        "stars": [
+            "Anthony Powell", 
+            "Genevieve Bachman", 
+            "William Brotman", 
+            "Michael Christiansen"
+        ], 
+        "unique_id": "tt2361700"
+    }
+]

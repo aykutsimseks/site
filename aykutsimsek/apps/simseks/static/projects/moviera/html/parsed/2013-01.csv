@@ -1,0 +1,574 @@
+[
+    {
+        "description": "A young woman travels to Texas to collect an inheritance; little does she know that an encounter with a chainsaw-wielding killer is part of the reward.", 
+        "metascore": "", 
+        "month": "1", 
+        "director": "John Luessenhop", 
+        "netflix_id": "", 
+        "run_time": "92", 
+        "year": "2013", 
+        "genres": [
+            "Horror", 
+            "Thriller"
+        ], 
+        "title": "Texas Chainsaw 3D (2013)", 
+        "stars": [
+            "Alexandra Daddario", 
+            "Tania Raymonde", 
+            "Scott Eastwood", 
+            "Trey Songz"
+        ], 
+        "unique_id": "tt1572315"
+    }, 
+    {
+        "description": "A former CIA operative turned political talk show host is hired by a corporate whistle blower to expose her company's cover-up of a massacre in a South American village.", 
+        "metascore": "31", 
+        "month": "1", 
+        "director": "Damian Lee", 
+        "netflix_id": "70251633", 
+        "run_time": "106", 
+        "year": "2013", 
+        "genres": [
+            "Action", 
+            "Thriller"
+        ], 
+        "title": "A Dark Truth (2012)", 
+        "stars": [
+            "Andy Garcia", 
+            "Kim Coates", 
+            "Deborah Kara Unger", 
+            "Forest Whitaker"
+        ], 
+        "unique_id": "tt2083379"
+    }, 
+    {
+        "description": "It's 1949 Los Angeles, the city is run by gangsters and a malicious mobster, Mickey Cohen. Determined to end the corruption, John O'Mara assembles a team of cops, ready to take down the ruthless leader and restore peace to the city.", 
+        "metascore": "40", 
+        "month": "1", 
+        "director": "Ruben Fleischer", 
+        "netflix_id": "", 
+        "run_time": "113", 
+        "year": "2013", 
+        "genres": [
+            "Action", 
+            "Crime", 
+            "Drama", 
+            "Thriller"
+        ], 
+        "title": "Gangster Squad (2013)", 
+        "stars": [
+            "Sean Penn", 
+            "Ryan Gosling", 
+            "Emma Stone", 
+            "Giovanni Ribisi"
+        ], 
+        "unique_id": "tt1321870"
+    }, 
+    {
+        "description": "Malcolm and Kisha move into their dream home, but soon learn a demon also resides there. When Kisha becomes possessed, Malcolm - determined to keep his sex life on track - turns to a priest, a psychic, and a team of ghost-busters for help.", 
+        "metascore": "20", 
+        "month": "1", 
+        "director": "Michael Tiddes", 
+        "netflix_id": "", 
+        "run_time": "86", 
+        "year": "2013", 
+        "genres": [
+            "Comedy", 
+            "Horror"
+        ], 
+        "title": "A Haunted House (2013)", 
+        "stars": [
+            "Marlon Wayans", 
+            "Essence Atkins", 
+            "Marlene Forte", 
+            "David Koechner"
+        ], 
+        "unique_id": "tt2243537"
+    }, 
+    {
+        "description": "At a home for retired musicians, the annual concert to celebrate Verdi's birthday is disrupted by the arrival of Jean, an eternal diva and the former wife of one of the residents.", 
+        "metascore": "64", 
+        "month": "1", 
+        "director": "Dustin Hoffman", 
+        "netflix_id": "70243583", 
+        "run_time": "98", 
+        "year": "2013", 
+        "genres": [
+            "Comedy", 
+            "Drama"
+        ], 
+        "title": "Quartet (2012)", 
+        "stars": [
+            "Maggie Smith", 
+            "Michael Gambon", 
+            "Billy Connolly", 
+            "Tom Courtenay"
+        ], 
+        "unique_id": "tt1441951"
+    }, 
+    {
+        "description": "A high schooler recounts the way he blackmailed his fellow classmates into contributing to his literary magazine.", 
+        "metascore": "41", 
+        "month": "1", 
+        "director": "Brian Dannelly", 
+        "netflix_id": "70239474", 
+        "run_time": "90", 
+        "year": "2013", 
+        "genres": [
+            "Comedy", 
+            "Drama"
+        ], 
+        "title": "Struck by Lightning (2012)", 
+        "stars": [
+            "Chris Colfer", 
+            "Rebel Wilson", 
+            "Christina Hendricks", 
+            "Dermot Mulroney"
+        ], 
+        "unique_id": "tt1791614"
+    }, 
+    {
+        "description": "Dave returns to his hometown on the Massachusetts coast for his father's funeral, where his reunion with two old friends provides a healthy dose of reality.", 
+        "metascore": "54", 
+        "month": "1", 
+        "director": "Tom O'Brien", 
+        "netflix_id": "", 
+        "run_time": "81", 
+        "year": "2013", 
+        "genres": [
+            "Comedy", 
+            "Drama"
+        ], 
+        "title": "Fairhaven (2012)", 
+        "stars": [
+            "Chris Messina", 
+            "Rich Sommer", 
+            "Tom O'Brien", 
+            "Sarah Paulson"
+        ], 
+        "unique_id": "tt1341718"
+    }, 
+    {
+        "description": "When three redneck brothers agree to help a woman save her godson from an abusive stepfather, they become targets on the run from an odd cast of characters.", 
+        "metascore": "33", 
+        "month": "1", 
+        "director": "Barry Battles", 
+        "netflix_id": "", 
+        "run_time": "98", 
+        "year": "2013", 
+        "genres": [
+            "Action", 
+            "Comedy", 
+            "Crime"
+        ], 
+        "title": "The Baytown Outlaws (2012)", 
+        "stars": [
+            "Billy Bob Thornton", 
+            "Eva Longoria", 
+            "Thomas Brodie-Sangster", 
+            "Clayne Crawford"
+        ], 
+        "unique_id": "tt1836944"
+    }, 
+    {
+        "description": "Celebrity photographer Kevin Mazur gives an all access pass to life behind the velvet rope and in front of the camera.", 
+        "metascore": "53", 
+        "month": "1", 
+        "director": "Kevin Mazur", 
+        "netflix_id": "", 
+        "run_time": "89", 
+        "year": "2013", 
+        "genres": [
+            "Documentary"
+        ], 
+        "title": "$ellebrity (2012)", 
+        "stars": [
+            "Jennifer Aniston", 
+            "Jennifer Lopez", 
+            "Sarah Jessica Parker", 
+            "Kid Rock"
+        ], 
+        "unique_id": "tt2258233"
+    }, 
+    {
+        "description": "Harry is an industrialist who loves his daughter Bijlee, and the bond they share with Harry's man friday, Matru. Bijlee's plan to wed the son of a politician, however, brings twists and turns in the lives of Matru, Bijlee and Mandola.", 
+        "metascore": "46", 
+        "month": "1", 
+        "director": "Vishal Bhardwaj", 
+        "netflix_id": "", 
+        "run_time": "151", 
+        "year": "2013", 
+        "genres": [
+            "Comedy", 
+            "Drama"
+        ], 
+        "title": "Matru ki Bijlee ka Mandola (2013)", 
+        "stars": [
+            "Pankaj Kapur", 
+            "Imran Khan", 
+            "Anushka Sharma", 
+            "Arya Babbar"
+        ], 
+        "unique_id": "tt2106537"
+    }, 
+    {
+        "description": "A Christmas Eve party at a luxury residential building takes a horrific turn when a fire breaks out.", 
+        "metascore": "", 
+        "month": "1", 
+        "director": "Ji-hoon Kim", 
+        "netflix_id": "", 
+        "run_time": "121", 
+        "year": "2013", 
+        "genres": [
+            "Action", 
+            "Comedy", 
+            "Drama"
+        ], 
+        "title": "Ta-weo (2012)", 
+        "stars": [
+            "Sang-kyung Kim", 
+            "Ye-jin Son", 
+            "Kyung-gu Sol", 
+            "In-kwon Kim"
+        ], 
+        "unique_id": "tt2554270"
+    }, 
+    {
+        "description": "In London, a military plane crashes leaving its highly classified contents strewn across the city. Completely unaware that the city is in lockdown, a group of people become trapped inside a storage facility with a highly unwelcome guest.", 
+        "metascore": "52", 
+        "month": "1", 
+        "director": "Johannes Roberts", 
+        "netflix_id": "70264589", 
+        "run_time": "87", 
+        "year": "2013", 
+        "genres": [
+            "Horror", 
+            "Sci-Fi"
+        ], 
+        "title": "Storage 24 (2012)", 
+        "stars": [
+            "Noel Clarke", 
+            "Colin O'Donoghue", 
+            "Antonia Campbell-Hughes", 
+            "Laura Haddock"
+        ], 
+        "unique_id": "tt1986953"
+    }, 
+    {
+        "description": "A chronicle of the decade-long hunt for al-Qaeda terrorist leader Osama bin Laden after the September 2001 attacks, and his death at the hands of the Navy S.E.A.L.s Team 6 in May 2011.", 
+        "metascore": "95", 
+        "month": "1", 
+        "director": "Kathryn Bigelow", 
+        "netflix_id": "", 
+        "run_time": "157", 
+        "year": "2013", 
+        "genres": [
+            "Drama", 
+            "History", 
+            "Thriller"
+        ], 
+        "title": "Zero Dark Thirty (2012)", 
+        "stars": [
+            "Jessica Chastain", 
+            "Joel Edgerton", 
+            "Chris Pratt", 
+            "Mark Strong"
+        ], 
+        "unique_id": "tt1790885"
+    }, 
+    {
+        "description": "Annabel and Lucas are faced with the challenge of raising his young nieces that were left alone in the forest for 5 years.... but how alone were they?", 
+        "metascore": "57", 
+        "month": "1", 
+        "director": "Andr\u00e9s Muschietti", 
+        "netflix_id": "", 
+        "run_time": "100", 
+        "year": "2013", 
+        "genres": [
+            "Horror"
+        ], 
+        "title": "Mama (2013)", 
+        "stars": [
+            "Jessica Chastain", 
+            "Nikolaj Coster-Waldau", 
+            "Megan Charpentier", 
+            "Isabelle N\u00e9lisse"
+        ], 
+        "unique_id": "tt2023587"
+    }, 
+    {
+        "description": "The leader of a drug cartel busts out of a courthouse and speeds to the Mexican border, where the only thing in his path is a sheriff and his inexperienced staff.", 
+        "metascore": "54", 
+        "month": "1", 
+        "director": "Jee-woon Kim", 
+        "netflix_id": "", 
+        "run_time": "107", 
+        "year": "2013", 
+        "genres": [
+            "Action", 
+            "Crime", 
+            "Thriller"
+        ], 
+        "title": "The Last Stand (2013)", 
+        "stars": [
+            "Arnold Schwarzenegger", 
+            "Forest Whitaker", 
+            "Johnny Knoxville", 
+            "Rodrigo Santoro"
+        ], 
+        "unique_id": "tt1549920"
+    }, 
+    {
+        "description": "In a city rife with injustice, ex-cop Billy Taggart seeks redemption and revenge after being double-crossed and then framed by its most powerful figure: Mayor Nicholas Hostetler.", 
+        "metascore": "49", 
+        "month": "1", 
+        "director": "Allen Hughes", 
+        "netflix_id": "", 
+        "run_time": "109", 
+        "year": "2013", 
+        "genres": [
+            "Crime", 
+            "Drama", 
+            "Thriller"
+        ], 
+        "title": "Broken City (2013)", 
+        "stars": [
+            "Mark Wahlberg", 
+            "Russell Crowe", 
+            "Catherine Zeta-Jones", 
+            "Jeffrey Wright"
+        ], 
+        "unique_id": "tt1235522"
+    }, 
+    {
+        "description": "An 11-year-old boy gets a crash course in what it means to be a man when he spends a day with the ex-convict uncle he idolizes.", 
+        "metascore": "52", 
+        "month": "1", 
+        "director": "Sheldon Candis", 
+        "netflix_id": "70227943", 
+        "run_time": "94", 
+        "year": "2013", 
+        "genres": [
+            "Crime", 
+            "Drama"
+        ], 
+        "title": "LUV (2012)", 
+        "stars": [
+            "Common", 
+            "Michael Rainey Jr.", 
+            "Dennis Haysbert", 
+            "Danny Glover"
+        ], 
+        "unique_id": "tt1907707"
+    }, 
+    {
+        "description": "In a village on the French Opal Coast, a drifter engages in a perplexing relationship with a young woman who has suffered abuse.", 
+        "metascore": "63", 
+        "month": "1", 
+        "director": "Bruno Dumont", 
+        "netflix_id": "", 
+        "run_time": "110", 
+        "year": "2013", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "Hors Satan (2011)", 
+        "stars": [
+            "David Dewaele", 
+            "Alexandra Lem\u00e2tre", 
+            "Christophe Bon", 
+            "Juliette Bacquet"
+        ], 
+        "unique_id": "tt1666168"
+    }, 
+    {
+        "description": "Hansel & Gretel are bounty hunters who track and kill witches all over the world. As the fabled Blood Moon approaches, the siblings encounter a new form of evil that might hold a secret to their past.", 
+        "metascore": "21", 
+        "month": "1", 
+        "director": "Tommy Wirkola", 
+        "netflix_id": "", 
+        "run_time": "88", 
+        "year": "2013", 
+        "genres": [
+            "Action", 
+            "Fantasy", 
+            "Horror"
+        ], 
+        "title": "Hansel & Gretel: Witch Hunters (2013)", 
+        "stars": [
+            "Jeremy Renner", 
+            "Gemma Arterton", 
+            "Peter Stormare", 
+            "Famke Janssen"
+        ], 
+        "unique_id": "tt1428538"
+    }, 
+    {
+        "description": "A thief with a unique code of professional ethics is double-crossed by his crew and left for dead. Assuming a new disguise and forming an unlikely alliance with a woman on the inside, he looks to hijack the score of the crew's latest heist.", 
+        "metascore": "42", 
+        "month": "1", 
+        "director": "Taylor Hackford", 
+        "netflix_id": "", 
+        "run_time": "118", 
+        "year": "2013", 
+        "genres": [
+            "Action", 
+            "Crime", 
+            "Thriller"
+        ], 
+        "title": "Parker (2013)", 
+        "stars": [
+            "Jason Statham", 
+            "Jennifer Lopez", 
+            "Michael Chiklis", 
+            "Nick Nolte"
+        ], 
+        "unique_id": "tt1904996"
+    }, 
+    {
+        "description": "A series of interconnected short films follows a washed-up producer as he pitches insane story lines featuring some of the biggest stars in Hollywood.", 
+        "metascore": "18", 
+        "month": "1", 
+        "director": "Elizabeth Banks", 
+        "netflix_id": "", 
+        "run_time": "94", 
+        "year": "2013", 
+        "genres": [
+            "Comedy"
+        ], 
+        "title": "Movie 43 (2013)", 
+        "stars": [
+            "Emma Stone", 
+            "Stephen Merchant", 
+            "Richard Gere", 
+            "Liev Schreiber"
+        ], 
+        "unique_id": "tt1333125"
+    }, 
+    {
+        "description": "Ranvir treads through the world of the Indian mafia in Turkey as he looks to avenge the death of his lover and partner in crime.", 
+        "metascore": "", 
+        "month": "1", 
+        "director": "Abbas Alibhai Burmawalla", 
+        "netflix_id": "", 
+        "run_time": "150", 
+        "year": "2013", 
+        "genres": [
+            "Action", 
+            "Crime", 
+            "Drama", 
+            "Thriller"
+        ], 
+        "title": "Race 2 (2013)", 
+        "stars": [
+            "Saif Ali Khan", 
+            "Anil Kapoor", 
+            "John Abraham", 
+            "Deepika Padukone"
+        ], 
+        "unique_id": "tt1375789"
+    }, 
+    {
+        "description": "A new street drug that sends its users across time and dimensions has one drawback: some people return as no longer human. Can two college dropouts save humankind from this silent, otherworldly invasion?", 
+        "metascore": "53", 
+        "month": "1", 
+        "director": "Don Coscarelli", 
+        "netflix_id": "70228191", 
+        "run_time": "99", 
+        "year": "2013", 
+        "genres": [
+            "Comedy", 
+            "Horror", 
+            "Sci-Fi"
+        ], 
+        "title": "John Dies at the End (2012)", 
+        "stars": [
+            "Chase Williamson", 
+            "Rob Mayes", 
+            "Paul Giamatti", 
+            "Clancy Brown"
+        ], 
+        "unique_id": "tt1783732"
+    }, 
+    {
+        "description": "This sequel to Yossi and Jagger finds Dr. Yossi Gutmann reminiscing about his love ten years after his death; however, as he encounters a group of young soldiers, one of them, Tom, reignites his romantic feelings.", 
+        "metascore": "66", 
+        "month": "1", 
+        "director": "Eytan Fox", 
+        "netflix_id": "", 
+        "run_time": "84", 
+        "year": "2013", 
+        "genres": [
+            "Drama", 
+            "Romance"
+        ], 
+        "title": "Yossi (2012)", 
+        "stars": [
+            "Ohad Knoller", 
+            "Shlomo Sadan", 
+            "Oz Zehavi", 
+            "Lior Ashkenazi"
+        ], 
+        "unique_id": "tt1934269"
+    }, 
+    {
+        "description": "A documentary depicting the life and work of the trappers of Bakhtia, a village in the heart of the Siberian Taiga, where daily life has changed little in over a century.", 
+        "metascore": "74", 
+        "month": "1", 
+        "director": "Werner Herzog", 
+        "netflix_id": "", 
+        "run_time": "90", 
+        "year": "2013", 
+        "genres": [
+            "Documentary"
+        ], 
+        "title": "Happy People: A Year in the Taiga (2010)", 
+        "stars": [
+            "Werner Herzog", 
+            "Nikolay Nikiforovitch Siniaev", 
+            "Gennady Soloviev", 
+            "Anatoly Tarkovsky"
+        ], 
+        "unique_id": "tt1683876"
+    }, 
+    {
+        "description": "A political strategist juggling three clients questions whether or not to take the high road as the ugly side of his work begins to haunt him.", 
+        "metascore": "34", 
+        "month": "1", 
+        "director": "Bill Guttentag", 
+        "netflix_id": "70239447", 
+        "run_time": "100", 
+        "year": "2013", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "Knife Fight (2012)", 
+        "stars": [
+            "Rob Lowe", 
+            "Jamie Chung", 
+            "Julie Bowen", 
+            "Richard Schiff"
+        ], 
+        "unique_id": "tt1931466"
+    }, 
+    {
+        "description": "Four friends hit the road to LA to compete in the Cyberbowl Video Game Championship, but will they be able to compete with the worst hangovers of their lives?", 
+        "metascore": "", 
+        "month": "1", 
+        "director": "Blake Freeman", 
+        "netflix_id": "", 
+        "run_time": "97", 
+        "year": "2013", 
+        "genres": [
+            "Comedy"
+        ], 
+        "title": "Noobz (2012)", 
+        "stars": [
+            "Blake Freeman", 
+            "Mindy Sterling", 
+            "Jason Mewes", 
+            "Matt Shively"
+        ], 
+        "unique_id": "tt1884369"
+    }
+]

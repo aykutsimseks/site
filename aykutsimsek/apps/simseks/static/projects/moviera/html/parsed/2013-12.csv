@@ -1,0 +1,558 @@
+[
+    {
+        "description": "When Rodney Baze mysteriously disappears and law enforcement doesn't follow through fast enough, his older brother, Russell, takes matters into his own hands to find justice.", 
+        "metascore": "63", 
+        "month": "12", 
+        "director": "Scott Cooper", 
+        "netflix_id": "70241419", 
+        "run_time": "116", 
+        "year": "2013", 
+        "genres": [
+            "Crime", 
+            "Drama", 
+            "Thriller"
+        ], 
+        "title": "Out of the Furnace (2013)", 
+        "stars": [
+            "Christian Bale", 
+            "Casey Affleck", 
+            "Zoe Saldana", 
+            "Woody Harrelson"
+        ], 
+        "unique_id": "tt1206543"
+    }, 
+    {
+        "description": "A week in the life of a young singer as he navigates the Greenwich Village folk scene of 1961.", 
+        "metascore": "92", 
+        "month": "12", 
+        "director": "Ethan Coen", 
+        "netflix_id": "", 
+        "run_time": "104", 
+        "year": "2013", 
+        "genres": [
+            "Drama", 
+            "Music"
+        ], 
+        "title": "Inside Llewyn Davis (2013)", 
+        "stars": [
+            "Oscar Isaac", 
+            "Carey Mulligan", 
+            "John Goodman", 
+            "Garrett Hedlund"
+        ], 
+        "unique_id": "tt2042568"
+    }, 
+    {
+        "description": "A group of astronaut explorers succumb one by one to a mysterious and terrifying force while collecting specimens on Mars.", 
+        "metascore": "46", 
+        "month": "12", 
+        "director": "Ruairi Robinson", 
+        "netflix_id": "70285729", 
+        "run_time": "98", 
+        "year": "2013", 
+        "genres": [
+            "Horror", 
+            "Sci-Fi", 
+            "Thriller"
+        ], 
+        "title": "The Last Days on Mars (2013)", 
+        "stars": [
+            "Liev Schreiber", 
+            "Elias Koteas", 
+            "Romola Garai", 
+            "Olivia Williams"
+        ], 
+        "unique_id": "tt1709143"
+    }, 
+    {
+        "description": "Colin happens upon a road accident where he finds a dead man, a beautiful woman, and a suitcase full of money. After trying to do the right thing he soon finds himself caught up in a dangerous scheme.", 
+        "metascore": "42", 
+        "month": "12", 
+        "director": "Craig Lahiff", 
+        "netflix_id": "70279657", 
+        "run_time": "86", 
+        "year": "2013", 
+        "genres": [
+            "Crime", 
+            "Drama", 
+            "Thriller"
+        ], 
+        "title": "Swerve (2011)", 
+        "stars": [
+            "Jason Clarke", 
+            "Emma Booth", 
+            "David Lyons", 
+            "Travis McMahon"
+        ], 
+        "unique_id": "tt1592576"
+    }, 
+    {
+        "description": "The dwarves, along with Bilbo Baggins and Gandalf the Grey, continue their quest to reclaim Erebor, their homeland, from Smaug. Bilbo Baggins is in possession of a mysterious and magical ring.", 
+        "metascore": "66", 
+        "month": "12", 
+        "director": "Peter Jackson", 
+        "netflix_id": "", 
+        "run_time": "161", 
+        "year": "2013", 
+        "genres": [
+            "Adventure", 
+            "Fantasy"
+        ], 
+        "title": "The Hobbit: The Desolation of Smaug (2013)", 
+        "stars": [
+            "Ian McKellen", 
+            "Martin Freeman", 
+            "Richard Armitage", 
+            "Ken Stott"
+        ], 
+        "unique_id": "tt1170358"
+    }, 
+    {
+        "description": "Madea dispenses her unique form of holiday spirit on rural town when she's coaxed into helping a friend pay her daughter a surprise visit in the country for Christmas.", 
+        "metascore": "28", 
+        "month": "12", 
+        "director": "Tyler Perry", 
+        "netflix_id": "", 
+        "run_time": "100", 
+        "year": "2013", 
+        "genres": [
+            "Comedy", 
+            "Drama"
+        ], 
+        "title": "A Madea Christmas (2013)", 
+        "stars": [
+            "Tyler Perry", 
+            "Chad Michael Murray", 
+            "Tika Sumpter", 
+            "Larry the Cable Guy"
+        ], 
+        "unique_id": "tt2609758"
+    }, 
+    {
+        "description": "A father struggles to keep his infant daughter alive in the wake of Hurricane Katrina.", 
+        "metascore": "55", 
+        "month": "12", 
+        "director": "Eric Heisserer", 
+        "netflix_id": "", 
+        "run_time": "97", 
+        "year": "2013", 
+        "genres": [
+            "Drama", 
+            "Thriller"
+        ], 
+        "title": "Hours (2013)", 
+        "stars": [
+            "Paul Walker", 
+            "Genesis Rodriguez", 
+            "Nancy Nave", 
+            "Shane Jacobsen"
+        ], 
+        "unique_id": "tt2094018"
+    }, 
+    {
+        "description": "A married couple lose their children while on a family trip near some caves in Tijuana. The kids eventually reappear without explanation, but it becomes clear that they are not who they used to be, that something terrifying has changed them.", 
+        "metascore": "50", 
+        "month": "12", 
+        "director": "Adri\u00e1n Garc\u00eda Bogliano", 
+        "netflix_id": "", 
+        "run_time": "97", 
+        "year": "2013", 
+        "genres": [
+            "Horror", 
+            "Thriller"
+        ], 
+        "title": "Ah\u00ed va el diablo (2012)", 
+        "stars": [
+            "Laura Caro", 
+            "Francisco Barreiro", 
+            "Michele Garcia", 
+            "Alan Martinez"
+        ], 
+        "unique_id": "tt2107648"
+    }, 
+    {
+        "description": "The 42 year long relationship between legendary actress Liv Ullmann and master filmmaker Ingmar Bergman.", 
+        "metascore": "74", 
+        "month": "12", 
+        "director": "Dheeraj Akolkar", 
+        "netflix_id": "", 
+        "run_time": "89", 
+        "year": "2013", 
+        "genres": [
+            "Documentary"
+        ], 
+        "title": "Liv & Ingmar (2012)", 
+        "stars": [
+            "Liv Ullmann", 
+            "Ingmar Bergman", 
+            "Samuel Fr\u00f6ler", 
+            "Erland Josephson"
+        ], 
+        "unique_id": "tt2327430"
+    }, 
+    {
+        "description": "A documentary chronicling the lives of Japanese refugees displaced by the 2011 tsunami and nuclear meltdown at Fukushima Daiichi.", 
+        "metascore": "69", 
+        "month": "12", 
+        "director": "Atsushi Funahashi", 
+        "netflix_id": "", 
+        "run_time": "96", 
+        "year": "2013", 
+        "genres": [
+            "Documentary"
+        ], 
+        "title": "Futaba kara tooku hanarete (2012)", 
+        "stars": [], 
+        "unique_id": "tt2215363"
+    }, 
+    {
+        "description": "A con man, Irving Rosenfeld, along with his seductive partner Sydney Prosser, is forced to work for a wild FBI agent, Richie DiMaso, who pushes them into a world of Jersey powerbrokers and mafia.", 
+        "metascore": "90", 
+        "month": "12", 
+        "director": "David O. Russell", 
+        "netflix_id": "", 
+        "run_time": "138", 
+        "year": "2013", 
+        "genres": [
+            "Crime", 
+            "Drama"
+        ], 
+        "title": "American Hustle (2013)", 
+        "stars": [
+            "Christian Bale", 
+            "Amy Adams", 
+            "Bradley Cooper", 
+            "Jennifer Lawrence"
+        ], 
+        "unique_id": "tt1800241"
+    }, 
+    {
+        "description": "With the 70s behind him, San Diego's top rated newsman, Ron Burgundy, returns to take New York's first 24-hour news channel by storm.", 
+        "metascore": "61", 
+        "month": "12", 
+        "director": "Adam McKay", 
+        "netflix_id": "", 
+        "run_time": "119", 
+        "year": "2013", 
+        "genres": [
+            "Comedy"
+        ], 
+        "title": "Anchorman 2: The Legend Continues (2013)", 
+        "stars": [
+            "Will Ferrell", 
+            "Christina Applegate", 
+            "Paul Rudd", 
+            "Steve Carell"
+        ], 
+        "unique_id": "tt1229340"
+    }, 
+    {
+        "description": "Author P.L. Travers reflects on her childhood after reluctantly meeting with Walt Disney, who seeks to adapt her Mary Poppins books for the big screen.", 
+        "metascore": "65", 
+        "month": "12", 
+        "director": "John Lee Hancock", 
+        "netflix_id": "", 
+        "run_time": "125", 
+        "year": "2013", 
+        "genres": [
+            "Biography", 
+            "Comedy", 
+            "Drama", 
+            "History", 
+            "Music"
+        ], 
+        "title": "Saving Mr. Banks (2013)", 
+        "stars": [
+            "Emma Thompson", 
+            "Tom Hanks", 
+            "Annie Rose Buckley", 
+            "Colin Farrell"
+        ], 
+        "unique_id": "tt2140373"
+    }, 
+    {
+        "description": "See and feel what it was like when dinosaurs ruled the Earth, in a story where an underdog dino triumphs to become a hero for the ages.", 
+        "metascore": "37", 
+        "month": "12", 
+        "director": "Barry Cook", 
+        "netflix_id": "", 
+        "run_time": "87", 
+        "year": "2013", 
+        "genres": [
+            "Animation", 
+            "Adventure", 
+            "Family"
+        ], 
+        "title": "Walking with Dinosaurs 3D (2013)", 
+        "stars": [
+            "Charlie Rowe", 
+            "Karl Urban", 
+            "Angourie Rice", 
+            "John Leguizamo"
+        ], 
+        "unique_id": "tt1762399"
+    }, 
+    {
+        "description": "To avenge his father's death, a circus entertainer trained in magic and acrobatics turns thief to take down a corrupt bank in Chicago. Two cops from Mumbai are assigned to the case.", 
+        "metascore": "61", 
+        "month": "12", 
+        "director": "Vijay Krishna Acharya", 
+        "netflix_id": "", 
+        "run_time": "172", 
+        "year": "2013", 
+        "genres": [
+            "Action", 
+            "Crime", 
+            "Thriller"
+        ], 
+        "title": "Dhoom:3 (2013)", 
+        "stars": [
+            "Aamir Khan", 
+            "Katrina Kaif", 
+            "Abhishek Bachchan", 
+            "Uday Chopra"
+        ], 
+        "unique_id": "tt1833673"
+    }, 
+    {
+        "description": "A lonely writer develops an unlikely relationship with his newly purchased operating system that's designed to meet his every need.", 
+        "metascore": "90", 
+        "month": "12", 
+        "director": "Spike Jonze", 
+        "netflix_id": "", 
+        "run_time": "126", 
+        "year": "2013", 
+        "genres": [
+            "Drama", 
+            "Romance", 
+            "Sci-Fi"
+        ], 
+        "title": "Her (2013)", 
+        "stars": [
+            "Joaquin Phoenix", 
+            "Amy Adams", 
+            "Scarlett Johansson", 
+            "Rooney Mara"
+        ], 
+        "unique_id": "tt1798709"
+    }, 
+    {
+        "description": "An Iranian man deserts his French wife and her two children to return to his homeland. Meanwhile, his wife starts up a new relationship, a reality her husband confronts upon his wife's request for a divorce.", 
+        "metascore": "85", 
+        "month": "12", 
+        "director": "Asghar Farhadi", 
+        "netflix_id": "", 
+        "run_time": "130", 
+        "year": "2013", 
+        "genres": [
+            "Drama", 
+            "Mystery"
+        ], 
+        "title": "Le pass\u00e9 (2013)", 
+        "stars": [
+            "B\u00e9r\u00e9nice Bejo", 
+            "Tahar Rahim", 
+            "Ali Mosaffa", 
+            "Pauline Burlet"
+        ], 
+        "unique_id": "tt2404461"
+    }, 
+    {
+        "description": "A contemporary fable about two scrappy 13-year-old working-class friends in the UK who seek fortune by getting involved with a local scrap dealer and criminal, leading to tragic consequences.", 
+        "metascore": "83", 
+        "month": "12", 
+        "director": "Clio Barnard", 
+        "netflix_id": "70285676", 
+        "run_time": "91", 
+        "year": "2013", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "The Selfish Giant (2013)", 
+        "stars": [
+            "Conner Chapman", 
+            "Shaun Thomas", 
+            "Sean Gilder", 
+            "Lorraine Ashbourne"
+        ], 
+        "unique_id": "tt2304426"
+    }, 
+    {
+        "description": "Marcus Luttrell and his team set out on a mission to capture or kill notorious Taliban leader Ahmad Shah, in late June 2005. Marcus and his team are left to fight for their lives in one of the most valiant efforts of modern warfare.", 
+        "metascore": "60", 
+        "month": "12", 
+        "director": "Peter Berg", 
+        "netflix_id": "", 
+        "run_time": "121", 
+        "year": "2013", 
+        "genres": [
+            "Action", 
+            "Biography", 
+            "Drama", 
+            "Thriller", 
+            "War"
+        ], 
+        "title": "Lone Survivor (2013)", 
+        "stars": [
+            "Mark Wahlberg", 
+            "Taylor Kitsch", 
+            "Emile Hirsch", 
+            "Ben Foster"
+        ], 
+        "unique_id": "tt1091191"
+    }, 
+    {
+        "description": "When his job along with that of his co-worker are threatened, Walter takes action in the real world embarking on a global journey that turns into an adventure more extraordinary than anything he could have ever imagined.", 
+        "metascore": "54", 
+        "month": "12", 
+        "director": "Ben Stiller", 
+        "netflix_id": "", 
+        "run_time": "114", 
+        "year": "2013", 
+        "genres": [
+            "Adventure", 
+            "Comedy", 
+            "Drama", 
+            "Fantasy"
+        ], 
+        "title": "The Secret Life of Walter Mitty (2013)", 
+        "stars": [
+            "Ben Stiller", 
+            "Kristen Wiig", 
+            "Jon Daly", 
+            "Kathryn Hahn"
+        ], 
+        "unique_id": "tt0359950"
+    }, 
+    {
+        "description": "Based on the true story of Jordan Belfort, from his rise to a wealthy stock-broker living the high life to his fall involving crime, corruption and the federal government.", 
+        "metascore": "75", 
+        "month": "12", 
+        "director": "Martin Scorsese", 
+        "netflix_id": "", 
+        "run_time": "180", 
+        "year": "2013", 
+        "genres": [
+            "Biography", 
+            "Comedy", 
+            "Crime", 
+            "Drama"
+        ], 
+        "title": "The Wolf of Wall Street (2013)", 
+        "stars": [
+            "Leonardo DiCaprio", 
+            "Jonah Hill", 
+            "Margot Robbie", 
+            "Matthew McConaughey"
+        ], 
+        "unique_id": "tt0993846"
+    }, 
+    {
+        "description": "A backstage and on-stage look at Justin Bieber during his rise to super stardom.", 
+        "metascore": "39", 
+        "month": "12", 
+        "director": "Jon M. Chu", 
+        "netflix_id": "70295190", 
+        "run_time": "92", 
+        "year": "2013", 
+        "genres": [
+            "Documentary", 
+            "Music"
+        ], 
+        "title": "Justin Bieber's Believe (2013)", 
+        "stars": [
+            "Justin Bieber", 
+            "Scooter Braun", 
+            "Ryan Good", 
+            "Usher Raymond"
+        ], 
+        "unique_id": "tt3165608"
+    }, 
+    {
+        "description": "A band of samurai set out to avenge the death and dishonor of their master at the hands of a ruthless shogun.", 
+        "metascore": "28", 
+        "month": "12", 
+        "director": "Carl Rinsch", 
+        "netflix_id": "", 
+        "run_time": "128", 
+        "year": "2013", 
+        "genres": [
+            "Action", 
+            "Adventure", 
+            "Drama", 
+            "Fantasy"
+        ], 
+        "title": "47 Ronin (2013)", 
+        "stars": [
+            "Keanu Reeves", 
+            "Hiroyuki Sanada", 
+            "Ko Shibasaki", 
+            "Tadanobu Asano"
+        ], 
+        "unique_id": "tt1335975"
+    }, 
+    {
+        "description": "A pair of aging boxing rivals are coaxed out of retirement to fight one final bout -- 30 years after their last match.", 
+        "metascore": "35", 
+        "month": "12", 
+        "director": "Peter Segal", 
+        "netflix_id": "", 
+        "run_time": "113", 
+        "year": "2013", 
+        "genres": [
+            "Comedy", 
+            "Sport"
+        ], 
+        "title": "Grudge Match (2013)", 
+        "stars": [
+            "Robert De Niro", 
+            "Sylvester Stallone", 
+            "Kim Basinger", 
+            "Alan Arkin"
+        ], 
+        "unique_id": "tt1661382"
+    }, 
+    {
+        "description": "A look at the lives of the strong-willed women of the Weston family, whose paths have diverged until a family crisis brings them back to the Oklahoma house they grew up in, and to the dysfunctional woman who raised them.", 
+        "metascore": "58", 
+        "month": "12", 
+        "director": "John Wells", 
+        "netflix_id": "70276334", 
+        "run_time": "121", 
+        "year": "2013", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "August: Osage County (2013)", 
+        "stars": [
+            "Meryl Streep", 
+            "Dermot Mulroney", 
+            "Julia Roberts", 
+            "Juliette Lewis"
+        ], 
+        "unique_id": "tt1322269"
+    }, 
+    {
+        "description": "At the height of his career, Charles Dickens meets a younger woman who becomes his secret lover until his death.", 
+        "metascore": "75", 
+        "month": "12", 
+        "director": "Ralph Fiennes", 
+        "netflix_id": "", 
+        "run_time": "111", 
+        "year": "2013", 
+        "genres": [
+            "Biography", 
+            "Drama", 
+            "History", 
+            "Romance"
+        ], 
+        "title": "The Invisible Woman (2013)", 
+        "stars": [
+            "Ralph Fiennes", 
+            "Felicity Jones", 
+            "Kristin Scott Thomas", 
+            "Tom Hollander"
+        ], 
+        "unique_id": "tt1700845"
+    }
+]

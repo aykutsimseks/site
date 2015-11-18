@@ -1,0 +1,719 @@
+[
+    {
+        "description": "A medical engineer and an astronaut work together to survive after a catastrophe destroys their shuttle and leaves them adrift in orbit.", 
+        "metascore": "96", 
+        "month": "10", 
+        "director": "Alfonso Cuar\u00f3n", 
+        "netflix_id": "", 
+        "run_time": "91", 
+        "year": "2013", 
+        "genres": [
+            "Sci-Fi", 
+            "Thriller"
+        ], 
+        "title": "Gravity (2013)", 
+        "stars": [
+            "Sandra Bullock", 
+            "George Clooney", 
+            "Ed Harris", 
+            "Orto Ignatiussen"
+        ], 
+        "unique_id": "tt1454468"
+    }, 
+    {
+        "description": "When a poor college student who cracks an online poker game goes bust, he arranges a face-to-face with the man he thinks cheated him, a sly offshore entrepreneur.", 
+        "metascore": "36", 
+        "month": "10", 
+        "director": "Brad Furman", 
+        "netflix_id": "", 
+        "run_time": "91", 
+        "year": "2013", 
+        "genres": [
+            "Crime", 
+            "Thriller"
+        ], 
+        "title": "Runner Runner (2013)", 
+        "stars": [
+            "Ben Affleck", 
+            "Justin Timberlake", 
+            "Gemma Arterton", 
+            "Anthony Mackie"
+        ], 
+        "unique_id": "tt2364841"
+    }, 
+    {
+        "description": "After a night of drinking, Rachel, a diplomat working in Mexico City finds her world turned upside down after she's saved by Alejandro, a Mariachi singer whose visa was rejected the day before - by Rachel.", 
+        "metascore": "57", 
+        "month": "10", 
+        "director": "Pedro Pablo Ibarra", 
+        "netflix_id": "70292933", 
+        "run_time": "111", 
+        "year": "2013", 
+        "genres": [
+            "Comedy", 
+            "Romance"
+        ], 
+        "title": "Pulling Strings (2013)", 
+        "stars": [
+            "Laura Ramsey", 
+            "Jaime Camil", 
+            "Omar Chaparro", 
+            "Stockard Channing"
+        ], 
+        "unique_id": "tt3203890"
+    }, 
+    {
+        "description": "A car thief falls in love with a woman whose car he has stolen.", 
+        "metascore": "", 
+        "month": "10", 
+        "director": "Abhinav Kashyap", 
+        "netflix_id": "", 
+        "run_time": "143", 
+        "year": "2013", 
+        "genres": [
+            "Comedy", 
+            "Romance"
+        ], 
+        "title": "Besharam (2013)", 
+        "stars": [
+            "Ranbir Kapoor", 
+            "Pallavi Sharda", 
+            "Rishi Kapoor", 
+            "Neetu Singh"
+        ], 
+        "unique_id": "tt2576450"
+    }, 
+    {
+        "description": "Grace Trey is the ideal Christian teen who is also a phenomenal singer. But at the tender age of eighteen, after she gets the music break of a lifetime and is thrust into the \"real world\" - her faith is put to the test.", 
+        "metascore": "39", 
+        "month": "10", 
+        "director": "Brad J. Silverman", 
+        "netflix_id": "", 
+        "run_time": "102", 
+        "year": "2013", 
+        "genres": [
+            "Drama", 
+            "Music"
+        ], 
+        "title": "Grace Unplugged (2013)", 
+        "stars": [
+            "AJ Michalka", 
+            "Kelly Thiebaud", 
+            "James Denton", 
+            "Kevin Pollak"
+        ], 
+        "unique_id": "tt2349460"
+    }, 
+    {
+        "description": "A grown man caught in the crossfire of his parents' 15-year divorce discovers he was unknowingly part of a study on divorced children and is enlisted in a follow-up years later, which wreaks new havoc on his family.", 
+        "metascore": "50", 
+        "month": "10", 
+        "director": "Stu Zicherman", 
+        "netflix_id": "", 
+        "run_time": "88", 
+        "year": "2013", 
+        "genres": [
+            "Comedy"
+        ], 
+        "title": "A.C.O.D. (2013)", 
+        "stars": [
+            "Adam Scott", 
+            "Richard Jenkins", 
+            "Catherine O'Hara", 
+            "Jane Lynch"
+        ], 
+        "unique_id": "tt1311060"
+    }, 
+    {
+        "description": "After a blow to the head, Abby decides she can't do it anymore. Her life just can't be only about the house, the kids and the wife. She needs more: she needs to be Eleanor.", 
+        "metascore": "56", 
+        "month": "10", 
+        "director": "Stacie Passon", 
+        "netflix_id": "", 
+        "run_time": "96", 
+        "year": "2013", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "Concussion (2013)", 
+        "stars": [
+            "Robin Weigert", 
+            "Maggie Siff", 
+            "Johnathan Tchaikovsky", 
+            "Ben Shenkman"
+        ], 
+        "unique_id": "tt2296697"
+    }, 
+    {
+        "description": "A recounting of the chaotic events that occurred at Dallas' Parkland Hospital on the day U.S. President John F. Kennedy was assassinated.", 
+        "metascore": "51", 
+        "month": "10", 
+        "director": "Peter Landesman", 
+        "netflix_id": "", 
+        "run_time": "93", 
+        "year": "2013", 
+        "genres": [
+            "Drama", 
+            "History", 
+            "Mystery", 
+            "Thriller"
+        ], 
+        "title": "Parkland (2013)", 
+        "stars": [
+            "Zac Efron", 
+            "Tom Welling", 
+            "Billy Bob Thornton", 
+            "Paul Giamatti"
+        ], 
+        "unique_id": "tt2345112"
+    }, 
+    {
+        "description": "The life story of basketball sensation, Jeremy Lin.", 
+        "metascore": "52", 
+        "month": "10", 
+        "director": "Evan Leong", 
+        "netflix_id": "70267583", 
+        "run_time": "89", 
+        "year": "2013", 
+        "genres": [
+            "Documentary", 
+            "Biography", 
+            "Sport"
+        ], 
+        "title": "Linsanity (2013)", 
+        "stars": [
+            "Jeremy Lin", 
+            "Daniel Dae Kim", 
+            "Ming Yao", 
+            "Joe Lacob"
+        ], 
+        "unique_id": "tt2359427"
+    }, 
+    {
+        "description": "While out on parole, Dennis reluctantly takes a job selling Christmas trees with his old buddy Rene in order to make enough money to buy his estranged daughter the piano she's always wanted.", 
+        "metascore": "54", 
+        "month": "10", 
+        "director": "Phil Morrison", 
+        "netflix_id": "", 
+        "run_time": "107", 
+        "year": "2013", 
+        "genres": [
+            "Comedy", 
+            "Drama"
+        ], 
+        "title": "All Is Bright (2013)", 
+        "stars": [
+            "Paul Giamatti", 
+            "Paul Rudd", 
+            "Sally Hawkins", 
+            "Amy Landecker"
+        ], 
+        "unique_id": "tt1462901"
+    }, 
+    {
+        "description": "A history of the conflict of the City of Philadelphia and the Black Liberation organization, MOVE, that led to the disastrously violent final confrontation in 1985.", 
+        "metascore": "86", 
+        "month": "10", 
+        "director": "Jason Osder", 
+        "netflix_id": "", 
+        "run_time": "88", 
+        "year": "2013", 
+        "genres": [
+            "Documentary", 
+            "Drama", 
+            "History", 
+            "Thriller"
+        ], 
+        "title": "Let the Fire Burn (2013)", 
+        "stars": [
+            "Birdie Africa", 
+            "Ramona Africa", 
+            "Wilson Goode", 
+            "William Brown III"
+        ], 
+        "unique_id": "tt2119463"
+    }, 
+    {
+        "description": "The story of the deadliest day on the world's most dangerous mountain, when 11 climbers mysteriously perished on K2.", 
+        "metascore": "63", 
+        "month": "10", 
+        "director": "Nick Ryan", 
+        "netflix_id": "", 
+        "run_time": "95", 
+        "year": "2013", 
+        "genres": [
+            "Documentary", 
+            "Adventure"
+        ], 
+        "title": "The Summit (2012)", 
+        "stars": [
+            "Christine Barnes", 
+            "Hoselito Bite", 
+            "Marco Confortola", 
+            "Pat Falvey"
+        ], 
+        "unique_id": "tt2363471"
+    }, 
+    {
+        "description": "A horror comedy centered on a guy who learns that his unusual stomach problems are being caused by a demon living in his intestines.", 
+        "metascore": "62", 
+        "month": "10", 
+        "director": "Jacob Vaughan", 
+        "netflix_id": "70272904", 
+        "run_time": "85", 
+        "year": "2013", 
+        "genres": [
+            "Comedy", 
+            "Horror"
+        ], 
+        "title": "Bad Milo (2013)", 
+        "stars": [
+            "Ken Marino", 
+            "Gillian Jacobs", 
+            "Patrick Warburton", 
+            "Mary Kay Place"
+        ], 
+        "unique_id": "tt2274570"
+    }, 
+    {
+        "description": "The true story of Captain Richard Phillips and the 2009 hijacking by Somali pirates of the US-flagged MV Maersk Alabama, the first American cargo ship to be hijacked in two hundred years.", 
+        "metascore": "83", 
+        "month": "10", 
+        "director": "Paul Greengrass", 
+        "netflix_id": "", 
+        "run_time": "134", 
+        "year": "2013", 
+        "genres": [
+            "Biography", 
+            "Drama", 
+            "Thriller"
+        ], 
+        "title": "Captain Phillips (2013)", 
+        "stars": [
+            "Tom Hanks", 
+            "Barkhad Abdi", 
+            "Barkhad Abdirahman", 
+            "Catherine Keener"
+        ], 
+        "unique_id": "tt1535109"
+    }, 
+    {
+        "description": "The U.S. government recruits Machete to battle his way through Mexico in order to take down an arms dealer who looks to launch a weapon into space.", 
+        "metascore": "41", 
+        "month": "10", 
+        "director": "Robert Rodriguez", 
+        "netflix_id": "70272637", 
+        "run_time": "107", 
+        "year": "2013", 
+        "genres": [
+            "Action", 
+            "Crime", 
+            "Thriller"
+        ], 
+        "title": "Machete Kills (2013)", 
+        "stars": [
+            "Danny Trejo", 
+            "Alexa PenaVega", 
+            "Mel Gibson", 
+            "Jessica Alba"
+        ], 
+        "unique_id": "tt2002718"
+    }, 
+    {
+        "description": "Romeo and Juliet secretly wed despite the sworn contempt their families hold for each another. It is not long, however, before a chain of fateful events changes the lives of both families forever.", 
+        "metascore": "41", 
+        "month": "10", 
+        "director": "Carlo Carlei", 
+        "netflix_id": "", 
+        "run_time": "118", 
+        "year": "2013", 
+        "genres": [
+            "Drama", 
+            "Romance"
+        ], 
+        "title": "Romeo & Juliet (2013)", 
+        "stars": [
+            "Hailee Steinfeld", 
+            "Douglas Booth", 
+            "Damian Lewis", 
+            "Laura Morante"
+        ], 
+        "unique_id": "tt1645131"
+    }, 
+    {
+        "description": "In a world of fake castles and anthropomorphic rodents, an epic battle begins when an unemployed father's sanity is challenged by a chance encounter with two underage girls on holiday.", 
+        "metascore": "58", 
+        "month": "10", 
+        "director": "Randy Moore", 
+        "netflix_id": "70268897", 
+        "run_time": "90", 
+        "year": "2013", 
+        "genres": [
+            "Fantasy", 
+            "Horror"
+        ], 
+        "title": "Escape from Tomorrow (2013)", 
+        "stars": [
+            "Roy Abramsohn", 
+            "Elena Schuber", 
+            "Katelynn Rodriguez", 
+            "Jack Dalton"
+        ], 
+        "unique_id": "tt2187884"
+    }, 
+    {
+        "description": "A coming-of-age story about two inner city boys who are left to fend for themselves over the summer after their mothers are taken away by the authorities.", 
+        "metascore": "61", 
+        "month": "10", 
+        "director": "George Tillman Jr.", 
+        "netflix_id": "", 
+        "run_time": "108", 
+        "year": "2013", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "The Inevitable Defeat of Mister & Pete (2013)", 
+        "stars": [
+            "Skylan Brooks", 
+            "Ethan Dizon", 
+            "Jordin Sparks", 
+            "Jeffrey Wright"
+        ], 
+        "unique_id": "tt2113075"
+    }, 
+    {
+        "description": "A group of high-schoolers invite Mandy Lane, a good girl who became quite hot over the summer, to a weekend party on a secluded ranch. While the festivities rage on, the number of revelers begins to drop quite mysteriously.", 
+        "metascore": "44", 
+        "month": "10", 
+        "director": "Jonathan Levine", 
+        "netflix_id": "", 
+        "run_time": "90", 
+        "year": "2013", 
+        "genres": [
+            "Horror"
+        ], 
+        "title": "All the Boys Love Mandy Lane (2006)", 
+        "stars": [
+            "Amber Heard", 
+            "Anson Mount", 
+            "Whitney Able", 
+            "Michael Welch"
+        ], 
+        "unique_id": "tt0490076"
+    }, 
+    {
+        "description": "A look at the New York City punk-rock scene and the venerable nightclub, CBGB.", 
+        "metascore": "30", 
+        "month": "10", 
+        "director": "Randall Miller", 
+        "netflix_id": "", 
+        "run_time": "101", 
+        "year": "2013", 
+        "genres": [
+            "Drama", 
+            "Music"
+        ], 
+        "title": "CBGB (2013)", 
+        "stars": [
+            "Alan Rickman", 
+            "Malin Akerman", 
+            "Justin Bartha", 
+            "Richard de Klerk"
+        ], 
+        "unique_id": "tt1786751"
+    }, 
+    {
+        "description": "In the late 1800s, a fanatical religious leader, a renegade Sheriff, and a former prostitute collide in a blood triangle on the rugged plains of the New Mexico Territory.", 
+        "metascore": "38", 
+        "month": "10", 
+        "director": "Logan Miller", 
+        "netflix_id": "70267272", 
+        "run_time": "95", 
+        "year": "2013", 
+        "genres": [
+            "Thriller", 
+            "Western"
+        ], 
+        "title": "Sweetwater (2013)", 
+        "stars": [
+            "Ed Harris", 
+            "January Jones", 
+            "Jason Isaacs", 
+            "Eduardo Noriega"
+        ], 
+        "unique_id": "tt2224004"
+    }, 
+    {
+        "description": "A deaf woman who resurrects the ghost of a murdered young woman is forced by the spirit to a serial killer who turns his female victims into marionette dolls.", 
+        "metascore": "32", 
+        "month": "10", 
+        "director": "Anthony DiBlasi", 
+        "netflix_id": "", 
+        "run_time": "108", 
+        "year": "2013", 
+        "genres": [
+            "Horror", 
+            "Thriller"
+        ], 
+        "title": "Cassadaga (2011)", 
+        "stars": [
+            "Kelen Coleman", 
+            "Avis-Marie Barnes", 
+            "Kevin Alejandro", 
+            "Louise Fletcher"
+        ], 
+        "unique_id": "tt1747967"
+    }, 
+    {
+        "description": "A reimagining of the classic horror tale about Carrie White, a shy girl outcast by her peers and sheltered by her deeply religious mother, who unleashes telekinetic terror on her small town after being pushed too far at her senior prom.", 
+        "metascore": "53", 
+        "month": "10", 
+        "director": "Kimberly Peirce", 
+        "netflix_id": "", 
+        "run_time": "100", 
+        "year": "2013", 
+        "genres": [
+            "Drama", 
+            "Horror"
+        ], 
+        "title": "Carrie (2013)", 
+        "stars": [
+            "Chlo\u00eb Grace Moretz", 
+            "Julianne Moore", 
+            "Gabriella Wilde", 
+            "Portia Doubleday"
+        ], 
+        "unique_id": "tt1939659"
+    }, 
+    {
+        "description": "A dramatic thriller based on real events that reveals the quest to expose the deceptions and corruptions of power that turned an Internet upstart into the 21st century's most fiercely debated organization.", 
+        "metascore": "49", 
+        "month": "10", 
+        "director": "Bill Condon", 
+        "netflix_id": "", 
+        "run_time": "128", 
+        "year": "2013", 
+        "genres": [
+            "Biography", 
+            "Drama", 
+            "Thriller"
+        ], 
+        "title": "The Fifth Estate (2013)", 
+        "stars": [
+            "Benedict Cumberbatch", 
+            "Daniel Br\u00fchl", 
+            "Carice van Houten", 
+            "Alicia Vikander"
+        ], 
+        "unique_id": "tt1837703"
+    }, 
+    {
+        "description": "In the antebellum United States, Solomon Northup, a free black man from upstate New York, is abducted and sold into slavery.", 
+        "metascore": "97", 
+        "month": "10", 
+        "director": "Steve McQueen", 
+        "netflix_id": "", 
+        "run_time": "134", 
+        "year": "2013", 
+        "genres": [
+            "Biography", 
+            "Drama", 
+            "History"
+        ], 
+        "title": "12 Years a Slave (2013)", 
+        "stars": [
+            "Chiwetel Ejiofor", 
+            "Michael Kenneth Williams", 
+            "Michael Fassbender", 
+            "Brad Pitt"
+        ], 
+        "unique_id": "tt2024544"
+    }, 
+    {
+        "description": "When a structural-security authority finds himself set up and incarcerated in the world's most secret and secure prison, he has to use his skills to escape with help from the inside.", 
+        "metascore": "49", 
+        "month": "10", 
+        "director": "Mikael H\u00e5fstr\u00f6m", 
+        "netflix_id": "", 
+        "run_time": "115", 
+        "year": "2013", 
+        "genres": [
+            "Action", 
+            "Mystery", 
+            "Thriller"
+        ], 
+        "title": "Escape Plan (2013)", 
+        "stars": [
+            "Sylvester Stallone", 
+            "Arnold Schwarzenegger", 
+            "50 Cent", 
+            "Vincent D'Onofrio"
+        ], 
+        "unique_id": "tt1211956"
+    }, 
+    {
+        "description": "After a collision with a shipping container at sea, a resourceful sailor finds himself, despite all efforts to the contrary, staring his mortality in the face.", 
+        "metascore": "87", 
+        "month": "10", 
+        "director": "J.C. Chandor", 
+        "netflix_id": "", 
+        "run_time": "106", 
+        "year": "2013", 
+        "genres": [
+            "Action", 
+            "Adventure", 
+            "Drama"
+        ], 
+        "title": "All Is Lost (2013)", 
+        "stars": [
+            "Robert Redford"
+        ], 
+        "unique_id": "tt2017038"
+    }, 
+    {
+        "description": "A murder in 1944 draws together the great poets of the beat generation: Allen Ginsberg, Jack Kerouac and William Burroughs.", 
+        "metascore": "65", 
+        "month": "10", 
+        "director": "John Krokidas", 
+        "netflix_id": "", 
+        "run_time": "104", 
+        "year": "2013", 
+        "genres": [
+            "Biography", 
+            "Drama", 
+            "Romance", 
+            "Thriller"
+        ], 
+        "title": "Kill Your Darlings (2013)", 
+        "stars": [
+            "Daniel Radcliffe", 
+            "Dane DeHaan", 
+            "Michael C. Hall", 
+            "Ben Foster"
+        ], 
+        "unique_id": "tt1311071"
+    }, 
+    {
+        "description": "A lawyer finds himself in over his head when he gets involved in drug trafficking.", 
+        "metascore": "48", 
+        "month": "10", 
+        "director": "Ridley Scott", 
+        "netflix_id": "", 
+        "run_time": "117", 
+        "year": "2013", 
+        "genres": [
+            "Crime", 
+            "Drama", 
+            "Thriller"
+        ], 
+        "title": "The Counselor (2013)", 
+        "stars": [
+            "Michael Fassbender", 
+            "Pen\u00e9lope Cruz", 
+            "Cameron Diaz", 
+            "Javier Bardem"
+        ], 
+        "unique_id": "tt2193215"
+    }, 
+    {
+        "description": "86-year-old Irving Zisman takes a trip from Nebraska to North Carolina to take his 8 year-old grandson, Billy, back to his real father.", 
+        "metascore": "54", 
+        "month": "10", 
+        "director": "Jeff Tremaine", 
+        "netflix_id": "", 
+        "run_time": "92", 
+        "year": "2013", 
+        "genres": [
+            "Comedy"
+        ], 
+        "title": "Jackass Presents: Bad Grandpa (2013)", 
+        "stars": [
+            "Johnny Knoxville", 
+            "Jackson Nicoll", 
+            "Greg Harris", 
+            "Georgina Cates"
+        ], 
+        "unique_id": "tt3063516"
+    }, 
+    {
+        "description": "Adele's life is changed when she meets Emma, a young woman with blue hair, who will allow her to discover desire, to assert herself as a woman and as an adult. In front of others, Adele grows, seeks herself, loses herself and ultimately finds herself through love and loss.", 
+        "metascore": "88", 
+        "month": "10", 
+        "director": "Abdellatif Kechiche", 
+        "netflix_id": "70275600", 
+        "run_time": "179", 
+        "year": "2013", 
+        "genres": [
+            "Drama", 
+            "Romance"
+        ], 
+        "title": "Blue Is the Warmest Color (2013)", 
+        "stars": [
+            "L\u00e9a Seydoux", 
+            "Ad\u00e8le Exarchopoulos", 
+            "Salim Kechiouche", 
+            "Aur\u00e9lien Recoing"
+        ], 
+        "unique_id": "tt2278871"
+    }, 
+    {
+        "description": "The newly appointed CEO of a giant European investment bank works to hold on to his power when an American hedge fund company tries to buy out his company.", 
+        "metascore": "55", 
+        "month": "10", 
+        "director": "Costa-Gavras", 
+        "netflix_id": "", 
+        "run_time": "114", 
+        "year": "2013", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "Le capital (2012)", 
+        "stars": [
+            "Gad Elmaleh", 
+            "Gabriel Byrne", 
+            "Liya Kebede", 
+            "Natacha R\u00e9gnier"
+        ], 
+        "unique_id": "tt1951166"
+    }, 
+    {
+        "description": "A documentary about three unique restaurants and their respective owners.", 
+        "metascore": "65", 
+        "month": "10", 
+        "director": "Joseph Levy", 
+        "netflix_id": "", 
+        "run_time": "93", 
+        "year": "2013", 
+        "genres": [
+            "Documentary"
+        ], 
+        "title": "Spinning Plates (2012)", 
+        "stars": [
+            "Grant Achatz", 
+            "Cindy Breitbach", 
+            "Mike Breitbach", 
+            "Thomas Keller"
+        ], 
+        "unique_id": "tt2014351"
+    }, 
+    {
+        "description": "Marco returns to Paris after his brother-in-law's suicide, where he targets the man his sister believes caused the tragedy - though he is ill-prepared for her secrets as they quickly muddy the waters.", 
+        "metascore": "69", 
+        "month": "10", 
+        "director": "Claire Denis", 
+        "netflix_id": "", 
+        "run_time": "100", 
+        "year": "2013", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "Les salauds (2013)", 
+        "stars": [
+            "Vincent Lindon", 
+            "Chiara Mastroianni", 
+            "Julie Bataille", 
+            "Michel Subor"
+        ], 
+        "unique_id": "tt2821088"
+    }
+]

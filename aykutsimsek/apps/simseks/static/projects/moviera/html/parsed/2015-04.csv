@@ -1,0 +1,619 @@
+[
+    {
+        "description": "Deckard Shaw seeks revenge against Dominic Toretto and his family for his comatose brother.", 
+        "metascore": "67", 
+        "month": "4", 
+        "director": "James Wan", 
+        "netflix_id": "", 
+        "run_time": "137", 
+        "year": "2015", 
+        "genres": [
+            "Action", 
+            "Crime", 
+            "Thriller"
+        ], 
+        "title": "Furious 7 (2015)", 
+        "stars": [
+            "Vin Diesel", 
+            "Paul Walker", 
+            "Dwayne Johnson", 
+            "Jason Statham"
+        ], 
+        "unique_id": "tt2820852"
+    }, 
+    {
+        "description": "Maria Altmann, an octogenarian Jewish refugee, takes on the Austrian government to recover artwork she believes rightfully belongs to her family.", 
+        "metascore": "51", 
+        "month": "4", 
+        "director": "Simon Curtis", 
+        "netflix_id": "", 
+        "run_time": "109", 
+        "year": "2015", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "Woman in Gold (2015)", 
+        "stars": [
+            "Helen Mirren", 
+            "Ryan Reynolds", 
+            "Daniel Br\u00fchl", 
+            "Katie Holmes"
+        ], 
+        "unique_id": "tt2404425"
+    }, 
+    {
+        "description": "An aspiring novelist enters into a relationship with a woman, though there's just one catch: She's married, and the couple can only meet between the hours of 5 and 7 each evening.", 
+        "metascore": "52", 
+        "month": "4", 
+        "director": "Victor Levin", 
+        "netflix_id": "", 
+        "run_time": "95", 
+        "year": "2015", 
+        "genres": [
+            "Comedy", 
+            "Drama", 
+            "Romance"
+        ], 
+        "title": "5 to 7 (2014)", 
+        "stars": [
+            "Anton Yelchin", 
+            "B\u00e9r\u00e9nice Marlohe", 
+            "Olivia Thirlby", 
+            "Lambert Wilson"
+        ], 
+        "unique_id": "tt2486678"
+    }, 
+    {
+        "description": "A documentary that reveals how the unlikely partnership between aspiring filmmakers Christopher Stamp and Kit Lambert produced one of the greatest rock bands in history: The Who.", 
+        "metascore": "75", 
+        "month": "4", 
+        "director": "James D. Cooper", 
+        "netflix_id": "", 
+        "run_time": "117", 
+        "year": "2015", 
+        "genres": [
+            "Documentary", 
+            "Biography", 
+            "History", 
+            "Music"
+        ], 
+        "title": "Lambert & Stamp (2014)", 
+        "stars": [
+            "Kit Lambert", 
+            "Roger Daltrey", 
+            "Pete Townshend", 
+            "Richard Barnes"
+        ], 
+        "unique_id": "tt3458236"
+    }, 
+    {
+        "description": "A look at the scandalous love triangle between Victorian art critic John Ruskin, his teenage bride Effie Gray, and Pre-Raphaelite painter John Everett Millais.", 
+        "metascore": "54", 
+        "month": "4", 
+        "director": "Richard Laxton", 
+        "netflix_id": "", 
+        "run_time": "104", 
+        "year": "2015", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "Effie Gray (2014)", 
+        "stars": [
+            "Dakota Fanning", 
+            "Greg Wise", 
+            "Tom Sturridge", 
+            "Emma Thompson"
+        ], 
+        "unique_id": "tt1605798"
+    }, 
+    {
+        "description": "The lives of a young couple intertwine with a much older man, as he reflects back on a past love.", 
+        "metascore": "33", 
+        "month": "4", 
+        "director": "George Tillman Jr.", 
+        "netflix_id": "", 
+        "run_time": "128", 
+        "year": "2015", 
+        "genres": [
+            "Drama", 
+            "Romance"
+        ], 
+        "title": "The Longest Ride (2015)", 
+        "stars": [
+            "Scott Eastwood", 
+            "Britt Robertson", 
+            "Alan Alda", 
+            "Jack Huston"
+        ], 
+        "unique_id": "tt2726560"
+    }, 
+    {
+        "description": "A young programmer is selected to participate in a ground-breaking experiment in artificial intelligence by evaluating the human qualities of a breath-taking female A.I.", 
+        "metascore": "78", 
+        "month": "4", 
+        "director": "Alex Garland", 
+        "netflix_id": "", 
+        "run_time": "108", 
+        "year": "2015", 
+        "genres": [
+            "Drama", 
+            "Mystery", 
+            "Sci-Fi"
+        ], 
+        "title": "Ex Machina (2015)", 
+        "stars": [
+            "Alicia Vikander", 
+            "Domhnall Gleeson", 
+            "Oscar Isaac", 
+            "Sonoya Mizuno"
+        ], 
+        "unique_id": "tt0470752"
+    }, 
+    {
+        "description": "Afshin Ghaffarian risks everything to start a dance company amidst his home country of Iran's politically volatile climate and the nation's ban on dancing.", 
+        "metascore": "49", 
+        "month": "4", 
+        "director": "Richard Raymond", 
+        "netflix_id": "80018210", 
+        "run_time": "98", 
+        "year": "2015", 
+        "genres": [
+            "Biography", 
+            "Drama"
+        ], 
+        "title": "Desert Dancer (2014)", 
+        "stars": [
+            "Nazanin Boniadi", 
+            "Freida Pinto", 
+            "Tom Cullen", 
+            "Simon Kassianides"
+        ], 
+        "unique_id": "tt2403393"
+    }, 
+    {
+        "description": "A veteran actress comes face-to-face with an uncomfortable reflection of herself when she agrees to take part in a revival of the play that launched her career 20 years earlier.", 
+        "metascore": "78", 
+        "month": "4", 
+        "director": "Olivier Assayas", 
+        "netflix_id": "", 
+        "run_time": "124", 
+        "year": "2015", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "Clouds of Sils Maria (2014)", 
+        "stars": [
+            "Juliette Binoche", 
+            "Kristen Stewart", 
+            "Chlo\u00eb Grace Moretz", 
+            "Lars Eidinger"
+        ], 
+        "unique_id": "tt2452254"
+    }, 
+    {
+        "description": "Professional hit-man Charlie Wolfe finds himself in three tales of murder, blackmail and revenge after a botched contract assignment.", 
+        "metascore": "30", 
+        "month": "4", 
+        "director": "Kriv Stenders", 
+        "netflix_id": "80018759", 
+        "run_time": "90", 
+        "year": "2015", 
+        "genres": [
+            "Action", 
+            "Comedy", 
+            "Thriller"
+        ], 
+        "title": "Kill Me Three Times (2014)", 
+        "stars": [
+            "Simon Pegg", 
+            "Teresa Palmer", 
+            "Alice Braga", 
+            "Luke Hemsworth"
+        ], 
+        "unique_id": "tt2393845"
+    }, 
+    {
+        "description": "A single mother is swept into a dark underworld, while her teenage son discovers a road that leads him to a secret underwater town.", 
+        "metascore": "42", 
+        "month": "4", 
+        "director": "Ryan Gosling", 
+        "netflix_id": "", 
+        "run_time": "95", 
+        "year": "2015", 
+        "genres": [
+            "Drama", 
+            "Fantasy", 
+            "Mystery", 
+            "Thriller"
+        ], 
+        "title": "Lost River (2014)", 
+        "stars": [
+            "Christina Hendricks", 
+            "Iain De Caestecker", 
+            "Matt Smith", 
+            "Saoirse Ronan"
+        ], 
+        "unique_id": "tt2366608"
+    }, 
+    {
+        "description": "A middle-aged couple's career and marriage are overturned when a disarming young couple enters their lives.", 
+        "metascore": "76", 
+        "month": "4", 
+        "director": "Noah Baumbach", 
+        "netflix_id": "", 
+        "run_time": "97", 
+        "year": "2015", 
+        "genres": [
+            "Comedy", 
+            "Drama"
+        ], 
+        "title": "While We're Young (2014)", 
+        "stars": [
+            "Ben Stiller", 
+            "Naomi Watts", 
+            "Adam Driver", 
+            "Amanda Seyfried"
+        ], 
+        "unique_id": "tt1791682"
+    }, 
+    {
+        "description": "An aging rock star decides to change his life when he discovers a 40-year-old letter written to him by John Lennon.", 
+        "metascore": "58", 
+        "month": "4", 
+        "director": "Dan Fogelman", 
+        "netflix_id": "", 
+        "run_time": "106", 
+        "year": "2015", 
+        "genres": [
+            "Comedy", 
+            "Drama", 
+            "Music"
+        ], 
+        "title": "Danny Collins (2015)", 
+        "stars": [
+            "Al Pacino", 
+            "Annette Bening", 
+            "Jennifer Garner", 
+            "Bobby Cannavale"
+        ], 
+        "unique_id": "tt1772288"
+    }, 
+    {
+        "description": "After six years of keeping our malls safe, Paul Blart has earned a well-deserved vacation. He heads to Vegas with his teenage daughter before she heads off to college. But safety never takes a holiday and when duty calls, Blart answers.", 
+        "metascore": "13", 
+        "month": "4", 
+        "director": "Andy Fickman", 
+        "netflix_id": "", 
+        "run_time": "94", 
+        "year": "2015", 
+        "genres": [
+            "Action", 
+            "Comedy", 
+            "Crime"
+        ], 
+        "title": "Paul Blart: Mall Cop 2 (2015)", 
+        "stars": [
+            "Kevin James", 
+            "Raini Rodriguez", 
+            "Eduardo Ver\u00e1stegui", 
+            "Daniella Alonso"
+        ], 
+        "unique_id": "tt3450650"
+    }, 
+    {
+        "description": "A group of online chat room friends find themselves haunted by a mysterious, supernatural force using the account of their dead friend.", 
+        "metascore": "59", 
+        "month": "4", 
+        "director": "Levan Gabriadze", 
+        "netflix_id": "", 
+        "run_time": "83", 
+        "year": "2015", 
+        "genres": [
+            "Horror", 
+            "Mystery", 
+            "Thriller"
+        ], 
+        "title": "Unfriended (2014)", 
+        "stars": [
+            "Heather Sossaman", 
+            "Matthew Bohrer", 
+            "Courtney Halverson", 
+            "Shelley Hennig"
+        ], 
+        "unique_id": "tt3713166"
+    }, 
+    {
+        "description": "A disgraced member of the military police investigates a series of nasty child murders during the Stalin-era Soviet Union.", 
+        "metascore": "41", 
+        "month": "4", 
+        "director": "Daniel Espinosa", 
+        "netflix_id": "", 
+        "run_time": "137", 
+        "year": "2015", 
+        "genres": [
+            "Drama", 
+            "Thriller"
+        ], 
+        "title": "Child 44 (2015)", 
+        "stars": [
+            "Tom Hardy", 
+            "Gary Oldman", 
+            "Noomi Rapace", 
+            "Joel Kinnaman"
+        ], 
+        "unique_id": "tt1014763"
+    }, 
+    {
+        "description": "A nature documentary that follows a newborn monkey and its mother as they struggle to survive within the competitive social hierarchy of the Temple Troop, a dynamic group of monkeys who live in ancient ruins found deep in the storied jungles of South Asia.", 
+        "metascore": "72", 
+        "month": "4", 
+        "director": "Mark Linfield", 
+        "netflix_id": "", 
+        "run_time": "81", 
+        "year": "2015", 
+        "genres": [
+            "Documentary"
+        ], 
+        "title": "Monkey Kingdom (2015)", 
+        "stars": [
+            "Tina Fey"
+        ], 
+        "unique_id": "tt3660770"
+    }, 
+    {
+        "description": "When disgraced New York Times reporter Michael Finkel meets accused killer Christian Longo - who has taken on Finkel's identity - his investigation morphs into a game of cat-and-mouse.", 
+        "metascore": "50", 
+        "month": "4", 
+        "director": "Rupert Goold", 
+        "netflix_id": "", 
+        "run_time": "99", 
+        "year": "2015", 
+        "genres": [
+            "Crime", 
+            "Drama", 
+            "Mystery", 
+            "Thriller"
+        ], 
+        "title": "True Story (2015)", 
+        "stars": [
+            "James Franco", 
+            "Jonah Hill", 
+            "Felicity Jones", 
+            "Maria Dizzia"
+        ], 
+        "unique_id": "tt2273657"
+    }, 
+    {
+        "description": "A workaholic attorney is forced to reinvent her life after her husband suddenly leaves.", 
+        "metascore": "56", 
+        "month": "4", 
+        "director": "Chris Messina", 
+        "netflix_id": "70307849", 
+        "run_time": "86", 
+        "year": "2015", 
+        "genres": [
+            "Drama"
+        ], 
+        "title": "Alex of Venice (2014)", 
+        "stars": [
+            "Mary Elizabeth Winstead", 
+            "Chris Messina", 
+            "Don Johnson", 
+            "Derek Luke"
+        ], 
+        "unique_id": "tt2977090"
+    }, 
+    {
+        "description": "A high-rolling corporate shark and his impoverished young guide play the most dangerous game during a hunting trip in the Mojave Desert.", 
+        "metascore": "34", 
+        "month": "4", 
+        "director": "Jean-Baptiste L\u00e9onetti", 
+        "netflix_id": "", 
+        "run_time": "91", 
+        "year": "2015", 
+        "genres": [
+            "Thriller"
+        ], 
+        "title": "Beyond the Reach (2014)", 
+        "stars": [
+            "Michael Douglas", 
+            "Jeremy Irvine", 
+            "Martin Palmer", 
+            "Hanna Mangan Lawrence"
+        ], 
+        "unique_id": "tt2911668"
+    }, 
+    {
+        "description": "In F\u00e9lix and Meira, an unusual romance blossoms between two lost souls who inhabit the same neighborhood but vastly different worlds.", 
+        "metascore": "66", 
+        "month": "4", 
+        "director": "Maxime Giroux", 
+        "netflix_id": "", 
+        "run_time": "105", 
+        "year": "2015", 
+        "genres": [
+            "Drama", 
+            "Romance"
+        ], 
+        "title": "F\u00e9lix et Meira (2014)", 
+        "stars": [
+            "Martin Dubreuil", 
+            "Hadas Yaron", 
+            "Luzer Twersky", 
+            "Anne-\u00c9lisabeth Boss\u00e9"
+        ], 
+        "unique_id": "tt3685218"
+    }, 
+    {
+        "description": "Ten years on from the events of Monsters, and the 'Infected Zones' have now spread worldwide. In the Middle East a new insurgency has begun. At the same time there has also been a proliferation of Monsters in that region. The Army decide to draft in more numbers to help deal with this insurgency.", 
+        "metascore": "42", 
+        "month": "4", 
+        "director": "Tom Green", 
+        "netflix_id": "70253597", 
+        "run_time": "119", 
+        "year": "2015", 
+        "genres": [
+            "Drama", 
+            "Sci-Fi", 
+            "Thriller", 
+            "War"
+        ], 
+        "title": "Monsters: Dark Continent (2014)", 
+        "stars": [
+            "Johnny Harris", 
+            "Sam Keeley", 
+            "Joe Dempsie", 
+            "Sofia Boutella"
+        ], 
+        "unique_id": "tt1935302"
+    }, 
+    {
+        "description": "After his tribe is slaughtered through an act of treachery, the teenage son of a slain Maori chieftain looks to avenge his father's murder and bring peace and honor to the souls of his loved ones.", 
+        "metascore": "59", 
+        "month": "4", 
+        "director": "Toa Fraser", 
+        "netflix_id": "80017264", 
+        "run_time": "107", 
+        "year": "2015", 
+        "genres": [
+            "Action"
+        ], 
+        "title": "The Dead Lands (2014)", 
+        "stars": [
+            "James Rolleston", 
+            "Lawrence Makoare", 
+            "Te Kohe Tuhaka", 
+            "Xavier Horan"
+        ], 
+        "unique_id": "tt3399916"
+    }, 
+    {
+        "description": "A young woman, born at the turn of the 20th century, is rendered ageless after an accident. After many solitary years, she meets a man who complicates the eternal life she has settled into.", 
+        "metascore": "51", 
+        "month": "4", 
+        "director": "Lee Toland Krieger", 
+        "netflix_id": "", 
+        "run_time": "112", 
+        "year": "2015", 
+        "genres": [
+            "Drama", 
+            "Fantasy", 
+            "Romance"
+        ], 
+        "title": "The Age of Adaline (2015)", 
+        "stars": [
+            "Blake Lively", 
+            "Michiel Huisman", 
+            "Harrison Ford", 
+            "Kathy Baker"
+        ], 
+        "unique_id": "tt1655441"
+    }, 
+    {
+        "description": "An eight-year-old boy is willing to do whatever it takes to end World War II so he can bring his father home. The story reveals the indescribable love a father has for his little boy and the love a son has for his father.", 
+        "metascore": "30", 
+        "month": "4", 
+        "director": "Alejandro Monteverde", 
+        "netflix_id": "", 
+        "run_time": "106", 
+        "year": "2015", 
+        "genres": [
+            "Comedy", 
+            "Drama", 
+            "War"
+        ], 
+        "title": "Little Boy (2015)", 
+        "stars": [
+            "Jakob Salvati", 
+            "Emily Watson", 
+            "David Henrie", 
+            "Michael Rapaport"
+        ], 
+        "unique_id": "tt1810683"
+    }, 
+    {
+        "description": "A young programmer is selected to participate in a ground-breaking experiment in artificial intelligence by evaluating the human qualities of a breath-taking female A.I.", 
+        "metascore": "78", 
+        "month": "4", 
+        "director": "Alex Garland", 
+        "netflix_id": "", 
+        "run_time": "108", 
+        "year": "2015", 
+        "genres": [
+            "Drama", 
+            "Mystery", 
+            "Sci-Fi"
+        ], 
+        "title": "Ex Machina (2015)", 
+        "stars": [
+            "Alicia Vikander", 
+            "Domhnall Gleeson", 
+            "Oscar Isaac", 
+            "Sonoya Mizuno"
+        ], 
+        "unique_id": "tt0470752"
+    }, 
+    {
+        "description": "An Australian man travels to Turkey after the Battle of Gallipoli to try and locate his three missing sons.", 
+        "metascore": "50", 
+        "month": "4", 
+        "director": "Russell Crowe", 
+        "netflix_id": "", 
+        "run_time": "111", 
+        "year": "2015", 
+        "genres": [
+            "Drama", 
+            "War"
+        ], 
+        "title": "The Water Diviner (2014)", 
+        "stars": [
+            "Russell Crowe", 
+            "Olga Kurylenko", 
+            "Jai Courtney", 
+            "Isabel Lucas"
+        ], 
+        "unique_id": "tt3007512"
+    }, 
+    {
+        "description": "A young, narcissistic entrepreneur crashes and burns on the eve of his company's big launch. With his entire life in total disarray, he leaves Manhattan to move in with his estranged pregnant sister, brother-in-law and 3-year-old nephew in the suburbs - only to become their nanny.", 
+        "metascore": "57", 
+        "month": "4", 
+        "director": "Ross Katz", 
+        "netflix_id": "", 
+        "run_time": "92", 
+        "year": "2015", 
+        "genres": [
+            "Comedy", 
+            "Drama"
+        ], 
+        "title": "Adult Beginners (2014)", 
+        "stars": [
+            "Nick Kroll", 
+            "Rose Byrne", 
+            "Bobby Cannavale", 
+            "Joel McHale"
+        ], 
+        "unique_id": "tt3318750"
+    }, 
+    {
+        "description": "Over fifty very famous American and Canadian funny people (filmmakers, writers, actors and comedians) share life and professional journeys and insights, in an effort to shed light on the thesis: Do you have to be miserable to be funny?", 
+        "metascore": "51", 
+        "month": "4", 
+        "director": "Kevin Pollak", 
+        "netflix_id": "", 
+        "run_time": "94", 
+        "year": "2015", 
+        "genres": [
+            "Documentary", 
+            "Comedy"
+        ], 
+        "title": "Misery Loves Comedy (2015)", 
+        "stars": [
+            "Amy Schumer", 
+            "James L. Brooks", 
+            "Judd Apatow", 
+            "Whoopi Goldberg"
+        ], 
+        "unique_id": "tt3132632"
+    }
+]

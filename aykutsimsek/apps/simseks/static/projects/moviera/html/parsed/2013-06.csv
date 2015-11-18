@@ -1,0 +1,636 @@
+[
+    {
+        "description": "Two salesmen whose careers have been torpedoed by the digital age find their way into a coveted internship at Google, where they must compete with a group of young, tech-savvy geniuses for a shot at employment.", 
+        "metascore": "42", 
+        "month": "6", 
+        "director": "Shawn Levy", 
+        "netflix_id": "", 
+        "run_time": "119", 
+        "year": "2013", 
+        "genres": [
+            "Comedy"
+        ], 
+        "title": "The Internship (2013)", 
+        "stars": [
+            "Vince Vaughn", 
+            "Owen Wilson", 
+            "Rose Byrne", 
+            "Aasif Mandvi"
+        ], 
+        "unique_id": "tt2234155"
+    }, 
+    {
+        "description": "In the future, a wealthy family is held hostage for harboring the target of a murderous syndicate during the Purge, a 12-hour period in which any and all crime is legalized.", 
+        "metascore": "41", 
+        "month": "6", 
+        "director": "James DeMonaco", 
+        "netflix_id": "", 
+        "run_time": "85", 
+        "year": "2013", 
+        "genres": [
+            "Horror", 
+            "Sci-Fi", 
+            "Thriller"
+        ], 
+        "title": "The Purge (2013)", 
+        "stars": [
+            "Ethan Hawke", 
+            "Lena Headey", 
+            "Max Burkholder", 
+            "Adelaide Kane"
+        ], 
+        "unique_id": "tt2184339"
+    }, 
+    {
+        "description": "A modern retelling of Shakespeare's classic comedy about two pairs of lovers with different takes on romance and a way with words.", 
+        "metascore": "78", 
+        "month": "6", 
+        "director": "Joss Whedon", 
+        "netflix_id": "", 
+        "run_time": "109", 
+        "year": "2013", 
+        "genres": [
+            "Comedy", 
+            "Drama", 
+            "Romance"
+        ], 
+        "title": "Much Ado About Nothing (2012)", 
+        "stars": [
+            "Alexis Denisof", 
+            "Amy Acker", 
+            "Fran Kranz", 
+            "Jillian Morgese"
+        ], 
+        "unique_id": "tt2094064"
+    }, 
+    {
+        "description": "Two teenage assassins accept what they think will be a quick-and-easy job, until an unexpected target throws them off their plan.", 
+        "metascore": "43", 
+        "month": "6", 
+        "director": "Geoffrey Fletcher", 
+        "netflix_id": "70212151", 
+        "run_time": "88", 
+        "year": "2013", 
+        "genres": [
+            "Action", 
+            "Comedy", 
+            "Crime", 
+            "Drama", 
+            "Thriller"
+        ], 
+        "title": "Violet & Daisy (2011)", 
+        "stars": [
+            "Saoirse Ronan", 
+            "Alexis Bledel", 
+            "James Gandolfini", 
+            "Danny Trejo"
+        ], 
+        "unique_id": "tt1634136"
+    }, 
+    {
+        "description": "Investigative journalist Jeremy Scahill is pulled into an unexpected journey as he chases down the hidden truth behind America's expanding covert wars.", 
+        "metascore": "76", 
+        "month": "6", 
+        "director": "Rick Rowley", 
+        "netflix_id": "", 
+        "run_time": "87", 
+        "year": "2013", 
+        "genres": [
+            "Documentary", 
+            "Crime", 
+            "Drama", 
+            "Mystery", 
+            "War"
+        ], 
+        "title": "Dirty Wars (2013)", 
+        "stars": [
+            "Jeremy Scahill", 
+            "Nasser Al Aulaqi", 
+            "Saleha Al Aulaqi", 
+            "Muqbal Al Kazemi"
+        ], 
+        "unique_id": "tt2532528"
+    }, 
+    {
+        "description": "Four friends lose themselves in a carefree South-East Asian holiday. Only three come back. Dave and Alice return home to their young family desperate for answers about Jeremy's mysterious disappearance. When Alice's sister Steph returns not long after, a nasty secret is revealed about the night her boyfriend went missing. But it is only the first of many. Who amongst them knows what happened on that fateful night when they were dancing under a full moon in Cambodia?", 
+        "metascore": "60", 
+        "month": "6", 
+        "director": "Kieran Darcy-Smith", 
+        "netflix_id": "70228019", 
+        "run_time": "89", 
+        "year": "2013", 
+        "genres": [
+            "Drama", 
+            "Mystery"
+        ], 
+        "title": "Wish You Were Here (2012)", 
+        "stars": [
+            "Joel Edgerton", 
+            "Teresa Palmer", 
+            "Felicity Price", 
+            "Antony Starr"
+        ], 
+        "unique_id": "tt1684925"
+    }, 
+    {
+        "description": "A slacker hatches a million-dollar idea. But, in order to see it through, he has to learn to trust his attractive corporate counterpart. Based on Max Barry's novel.", 
+        "metascore": "", 
+        "month": "6", 
+        "director": "Aram Rappaport", 
+        "netflix_id": "70276011", 
+        "run_time": "90", 
+        "year": "2013", 
+        "genres": [
+            "Comedy", 
+            "Drama", 
+            "Romance"
+        ], 
+        "title": "Syrup (2013)", 
+        "stars": [
+            "Amber Heard", 
+            "Shiloh Fernandez", 
+            "Kellan Lutz", 
+            "Brittany Snow"
+        ], 
+        "unique_id": "tt0762138"
+    }, 
+    {
+        "description": "Before entire networks were built on populist personalities; before reality morphed into a TV genre; the masses fixated on a single, sociopathic star: controversial talk-show host Morton Downey, Jr.", 
+        "metascore": "70", 
+        "month": "6", 
+        "director": "Seth Kramer", 
+        "netflix_id": "", 
+        "run_time": "90", 
+        "year": "2013", 
+        "genres": [
+            "Documentary"
+        ], 
+        "title": "\u00c9vocateur: The Morton Downey Jr. Movie (2012)", 
+        "stars": [
+            "Morton Downey Jr.", 
+            "Glenn Beck", 
+            "Victoria Jackson", 
+            "Bob Pittman"
+        ], 
+        "unique_id": "tt1822381"
+    }, 
+    {
+        "description": "Clark Kent, one of the last of an extinguished race disguised as an unremarkable human, is forced to reveal his identity when Earth is invaded by an army of survivors who threaten to bring the planet to the brink of destruction.", 
+        "metascore": "55", 
+        "month": "6", 
+        "director": "Zack Snyder", 
+        "netflix_id": "", 
+        "run_time": "143", 
+        "year": "2013", 
+        "genres": [
+            "Action", 
+            "Adventure", 
+            "Fantasy", 
+            "Sci-Fi"
+        ], 
+        "title": "Man of Steel (2013)", 
+        "stars": [
+            "Henry Cavill", 
+            "Amy Adams", 
+            "Michael Shannon", 
+            "Diane Lane"
+        ], 
+        "unique_id": "tt0770828"
+    }, 
+    {
+        "description": "While attending a party at James Franco's house, Seth Rogen, Jay Baruchel and many other celebrities are faced with the apocalypse.", 
+        "metascore": "67", 
+        "month": "6", 
+        "director": "Evan Goldberg", 
+        "netflix_id": "", 
+        "run_time": "107", 
+        "year": "2013", 
+        "genres": [
+            "Comedy", 
+            "Fantasy"
+        ], 
+        "title": "This Is the End (2013)", 
+        "stars": [
+            "James Franco", 
+            "Jonah Hill", 
+            "Seth Rogen", 
+            "Jay Baruchel"
+        ], 
+        "unique_id": "tt1245492"
+    }, 
+    {
+        "description": "The paths of four dream-chasing college friends cross with an array of colourful characters, from a tough-talking Punjabi female don to a Jugaad Baaz college watchman. Mayhem ensues.", 
+        "metascore": "", 
+        "month": "6", 
+        "director": "Mrigdeep Singh Lamba", 
+        "netflix_id": "", 
+        "run_time": "139", 
+        "year": "2013", 
+        "genres": [
+            "Comedy", 
+            "Drama", 
+            "Romance"
+        ], 
+        "title": "Fukrey (2013)", 
+        "stars": [
+            "Pulkit Samrat", 
+            "Manjot Singh", 
+            "Ali Fazal", 
+            "Varun Sharma"
+        ], 
+        "unique_id": "tt2806788"
+    }, 
+    {
+        "description": "Backup singers live in a world that lies just beyond the spotlight. Their voices bring harmony to the biggest bands in popular music, but we've had no idea who these singers are or what lives they lead, until now.", 
+        "metascore": "83", 
+        "month": "6", 
+        "director": "Morgan Neville", 
+        "netflix_id": "", 
+        "run_time": "91", 
+        "year": "2013", 
+        "genres": [
+            "Documentary", 
+            "History", 
+            "Music"
+        ], 
+        "title": "Twenty Feet from Stardom (2013)", 
+        "stars": [
+            "Darlene Love", 
+            "Merry Clayton", 
+            "Lisa Fischer", 
+            "Judith Hill"
+        ], 
+        "unique_id": "tt2396566"
+    }, 
+    {
+        "description": "A sound engineer's work for an Italian horror studio becomes a terrifying case of life imitating art.", 
+        "metascore": "80", 
+        "month": "6", 
+        "director": "Peter Strickland", 
+        "netflix_id": "70260473", 
+        "run_time": "92", 
+        "year": "2013", 
+        "genres": [
+            "Drama", 
+            "Horror", 
+            "Thriller"
+        ], 
+        "title": "Berberian Sound Studio (2012)", 
+        "stars": [
+            "Toby Jones", 
+            "Antonio Mancino", 
+            "Guido Adorni", 
+            "Susanna Cappellaro"
+        ], 
+        "unique_id": "tt1833844"
+    }, 
+    {
+        "description": "United Nations employee Gerry Lane traverses the world in a race against time to stop the Zombie pandemic that is toppling armies and governments, and threatening to destroy humanity itself.", 
+        "metascore": "63", 
+        "month": "6", 
+        "director": "Marc Forster", 
+        "netflix_id": "", 
+        "run_time": "116", 
+        "year": "2013", 
+        "genres": [
+            "Action", 
+            "Adventure", 
+            "Horror", 
+            "Sci-Fi", 
+            "Thriller"
+        ], 
+        "title": "World War Z (2013)", 
+        "stars": [
+            "Brad Pitt", 
+            "Mireille Enos", 
+            "Daniella Kertesz", 
+            "James Badge Dale"
+        ], 
+        "unique_id": "tt0816711"
+    }, 
+    {
+        "description": "A look at the relationship between Mike and Sulley during their days at Monsters University -- when they weren't necessarily the best of friends.", 
+        "metascore": "65", 
+        "month": "6", 
+        "director": "Dan Scanlon", 
+        "netflix_id": "", 
+        "run_time": "104", 
+        "year": "2013", 
+        "genres": [
+            "Animation", 
+            "Adventure", 
+            "Comedy", 
+            "Family", 
+            "Fantasy"
+        ], 
+        "title": "Monsters University (2013)", 
+        "stars": [
+            "Billy Crystal", 
+            "John Goodman", 
+            "Steve Buscemi", 
+            "Helen Mirren"
+        ], 
+        "unique_id": "tt1453405"
+    }, 
+    {
+        "description": "Grumpy pensioner Arthur honors his recently deceased wife's passion for performing by joining the unconventional local choir to which she used to belong, a process that helps him build bridges with his estranged son, James.", 
+        "metascore": "57", 
+        "month": "6", 
+        "director": "Paul Andrew Williams", 
+        "netflix_id": "", 
+        "run_time": "93", 
+        "year": "2013", 
+        "genres": [
+            "Comedy", 
+            "Drama", 
+            "Music", 
+            "Romance"
+        ], 
+        "title": "Unfinished Song (2012)", 
+        "stars": [
+            "Terence Stamp", 
+            "Gemma Arterton", 
+            "Christopher Eccleston", 
+            "Vanessa Redgrave"
+        ], 
+        "unique_id": "tt1047011"
+    }, 
+    {
+        "description": "As he helps a young artist with her upcoming exhibition, the owner of a mannequin shop's deadly, suppressed desires come to the surface.", 
+        "metascore": "47", 
+        "month": "6", 
+        "director": "Franck Khalfoun", 
+        "netflix_id": "", 
+        "run_time": "89", 
+        "year": "2013", 
+        "genres": [
+            "Horror", 
+            "Thriller"
+        ], 
+        "title": "Maniac (2012)", 
+        "stars": [
+            "Elijah Wood", 
+            "Nora Arnezeder", 
+            "America Olivo", 
+            "Megan Duffy"
+        ], 
+        "unique_id": "tt2103217"
+    }, 
+    {
+        "description": "The crew of a Danish cargo ship is hijacked by Somali pirates who proceed to engage in escalating negotiations with authorities in Copenhagen.", 
+        "metascore": "82", 
+        "month": "6", 
+        "director": "Tobias Lindholm", 
+        "netflix_id": "", 
+        "run_time": "103", 
+        "year": "2013", 
+        "genres": [
+            "Drama", 
+            "Thriller"
+        ], 
+        "title": "Kapringen (2012)", 
+        "stars": [
+            "Pilou Asb\u00e6k", 
+            "S\u00f8ren Malling", 
+            "Dar Salim", 
+            "Roland M\u00f8ller"
+        ], 
+        "unique_id": "tt2216240"
+    }, 
+    {
+        "description": "A documentary that explores the downloading revolution; the kids that created it, the bands and the businesses that were affected by it, and its impact on the world at large.", 
+        "metascore": "56", 
+        "month": "6", 
+        "director": "Alex Winter", 
+        "netflix_id": "", 
+        "run_time": "106", 
+        "year": "2013", 
+        "genres": [
+            "Documentary"
+        ], 
+        "title": "Downloaded (2013)", 
+        "stars": [
+            "Mike D", 
+            "Henry Rollins", 
+            "Noel Gallagher", 
+            "Billy Corgan"
+        ], 
+        "unique_id": "tt2033981"
+    }, 
+    {
+        "description": "Inspired by actual events, a group of fame-obsessed teenagers use the internet to track celebrities' whereabouts in order to rob their homes.", 
+        "metascore": "66", 
+        "month": "6", 
+        "director": "Sofia Coppola", 
+        "netflix_id": "", 
+        "run_time": "90", 
+        "year": "2013", 
+        "genres": [
+            "Biography", 
+            "Crime", 
+            "Drama"
+        ], 
+        "title": "The Bling Ring (2013)", 
+        "stars": [
+            "Katie Chang", 
+            "Israel Broussard", 
+            "Emma Watson", 
+            "Claire Julien"
+        ], 
+        "unique_id": "tt2132285"
+    }, 
+    {
+        "description": "While on a tour of the White House with his young daughter, a Capitol policeman springs into action to save his child and protect the president from a heavily armed group of paramilitary invaders.", 
+        "metascore": "52", 
+        "month": "6", 
+        "director": "Roland Emmerich", 
+        "netflix_id": "", 
+        "run_time": "131", 
+        "year": "2013", 
+        "genres": [
+            "Action", 
+            "Drama", 
+            "Thriller"
+        ], 
+        "title": "White House Down (2013)", 
+        "stars": [
+            "Channing Tatum", 
+            "Jamie Foxx", 
+            "Maggie Gyllenhaal", 
+            "Jason Clarke"
+        ], 
+        "unique_id": "tt2334879"
+    }, 
+    {
+        "description": "An uptight FBI Special Agent is paired with a foul-mouthed Boston cop to take down a ruthless drug lord.", 
+        "metascore": "60", 
+        "month": "6", 
+        "director": "Paul Feig", 
+        "netflix_id": "", 
+        "run_time": "117", 
+        "year": "2013", 
+        "genres": [
+            "Action", 
+            "Comedy", 
+            "Crime"
+        ], 
+        "title": "The Heat (2013)", 
+        "stars": [
+            "Sandra Bullock", 
+            "Michael McDonald", 
+            "Melissa McCarthy", 
+            "Demian Bichir"
+        ], 
+        "unique_id": "tt2404463"
+    }, 
+    {
+        "description": "When it appears as though the end is in sight, the pilots, flight crew, and passengers of a plane heading to Mexico City look to forget the anguish of the moment and face the greatest danger, which we carry within ourselves.", 
+        "metascore": "55", 
+        "month": "6", 
+        "director": "Pedro Almod\u00f3var", 
+        "netflix_id": "", 
+        "run_time": "90", 
+        "year": "2013", 
+        "genres": [
+            "Comedy"
+        ], 
+        "title": "I'm So Excited! (2013)", 
+        "stars": [
+            "Javier C\u00e1mara", 
+            "Pepa Charro", 
+            "Cecilia Roth", 
+            "Lola Due\u00f1as"
+        ], 
+        "unique_id": "tt2243389"
+    }, 
+    {
+        "description": "Residents of a coastal town learn, with deathly consequences, the secret shared by the two mysterious women who have sought shelter at a local resort.", 
+        "metascore": "66", 
+        "month": "6", 
+        "director": "Neil Jordan", 
+        "netflix_id": "70259263", 
+        "run_time": "118", 
+        "year": "2013", 
+        "genres": [
+            "Drama", 
+            "Fantasy", 
+            "Horror", 
+            "Thriller"
+        ], 
+        "title": "Byzantium (2012)", 
+        "stars": [
+            "Saoirse Ronan", 
+            "Gemma Arterton", 
+            "Sam Riley", 
+            "Caleb Landry Jones"
+        ], 
+        "unique_id": "tt1531901"
+    }, 
+    {
+        "description": "Homeless and on the run from a military court martial, a damaged ex-special forces soldier navigating London's criminal underworld seizes an opportunity to assume another man's identity -- transforming into an avenging angel in the process.", 
+        "metascore": "43", 
+        "month": "6", 
+        "director": "Steven Knight", 
+        "netflix_id": "", 
+        "run_time": "100", 
+        "year": "2013", 
+        "genres": [
+            "Action", 
+            "Crime", 
+            "Drama"
+        ], 
+        "title": "Redemption (2013)", 
+        "stars": [
+            "Jason Statham", 
+            "Agata Buzek", 
+            "Vicky McClure", 
+            "Benedict Wong"
+        ], 
+        "unique_id": "tt1893256"
+    }, 
+    {
+        "description": "A drama that charts ten years in the relationship of a male-to-female transsexual's relationship with her lover.", 
+        "metascore": "73", 
+        "month": "6", 
+        "director": "Xavier Dolan", 
+        "netflix_id": "70243019", 
+        "run_time": "168", 
+        "year": "2013", 
+        "genres": [
+            "Drama", 
+            "Romance"
+        ], 
+        "title": "Laurence Anyways (2012)", 
+        "stars": [
+            "Melvil Poupaud", 
+            "Emmanuel Schwartz", 
+            "Suzanne Cl\u00e9ment", 
+            "Nathalie Baye"
+        ], 
+        "unique_id": "tt1650048"
+    }, 
+    {
+        "description": "On the eve of his wedding, a successful writer travels across the country to meet up with ex-lovers in an attempt to make amends for past relationship transgressions.", 
+        "metascore": "48", 
+        "month": "6", 
+        "director": "Daisy von Scherler Mayer", 
+        "netflix_id": "", 
+        "run_time": "90", 
+        "year": "2013", 
+        "genres": [
+            "Comedy", 
+            "Drama"
+        ], 
+        "title": "Some Girl(s) (2013)", 
+        "stars": [
+            "Adam Brody", 
+            "Kristen Bell", 
+            "Zoe Kazan", 
+            "M\u00eda Maestro"
+        ], 
+        "unique_id": "tt2201221"
+    }, 
+    {
+        "description": "A documentary on the 1970s punk trio Death, and their new-found popularity decades after they disbanded.", 
+        "metascore": "77", 
+        "month": "6", 
+        "director": "Mark Christopher Covino", 
+        "netflix_id": "", 
+        "run_time": "96", 
+        "year": "2013", 
+        "genres": [
+            "Documentary", 
+            "Biography", 
+            "Music"
+        ], 
+        "title": "A Band Called Death (2012)", 
+        "stars": [
+            "Bobby Hackney", 
+            "David Hackney", 
+            "Dannis Hackney", 
+            "Robbie Duncan"
+        ], 
+        "unique_id": "tt2064713"
+    }, 
+    {
+        "description": "Ten easy steps show you how to make money from drugs, featuring a series of interviews with drug dealers, prison employees, and lobbyists arguing for tougher drug laws.", 
+        "metascore": "68", 
+        "month": "6", 
+        "director": "Matthew Cooke", 
+        "netflix_id": "", 
+        "run_time": "96", 
+        "year": "2013", 
+        "genres": [
+            "Documentary", 
+            "Crime"
+        ], 
+        "title": "How to Make Money Selling Drugs (2012)", 
+        "stars": [
+            "Susan Sarandon", 
+            "David Simon", 
+            "50 Cent", 
+            "Woody Harrelson"
+        ], 
+        "unique_id": "tt1276962"
+    }
+]

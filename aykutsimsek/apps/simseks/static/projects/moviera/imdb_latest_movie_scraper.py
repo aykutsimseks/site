@@ -17,14 +17,14 @@ sys.setdefaultencoding('utf8')
 # http://www.imdb.com/movies-coming-soon/2015-05
 url_base = 'http://www.imdb.com/movies-coming-soon'
 
-start = ['2011','1']
-end   = [datetime.datetime.now().strftime("%Y"),datetime.datetime.now().strftime("%m")]
+start = [2011,1]
+end   = [int(datetime.datetime.now().strftime("%Y")),int(datetime.datetime.now().strftime("%m"))]
 
 
 pwd = os.path.dirname(os.path.realpath(__file__))
 netflix = Netflix()
 
-
+### GENERICS
 def randomsleep(t):
     'Sleep between zero and t seconds.'
     time.sleep(t * betavariate(0.7, 8))
@@ -36,21 +36,31 @@ def mk_int(s):
     except:
 	return ''
     
+def date_as_int(array):
+    #[%Y, %m]
+    return array[0]*12 + array[1]
+
+def json_array_fields_as_str(d):
+    for k, v in d.items():
+	# catch None's
+	if v is not None:
+	    d[k] = ",".join(v).encode("utf-8") if isinstance(v, list) else v.encode("utf-8")
+	    
 sleep_time=10;
     
-def get_url_content(url,page_id, loc='html', ext='html', s=sleep_time, force=False):
-    outdir	= pwd + "/" + loc
-    filepath 	= outdir  +"/"+ page_id + '.' + ext
+def get_url_content(url,page_id, loc='download', ext='html', s=sleep_time, force_refresh=False):
+    outdir	= pwd 	  + "/" + loc
+    filepath 	= outdir  + "/" + page_id + '.' + ext
     
     if not os.path.exists(outdir):
         os.makedirs(outdir);
         
-    if force or not os.path.exists(filepath):
+    if force_refresh or not os.path.exists(filepath):
         print("Downloading page.....: " + url);
 	try:
 	    contents = urllib2.urlopen(url).read()
-	    with open(filepath, 'wb') as html:
-	        html.write(contents)
+	    with open(filepath, 'wb') as content_file:
+	        content_file.write(contents)
 		randomsleep(sleep_time)
 	except:
 	    print "ERROR!!!"
@@ -87,15 +97,21 @@ def html_stripper(soup,strip_tags):
             e.extract()
     return soup
 
-def parse_imdb_html(content, current, force=False):
-    movie_list = []
-    outdir	= pwd + "/html/parsed"
-    filepath 	= outdir + "/" + current[0] + '-' + current[1].zfill(2) + '.csv'
+####
+
+
+def parse_imdb_html(content, current, force_refresh=False):
+    outdir	= "%s/download/imdb_html_parsed" % (pwd)
+    file_handle = "%d-%s" 	% (current[0],str(current[1]).zfill(2))
+    filepath 	= "%s/%s.csv"	% (outdir,file_handle)
+    
+    movie_list 	= []
     
     if not os.path.exists(outdir):
         os.makedirs(outdir);
     
-    if force or not os.path.exists(filepath):
+    if force_refresh or not os.path.exists(filepath):
+	print("Parsing page into: " + file_handle);
 	soup = BeautifulSoup(content, "html.parser")
 	movies = html_scraper(soup,[['tag_class','td','overview-top']])
 	images = html_scraper(soup,[['other','td','id', 'img_primary']])
@@ -142,7 +158,7 @@ def parse_imdb_html(content, current, force=False):
 		    
 	    try:
 		image_url = html_scraper(images[idx],[['other','img', 'itemprop','image']])[0].get('src').split('?')[0]
-		get_url_content(image_url,unique_id, loc='img/thumbnails', ext='png', s=1)
+		get_url_content(image_url,unique_id, loc='download/imdb_thumbnails', ext='png', s=1)
 	    except:
 		image_url = ''
 		    
@@ -158,8 +174,8 @@ def parse_imdb_html(content, current, force=False):
 		'run_time'	: run_time,
 		'genres'	: genres,
 		'metascore'	: metascore,
-		'month' 	: current[1],
-		'year' 		: current[0],
+		'month' 	: str(current[1]),
+		'year' 		: str(current[0]),
 		'description'	: description,
 		'director'  	: director,
 		'stars'	    	: stars,
@@ -176,30 +192,24 @@ def parse_imdb_html(content, current, force=False):
     
     return movie_list
 
+
 def main():
     current = start;
-    end_y = int(end[0])
-    end_m = int(end[1])
     movie_list = []
-    while (current[0] + current[1].zfill(2)) <= (end[0] + end[1].zfill(2)):
-	handle = current[0] + '-' + current[1].zfill(2);
-	cur_y = int(current[0])
-	cur_m = int(current[1])
-	print handle
-	url = url_base + '/' + handle
-	force = (cur_y*12 + cur_m) >= (end_y*12 + end_m - 1)
-        content = get_url_content(url,handle, force= force)
-	movie_list += parse_imdb_html(content, current, force= force)
-        if current[1] == '12':
-	    current[0] = str(int(current[0])+1);
-	current[1] = str((int(current[1])%12)+1);
+    while date_as_int(current) <= date_as_int(end):
+	file_handle = "%d-%s"%(current[0],str(current[1]).zfill(2))
+	print file_handle
+	url = url_base + '/' + file_handle
+	# Re-download and parse last 2 months data as they might update
+	force_refresh 	 = date_as_int(current) > (date_as_int(end) - 2)
+        content 	 = get_url_content(url,file_handle, loc="download/imdb_html", force_refresh= force_refresh)
+	movie_list 	+= parse_imdb_html(content, current, force_refresh= force_refresh)
+        if current[1] == 12:
+	    current[0] = current[0]+1;
+	    
+	current[1] = (current[1]%12)+1;
 	
-    def map_to(d):
-	for k, v in d.items():
-	    # catch None's
-	    if v is not None:
-	        d[k] = ",".join(v).encode("utf-8") if isinstance(v, list) else v.encode("utf-8")
-
+    # Write to csv
     with open(pwd + "/data/movies.csv", "w") as csvfile:
 	header = ["title",
 		#"url",
@@ -219,9 +229,10 @@ def main():
 	# get each dict from the list
 	for d in movie_list:
 	    # run the encode func
-	    map_to(d)
+	    json_array_fields_as_str(d)
 	    writer.writerow(d)
     
+    # Gzip csv file
     with open(pwd + "/data/movies.csv", 'rb') as f_in, gzip.open(pwd + "/data/movies.csv.gz", 'wb') as f_out:
 	shutil.copyfileobj(f_in, f_out)
     

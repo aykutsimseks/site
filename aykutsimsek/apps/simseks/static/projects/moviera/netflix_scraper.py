@@ -18,6 +18,7 @@ class Netflix():
 	with codecs.open(txt_file, 'r', encoding='utf-8') as json_file:
 	    self.netflix_json = json.loads(json_file.read())
     
+    # Search title ex. Reservoir Dogs ()
     def isNetflix(self, search_title):
 	netflix_json = self.netflix_json;
         for num in range(0,len(netflix_json)):
@@ -38,7 +39,7 @@ def randomsleep(t):
     time.sleep(t * betavariate(0.7, 8))
 
 sleep_time=100;
-output_directory = "json/netflix"
+output_directory = "download/allflicks"
 pwd = os.path.dirname(os.path.realpath(__file__))
 
 url_base = 'http://www.allflicks.net/wp-content/themes/responsive/processing/processing_us.php'
@@ -67,7 +68,6 @@ def run_scraper():
 	'Accept-Language' : 'en-US,en;q=0.8,tr;q=0.6',
 	'Cache-Control'	  : 'no-cache',
 	'Connection'	  : 'keep-alive',
-	'Cookie'	  : 'PHPSESSID=bn173ihdgc913fh0rotgdo9df1; us=J%3B1Fvh%26hVrdlFML; __utmt=1; __utma=211810501.591813640.1447610159.1447610159.1447613008.2; __utmb=211810501.1.10.1447613008; __utmc=211810501; __utmz=211810501.1447610159.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided)',
 	'Cookie'	  : 'PHPSESSID=bn173ihdgc913fh0rotgdo9df1; us=J%3B1Fvh%26hVrdlFML; __utmt=1; __utma=211810501.591813640.1447610159.1447613008.1447615343.3; __utmb=211810501.3.10.1447615343; __utmc=211810501; __utmz=211810501.1447610159.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided)',
 	'Host'		  : 'www.allflicks.net',
 	'Pragma'	  : 'no-cache',
@@ -96,15 +96,18 @@ def run_scraper():
         
 	if not os.path.exists(filepath):
 	    print("Downloading page.....: " + _prepped.url);
-	    
 	    _response = _session.send(_prepped)
-	    
 	    if(_response and _response.json() and _response.json().get('data')):
-		file_handle 	= str(start+1) + "_" + str(start + len(_response.json().get('data')))
-		filepath 	= pwd + "/json/netflix/"+ file_handle + '.json'
+		resp_data   	= _response.json().get('data')
+		resp_len 	= len(resp_data)
+		if resp_len < 100:
+		    scrape = False;
 		    
+		file_handle 	= "%s_%s" 		% (str(start+1), str(start + resp_len))
+		filepath 	= "%s/%s/%s.json"	% (pwd, output_directory, file_handle)
+		
 		with open(filepath, 'wb') as json_file:
-		    json_file.write(json.dumps(_response.json().get('data'), indent=4))
+		    json_file.write(json.dumps(resp_data, indent=4))
 		    randomsleep(sleep_time)
 	    else:
 		scrape = False
@@ -128,9 +131,9 @@ def merge_json_files():
 	print "Done"
 	
 def main():
-    #run_scraper()	
-    #merge_json_files()
-    print isNetflix('The Dempsey Sisters (2013)').get('id')
+    run_scraper()	
+    merge_json_files()
+    #print isNetflix('The Dempsey Sisters (2013)').get('id')
     
 if __name__ == "__main__":
     main()

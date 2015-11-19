@@ -22,7 +22,7 @@ var list_item_template = function(data) {
 					<div class='col-md-10'> \
 						<a href='http://www.imdb.com/title/" +  data.unique_id + "/' target='_blank'>\
 						<figure class='pull-left' style='padding:0 10px 0 0px;margin-left:-15px;'>	\
-							<img class='media-object img-responsive' width=80 height=100 src='/static/projects/moviera/img/movie-placeholder.png' data-src='/static/projects/moviera/img/thumbnails/" + data.unique_id + ".png'  alt='" + data.title +"' >\
+							<img class='media-object img-responsive' width=80 height=100 src='/static/projects/moviera/img/movie-placeholder.png' data-src='/static/projects/moviera/download/imdb_thumbnails/" + data.unique_id + ".png'  alt='" + data.title +"' >\
 						</figure>	\
 						</a>\
 						<div style='padding-left:80px;width:calc(100%-80px);'> \

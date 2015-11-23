@@ -1,95 +1,101 @@
 var list_item_template = function(data) {
-			/*
-			String.prototype.parseHex = function(){
-				return this.replace(/\\x([a-fA-F0-9]{2})/g, function(a,b){
-					return String.fromCharCode(parseInt(b,16));
-				});
-			};
-		
-			var parse_str_as_array = function(str) {
-				if(!str) return []
-				var array_match = /['"]([^'"]*)['"]/gi;
-				var match = str.match(array_match);
-				if(match) {
-					return match.map(function(str) { return str.slice(1, -1).parseHex()})
-				}
-				return []
-			}
-			*/
-		
-			var html = "\
-				<div class='list-group-item' style='cursor:default;float:none'>	\
-					<div class='col-md-10'> \
-						<a href='http://www.imdb.com/title/" +  data.unique_id + "/' target='_blank'>\
-						<figure class='pull-left' style='padding:0 10px 0 0px;margin-left:-15px;'>	\
-							<img class='media-object img-responsive' width=80 height=100 src='/static/projects/moviera/img/movie-placeholder.png' data-src='/static/projects/moviera/download/imdb_thumbnails/" + data.unique_id + ".png'  alt='" + data.title +"' >\
-						</figure>	\
-						</a>\
-						<div style='padding-left:80px;width:calc(100%-80px);'> \
-							<h4 class='list-group-item-heading col-md-12'  style='padding-left:0;'><a href='http://www.imdb.com/title/" +  data.unique_id + "/' target='_blank' class='list-group-item-heading'><span class='m_title'>" + data.title + "</span></a>\
-								<div  class='small pull-right' style='vertical-align:5px;'> \
-									<span class='m_genres'>" + data.genres.split(',').join(', ') + "</span> | <span style=''> " + data.run_time + " min</span>\
-								</div> \
-							</h4> \
-							<div class='list-group-item-text col-md-12' style='padding:10px 0px'> \
-								<span class='m_description'>" + data.description + "</span>\
-							</div> \
-							<div class='col-md-4' style='padding:0'> \
-								<p class='list-group-item-text'> \
-									<small>Director: <span class='m_director'>" + data.director + "</span></small> \
-								</p> \
-							</div> \
-							<div class='col-md-8' style='padding:0'> \
-								<p class='list-group-item-text'> \
-									<small> Stars: <span class='m_stars'>" + data.stars.split(',').join(', ') + "</span></small> \
-								</p> \
-							</div> \
-						</div> \
-					</div> \
-					<div class='col-md-2 text-center record-card'> \
-						<!-- <h2> 14240 <small> votes </small></h2> --> \
-						<!-- <button type='button' class='btn btn-primary btn-lg btn-block'> Vote Now! </button> --> \
-						<div><span class='m_air_date' style='display:none;'>" + (parseInt(data.year||0)*1200 + parseInt(data.month||0)*100 + parseInt(data.metascore||0)) + "</span><span class='m_month' style='display:none;'>" + (data.month||0) + "</span>" + months[data.month-1] + ", <span class='m_year' style='display:none;'>" + (data.year||0) + "</span>" + data.year +"</div> \
-						<div class='stars'> \
-					"
-					var stars = Math.round((data.metascore||0)/10)
-					
-					for( var i=1; i <= 10; ) {
-						var diff = stars-i;
-						if(diff > 0) {
-							if(diff > 1) {
-								html += " <i class='fa fa-star'></i>"
-							} 
-							else {
-								html += " <i class='fa fa-star-half-o'></i>"
-							}
-						} 
-						else {
-							html += " <i class='fa fa-star-o'></i>"
-						}
-						i += 2;
-					}
-					
-					html += "\
-						</div> \
-						<div><span class='m_metascore' style='display:none'>" + (parseInt(data.metascore||0)*30000 + parseInt(data.year||0)*12 + parseInt(data.month||0)) +"</span>" + data.metascore +" <small> / </small> 100 </div> \
-						" + ((data.netflix_id != "")?"<span class='m_netflix' style='display:none'>netflix</span><a title='Available on Netflix' target='_blank' href='http://www.netflix.com/WiPlayer?movieid=" + data.netflix_id + "'><img height=20 class='netflix-icon' src='/static/projects/moviera/img/netflix_red.png'></img></a>":"") + "\
-					</div> \
-				</div>\
-				"
-			return html;
-		}
+	var imdb_url    = 'http://www.imdb.com/title/' +  data.imdbID + '/'
+	var image_url   = '/static/projects/moviera/download/imdb_thumbnails/' + data.imdbID + '.png'
+	var genres_str  = data.Genre
+	var actors_str	= data.Actors
+	var year		= (data.Year||0)
+	var month_text  = data.Released.split(' ')[1]
+	var month		= (months.indexOf(month_text) || 0)
+	
+	var air_date	= (parseInt(data.Year||0)*120 + parseInt(month||0)*10 + Number(data.imdbRating||0))
+	var imdb_rating	= (Number(data.imdbRating||0)*300000 + parseInt(data.Year||0)*12 + parseInt(month||0))
+	
+    
+	stars_html = ''
+	//var rating_text_html  = data.imdbRating +' <small> / </small> 10'
+	var imdb_html = '<div class="rating-box">'
+				  + 	'<span class="m_imdb_rating" style="display:none">' + imdb_rating + '</span>' + data.imdbRating + '<span class="source">/10</span><div class="source">IMDb</div>'
+				  + '</div>'
+				  
+	
+	
+	var rotten_tomates_html = '<div class="rating-box">'
+	if(data.tomatoRating && data.tomatoRating != 'N/A') {
+		rotten_tomates_html +=  data.tomatoRating + '<span class="source">/10</span><div class="source">Rotten Tomatoes</div>'
+	}
+	rotten_tomates_html += '</div>'
+	
+	var metacritic_html = '<div class="rating-box">'
+	if(data.Metascore  && data.Metascore != 'N/A') {
+		metacritic_html +=  data.Metascore + '<span class="source" style="vertical-align: 5px;">%</span><div class="source">Critic Score</div>'
+	}
+	metacritic_html += '</div>'
+	
+	var netflix_html = '<div class="rating-box"> '
+	if(data.netflixID) {
+		//<div class="source"><img height=20 class="netflix-icon" src="/static/projects/moviera/img/netflix_red.png"></img></div>\
+		netflix_html += 
+						'<a title="Available on Netflix" target="_blank" href="http://www.netflix.com/WiPlayer?movieid=' + data.netflixID + '">\
+						' + data.netflixRating + '<span class="source">/5</span><div class="source"><span class="m_netflix" style="display:none">netflix</span>\
+								Netflix \
+							</div></a>'
+	}
+	netflix_html += '</div>'
+	
+	
+	var html = [
+		'<div class="list-group-item">',
+			'<a class="movie-thumb pull-left" href="' + imdb_url +'" target="_blank">',
+				'<img class="media-object img-responsive" width="80" height="100" src="/static/projects/moviera/img/movie-placeholder.png"  data-original="' + image_url + '"  alt="' + data.Title +'" />',
+			'</a>',
+			'<div class="movie-content">',
+				'<div class="col-md-12 nopadding">',
+					'<div class="col-md-12 nopadding">',
+						'<div class="col-md-7">',
+							'<a href="' + imdb_url +'" target="_blank" class="list-group-item-heading"><span class="m_title">' + data.Title + '</span></a>',
+						'</div>',
+						'<div class="col-md-5 align-right">',
+							'<p  class="small">',
+								'<span class="m_air_date" style="display:none;">' + air_date + '</span>',
+								'<span class="m_month"    style="display:none;">' + month    + '</span>' + month_text + ', ',
+								'<span class="m_year"     style="display:none;">' + year     + '</span>' + year + " | ",
+								'<span class="m_genres">' + genres_str + '</span> | <span> ' + data.Runtime + '</span>',
+							'</p>',
+						'</div>',
+					'</div>',
+					'<div class="col-md-12">',
+						'<p class="list-group-item-text">',
+							'<span class="m_description">' + data.Plot + '</span>',
+						'</p>',
+					'</div>',
+					'<div class="col-md-4">',
+						'<p class="list-group-item-text">',
+							'<small>Director: <span class="m_director">' + data.Director + '</span></small>',
+						'</p>',
+					'</div>',
+					'<div class="col-md-8 align-right">',
+						'<p class="list-group-item-text">',
+							'<small> Actors: <span class="m_stars">' + actors_str + '</span></small>',
+						'</p>',
+					'</div>',
+					'<div class="col-md-12 text-center">',
+						stars_html,
+						imdb_html,
+						rotten_tomates_html,
+						metacritic_html,
+						netflix_html,
+					'</div>',	
+				'</div>',
+			'</div>',
+		'</div>'
+	]
+	
+	return html.join('');
+}
 
 function init_list() {
-	genres.forEach(function(g) {
-		//$('.filter').append('<li class="btn">' + g + '</li>')
-		$(".custom-dropdown select").append(
-			"<option value='" + g + "'>" + g + "</option>"
-		)
-	})
-
 	var options = {
-		valueNames: [ 'm_title','m_genres','m_month', 'm_year', 'm_metascore', 'm_air_date', 'm_description', 'm_director', 'm_stars', 'm_netflix'],
+		valueNames: [ 'm_title','m_genres','m_month', 'm_year', 'm_imdb_rating', 'm_air_date', 'm_description', 'm_director', 'm_stars', 'm_netflix'],
 		page: 25,
 		plugins: [ ListPagination({'innerWindow': 1, 'outerWindow': 1}) ] 
 	};
@@ -114,35 +120,12 @@ function init_list() {
 			return false;
 		});
 	}
-}
-
-
-
-function dynamicSort(property) { 
-    return function (obj1,obj2) {
-        return obj1[property] > obj2[property] ? 1
-            : obj1[property] < obj2[property] ? -1 : 0;
-    }
-}
-
-function dynamicSortMultiple() {
-    /*
-     * save the arguments object as it will be overwritten
-     * note that arguments object is an array-like object
-     * consisting of the names of the properties to sort by
-     */
-    var props = arguments;
-    return function (obj1, obj2) {
-        var i = 0, result = 0, numberOfProperties = props.length;
-        /* try getting a different result from 0 (equal)
-         * as long as we have extra properties to compare
-         */
-        while(result === 0 && i < numberOfProperties) {
-            result = dynamicSort(props[i])(obj1, obj2);
-            i++;
-        }
-        return result;
-    }
+	
+	featureList.on('updated', function() {
+		console.log(featureList.matchingItems.length  + " " + featureList.items.length)
+		$(window).trigger("scroll")	
+	})
+	$('#cover').fadeOut(2000);
 }
 
 function formatDate ( date ) {

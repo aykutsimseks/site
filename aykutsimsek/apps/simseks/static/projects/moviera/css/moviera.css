@@ -2,6 +2,15 @@ body {
     color: #ccc;
     background-color: #333;
 }
+.nopadding {
+	padding: 0;
+	margin: 0;
+}
+
+.align-right {
+	text-align: right;
+}
+
 .app-title {
 	text-align: left;
 	padding-bottom: 20px;
@@ -18,6 +27,7 @@ a {
 
 .list-group-item {
     min-height: 140px;
+    width: 100%;
     background: rgba(0, 0, 0, 0);
     color: #ccc;
     border: none;
@@ -37,7 +47,26 @@ a {
 }
 .list-group-item .list-group-item-heading {
     color: #fff;
+    font-size: 1.15em;
+    font-weight: 800;
 }
+
+.list-group-item .movie-thumb {
+	padding: 4px 0px 0px 14px;
+	margin-left:-15px;
+}
+
+.list-group-item .movie-content {
+	margin-left:80px;
+}
+
+.list-group-item .movie-description div {
+	padding: 0px 0 10px 0px;
+}
+.list-group-item .movie-description small {
+	padding: 0;
+}
+
 .half {
     position: relative;
 }
@@ -50,8 +79,19 @@ a {
     height: 100%;
     left: 47%;
 }
-.record-card {
-    padding-top: 32px;
+
+.rating-box {
+	width: 25%;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 1.3em;
+	padding-top: 10px;
+}
+
+.rating-box .source{
+	font-size: .6em;
+	height: 2em;
+	line-height: 1em;
 }
 
 .list-group-item img.netflix-icon{
@@ -374,7 +414,10 @@ a.imdb-logo {
     #cover {
     	margin-top:0%;
     }
-    
+    .align-right {
+		text-align: left;	
+	}
+
     .app-title {
 		text-align: center;
 		padding-bottom: 0px;
@@ -384,21 +427,11 @@ a.imdb-logo {
 		height: auto;
 		width: auto\9; /* ie8 */
 	}
-    
-    .record-card {
-        display: inline-flex;
-        width: 100%;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .record-card div {
-        float: left;
-        margin: auto
-    }
+
     
     #date-slider {
 		height: 1.2em;
-		margin: 0 0em;
+		margin: 0 1.1em;
 	}
   
 	.noUi-horizontal .noUi-handle {

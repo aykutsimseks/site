@@ -11,8 +11,8 @@
 		<link rel="stylesheet" href="/static/projects/moviera/css/moviera.css">
 		
 		
-		<script src="//cdn.jsdelivr.net/g/jquery@3.0.0-alpha1,list.js@1.1.1,d3js@3.5.6,jquery.unveiljs@1.3.0,jquery.nouislider@8.1.0"  charset="utf-8"></script>
-		<script src="//listjs.com/no-cdn/list.pagination.js"></script>
+		<script src="//cdn.jsdelivr.net/g/jquery@2.1.4,list.js@1.1.1,d3js@3.5.6,jquery.lazyload@1.9.3,jquery.nouislider@8.1.0"  charset="utf-8"></script>
+		<script src="/static/projects/moviera/js/list.pagination.min.js"></script>
 		<script src='/static/projects/moviera/js/app.js'></script>
 		
 		<script>
@@ -44,7 +44,7 @@
 			  <div class="col-md-9">
 			  	<div class="switch-toggle">
 					<input id="sort_metascore"  value="1" name="view-d" type="radio" checked>
-					<label for="sort_metascore" onclick="featureList.sort('m_metascore', { order: 'desc' });">Metascore</label>
+					<label for="sort_metascore" onclick="featureList.sort('m_imdb_rating', { order: 'desc' });">Rating</label>
 
 					<input id="sort_air_date"   value="2" name="view-d" type="radio">
 					<label for="sort_air_date" onclick="featureList.sort('m_air_date', { order: 'desc' });">Date</label>
@@ -118,7 +118,7 @@
 		filterList  = null;
 		genre = null;
 		
-		months = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+		months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 		genres = ["Action","Adventure","Animation","Biography","Comedy","Crime","Documentary","Drama","Family","Fantasy","History","Horror","Music","Musical","Mystery","Romance","Sci-Fi","Sport","Thriller","War","Western"]
 		
 		start_date = dateVal(new Date(Date.parse('01/01/2011')));
@@ -150,22 +150,24 @@
 			//init();
 			d3.csv(csv_file, function(error, csv) {
 				csv.forEach(function(c, i) {
-					//if( i < 250) {
-					//if(c.title == 'The Salt of the Earth (2014)'){
-					//	console.log(c)
+					//if( i < 50) {
 						$('#list').append(list_item_template(c))
 					//}
 				})
-				$("figure img").unveil();
+				
+				var $images = $('#list .movie-thumb img');
+				
+				$images.lazyload({
+					failure_limit : Math.max($images.length-1, 0)
+				})
 				init_list();
-				$('#cover').fadeOut(2000);
 				
 				$(".custom-dropdown select").change(function(){
 					genre = $(this).val();
 					filterList(genre)
 				})
 				filterList('All',start_date,end_date);
-				featureList.sort('m_metascore', { order: "desc" });	
+				featureList.sort('m_imdb_rating', { order: "desc" });
 			})
 		})
 	</script>

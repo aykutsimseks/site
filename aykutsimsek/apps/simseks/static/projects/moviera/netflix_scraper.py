@@ -12,9 +12,12 @@ import codecs
 reload(sys)  
 sys.setdefaultencoding('utf8')
 
+force_refresh = True
+#force_refresh = False
+
 class Netflix():
     def __init__(self):
-	txt_file = 'data/netflix.json'
+	txt_file = pwd + '/data/netflix.json'
 	with codecs.open(txt_file, 'r', encoding='utf-8') as json_file:
 	    self.netflix_json = json.loads(json_file.read())
     
@@ -68,12 +71,20 @@ def run_scraper():
 	'Accept-Language' : 'en-US,en;q=0.8,tr;q=0.6',
 	'Cache-Control'	  : 'no-cache',
 	'Connection'	  : 'keep-alive',
-	'Cookie'	  : 'PHPSESSID=bn173ihdgc913fh0rotgdo9df1; us=J%3B1Fvh%26hVrdlFML; __utmt=1; __utma=211810501.591813640.1447610159.1447613008.1447615343.3; __utmb=211810501.3.10.1447615343; __utmc=211810501; __utmz=211810501.1447610159.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided)',
 	'Host'		  : 'www.allflicks.net',
 	'Pragma'	  : 'no-cache',
 	'Referer'	  : 'http://www.allflicks.net/',
 	'User-Agent'	  : 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36',
 	'X-Requested-With': 'XMLHttpRequest'
+    }
+    
+    cookies = {
+	'PHPSESSID'	: 'kaf6p0on6qln3jqhtv0qvp3v60',
+	'__utma'	: '211810501',
+	'__utmb'	: '211810501.1.10.1450151467',
+	'__utmz'	: '211810501.1447610159.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided)',
+	'__utma'	: '211810501.591813640.1447610159.1447615343.1450151467.4',
+	'us'		: 'J%3B1Fvh%26hVrdlFML'
     }
     
     scrape = True
@@ -88,13 +99,13 @@ def run_scraper():
 	
 	params['start'] = start
 	
-	_request = Request('GET', url_base, params=params,headers=headers)
+	_request = Request('GET', url_base, params=params,headers=headers, cookies=cookies)
 	_prepped = _request.prepare()
 	
 	if not os.path.exists(outdir):
 	    os.makedirs(outdir);
         
-	if not os.path.exists(filepath):
+	if not os.path.exists(filepath) or force_refresh:
 	    print("Downloading page.....: " + _prepped.url);
 	    _response = _session.send(_prepped)
 	    if(_response and _response.json() and _response.json().get('data')):
@@ -115,7 +126,7 @@ def run_scraper():
 	start+=100
 
 def merge_json_files():
-    merged_file = '/data/netflix.json'
+    merged_file = pwd + '/data/netflix.json'
     print "Merging json files in '/" + output_directory + "/' into '" + merged_file + "'"
     
     read_files = glob.glob(pwd + "/" + output_directory + "/*.json")
@@ -126,7 +137,7 @@ def merge_json_files():
             netflix_movies += json.load(infile)
 	    
     netflix_movies = sorted(netflix_movies, key=lambda k: datetime.datetime.strptime(k['available'], '%d %b %Y'), reverse=True)
-    with open(pwd + merged_file, "wb") as outfile:
+    with open(merged_file, "wb") as outfile:
         json.dump(netflix_movies, outfile, indent=4)
 	print "Done"
 	

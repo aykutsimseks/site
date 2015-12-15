@@ -49,7 +49,7 @@ def json_array_fields_as_str(d):
 	    
 sleep_time=10;
     
-def get_url_content(url,page_id, loc='download', ext='html', s=sleep_time, force_refresh=False, action=None):
+def get_url_content(url,page_id, loc='download', ext='html', s=sleep_time, force_refresh=False, force_action=False,action=None):
     outdir	= pwd 	  + "/" + loc
     filepath 	= outdir  + "/" + page_id + '.' + ext
     
@@ -70,6 +70,8 @@ def get_url_content(url,page_id, loc='download', ext='html', s=sleep_time, force
 	#    print "ERROR!!!"
 	#    return ""
     content = open(filepath, 'r').read();
+    if force_action:
+	content = action(content)
     return content
 
 def html_scraper(soup,matcher):
@@ -263,32 +265,6 @@ def main_bk():
 	current[1] = (current[1]%12)+1;
 	
     # Write to csv
-    '''
-    with open(pwd + "/data/movies.csv", "w") as csvfile:
-	unique_ids    = []
-	header = ["title",
-		#"url",
-		"unique_id",
-		"run_time",
-		"metascore",
-		"genres",
-		"month",
-		"year",
-		"description",
-		"director",
-		"actors",
-		#"image_url",
-		"netflix_id"]
-	writer = csv.DictWriter(csvfile, fieldnames=header)
-	writer.writeheader()
-	# get each dict from the list
-	for d in movie_list:
-	    # run the encode func
-	    if d['unique_id'] not in unique_ids:
-		unique_ids.append(d['unique_id'])
-		json_array_fields_as_str(d)
-		writer.writerow(d)
-    '''
     with open(pwd + "/data/movies.csv", "w") as csvfile:
 	unique_ids    	= []
 	header = ["Title",
@@ -351,7 +327,7 @@ def generate_movie_list():
 
     return movie_list
 
-def movie_content(movie_id):
+def movie_content(movie_id,force_refresh=False):
     # Get main content from omdb
     omdb_url  = "http://www.omdbapi.com/?i=%s&tomatoes=true"%(movie_id)
     
@@ -377,7 +353,7 @@ def movie_content(movie_id):
 	    
 	return json.dumps(contents, indent=4, sort_keys=True)
 	
-    omdb_json = json.loads(get_url_content(omdb_url,movie_id, loc='download/movie_json', ext='json', s=1, action=additional_operations))
+    omdb_json = json.loads(get_url_content(omdb_url,movie_id, loc='download/movie_json', ext='json', s=1, force_refresh=force_refresh, action=additional_operations, force_action=True))
     return omdb_json
     
 	
@@ -407,7 +383,7 @@ def main():
 	writer.writeheader()
 	
 	for movie_id in movie_list:
-	    json_file = 'download/movie_json/%s.json'%(movie_id)
+	    json_file = '%s/download/movie_json/%s.json'%(pwd,movie_id)
 	    with open(json_file, "rb") as json_file:
 		jsonobj = json.load(json_file)
 		row = { k: (jsonobj.get(k) or '') for k in header }

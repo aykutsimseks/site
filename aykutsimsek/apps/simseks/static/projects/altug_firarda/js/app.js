@@ -1,8 +1,42 @@
 // Original tempalte from http://cartodb.com/v/maya-angelou
 // Altug Firarda, by Aykut Simsek (aykutsimseks@gmail.com)
 
+var months = {
+	//'eng' : ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+	//'tr'  : ["Oca", "Şub", "Mar", "Nis", "May", "Haz", "Tem", "Ağu", "Eyl", "Eki", "Kas", "Ara"],
+	
+	'eng' : ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+	'tr'  : ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"],
+}
+
 var daydiff = function(first, second) {
 	return parseInt((second - first) / (1000 * 60 * 60 * 24));
+}
+
+var daydiff_str = function(first,second) {
+	return (daydiff(first,second)+1) + (tr ? (" gün") : (" days"))
+}
+
+function formatDateInterval(s,e) {
+	var string = ""
+	if(s.getMonth() == e.getMonth()) {
+		if(s.getUTCDate() !=  e.getUTCDate()) {
+			string = s.getUTCDate() + " - " 
+		}
+		string += e.getUTCDate() + " " + months[tr?'tr':'eng'][e.getMonth()]
+	}
+	else {
+		string = formatDate(s) + " - " + formatDate(e)
+	}
+	var date_diff = daydiff(s, e)
+	if(date_diff > 0) {
+		string += " (" + daydiff_str(s,e) + ")"
+	}
+	return string
+}
+
+function formatDate (date) {
+	return  date.getUTCDate() + " " + months[tr?'tr':'eng'][date.getMonth()]//.slice(0,3)
 }
 
 var urlParam = function(name, w) {
@@ -20,9 +54,10 @@ var marker = L.icon({
 
 // Day line cross index for crossing dayline 
 var dlci = 87;
+var tr = true;
+
 
 window.onload = function() {
-	var tr = true;
 	if (urlParam('l') == 'en') {
 		tr = false;
 	}
@@ -35,8 +70,24 @@ window.onload = function() {
 	var transMarkers = new L.FeatureGroup();
 		
 	var startDate = new Date('02/02/2015')
-	var currentDate = new Date('08/20/2015');
+	var endDate = new Date('08/21/2015');
+	var panel_width;
+	var insta_height;
 	
+	
+	var view_setup = function() {
+		panel_width  = Math.min( 
+			350, // Max limit
+			$('#container').width(),
+			(($('#content').height()) * 0.8)
+		)
+			
+		insta_height= panel_width * 1.25;
+		$('#instagram-caption').width(($('#container').width() - 20) + 'px')
+		$('#instagram-caption').height(($('#content').height() - insta_height) + "px")
+	}
+	view_setup();
+		
 	var add_line_icons = function(start,end, icons) {
 		var line = [];
 		var icon;
@@ -124,92 +175,153 @@ window.onload = function() {
 		
 	}
 	
-	
 	if(tr) {
-		$('#left-panel .loader').html("<i style='font-size:36px;vertical-align:-4px;' class='fa fa-spinner fa-pulse' ></i>&nbsp;Yükleniyor...");
+		$('#loader span').html("&nbsp;Yükleniyor...");
 		$('#info-text').html('* Klayvenizin sağ/sol tuşlarını veya yukarıdaki ok tuşlarını kullanarak günleri değiştirebilir, ülke isimlerine tıklayarak direkt o ülkere ulaşabilirsiniz.')
 	}
 	else {
-		$('#left-panel .loader').html("<i style='font-size:36px;vertical-align:-4px;' class='fa fa-spinner fa-pulse' ></i>&nbsp;Loading...");
+		$('#loader span').html("&nbsp;Loading...");
 		$('#info-text').html('* Use the left/right arrow keys on your keyboard or on the screen to navigate the map. You can click on country names above for direct access to those countries.');
-		$('#restart a').prop('href','.?l=en')
 	}
 	
 	cartodb.createVis('map', 'http://aykutsimseks.cartodb.com/api/v2/viz/73dba65c-eb63-11e4-a391-0e9d821ea90d/viz.json', {
-			shareable: true,
-			zoomControl: true
+			shareable		: false,
+			zoomControl		: false,
+			cartodb_logo 	: false,
+			mobile_layout	: true,
+			force_mobile	: true
 		})
 		.done(function(vis, layers) {
-			map = vis.getNativeMap();
-			$('#map > div:nth-child(3) > div > div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div')
-				.prepend('<a href="http://www.aykutsimseks.com" target="_blank">Aykut Simsek</a> | <a href="http://cartodb.github.io/odyssey.js/index.html" target="_blank">Odyssey.js</a> | ')
-							
+			if(tr) {
+				$('#map div.aside h3').html("Ülkeler")
+			}
+			else {
+				$('#map div.aside h3').html("Countries")
+			}
+			map = vis.getNativeMap()
+			
+			map.setActiveArea({
+				position: 'absolute',
+				top: 0,
+				bottom: 0,
+				left:	$('#container').width() + 'px',
+				right: 0,
+			});
+			
+			$('#map div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div, .cartodb-attribution li')
+			.prepend('<a href="http://www.aykutsimseks.com" target="_blank">Aykut Simsek</a> | <a href="http://cartodb.github.io/odyssey.js/index.html" target="_blank">Odyssey.js</a> | ')
+
+			new L.Control.Zoom({ position: 'topright' }).addTo(map);
+					
 			var seq = O.Sequential();
-			O.Keys().left().then(seq.prev, seq);
-			O.Keys().right().then(seq.next, seq);
-			$('a.next').click(function() {
-				seq.next();
-			})
-			$('a.prev').click(function() {
-				seq.prev();
-			})
-
 			var story = O.Story();
-
-			var updateUI = function(title, description, sources, location, date, marker, k, instagram_link) {				
+			var update 	= function(point,index) {				
 				return O.Action(function() {
-					/* http://api.instagram.com/publicapi/oembed/?url=http://instagr.am/p/ynan9PR-1N/ */
-					/* data-instgrm-captioned  */
-					$('.caption-panel .caption').html('')
-					if(instagram_link) {
-						var html = '<blockquote class="instagram-media" data-instgrm-version="1" style="width:340px;border-radius:0">'
-								   + '<a href="' + instagram_link + '"></a>'
-								   + '</blockquote> '
-						
-						$('#left-panel .loader').css("display","inline-block");
-						$('.instagram-panel').html(html)
-                		window.instgrm.Embeds.process()
-        	        	if(description) {
-							$('.caption-panel').show()
-							$('.caption-panel .caption').html(
-							[	'<div class="Embed" ><div class="EmbedCaption normal-text">',
-								twemoji.parse(description.replace(/#(\S*)/g,'<div class="hashtag" style="color:#3f729b;display:inline-block;">#$1</div>')),
-								'</div></div>'
-							].join(''))
-						}
-						else {
-							$('.caption-panel').show()
-							$('.caption-panel .caption').html('');
-						}
+					var pos 			= 	[point.lat, point.lon];
+					var zoom 			= 	point.zoom;
+					
+					map.setView(pos,zoom);
+					add_line_icons(index-2,index+1)	
+					$('#page-counter').html((story.state() + 1) + ' / ' + (points.length + 1))
+					
+					
+					var place 			= (tr?point.place_tr:point.place);
+					var country 		= (tr?point.country_tr:point.country);
+					var title			= $.grep([place, country], Boolean).join(', ')
+					$('#place').html(title)
+					
+					var begin_arr		= point.begin_date.split('T')[0].split('-')
+					var begin 			= new Date(begin_arr.slice(0,3));
+					var end_arr			= point.end_date.split('T')[0].split('-')
+					var end 			= new Date(end_arr.slice(0,3));
+					var date			=  "<span class='glyphicon glyphicon-calendar'></span> " + formatDateInterval(begin,end)
+					$('#date').html(date)
+					
+					
+					var day_count		= (tr ? ((daydiff(startDate, begin)+1) + ". Gün") : ("Day " + (daydiff(startDate, begin) + 1)));
+					$('#day_count').html(day_count)
+					//var description 	= point.description;
+					
+					
+					var caption 		= (tr?point.story_tr:point.story);
+					if(caption) {
+						$('#instagram-caption').html(
+						[	'<div class="Embed" ><div class="EmbedCaption normal-text">',
+							twemoji.parse(caption.replace(/#(\S*)/g,'<div class="hashtag" style="color:#3f729b;display:inline-block;">#$1</div>')),
+							'</div></div>'
+						].join(''))
 					}
 					else {
-						$('.instagram-panel').html("")
-						$('#left-panel .loader').css("display","none")
-						$('.caption-panel').hide();
+						$('#instagram-caption').html('');
 					}
 					
-				
-					$('#left-panel h3').html(title)
-					$('#left-panel .location').html(location)
-					$('#left-panel .date').html(date)
-					if(sources) {
-						$('#left-panel .text-panel').show()
-						$('#left-panel .text-panel').html(sources)
+					var instagram_link 	=	point.instagram_links
+					if(instagram_link) {
+						$('#loader').css("display","inline-block");
+						var embed_html = '<blockquote class="instagram-media" data-instgrm-version="1" style="margin:auto;width:' + panel_width + 'px;border-radius:0;">'
+								  		 + '<a href="' + instagram_link + '"></a>'
+								   		 + '</blockquote> '
+						$('#instagram-embed').html(embed_html)
+						window.instgrm.Embeds.process()
 					}
 					else {
-						$('#left-panel .text-panel').hide()
+						$('#instagram-embed').html("")
+						$('#loader').css("display","none")
+					}	
+					
+					
+					if(index == 0) {
+						var day_count = (daydiff(startDate, endDate)+1) + " " +(tr?"Gün":"Days");
+						$('#day_count').html(day_count)
+						$('#instagram-embed').html(caption);
+						$('#instagram-caption').html('');
 					}
-					$('.controls .page-num').html(story.state() + 1 + ' / ' + (points.length + 1))
-					add_line_icons(k-2,k+1)			
 				});
 			}
+			
+			
+			O.Keys().left().then(seq.prev, seq);
+			O.Keys().right().then(seq.next, seq);
+			$('button.next').click(function() {
+				seq.next();
+			})
+			$('button.prev').click(function() {
+				seq.prev();
+			})
+			$('button.restart').click(function() {
+				seq.current(0);
+				story.go(0);
+			})
+			$('a.tr').click(function() {
+				window.location="/project/altug-firarda?l=tr#"+seq.current();
+			})
+			$('a.en').click(function() {
+				window.location="/project/altug-firarda?l=en#"+seq.current();
+			})
 
-			var action = O.Step(
-				map.actions.setView([10, -10], 2),
-				//O.Debug().log("state " + 0),
-				updateUI(
-					"<i class='fa fa-globe' style='font-size:18px;'></i>&nbsp; Altuğ Firarda &nbsp;<i class='fa fa-globe' style='font-size:18px;'></i>",
-					"", (tr ? ["2 şubat 2015 tarihinde sadece bir sırt çantası ve Hindistan’a tek yön bir bilet alarak başladığım ve 6.5 ayda, 4 kıta, 20 ülke, 82 şehir gezdiğim; 26 uçak yolculuğu, sayısız otobüs, tren, araba, gemi ve motosiklet yolculukları yaptığım 200 günlük dünya turumun haritasını ve maceralarımın bir kısmını bu sitede bulabilirsiniz."
+			
+			
+			/// SET UP WELCOME PAGE
+			var start_page = {
+				'place' 	: "<i class='fa fa-globe' style='font-size:18px;'></i>&nbsp; Altug Firarda &nbsp;<i class='fa fa-globe' style='font-size:18px;'></i>",
+				'place_tr' 	: "<i class='fa fa-globe' style='font-size:18px;'></i>&nbsp; Altuğ Firarda &nbsp;<i class='fa fa-globe' style='font-size:18px;'></i>",
+				'begin_date': startDate.toISOString(),
+				'end_date'	: endDate.toISOString(),
+				'story'		: [
+							  "<div style='padding:0 10px 10px 10px;height:" + $('#content').height() + "px;overflow-y: auto;text-overflow: ellipsis;'>",
+							  "This is the summary of my world trip which I traveled 4 continents, 20 countries, 82 cities in 6.5 months by taking 26 flights, countless bus, train, car, ferry and motorcycle trips after taking a one way flight to India with my backpack without any proper plan on 2nd February 2015."
+ 							  ,""
+ 							  ,"For more detailed pictures and stories you can also check my <a href='https://instagram.com/altugsimsek/' target='_blank'>Instagram</a> account."
+							  ,""
+							  ,"To move between days and places, use the left/right arrow keys on your keyboard or on the screen. You can directly access countries by clicking the name of the country at the bottom of the screen."
+ 							  ,""
+							  ,"If you have any questions, you can reach me via <a href='mailto:simsekaltug@gmail.com' target='_blank'>simsekaltug@gmail.com</a>"
+							  ,""
+							  ,"Enjoy your trip."
+							  ,"</div>"].join('<br/>') ,
+				'story_tr'	: [
+							  "<div style='padding:0 10px 10px 10px;height:" + $('#content').height() + "px;overflow-y: auto;text-overflow: ellipsis;'>",
+							  "2 şubat 2015 tarihinde sadece bir sırt çantası ve Hindistan’a tek yön bir bilet alarak başladığım ve 6.5 ayda, 4 kıta, 20 ülke, 82 şehir gezdiğim; 26 uçak yolculuğu, sayısız otobüs, tren, araba, gemi ve motosiklet yolculukları yaptığım 200 günlük dünya turumun haritasını ve maceralarımın bir kısmını bu sitede bulabilirsiniz."
 							  ,""
 							  ,"Daha detaylı fotoğraflar ve hikayeler için <a href='https://instagram.com/altugsimsek/' target='_blank'>Instagram</a> hesabıma göz atabilirsiniz."
 							  ,""
@@ -219,24 +331,20 @@ window.onload = function() {
 							  ,""
 							  ,"Bunlara ek olarak seyahat sonrası yorumlarım veya başka sorularınız için <a href='mailto:simsekaltug@gmail.com' target='_blank'>simsekaltug@gmail.com</a> adresinden benimle iletişime geçebilirsiniz."
  							  ,""
- 							  ,"Keyifli yolculuklar."].join('<br/>') 
- 							  : 
- 							  ["This is the summary of my world trip which I traveled 4 continents, 20 countries, 82 cities in 6.5 months by taking 26 flights, countless bus, train, car, ferry and motorcycle trips after taking a one way flight to India with my backpack without any proper plan on 2nd February 2015."
- 							  ,""
- 							  ,"For more detailed pictures and stories you can also check my <a href='https://instagram.com/altugsimsek/' target='_blank'>Instagram</a> account."
-							  ,""
-							  ,"To move between days and places, use the left/right arrow keys on your keyboard or on the screen. You can directly access countries by clicking the name of the country at the bottom of the screen."
- 							  ,""
-							  ,"If you have any questions, you can reach me via <a href='mailto:simsekaltug@gmail.com' target='_blank'>simsekaltug@gmail.com</a>"
-							  ,""
-							  ,"Enjoy your trip."].join('<br/>') 
-						), (daydiff(startDate, currentDate) + 2) + (tr ? " Gün" :" Days"),
-					"<span class='glyphicon glyphicon-calendar'></span> " + startDate.toLocaleDateString('en-GB') + " - " + currentDate.toLocaleDateString('en-GB') + " (" + (daydiff(startDate, currentDate) + 2) + (tr ? (" gün") : (" days")) + ")",
-					marker, -1, null),
+ 							  ,"Keyifli yolculuklar."
+							  ,"</div>"].join('<br/>'),
+				'lat'		: 10,
+				'lon'		: -10,
+				'zoom'		: 2
+			}
+			var action0		= O.Step(
+				update(start_page, 0),
 				O.Location.changeHash('#' + 0)
 			)
-			story.addState(seq.step(0), action);
-
+			story.addState(seq.step(0), action0);
+			////
+			
+			
 			var sql = new cartodb.SQL({
 				user: 'aykutsimseks'
 			});
@@ -244,51 +352,15 @@ window.onload = function() {
 				.done(function(data) {
 					points = data.rows;
 					for (var i = 0; i < points.length; ++i) {
-						var point = data.rows[i];
-						var pos = [point.lat, point.lon];
-
-						if (tr) {
-							var place = point.place_tr;
-							var country = point.country_tr;
-							var text = point.story_tr;
-						} else {
-							var place = point.place;
-							var country = point.country;
-							var text = point.story;
-						}
-
-						var begin = new Date(point.begin_date);
-						var end = new Date(point.end_date);
-
-						var story_html = []
-						if (point.blog_url) {
-							story_html.push("<a href=\"" + point.blog_url + "\" target='_blank'>" + (tr ? 'Devamı..' : 'Read more..') + "</a>")
-						}
-						var description = point.description;
-						var summary = point.summarys;
-
-						var zoom = point.zoom;
-
-
+						var point = points[i]
 						var action = O.Step(
-							map.actions.setView(pos, zoom),
-							//O.Debug().log("state " + (i+1)),
-							L.marker(pos, {
-								icon: marker
-							}).actions.addRemove(map),
-							updateUI(
-								[place, country].join(', '),
-								text /* + '</br> ' + story_html.join(", ")*/,
-								'', (tr ? ((daydiff(startDate, begin)+1) + ". Gün") : ("Day " + (daydiff(startDate, begin) + 1))),
-								"<span class='glyphicon glyphicon-calendar'></span> " + begin.toLocaleDateString('en-GB') + " - " + end.toLocaleDateString('en-GB') + " (" + (daydiff(begin, end)+1) + (tr ? (" gün") : (" days")) + ")",
-								marker, 
-								(i + 1),
-								point.instagram_links
-							),
+							L.marker([point.lat, point.lon], { icon: marker }).actions.addRemove(map),
+							update(point, (i+1)),
 							O.Location.changeHash('#' + (i + 1))
 						)
 						story.addState(seq.step((i + 1)), action);
 					}
+					
 					if (location.hash && location.hash.slice(1)>0) {
 						seq.current(+location.hash.slice(1));
 					} else {
@@ -315,9 +387,6 @@ window.onload = function() {
 							line_lookup[point['country']] = i
 						}
 					}
-					//console.log(line_lookup)
-					//draw_line(line_data)
-						
 					$('#map div.cartodb-legend ul li').click(function() {
 						story.go(line_lookup[$(this).text().trim()]+1)
 						seq.current(line_lookup[$(this).text().trim()]+1)

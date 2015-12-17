@@ -2,29 +2,41 @@
 <html>
 	<head>
 		<title>Altug Firarda</title>
-		<link rel="shortcut icon" href="{{ STATIC_URL }}img/logo/favicon.ico">
+		<link rel="shortcut icon" href="/static/img/logo/favicon.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 		<meta charset="utf-8">
 			
 		<!-- CSS -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		
+		
+		
 		<link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.css" />
 		<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
 		<link rel="stylesheet" href="http://watson.lennardvoogdt.nl/Leaflet.awesome-markers/dist/leaflet.awesome-markers.css">
-		<link rel="stylesheet" href="{{ STATIC_URL }}projects/altug_firarda/css/app.css" />
+		<link rel="stylesheet" href="/static/projects/altug_firarda/css/app.css" />
 		
+		
+			
 		<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 		
 		<!-- JS -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/g/jquery@2.1.4,bootstrap@3.3.6"></script>
 		<script src="http://twemoji.maxcdn.com/twemoji.min.js"></script>
 		<script src="http://libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script>
 		<script src="http://cartodb.github.io/odyssey.js/dist/odyssey.js" charset="UTF-8"></script>
 		<script src="http://watson.lennardvoogdt.nl/Leaflet.awesome-markers/dist/leaflet.awesome-markers.js"></script>
 		
-		<script async defer src="{{ STATIC_URL }}projects/altug_firarda/js/embeds.js"></script>
-		<script src="{{ STATIC_URL }}projects/altug_firarda/js/app.js"></script>
-		
+		<script async defer src="/static/projects/altug_firarda/js/embeds.js"></script>
+		<script async defer src="/static/projects/altug_firarda/js/leaflet.activearea.js"></script>
+		<script src="/static/projects/altug_firarda/js/app.js"></script>
+		<style>
+			
+		</style>
 		<!-- Analytics -->
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -36,42 +48,64 @@
 		</script>
 	</head>
 	<body>
-		<div id="map">
-			<div id="language-selector">
-				<ul>
-					<li><a title='Türkçe'   href="{% url 'altug_firarda' language='tr'  %}"><img src="{{ STATIC_URL }}projects/altug_firarda/img/turkey_round_icon_64.png"></img></a></li>
-					<li><a title='English'  href="{% url 'altug_firarda' language='en'  %}"><img src="{{ STATIC_URL }}projects/altug_firarda/img/united_kingdom_round_icon_64.png"></img></a></li>
-				</ul>
-			</div>
-			<div id='info-text' class='small-text'></div>
-		</div>
+		<div id="map"></div>
 		<div id="cover"></div>
-		<div id="left-panel">
-			<div class="top-section" >
-					<h3></h3>
-					<div>
-						<span class="location"></span>
-						</br>
-						<span class="date"></span>
-					</div>
-					<div class="controls">
-						<ul>
-							<li><a class="prev" title="Previous/ Önceki" href="#"><i class="fa fa-arrow-left"></i></a></li>
-							<li><a class="next" title="Next / Sonraki" href="#"><i class="fa fa-arrow-right"></i></a></li>
-						</ul>
-						<ul style='margin-top:-3px;'>
-							<span class='page-num'>&nbsp;</span>
-							<li id='restart' class='small-button'><a class="" title="Start over / Başa dön" href="."><i class="fa fa-rotate-left"></i></a></li>
-						</ul>
+		<div id="language">
+			<div>
+				<a class='tr'  title='Türkçe'><img src="/static/projects/altug_firarda/img/turkey_round_icon_64.png"></img></a>
+			</div>
+			<div>
+				<a class='en'  title='English'><img src="/static/projects/altug_firarda/img/united_kingdom_round_icon_64.png"></img></a>
+			</div>
+		</div>
+		<div id="container" class='col-md-12 nopadding'>
+			<div id="header">
+				<div>
+					<div id='text-panel' class='col-md-12 nopadding'>
+						<h4 class='col-md-12'>
+							<span id='place'></span>
+						</h4>
+						<div class='col-md-12'>
+							<span id="date"></span>
+							<span id="day_count" style='float:right'></span>
+						</div>
 					</div>
 				</div>
-			<div class="caption-panel">
-					<div style='height:420px;'></div>
-					<p class='caption'></p>
+			</div>
+			<div id="content">
+				<div>
+					<div id="instagram-panel" class='col-md-12 nopadding'>
+						<div id='loader'>
+							<i class="fa fa-spinner fa-pulse" ></i>
+							<span>&nbsp;Loading...</span>
+						</div>
+						<div id="instagram-embed"></div>
+					</div>
+					<div id='instagram-caption'>
+					</div>
 				</div>
-			<p class="text-panel"></p>
-			<p class="instagram-panel"></p>
-			<div class='loader large-text'><i class="fa fa-spinner fa-pulse" ></i>&nbsp;Loading...</div>
+			</div>
+			<div id="footer">
+				<div>
+					<div id='controls' class='col-md-12 nopadding''>
+						<div class='' style='width:40%;float:left;'>
+							<button type="button" class="btn btn-primary btn-lg btn-block prev"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span></button>
+						</div>
+						<!--
+						<div class='' style='width:20%;float:left;'>
+							<button type="button" class="btn btn-primary btn-lg btn-block restart"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span></button>
+						</div>
+						-->
+						<div class='' style='width:20%;float:left;'>
+							<button type="button" class="btn btn-primary btn-xs btn-block"><span class="glyphicon glyphicon-resize-full" aria-hidden="true"></span></button>
+							<div id='page-counter'>&nbsp;</div>
+						</div>
+						<div class='' style='width:40%;float:left;'>
+							<button type="button" class="btn btn-primary btn-lg btn-block next"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></button>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</body>
 	<script></script>

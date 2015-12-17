@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Altug Firarda</title>
+		<link rel="shortcut icon" href="/static/img/logo/favicon.ico">
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+		<meta charset="utf-8">
+			
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.css" />
+		<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+		<link rel="stylesheet" href="http://watson.lennardvoogdt.nl/Leaflet.awesome-markers/dist/leaflet.awesome-markers.css">
+		<link rel="stylesheet" href="/static/projects/altug_firarda/css/app.bk.css" />
+		
+		<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		
+		<!-- JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="http://twemoji.maxcdn.com/twemoji.min.js"></script>
+		<script src="http://libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script>
+		<script src="http://cartodb.github.io/odyssey.js/dist/odyssey.js" charset="UTF-8"></script>
+		<script src="http://watson.lennardvoogdt.nl/Leaflet.awesome-markers/dist/leaflet.awesome-markers.js"></script>
+		
+		<script async defer src="/static/projects/altug_firarda/js/embeds.js"></script>
+		<script src="/static/projects/altug_firarda/js/app.js"></script>
+		
+		<!-- Analytics -->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-66787829-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</head>
+	<body>
+		<div id="map">
+			<div id="language-selector">
+				<ul>
+					<li><a class='tr'  title='Türkçe'><img src="/static/projects/altug_firarda/img/turkey_round_icon_64.png"></img></a></li>
+					<li><a class='eng' title='English'><img src="/static/projects/altug_firarda/img/united_kingdom_round_icon_64.png"></img></a></li>
+				</ul>
+			</div>
+			<div id='info-text' class='small-text'></div>
+		</div>
+		<div id="cover"></div>
+		<div id="left-panel">
+			<div class="top-section" >
+					<h3></h3>
+					<div>
+						<span class="location"></span>
+						</br>
+						<span class="date"></span>
+					</div>
+					<div class="controls">
+						<ul>
+							<li><a class="prev" title="Previous/ Önceki" href="#"><i class="fa fa-arrow-left"></i></a></li>
+							<li><a class="next" title="Next / Sonraki" href="#"><i class="fa fa-arrow-right"></i></a></li>
+						</ul>
+						<ul style='margin-top:-3px;'>
+							<span class='page-num'>&nbsp;</span>
+							<li id='restart' class='small-button'><a class="" title="Start over / Başa dön" href="."><i class="fa fa-rotate-left"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			<div class="caption-panel">
+					<div style='height:420px;'></div>
+					<p class='caption'></p>
+				</div>
+			<p class="text-panel"></p>
+			<p class="instagram-panel"></p>
+			<div class='loader large-text'><i class="fa fa-spinner fa-pulse" ></i>&nbsp;Loading...</div>
+		</div>
+	</body>
+	<script></script>
+</html>

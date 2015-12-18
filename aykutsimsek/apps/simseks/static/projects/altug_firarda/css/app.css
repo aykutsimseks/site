@@ -43,8 +43,8 @@ img.emoji {
     background-size: cover;
     color: #fff;
     
-    height: 200%;
-    width: 200%;
+    height: 100%;
+    width: 100%;
 }
 #map {
 	position: absolute;
@@ -58,16 +58,30 @@ img.emoji {
 #language {
 	position: absolute;
 	cursor: pointer;
-	right: 13px;
-	display: block;
-	bottom:43px;
+	right: 5px;
+	bottom:41px;
 }
 #language a {
-	width: 30px;
 }
+
 #language img {
-	width: 35px;
-	padding-bottom: 3px;
+	width: 30px;
+	padding-bottom: 8px;
+}
+
+#language a::before {
+	position: absolute;
+    content: '';
+    left: 2px;
+    margin-top: -2px;
+    width: 26px;
+    height: 26px;
+    border-radius: 100px;
+    border: 3px solid rgba(0, 0, 0, 0.3);
+}
+
+#language a:hover::before {
+    border: 3px solid rgba(0, 0, 0, 0.7);
 }
 
 /* Left Panel */
@@ -78,7 +92,7 @@ img.emoji {
 	/*padding:20px;*/
 	margin-left: -15px;
 	width: 350px;
-	max-width: calc(100% - 70px);
+	max-width: calc(100% - 100px);
 }
 
 #container > div {   
@@ -95,7 +109,7 @@ img.emoji {
 #text-panel {
 	color : rgba(255,255,255,1);
 	min-height: 70px;
-	background: rgba(51, 122, 183,.9);
+	background: rgba(51, 122, 183,1);
 	padding-bottom: 10px !important;
 }
 
@@ -121,9 +135,8 @@ img.emoji {
 
 #instagram-embed {
 	position: relative;
-	width: calc(100%-140px);
 	margin:auto;
-    z-index: 99999;
+    z-index: 9;
     pointer-events: all;
 }
 
@@ -163,23 +176,14 @@ img.emoji {
 	width: 100%;
 }
 
-
-
-
-
-
-
-/* Controls */
-/* Mobile */
-@media only screen and (max-device-width: 768px) and (orientation: portrait) {
-    html,
-    body {
-        font-size: .9em;
-    }
+#instagram-modal {
+	background: rgba(0,0,0,.5);
+	margin: auto;
 }
 
-
-
+#instagram-modal .modal-body{
+	padding:0
+}
 
 /* LEAFLET & CARTODB CUSTOMIZATIONS */
 /* Attribution */
@@ -190,6 +194,11 @@ img.emoji {
 #map div.leaflet-bottom.leaflet-right > div a {
     color: rgba(0, 0, 0, 1);
     font-weight: 500;
+}
+
+
+#map .cartodb-mobile .cartodb-attribution-button {
+	right: 10px !important;
 }
 
 #map .cartodb-mobile .cartodb-attribution-button:before {

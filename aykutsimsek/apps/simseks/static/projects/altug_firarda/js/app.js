@@ -35,6 +35,12 @@ function formatDateInterval(s,e) {
 	return string
 }
 
+function instagramEmbedCode(instagram_link,width) {
+	return '<blockquote class="instagram-media" data-instgrm-version="1" style="margin:auto;width:' + width + 'px;border-radius:0;">'
+			+ '<a href="' + instagram_link + '"></a>'
+			+ '</blockquote> '
+}
+
 function formatDate (date) {
 	return  date.getUTCDate() + " " + months[tr?'tr':'eng'][date.getMonth()]//.slice(0,3)
 }
@@ -56,7 +62,7 @@ var marker = L.icon({
 var dlci = 87;
 var tr = true;
 
-
+var current_link = null;
 window.onload = function() {
 	if (urlParam('l') == 'en') {
 		tr = false;
@@ -85,6 +91,8 @@ window.onload = function() {
 		insta_height= panel_width * 1.25;
 		$('#instagram-caption').width(($('#container').width() - 20) + 'px')
 		$('#instagram-caption').height(($('#content').height() - insta_height) + "px")
+		
+		$('#cover').css('background-position-x', $('#container').width()/2)
 	}
 	view_setup();
 		
@@ -193,10 +201,10 @@ window.onload = function() {
 		})
 		.done(function(vis, layers) {
 			if(tr) {
-				$('#map div.aside h3').html("Ülkeler")
+				$('#map div.aside h3').html('Toplam ' + ($('#map div.cartodb-legend ul li').length -1) + " Ülke")
 			}
 			else {
-				$('#map div.aside h3').html("Countries")
+				$('#map div.aside h3').html(($('#map div.cartodb-legend ul li').length -1) + " Countries")
 			}
 			map = vis.getNativeMap()
 			
@@ -230,15 +238,17 @@ window.onload = function() {
 					var title			= $.grep([place, country], Boolean).join(', ')
 					$('#place').html(title)
 					
-					var begin_arr		= point.begin_date.split('T')[0].split('-')
-					var begin 			= new Date(begin_arr.slice(0,3));
-					var end_arr			= point.end_date.split('T')[0].split('-')
-					var end 			= new Date(end_arr.slice(0,3));
+					//var begin_arr		= point.begin_date.split('T')[0].split('-')
+					//var begin 			= new Date(begin_arr.slice(0,3));
+					//var end_arr			= point.end_date.split('T')[0].split('-')
+					//var end 			= new Date(end_arr.slice(0,3));
+					var begin 			= Date.parse( point.begin_date.split('T')[0])
+					var end 			= Date.parse( point.end_date.split('T')[0])
 					var date			=  "<span class='glyphicon glyphicon-calendar'></span> " + formatDateInterval(begin,end)
 					$('#date').html(date)
 					
 					
-					var day_count		= (tr ? ((daydiff(startDate, begin)+1) + ". Gün") : ("Day " + (daydiff(startDate, begin) + 1)));
+					var day_count		= '<div style="width:100%;text-align:center;margin-bottom:-.3em;">' + (tr?"Gün":"Day") + '</div><div style="font-size:1.5em;line-height: 1em;text-align:center;">' + (daydiff(startDate, begin) + 1) + '</div>';//(tr ? ((daydiff(startDate, begin)+1) + ". Gün") : ("Day " + (daydiff(startDate, begin) + 1)));
 					$('#day_count').html(day_count)
 					//var description 	= point.description;
 					
@@ -257,12 +267,34 @@ window.onload = function() {
 					
 					var instagram_link 	=	point.instagram_links
 					if(instagram_link) {
+						current_link = instagram_link;
 						$('#loader').css("display","inline-block");
-						var embed_html = '<blockquote class="instagram-media" data-instgrm-version="1" style="margin:auto;width:' + panel_width + 'px;border-radius:0;">'
-								  		 + '<a href="' + instagram_link + '"></a>'
-								   		 + '</blockquote> '
-						$('#instagram-embed').html(embed_html)
-						window.instgrm.Embeds.process()
+						$('#instagram-embed').html(instagramEmbedCode(instagram_link, panel_width))
+						//$('#instagram-modal .modal-body').html(instagramEmbedCode(instagram_link, Math.min($(window).height()-300,$('#instagram-modal').width())))
+						
+						var modal_width = Math.min($(window).height()-240,$('#instagram-modal').width());
+						if(panel_width < 220) {
+							window.instgrm.Embeds.process();
+							$('#instagram-modal .modal-body').html("")
+							$('button.full-screen').prop('disabled', true);
+						}
+						else {
+							$('button.full-screen').prop('disabled', false);
+						}
+						
+						$('#instagram-modal .modal-footer-content').html("<span style='font-weight:800;font-size:1.2em;padding-right:20px;'>"  + title + "</span></br>" + date)
+						$.ajax({
+							url: 'https://api.instagram.com/oembed?url=' + instagram_link + '&hidecaption=true&maxwidth=' + modal_width,
+							dataType: 'jsonp',
+							async: false,
+							success: function(json, textStatus, jqXHR) {
+								$('#instagram-modal .modal-dialog').width(modal_width)
+								$('#instagram-modal .modal-body').html(json.html)
+								window.instgrm.Embeds.process()
+							}
+						})
+						//$('#instagram-modal .modal-body').html('<iframe height="100%" width="100%" src=' + instagram_link + '></iframe>')
+						
 					}
 					else {
 						$('#instagram-embed').html("")
@@ -271,11 +303,15 @@ window.onload = function() {
 					
 					
 					if(index == 0) {
-						var day_count = (daydiff(startDate, endDate)+1) + " " +(tr?"Gün":"Days");
-						$('#day_count').html(day_count)
+						//var day_count = (daydiff(startDate, endDate)+1) + " " +(tr?"Gün":"Days");
+						$('#day_count').html('')
 						$('#instagram-embed').html(caption);
 						$('#instagram-caption').html('');
+						$('#instagram-modal .modal-body').html(caption);
 					}
+					view_setup();
+					
+					
 				});
 			}
 			
@@ -291,6 +327,10 @@ window.onload = function() {
 			$('button.restart').click(function() {
 				seq.current(0);
 				story.go(0);
+			})
+			$('button.full-screen').click(function() {
+				//$('#instagram-modal .modal-body')
+				$('#instagram-modal').modal('toggle');
 			})
 			$('a.tr').click(function() {
 				window.location="/project/altug-firarda?l=tr#"+seq.current();

@@ -25,7 +25,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 		
 		<!-- JS -->
-		<script src="https://cdn.jsdelivr.net/g/jquery@2.1.4,bootstrap@3.3.6"></script>
+		<script src="https://cdn.jsdelivr.net/g/jquery@2.1.4,bootstrap@3.3.6,datejs@1.0"></script>
 		<script src="http://twemoji.maxcdn.com/twemoji.min.js"></script>
 		<script src="http://libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script>
 		<script src="http://cartodb.github.io/odyssey.js/dist/odyssey.js" charset="UTF-8"></script>
@@ -51,11 +51,11 @@
 		<div id="map"></div>
 		<div id="cover"></div>
 		<div id="language">
-			<div>
-				<a class='tr'  title='Türkçe'><img src="/static/projects/altug_firarda/img/turkey_round_icon_64.png"></img></a>
+			<div title='Türkçe'>
+				<a class='tr'  ><img src="/static/projects/altug_firarda/img/turkey_round_icon_64.png"></img></a>
 			</div>
-			<div>
-				<a class='en'  title='English'><img src="/static/projects/altug_firarda/img/united_kingdom_round_icon_64.png"></img></a>
+			<div  title='English'>
+				<a class='en' ><img src="/static/projects/altug_firarda/img/united_kingdom_round_icon_64.png"></img></a>
 			</div>
 		</div>
 		<div id="container" class='col-md-12 nopadding'>
@@ -67,7 +67,7 @@
 						</h4>
 						<div class='col-md-12'>
 							<span id="date"></span>
-							<span id="day_count" style='float:right'></span>
+							<span id="day_count" style='position:absolute;right:15px;margin-top:-1.1em;'></span>
 						</div>
 					</div>
 				</div>
@@ -89,7 +89,7 @@
 				<div>
 					<div id='controls' class='col-md-12 nopadding''>
 						<div class='' style='width:40%;float:left;'>
-							<button type="button" class="btn btn-primary btn-lg btn-block prev"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span></button>
+							<button title='Previous Page' type="button" class="btn btn-primary btn-lg btn-block prev"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span></button>
 						</div>
 						<!--
 						<div class='' style='width:20%;float:left;'>
@@ -97,16 +97,35 @@
 						</div>
 						-->
 						<div class='' style='width:20%;float:left;'>
-							<button type="button" class="btn btn-primary btn-xs btn-block"><span class="glyphicon glyphicon-resize-full" aria-hidden="true"></span></button>
-							<div id='page-counter'>&nbsp;</div>
+							<button title='Full Screen' type="button" class="btn btn-primary btn-xs btn-block full-screen"><span class="glyphicon glyphicon-resize-full" aria-hidden="true"></span></button>
+							<div  title='Page Number' id='page-counter'>&nbsp;</div>
 						</div>
 						<div class='' style='width:40%;float:left;'>
-							<button type="button" class="btn btn-primary btn-lg btn-block next"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></button>
+							<button title='Next Page' type="button" class="btn btn-primary btn-lg btn-block next"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</body>
-	<script></script>
+		<div id="instagram-modal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<!--
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Modal Header</h4>
+					</div>
+					-->
+					<div class="modal-body">
+					</div>
+					<div class="modal-footer" style='padding:10px'>
+						<div class="modal-footer-content pull-left" style='text-align:left;margin-top:-5px;'></div>
+						<button type="button" class="btn btn-danger pull-right" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+<script></script>
 </html>

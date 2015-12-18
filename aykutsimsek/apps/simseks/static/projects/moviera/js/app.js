@@ -111,7 +111,8 @@ function init_list() {
 		featureList.filter(function(item) {
 			var values = item.values()
 			if (!g || g == "All" || values.m_genres.search(g) >= 0) {
-				var air_date = parseInt(values.m_month-1) + parseInt(values.m_year)*12;
+				//var air_date = parseInt(values.m_month) + parseInt(values.m_year)*12;
+				var air_date = parseInt(values.m_year);
 				if( air_date >= start_date && air_date <= end_date && (!n||values.m_netflix == 'netflix')) { 
 					//console.log(air_date + " " + start_date + " " + end_date)
 					return true;
@@ -129,12 +130,16 @@ function init_list() {
 }
 
 function formatDate ( date ) {
+	/*
 	return 	months[date%12] + ", " +
 			parseInt(date/12);
+	*/
+	return date
 }
 
 function dateVal(d) {
-	return d.getMonth() + d.getFullYear()*12
+	//return d.getMonth() + d.getFullYear()*12
+	return d.getFullYear()
 }	
 		
 function init_date_slider() {
@@ -155,7 +160,7 @@ function init_date_slider() {
 		},
 
 		// Steps of one week
-		step: 12,
+		step: 1,
 
 		// Two more timestamps indicate the handle starting positions.
 		start: [ dateVal(new Date('01/01/2015')), end_date],

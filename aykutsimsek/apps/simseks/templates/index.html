@@ -9,15 +9,15 @@
 <!-- Meta Tags -->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<title>Aykut Simsek | Home</title>   
+<title>Aykut Simsek | Home</title>
 <link rel="shortcut icon" href="{{ STATIC_URL }}img/logo/favicon.ico">
 
-<meta name="description" content="Insert Your Site Description" /> 
+<meta name="description" content="Insert Your Site Description" />
 
 <!-- Mobile Specifics -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="HandheldFriendly" content="true"/>
-<meta name="MobileOptimized" content="320"/>   
+<meta name="MobileOptimized" content="320"/>
 
 <!-- Mobile Internet Explorer ClearType Technology -->
 <!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
@@ -70,13 +70,13 @@
 <!-- End of Splash Screen -->
 
 <!-- Homepage Slider -->
-<div id="home-slider">	
+<div id="home-slider">
     <div class="overlay"></div>
 
     <div class="slider-text">
-    	
+
     	<!-- <img style="margin-top:-70px;" height="70px" width="70px" src="{{ STATIC_URL }}img/logo/logo.png"/> -->
-    	<div id="slidecaption"></div>
+    	<div id="slidecaption"><div class="slide-content">Aykut Simsek</div></div>
     	<div id="social-area">
             <nav id="social">
                 <ul>
@@ -88,8 +88,8 @@
                 </ul>
             </nav>
 		</div>
-    </div>   
-	
+    </div>
+
 	<div class="control-nav">
 		<!--
         <a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
@@ -105,21 +105,18 @@
 <header>
     <div class="sticky-nav">
     	<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
-        
+
         <div id="logo">
         	<a id="goUp" href="#home-slider"></a>
         </div>
-        
+        <!--
         <nav id="menu">
         	<ul id="menu-nav">
             	<li class="current"><a href="#home-slider">Home</a></li>
                 <li><a href="#work">Work</a></li>
-                <!-- <li><a href="#about">About Me</a></li> -->
-                <!--  <li><a href="#contact">Contact</a></li> -->
-				<!-- <li><a href="shortcodes.html" class="external">Shortcodes</a></li> -->
             </ul>
         </nav>
-        
+        -->
     </div>
 </header>
 <!-- End Header -->
@@ -141,14 +138,14 @@
             </div>
         </div>
         <!-- End Title Page -->
-        
+
         <!-- Portfolio Projects -->
         <div class="row">
-        	<div class="span3">
+        	<div class="span12">
             	<!-- Filter -->
                 <nav id="options" class="work-nav">
                     <ul id="filters" class="option-set" data-option-key="filter">
-                    	<li class="type-work"></li>
+                    	<!-- <li class="type-work"></li> -->
                         <li><a href="#filter" data-option-value="*" class="selected">All</a></li>
                         <li><a href="#filter" data-option-value=".maps">Maps</a></li>
                         <li><a href="#filter" data-option-value=".visualization">Visualization</a></li>
@@ -158,117 +155,93 @@
                 </nav>
                 <!-- End Filter -->
             </div>
-            
-            <div class="span9">
+
+            <div class="span12">
             	<div class="row">
                 	<section id="projects">
                     	<ul id="thumbs">
                     		<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 data misc">
+                        	<li class="item-thumbs span4 data misc">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="<a href='{% url 'moviera' %}' target='_blank'>Moviera</a>" href="{{ STATIC_URL }}img/work/full/moviera-full.jpg">
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" target="_blank" href="{% url 'moviera' %}">
                                 	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb"></br>Moviera</span>
                                 </a>
                                 <!-- Thumb Image and Description -->
-                                
-                                <img src="{{ STATIC_URL }}img/work/thumbs/moviera-thumb.jpg" alt="Browsing and exploring movies, never been easier.">
+                                <img src="{{ STATIC_URL }}img/homepage/work/thumbs/moviera-thumb.jpg" alt="Browsing and exploring movies, never been easier.">
                             </li>
                         	<!-- End Item Project -->
-                    	
+
                     		<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 maps">
+                        	<li class="item-thumbs span4 maps">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="<a href='{% url 'altug_firarda' %}' target='_blank'>Altug Firarda</a>" href="{{ STATIC_URL }}img/work/full/altug-firarda-full.jpg">
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" target="_blank" href="{% url 'altug_firarda' %}">
                                 	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb"></br>Altug Firarda</span>
                                 </a>
                                 <!-- Thumb Image and Description -->
-                                
-                                <img src="{{ STATIC_URL }}img/work/thumbs/altug-firarda-thumb.jpg" alt="A visual diary of my brother's travels.">
+
+                                <img src="{{ STATIC_URL }}img/homepage/work/thumbs/altug-firarda-thumb.jpg" alt="A visual diary of my brother's travels.">
                             </li>
                         	<!-- End Item Project -->
-                    	
-                    	
+
+
                         	<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 maps">
+                        	<li class="item-thumbs span4 maps">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="<a href='{% url 'world_bank_indicators' %}' target='_blank'>World Bank Indicators</a>" href="{{ STATIC_URL }}img/work/full/world-bank-indicators-full.jpg">
+                            	 <a class="hover-wrap fancybox" data-fancybox-group="gallery" target="_blank" href="{% url 'world_bank_indicators' %}">
+                                
                                 	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb"></br>World Bank Indicators</span>
                                 </a>
                                 <!-- Thumb Image and Description -->
-                                
-                                <img src="{{ STATIC_URL }}img/work/thumbs/world-bank-indicators-thumb.jpg" alt="Comparing World Bank Indicators">
+
+                                <img src="{{ STATIC_URL }}img/homepage/work/thumbs/world-bank-indicators-thumb.jpg" alt="Comparing World Bank Indicators">
                             </li>
                         	<!-- End Item Project -->
-                        	
-                        	
+
+
 							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 maps">
+                        	<li class="item-thumbs span4 maps">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="<a href='http://data.ci.newark.nj.us/base/maps/snowplows.html' target='_blank'>Newark Snow Plow Trucks</a>" href="{{ STATIC_URL }}img/work/full/newark-snowplows-full.jpg">
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" target="_blank" href="http://data.ci.newark.nj.us/base/maps/snowplows.html">
+                                
                                 	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb"></br>Newark Snow Plow Trucks</span>
                                 </a>
                                 <!-- Thumb Image and Description -->
-                                <img src="{{ STATIC_URL }}img/work/thumbs/newark-snowplows-thumb.jpg" alt="A Day for Newark Snow Plow Trucks.">
+                                <img src="{{ STATIC_URL }}img/homepage/work/thumbs/newark-snowplows-thumb.jpg" alt="A Day for Newark Snow Plow Trucks.">
                             </li>
                         	<!-- End Item Project -->
-                            
+
 							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 maps">
+                        	<li class="item-thumbs span4 maps">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="<a href='http://nyc.pediacities.com/fsmaps/RoofPiano/' target='_blank'>Roof Piano</a>" href="{{ STATIC_URL }}img/work/full/roofpiano-full.jpg">
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" target="_blank" href="http://www.civicdashboards.com/project/roof-piano">
+                                
                                 	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb"></br>Roof Piano</span>
                                 </a>
                                 <!-- Thumb Image and Description -->
-                                <img src="{{ STATIC_URL }}img/work/thumbs/roofpiano-thumb.jpg" alt="A Sonification & Visualization project, using NYC building footprint data.">
+                                <img src="{{ STATIC_URL }}img/homepage/work/thumbs/roofpiano-thumb.jpg" alt="A Sonification & Visualization project, using NYC building footprint data.">
                             </li>
                         	<!-- End Item Project -->
-                        	
+
                         	<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 maps">
+                        	<li class="item-thumbs span4 visualization">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="<a href='http://nyc.pediacities.com/fsmaps/VisionZero/' target='_blank'>Vision Zero</a>" href="{{ STATIC_URL }}img/work/full/vision-zero-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb"></br>Vision Zero</span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="{{ STATIC_URL }}img/work/thumbs/vision-zero-thumb.jpg" alt="Visualizing Traffic-Related Fatalities in NYC.">
-                            </li>
-                        	<!-- End Item Project -->
-                        	
-                        	<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 maps">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="<a href='http://nyc.pediacities.com/fsmaps/NYCCrimeMap/' target='_blank'>NYC Crime Map</a>" href="{{ STATIC_URL }}img/work/full/nyc-crime-map-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb"></br>NYC Crime Map</span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                
-                                <img src="{{ STATIC_URL }}img/work/thumbs/nyc-crime-map-thumb.jpg" alt="Explore crime rates in New York City based on geographies like neighborhoods, ZIP codes, boroughs, police precincts, community districts, or city council districts.">
-                            </li>
-                        	<!-- End Item Project -->
-                        	
-                        	<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 visualization">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="<a href='{% url 'aid_indicators' %}' target='_blank'>International Aid Indicators</a>" href="{{ STATIC_URL }}img/work/full/aid-indicators-full.jpg">
-                                	<span class="overlay-img"></span>
+                            	 <a class="hover-wrap fancybox" data-fancybox-group="gallery"  target="_blank" href="{% url 'aid_indicators' %}">
                                     <span class="overlay-img-thumb"></br>International Aid Indicators</span>
                                 </a>
                                 <!-- Thumb Image and Description -->
-                                
-                                <img src="{{ STATIC_URL }}img/work/thumbs/aid-indicators-thumb.jpg" alt="Comparing International Aid Amount with World Bank Indicators (needs fine tuning)">
+
+                                <img src="{{ STATIC_URL }}img/homepage/work/thumbs/aid-indicators-thumb.jpg" alt="Comparing International Aid Amount with World Bank Indicators (needs fine tuning)">
                             </li>
                         	<!-- End Item Project -->
-                        	
-                        	
+
+
                         </ul>
-                    </section>                   
+                    </section>
             	</div>
             </div>
         </div>
@@ -326,16 +299,13 @@
 <!-- Js -->
 <script src="{{ STATIC_URL }}js/jquery.2.1.1.min.js"></script> <!-- Jquery -->
 <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script> <!-- Bootstrap -->
-<script src="{{ STATIC_URL }}js/supersized.3.2.7.min.js"></script> <!-- Slider -->
-<script src="{{ STATIC_URL }}js/waypoints.js"></script> <!-- WayPoints -->
-<script src="{{ STATIC_URL }}js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
-<script src="{{ STATIC_URL }}js/jquery.isotope.js"></script> <!-- Isotope Filter -->
-<script src="{{ STATIC_URL }}js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
-<script src="{{ STATIC_URL }}js/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
-<script src="{{ STATIC_URL }}js/jquery.tweet.js"></script> <!-- Tweet -->
+<script src="{{ STATIC_URL }}js/waypoints.js"></script> <!-- Bootstrap -->
+<script src="{{ STATIC_URL }}js/jquery.isotope.js"></script> <!-- Bootstrap -->
+<script src="{{ STATIC_URL }}js/waypoints-sticky.js"></script> <!-- Bootstrap -->
+<!-- <script src="{{ STATIC_URL }}js/supersized.3.2.7.min.js"></script> --><!-- Slider -->
 <script src="{{ STATIC_URL }}js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
 <script src="{{ STATIC_URL }}js/main.js"></script> <!-- Default JS -->
-<!-- End Js -->
 
+<!-- End Js -->
 </body>
 </html>

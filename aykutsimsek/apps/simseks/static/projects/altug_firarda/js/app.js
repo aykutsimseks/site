@@ -333,10 +333,10 @@ window.onload = function() {
 				$('#instagram-modal').modal('toggle');
 			})
 			$('a.tr').click(function() {
-				window.location="/project/altug-firarda?l=tr#"+seq.current();
+				window.location="/altug-firarda?l=tr#"+seq.current();
 			})
 			$('a.en').click(function() {
-				window.location="/project/altug-firarda?l=en#"+seq.current();
+				window.location="/altug-firarda?l=en#"+seq.current();
 			})
 
 			

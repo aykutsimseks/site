@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<head>
+		<head>
+		<!-- Meta Tags -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>World Bank Indicators</title>
+		<!-- <title>Life of Me</title> -->
+		<!-- <title>About | Aykut Simsek</title> -->
+		<meta name="description" content="World Bank Indicators" />
+		<!-- Mobile Specifics -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="HandheldFriendly" content="true"/>
+		<meta name="MobileOptimized" content="320"/>
+		<link href="https://cdn.jsdelivr.net/g/bootstrap@3.3.5(css/bootstrap.min.css),select2@4.0.1(css/select2.min.css)" rel="stylesheet">
+		
+		<style type="text/css">
+			html, body {
+				background: rgba(47, 50, 56, 1);
+			}
+			
+			.nopadding {
+				padding: 0;
+				margin: 0;
+			}
+			
+			path.inactive {
+				fill: #444;
+				stroke: #2F3238;
+				stroke-width: .4px;
+			}
+		
+			#countries path {
+				fill: #ccc;
+				stroke: #444;
+				stroke-width: .2px;
+				stroke-linejoin: round;
+			}
+			#countries .inactive {
+				fill: #444;
+				stroke: #2F3238;
+				stroke-width: .4px;
+			}
+			#countries .active, #countries :hover  {
+				fill: rgba(222,94,96,.7);
+			}
+			#countries2 path {
+				fill: #ccc;
+				stroke: #444;
+				stroke-width: .2px;
+				stroke-linejoin: round;
+			}
+			#countries2 .inactive {
+				fill: #444;
+				stroke: #2F3238;
+				stroke-width: .4px;
+			}
+			#countries2 .active, #countries2 :hover  {
+				fill: rgba(255,153,0,.7);
+			}
+			
+			select {
+				background-color: #444;
+				color: #ffffff;
+				width: 100%;
+			}
+			
+			select optgroup {
+				color: #888;
+				font-weight: bold;
+			}
+			hr {
+				margin: 10px;
+			}
+		</style>
+		<script src="//cdn.jsdelivr.net/g/jquery@2.1.4,bootstrap@3.3.6,d3js@3.5.12"></script>
+		<script src="{{ STATIC_URL }}js/topojson.v1.min.js"></script>
+		<script src="{{ STATIC_URL }}js/d3.geo.projection.v0.min.js"></script>
+		<script src="{{ STATIC_URL }}projects/world_bank_indicators/js/spatial_glyph.js" ></script>
+		<script src="{{ STATIC_URL }}projects/world_bank_indicators/js/utils.js" ></script>
+		<script src="{{ STATIC_URL }}projects/world_bank_indicators/js/map_topo.js"></script>	
+		<!-- Analytics -->
+		<script>
+  			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-66787829-1', 'auto');
+  			ga('send', 'pageview');
+		</script>
+		<!-- End Analytics -->
+	</head>
+	<body>
+		<div style='col-md-12 nopadding'>
+			<div id='map_canvas1' class='col-md-12 nopadding'></div>
+			<div id='map_canvas2' class='col-md-12 nopadding'></div>
+			<div class='col-md-3'>
+				<!--
+				<div class="select_list" id="select_list1" style="display:none;">
+					<div>
+						Select Indicator:
+						</br>
+					</div>
+					<select id="indicators1" name="indicators1" size=15 >
+					</select>
+				</div>	
+				-->	
+			</div>
+			<div class='col-md-6'>
+				<!-- <div id='circle_hover'></div> -->
+				&nbsp;
+			</div>
+			<div class='col-md-3'>
+				<!--
+				<div class="select_list" id="select_list2" style="display:none;">
+					<div>
+						Select Indicator:</br>
+					</div>
+					<select id="indicators2" name="indicators2" size=15 >
+					</select>
+				</div>		
+				-->
+			</div>
+			<!-- 
+			<div id='map_country_text' style="margin-bottom:-5px"></div>
+			-->
+		</div>
+		<script type="text/javascript">
+			var select_indicator1 = 'SL.AGR.EMPL.ZS'
+			var select_indicator2 = 'SL.AGR.EMPL.ZS'
+			var select_country1 = ''
+			var select_country2 = ''
+			
+   		 	var glyph_colors = ["#DE5E60","#ff9900"]
+   		 	var default_set = [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,]
+			var values = [{
+                	"yearly_values": [],
+                	"format" : 'percent'
+                }, {
+                    "yearly_values": [],
+                    "format" : 'percent'
+            }];
+            
+            
+			var indicators = {}
+			
+			$(function(){ 
+				json = {}
+				d3.csv("{{ STATIC_URL }}projects/world_bank_indicators/data/WDI_Data_Modified_All.csv", function(error, csv) {
+					csv.forEach(function(d) {
+						if(!json[d["Country Name"]]) {
+							json[d["Country Name"]] = {}
+						}
+						json[d["Country Name"]][d["Indicator Code"]] = d["values"].replace(/[\[\]]/g,'').split(',').map(function (x) { return parseFloat(x) || 0; });
+    				});
+    			});
+				
+				var body = document.body,
+				html = document.documentElement;
+				var h = $(window).height();
+			    var w = $(window).width();
+			    //drawMap(w/2,"#map_canvas1");
+			    mapDraw("#map_canvas2")
+			});
+			
+			d3.csv("{{ STATIC_URL }}projects/world_bank_indicators/data/selected_indicators_modified.csv", function(error, csv) {
+					lastType = '';
+					csv.forEach(function(d) {
+						var self = d["self"];
+    					var type = d["type"];
+    					var code = d["Indicator Code"];
+    					
+						indicators[code] = {
+							'type': type,
+							'self': self,
+							'value_type':d["value_type"],
+							'description':d["description"]
+						}
+						
+    					if (type != lastType) {
+    						if (lastType!='') {
+      							$('#indicators1').append('</optgroup>');
+      							$('#indicators2').append('</optgroup>');		
+        						$('#indicators1').append('<hr style="height:2px"></hr>')
+        						$('#indicators2').append('<hr style="height:2px"></hr>')
+      						}
+    						$('#indicators1').append('<optgroup label="' + type + '">');
+    						$('#indicators2').append('<optgroup label="' + type + '">');
+    					}
+    					if(lastType=='') {
+    						$('#indicators1').append('<option selected="selected" value="'+ code +'">' + self + '</option>');
+    						$('#indicators2').append('<option selected="selected" value="'+ code +'">' + self + '</option>');
+    					}
+    					else {
+    						$('#indicators1').append('<option value="'+ code +'">' + self + '</option>');
+    						$('#indicators2').append('<option value="'+ code +'">' + self + '</option>');
+    					}
+						lastType = type;
+						
+						
+					})
+					$('select[id="indicators1"]').change(function() {
+    					select_indicator1 = ($(this).val())
+    					values[0]["yearly_values"] = json[select_country1][select_indicator1]
+    					values[0]["format"] = indicators[select_indicator1]['value_type']
+    					$("#indicator1_name").html(indicators[select_indicator1]['self'] + "<div style='font-size:12px;line-height:8px;'>("+ indicators[select_indicator1]['description'] + ")</div>")
+    					if(!values[0]["yearly_values"]){
+    						values[0]["yearly_values"] = default_set
+    					}
+    					half_circle_spatial("#circle_hover", values, glyph_colors, $(window).height() * 1 / 2, $(window).width(),select_indicator1==select_indicator2);
+    					
+    				})
+    				$('select[id="indicators2"]').change(function() {
+    					select_indicator2 = ($(this).val())
+    					values[1]["yearly_values"] = json[select_country2][select_indicator2]
+    					values[1]["format"] = indicators[select_indicator2]['value_type']
+    					$("#indicator2_name").html(indicators[select_indicator2]['self'] + "<div style='font-size:12px;line-height:8px;'>("+ indicators[select_indicator2]['description'] + ")</div>")
+    					if(!values[1]["yearly_values"]){
+    						values[1]["yearly_values"] = default_set
+    					}
+    					half_circle_spatial("#circle_hover", values, glyph_colors, $(window).height() * 1 / 2, $(window).width(),select_indicator1==select_indicator2);
+    				})
+    		});
+		</script>
+	</body>
+</html>

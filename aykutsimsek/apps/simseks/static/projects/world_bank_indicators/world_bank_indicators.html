@@ -8,54 +8,28 @@
 		<title>World Bank Indicators</title>
 		<!-- <title>Life of Me</title> -->
 		<!-- <title>About | Aykut Simsek</title> -->
-		<meta name="description" content="Insert Your Site Description" />
+		<meta name="description" content="World Bank Indicators" />
 		<!-- Mobile Specifics -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="HandheldFriendly" content="true"/>
 		<meta name="MobileOptimized" content="320"/>
-		<!-- Mobile Internet Explorer ClearType Technology -->
-		<!--[if IEMobile]>  
-		<meta http-equiv="cleartype" content="on">
-		<![endif]-->
-		<!-- Bootstrap  -->
-		<link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet">
-		
-		<!-- Main Style -->
-		<link href="{{ STATIC_URL }}css/main.css" rel="stylesheet">
-		
+		<link href="https://cdn.jsdelivr.net/g/bootstrap@3.3.5(css/bootstrap.min.css),select2@4.0.1(css/select2.min.css)" rel="stylesheet">
 		<style type="text/css">
-			#countries path {
-				fill: #ccc;
-				stroke: #444;
-				stroke-width: .2px;
-				stroke-linejoin: round;
+			html, body {
+				background: rgba(47, 50, 56, 1);
 			}
-			#countries .inactive {
-				fill: #444;
-				stroke: #2F3238;
-				stroke-width: .4px;
+			
+			.navbar {
+    			border-radius: 0px; 
+    			margin-bottom: 10px;
 			}
-			#countries .active, #countries :hover  {
-				fill: rgba(222,94,96,.7);
-			}
-			#countries2 path {
-				fill: #ccc;
-				stroke: #444;
-				stroke-width: .2px;
-				stroke-linejoin: round;
-			}
-			#countries2 .inactive {
-				fill: #444;
-				stroke: #2F3238;
-				stroke-width: .4px;
-			}
-			#countries2 .active, #countries2 :hover  {
-				fill: rgba(255,153,0,.7);
+			
+			.nopadding {
+				padding: 0;
+				margin: 0;
 			}
 			
 			select {
-				background-color: #444;
-				color: #ffffff;
 				width: 100%;
 			}
 			
@@ -63,142 +37,14 @@
 				color: #888;
 				font-weight: bold;
 			}
-			hr {
-				margin: 10px;
-			}
 		</style>
-		<!-- Modernizr -->
-		<script src="{{ STATIC_URL }}js/modernizr.js"></script>
-		
-		<!-- Scripts -->
-		<!--[if IE 6]>
-		<script src="js/DD_belatedPNG_0.0.8a-min.js"></script>
-		<script>
-			/* EXAMPLE */
-			DD_belatedPNG.fix('.button');
-			
-			/* string argument can be any CSS selector */
-			/* .png_bg example is unnecessary */
-			/* change it to what suits you! */
-		</script>
-		<![endif]-->
-		<!-- Js -->
-		<script src="{{ STATIC_URL }}js/jquery.2.1.1.min.js"></script> <!-- Jquery -->
-		<script src="{{ STATIC_URL }}js/bootstrap.min.js"></script> <!-- Bootstrap -->
-		<script src="{{ STATIC_URL }}js/supersized.3.2.7.min.js"></script> <!-- Slider -->
-		<script src="{{ STATIC_URL }}js/waypoints.js"></script> <!-- WayPoints -->
-		<script src="{{ STATIC_URL }}js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
-		<script src="{{ STATIC_URL }}js/jquery.isotope.js"></script> <!-- Isotope Filter -->
-		<script src="{{ STATIC_URL }}js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
-		<script src="{{ STATIC_URL }}js/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
-		<script src="{{ STATIC_URL }}js/jquery.tweet.js"></script> <!-- Tweet -->
-		<script src="{{ STATIC_URL }}js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
-		<!-- End Js -->
-
-		<script src="{{ STATIC_URL }}js/d3.3.5.2.min.js"></script>
+		<script src="//cdn.jsdelivr.net/g/jquery@2.1.4,bootstrap@3.3.6,d3js@3.5.12,select2@4.0.1,simple-statistics@1.0.0"></script>
 		<script src="{{ STATIC_URL }}js/topojson.v1.min.js"></script>
 		<script src="{{ STATIC_URL }}js/d3.geo.projection.v0.min.js"></script>
+		<script src="{{ STATIC_URL }}js/lib/utils.js"></script>
 		<script src="{{ STATIC_URL }}projects/world_bank_indicators/js/spatial_glyph.js" ></script>
-		<script src="{{ STATIC_URL }}projects/world_bank_indicators/js/utils.js" ></script>
+		<!-- <script src="{{ STATIC_URL }}projects/world_bank_indicators/js/utils.js" ></script> -->
 		<script src="{{ STATIC_URL }}projects/world_bank_indicators/js/map_topo.js"></script>	
-		<script type="text/javascript">
-			var select_indicator1 = 'SL.AGR.EMPL.ZS'
-			var select_indicator2 = 'SL.AGR.EMPL.ZS'
-			var select_country1 = ''
-			var select_country2 = ''
-			
-   		 	var glyph_colors = ["#DE5E60","#ff9900"]
-   		 	var default_set = [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,]
-			var values = [{
-                	"yearly_values": [],
-                	"format" : 'percent'
-                }, {
-                    "yearly_values": [],
-                    "format" : 'percent'
-            }];
-            
-            
-			var indicators = {}
-			
-			$(function(){ 
-				json = {}
-				d3.csv("{{ STATIC_URL }}projects/world_bank_indicators/data/WDI_Data_Modified_All.csv", function(error, csv) {
-					csv.forEach(function(d) {
-						if(!json[d["Country Name"]]) {
-							json[d["Country Name"]] = {}
-						}
-						json[d["Country Name"]][d["Indicator Code"]] = d["values"].replace(/[\[\]]/g,'').split(',').map(function (x) { return parseFloat(x) || 0; });
-    				});
-    			});
-				
-				var body = document.body,
-				html = document.documentElement;
-				var h = $(window).height();
-			    var w = $(window).width();
-			    drawMap(w/2,"#map_canvas1");
-			});
-			
-			d3.csv("{{ STATIC_URL }}projects/world_bank_indicators/data/selected_indicators_modified.csv", function(error, csv) {
-					lastType = '';
-					csv.forEach(function(d) {
-						var self = d["self"];
-    					var type = d["type"];
-    					var code = d["Indicator Code"];
-    					
-						indicators[code] = {
-							'type': type,
-							'self': self,
-							'value_type':d["value_type"],
-							'description':d["description"]
-						}
-						
-    					if (type != lastType) {
-    						if (lastType!='') {
-      							$('#indicators1').append('</optgroup>');
-      							$('#indicators2').append('</optgroup>');		
-        						$('#indicators1').append('<hr style="height:2px"></hr>')
-        						$('#indicators2').append('<hr style="height:2px"></hr>')
-      						}
-    						$('#indicators1').append('<optgroup label="' + type + '">');
-    						$('#indicators2').append('<optgroup label="' + type + '">');
-    					}
-    					if(lastType=='') {
-    						$('#indicators1').append('<option selected="selected" value="'+ code +'">' + self + '</option>');
-    						$('#indicators2').append('<option selected="selected" value="'+ code +'">' + self + '</option>');
-    					}
-    					else {
-    						$('#indicators1').append('<option value="'+ code +'">' + self + '</option>');
-    						$('#indicators2').append('<option value="'+ code +'">' + self + '</option>');
-    					}
-						lastType = type;
-						
-						
-					})
-					$('select[id="indicators1"]').change(function() {
-    					select_indicator1 = ($(this).val())
-    					values[0]["yearly_values"] = json[select_country1][select_indicator1]
-    					values[0]["format"] = indicators[select_indicator1]['value_type']
-    					$("#indicator1_name").html(indicators[select_indicator1]['self'] + "<div style='font-size:12px;line-height:8px;'>("+ indicators[select_indicator1]['description'] + ")</div>")
-    					if(!values[0]["yearly_values"]){
-    						values[0]["yearly_values"] = default_set
-    					}
-    					half_circle_spatial("#circle_hover", values, glyph_colors, $(window).height() * 1 / 2, $(window).width(),select_indicator1==select_indicator2);
-    					
-    				})
-    				$('select[id="indicators2"]').change(function() {
-    					select_indicator2 = ($(this).val())
-    					values[1]["yearly_values"] = json[select_country2][select_indicator2]
-    					values[1]["format"] = indicators[select_indicator2]['value_type']
-    					$("#indicator2_name").html(indicators[select_indicator2]['self'] + "<div style='font-size:12px;line-height:8px;'>("+ indicators[select_indicator2]['description'] + ")</div>")
-    					if(!values[1]["yearly_values"]){
-    						values[1]["yearly_values"] = default_set
-    					}
-    					half_circle_spatial("#circle_hover", values, glyph_colors, $(window).height() * 1 / 2, $(window).width(),select_indicator1==select_indicator2);
-    				})
-    		});
-
-    	
-		</script>
 		<!-- Analytics -->
 		<script>
   			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -211,28 +57,143 @@
 		<!-- End Analytics -->
 	</head>
 	<body>
-		<div id='circle_hover' style="position: absolute;margin-top:25%"></div>
-		<div style="top:0px;left:0px;position: relative;">
-			<div id='map_canvas1' style="position:fixed;left:0px;top:0px" ></div>
-			<div id='map_canvas2' style="position:fixed;right:0px;top:0px;display:none;" ></div>
+		<nav class="navbar navbar-inverse">
+		  <div class="container-fluid">
+			<div class="navbar-header">
+			  <a class="navbar-brand" href="#">Compare World Bank Indicators</a>
+			</div>
+			<div>
+			  <ul class="nav navbar-nav">
+			  </ul>
+			</div>
+		  </div>
+		</nav>
+		<div style='col-md-12 row nopadding'>
+			<div id='map_canvas1' class='col-md-6 nopadding map_canvas'></div>
+			<div id='map_canvas2' class='col-md-6 nopadding map_canvas'></div>
+		</div>
+		<div class='col-md-12'>
+			<div class='col-md-3'>
+				<select id="indicators1" name="indicators1">
+				</select>
+			</div>
+			<div class='col-md-6'>
+				<!-- <div id='circle_hover'></div> -->
+				&nbsp;
+			</div>
+			<div class='col-md-3'>			
+				<select id="indicators2" name="indicators2" >
+				</select>	
+			</div>
 			<!-- 
 			<div id='map_country_text' style="margin-bottom:-5px"></div>
 			-->
 		</div>
-		<div class="select_list" id="select_list1" style="position:fixed;left:10px;top:50%;width:20%;display:none;margin-top:-20px">
-			<div>
-				Select Indicator:
-				</br>
-			</div>
-			<select id="indicators1" name="indicators1" size=15 >
-			</select>
-		</div>
-		<div class="select_list" id="select_list2" style="position:fixed;right:10px;top:50%;width:20%;display:none;margin-top:-15px">
-			<div>
-				Select Indicator:</br>
-			</div>
-			<select id="indicators2" name="indicators2" size=15 >
-			</select>
-		</div>
+		<script>
+		</script>
+		<script type="text/javascript">
+			$("#indicators1").select2()
+			$("#indicators2").select2()
+   		 	var default_set = [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,]
+            
+			world_polygons = null
+			countries	   = null
+			$(function(){ 
+				json = {}
+				d3.json("/static/projects/world_bank_indicators/data/countries.topojson", function(error, world) {
+					d3.csv("{{ STATIC_URL }}projects/world_bank_indicators/data/WDI_Data_Modified_All.csv", function(error, indicator_data) {
+						d3.csv("{{ STATIC_URL }}projects/world_bank_indicators/data/selected_indicators_modified.csv", function(error, indicator_mapping) {
+							world_polygons = world
+								
+							// Parse yearly values, calculate mean and last value
+							indicator_data   	= indicator_data.map(function(row){
+								var values = row.values.replace(/[\[\]]/g,'')
+												.split(',')
+												.filter(function(d) { return Number(d)})
+												.map(function(d) { return Number(d)})
+								row.values = values
+								if(values.length > 0) {
+									row.mean   = d3.mean(values)
+									row.last   = values[values.length-1]
+								}
+								else {
+									row.mean = null;
+									row.last = null;
+								}
+								return row
+							})
+							
+							// Extend polygons data with csv data
+							countries = topojson.feature(world_polygons, world_polygons.objects.land).features;
+							countries.map(function(country) {
+								country.properties.indicator_data = indicator_data.filter(function(d) { return country.properties.name == d['Country Name']})			
+								return country;
+							})
+							
+							// Draw maps
+							drawMap("#map_canvas1", { 'color' : default_colors[0] })
+			    			drawMap("#map_canvas2", { 'color' : default_colors[1] })
+							
+							
+							
+							// Init selectors
+							var indicators 		= d3.map(indicator_data, function(d){return d['Indicator Code'];}).keys().sort()
+							var all_indicators 	= []
+							indicators.forEach( function(indicator_id) {
+								var index 			= jsonArraySearch(indicator_id,'Indicator Code',indicator_mapping)
+								var indicator_json 	= indicator_mapping[index]
+								var type = indicator_json['type'].trim()
+								var text = indicator_json['indicator'].trim()
+								if(!(type in all_indicators)) {
+									all_indicators[type] = { text : type, children : []}
+								}
+								all_indicators[type]['children'].push({text : text, id: indicator_id})
+							})
+					
+							function compare(a,b) { if (a.text < b.text) return -1;  if (a.text > b.text) return 1; return 0; }
+							//console.log(d3.values(all_indicators).map(function(group) { return { text: group.text, children: group.children.sort(compare)}}))
+							all_indicators = d3.values(all_indicators).map(function(group) { return { text: group.text, children: group.children.sort(compare)}})
+							
+							
+							function select_action(e, id) {
+								var ind = e.params.data;
+								
+								var ind_data = indicator_data.filter(function (d) { return d['Indicator Code'] == ind.id})
+								var mean_values = jsonToArrayKey(ind_data, 'mean')
+							
+								var buckets = generateBuckets(mean_values,5)
+								var factorize = 1
+								var colorRamp	  = generateSingleColorRamp(default_colors[id-1],6*factorize)
+
+								d3.select('#map_canvas' + id).selectAll("path")
+									.style("fill", function(d) {
+										var indicator_index 	= jsonArraySearch(ind.id,'Indicator Code',d.properties.indicator_data);
+										var row					= d.properties.indicator_data[indicator_index]
+										var index = -1/factorize;
+										if(row) {
+											index 	= binary_search_iterative(buckets['breaks'],Number(row.mean));
+										}
+										return colorRamp[index*factorize+1]
+									});
+							
+							}
+							
+							$("#indicators1")
+								.select2({placeholder: 'Select Indicator...', data:  d3.values(all_indicators) })
+								.select2("val", "")
+						
+							$("#indicators1")
+								.on("select2:select", function (e) {  select_action(e,1) });
+								
+							$("#indicators2").select2({placeholder: 'Select Indicator...', data:  d3.values(all_indicators) }
+								).select2("val", "")
+								
+							$("#indicators2")
+								.on("select2:select", function (e) {  select_action(e,2) });;
+						})
+					});
+				})
+			});
+		</script>
 	</body>
 </html>

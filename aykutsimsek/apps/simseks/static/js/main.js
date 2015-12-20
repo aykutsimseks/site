@@ -152,8 +152,12 @@ $(document).ready(function(){
 	});
 	
 	BRUSHED.nav();
-	BRUSHED.filter();
 	BRUSHED.scrollToTop();
 	BRUSHED.utils();
 });
+
+window.onload = function() {
+	BRUSHED.filter();
+}
+
 });

@@ -152,7 +152,7 @@ $(document).ready(function(){
 	});
 	
 	BRUSHED.nav();
-	BRUSHED.scrollToTop();
+	//BRUSHED.scrollToTop();
 	BRUSHED.utils();
 });
 

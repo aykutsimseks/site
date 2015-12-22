@@ -6,6 +6,7 @@
 		<!-- Meta Tags -->
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>World Bank Indicators</title>
+		<link rel="shortcut icon" href="{{ STATIC_URL }}img/logo/favicon.ico">
 		<!-- <title>Life of Me</title> -->
 		<!-- <title>About | Aykut Simsek</title> -->
 		<meta name="description" content="World Bank Indicators" />
@@ -13,10 +14,22 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="HandheldFriendly" content="true"/>
 		<meta name="MobileOptimized" content="320"/>
-		<link href="https://cdn.jsdelivr.net/g/bootstrap@3.3.5(css/bootstrap.min.css),select2@4.0.1(css/select2.min.css)" rel="stylesheet">
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/g/bootstrap@3.3.6(css/bootstrap.min.css),select2@4.0.1(css/select2.min.css),fontawesome@4.5.0">
 		<style type="text/css">
 			html, body {
 				background: rgba(47, 50, 56, 1);
+			}
+			
+			#cover {
+				position: fixed;
+				height: 100%;
+				width: 100%;
+				z-index: 9999;
+				background: rgba(47, 50, 56, 1);
+				color: #fff;
+				font-size: 40px;
+				margin: auto;
+				text-align: center;
 			}
 			
 			.navbar {
@@ -38,11 +51,12 @@
 				font-weight: bold;
 			}
 		</style>
-		<script src="//cdn.jsdelivr.net/g/jquery@2.1.4,bootstrap@3.3.6,d3js@3.5.12,select2@4.0.1,simple-statistics@1.0.0"></script>
+		<script type="text/javascript" src="//cdn.jsdelivr.net/g/jquery@2.1.4,bootstrap@3.3.6,d3js@3.5.12,select2@4.0.1,simple-statistics@1.0.0"></script>
 		<script src="{{ STATIC_URL }}js/topojson.v1.min.js"></script>
 		<script src="{{ STATIC_URL }}js/d3.geo.projection.v0.min.js"></script>
+		<!-- <script src="www.civicdashboards.com/static/js/lib/civicdashboards.js"></script>-->
 		<script src="{{ STATIC_URL }}js/lib/utils.js"></script>
-		<script src="{{ STATIC_URL }}projects/world_bank_indicators/js/spatial_glyph.js" ></script>
+		<!-- <script src="{{ STATIC_URL }}projects/world_bank_indicators/js/spatial_glyph.js" ></script> -->
 		<!-- <script src="{{ STATIC_URL }}projects/world_bank_indicators/js/utils.js" ></script> -->
 		<script src="{{ STATIC_URL }}projects/world_bank_indicators/js/map_topo.js"></script>	
 		<!-- Analytics -->
@@ -57,10 +71,11 @@
 		<!-- End Analytics -->
 	</head>
 	<body>
+		<div id="cover"><div style='position:fixed;top:40%;text-align:center;width:100%;'><i class="fa fa-refresh fa-spin" style='font-size:100px;'></i></br>Loading...</div></div>
 		<nav class="navbar navbar-inverse">
 		  <div class="container-fluid">
 			<div class="navbar-header">
-			  <a class="navbar-brand" href="#">Compare World Bank Indicators</a>
+			  <a class="navbar-brand" href="#">World Bank Indicators</a>
 			</div>
 			<div>
 			  <ul class="nav navbar-nav">
@@ -69,37 +84,50 @@
 		  </div>
 		</nav>
 		<div style='col-md-12 row nopadding'>
-			<div id='map_canvas1' class='col-md-6 nopadding map_canvas'></div>
-			<div id='map_canvas2' class='col-md-6 nopadding map_canvas'></div>
+			<div class='col-md-6 nopadding'>
+				<div class='col-md-12' style='margin-bottom:5px;'>
+					<select id="indicator_select1"></select>
+				</div>
+				<div id='map_canvas1' class='col-md-12 map_canvas'></div>
+				<div id='hover_text1' class='col-md-12 nopadding'>&nbsp;</div>
+				<div class='col-md-12 nopadding' id='country_info1'>
+					<div class='col-md-8' id='last_value1'></div>
+					<div class='col-md-4 pull-right' id='mean_value1'></div>
+				</div>
+			</div>
+			<div class='col-md-6 nopadding'>
+				<div class='col-md-12' style='margin-bottom:5px;'>
+					<select id="indicator_select2"></select>	
+				</div>
+				<div id='map_canvas2' class='col-md-12 map_canvas'></div>
+				<div id='hover_text2' class='col-md-12 nopadding'>&nbsp;</div>
+				<div class='col-md-12 nopadding' id='country_info2'>
+					<div class='col-md-8' id='last_value2'></div>
+					<div class='col-md-4 pull-right' id='mean_value2'></div>
+				</div>
+			</div>
 		</div>
-		<div class='col-md-12'>
-			<div class='col-md-3'>
-				<select id="indicators1" name="indicators1">
-				</select>
+		<div class='col-md-12 nopadding'>
+			<div class='col-md-3'>		
 			</div>
-			<div class='col-md-6'>
-				<!-- <div id='circle_hover'></div> -->
-				&nbsp;
+			<div class='col-md-6' >			
 			</div>
-			<div class='col-md-3'>			
-				<select id="indicators2" name="indicators2" >
-				</select>	
+			<div class='col-md-3'>		
 			</div>
-			<!-- 
-			<div id='map_country_text' style="margin-bottom:-5px"></div>
-			-->
 		</div>
 		<script>
 		</script>
 		<script type="text/javascript">
-			$("#indicators1").select2()
-			$("#indicators2").select2()
+			$("#indicator_select1").select2()
+			$("#indicator_select2").select2()
    		 	var default_set = [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,]
-            
-			world_polygons = null
-			countries	   = null
+            var vis_color_sets = [colorbrewer['Oranges'], colorbrewer['Reds']]
+			
+			selected_indicator 	= [null,null]
+			world_polygons 		= null
+			countries	   		= null
+			
 			$(function(){ 
-				json = {}
 				d3.json("/static/projects/world_bank_indicators/data/countries.topojson", function(error, world) {
 					d3.csv("{{ STATIC_URL }}projects/world_bank_indicators/data/WDI_Data_Modified_All.csv", function(error, indicator_data) {
 						d3.csv("{{ STATIC_URL }}projects/world_bank_indicators/data/selected_indicators_modified.csv", function(error, indicator_mapping) {
@@ -109,30 +137,37 @@
 							indicator_data   	= indicator_data.map(function(row){
 								var values = row.values.replace(/[\[\]]/g,'')
 												.split(',')
-												.filter(function(d) { return Number(d)})
-												.map(function(d) { return Number(d)})
-								row.values = values
+												.map(function(d,i) { return {index : i, value: d}})
+												.filter(function(d,i) { return Number(d.value)})
+												
+								var index 				= jsonArraySearch(row['Indicator Code'], 'Indicator Code',indicator_mapping)
+								row['Indicator Name'] 	= indicator_mapping[index]['indicator']
+								
+								row.values 	= values.map(function(d) { return Number(d.value)})
+								row.indexes = values.map(function(d) { return Number(d.index)})		
+								
+								
 								if(values.length > 0) {
-									row.mean   = d3.mean(values)
-									row.last   = values[values.length-1]
+									row.mean   		 = d3.mean(row.values)
+									row.last   		 = row.values[row.values.length-1]
+									row.last_index   = row.indexes[row.values.length-1]
 								}
 								else {
 									row.mean = null;
 									row.last = null;
+									row.last_index = null;
 								}
 								return row
 							})
-							
 							// Extend polygons data with csv data
 							countries = topojson.feature(world_polygons, world_polygons.objects.land).features;
 							countries.map(function(country) {
 								country.properties.indicator_data = indicator_data.filter(function(d) { return country.properties.name == d['Country Name']})			
 								return country;
 							})
-							
 							// Draw maps
-							drawMap("#map_canvas1", { 'color' : default_colors[0] })
-			    			drawMap("#map_canvas2", { 'color' : default_colors[1] })
+							drawMap("#map_canvas1", { 'index': 1, 'color' : vis_color_sets[0][5][2] })
+			    			drawMap("#map_canvas2", { 'index': 2, 'color' : vis_color_sets[1][5][2] })
 							
 							
 							
@@ -157,14 +192,16 @@
 							
 							function select_action(e, id) {
 								var ind = e.params.data;
+								var no_buckets = 5;
 								
 								var ind_data = indicator_data.filter(function (d) { return d['Indicator Code'] == ind.id})
+								selected_indicator[id-1] = ind.id
 								var mean_values = jsonToArrayKey(ind_data, 'mean')
 							
-								var buckets = generateBuckets(mean_values,5)
+								var buckets = generateBuckets(mean_values,no_buckets)
 								var factorize = 1
-								var colorRamp	  = generateSingleColorRamp(default_colors[id-1],6*factorize)
-
+								//var colorRamp	  = generateSingleColorRamp(default_colors[id-1],6*factorize)
+								var colorRamp	= vis_color_sets[id-1][(no_buckets+1)]
 								d3.select('#map_canvas' + id).selectAll("path")
 									.style("fill", function(d) {
 										var indicator_index 	= jsonArraySearch(ind.id,'Indicator Code',d.properties.indicator_data);
@@ -174,25 +211,26 @@
 											index 	= binary_search_iterative(buckets['breaks'],Number(row.mean));
 										}
 										return colorRamp[index*factorize+1]
-									});
-							
+								});
 							}
 							
-							$("#indicators1")
+							$("#indicator_select1")
 								.select2({placeholder: 'Select Indicator...', data:  d3.values(all_indicators) })
 								.select2("val", "")
 						
-							$("#indicators1")
+							$("#indicator_select1")
 								.on("select2:select", function (e) {  select_action(e,1) });
 								
-							$("#indicators2").select2({placeholder: 'Select Indicator...', data:  d3.values(all_indicators) }
+							$("#indicator_select2").select2({placeholder: 'Select Indicator...', data:  d3.values(all_indicators) }
 								).select2("val", "")
 								
-							$("#indicators2")
+							$("#indicator_select2")
 								.on("select2:select", function (e) {  select_action(e,2) });;
+								
+							$('#cover').fadeOut(1000);
 						})
 					});
-				})
+				})	
 			});
 		</script>
 	</body>

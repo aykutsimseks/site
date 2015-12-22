@@ -1,5 +1,66 @@
+function hoverInitElements(opts) {
+	var theme_color = opts['color'] || 'rgba(222,94,96,1)'
+	var index = opts.index;
+	
+	d3.select('#country_info'+ index)
+		.style('color', theme_color)
+		.style('display', 'inline-block')
+		.style('float','left')
+	
+	d3.select('#hover_text'+ index)
+		//.style('text-align', opts.index%2?'left':'right')
+		.style('text-align', 'center')
+		.style('font-size', '20px')
+		.style('background', 'rgba(200,200,200,.25)')
+		.style('padding', '5px 0px')
+		.style('margin-bottom', '20px')
+		.style('color', theme_color)
+		.style('text-anchor', 'middle')
+}
+
+function hoverUpdateElements(feature, opts) {
+	var index = opts.index;
+	var hover_text = d3.select('#hover_text' + opts.index)
+	var mean_value = d3.select('#mean_value'+ opts.index)
+	var last_value = d3.select('#last_value'+ opts.index)
+	var last_year = d3.select('#last_year'+ opts.index)
+	
+	function valueTemplate(label, value, value_type) {
+		return '<div class="col-md-3">' + label +'</div><span class="col-md-1">:</span><div class="col-md-7">' + formatDisplayValue(value,value_type) + '</div>'
+	}
+	if(feature) {
+		var indicator_index 	= jsonArraySearch(selected_indicator[index-1],'Indicator Code',feature.properties.indicator_data);
+		var row					= feature.properties.indicator_data[indicator_index]
+		hover_text.text(feature.properties.name);
+		if(row) {
+			var value_type		 = 'float1';
+			var indicator_name	 = row['Indicator Name'];
+			if(indicator_name.contains('$') || indicator_name.contains('USD')) {
+				value_type = 'dollar'
+			}
+			else if(indicator_name.contains('%')) {
+				value_type = 'percent'
+			}		
+			last_value.html('Current (' + (1960 + parseInt(row.last_index)) + ") : " + formatDisplayValue(row.last,value_type))
+			mean_value.html('Avg : ' + formatDisplayValue(row.mean,value_type))
+			//last_year.html(valueTemplate('Measured',1960 + parseInt(row.last_index),'string') )
+		}
+		else {
+			mean_value.html('&nbsp;')
+			last_value.html('&nbsp;')
+			//last_year.html('&nbsp;')
+		}
+	}
+	else {
+		hover_text.html('&nbsp;');
+		mean_value.html('&nbsp;')
+		last_value.html('&nbsp;')
+		//last_year.html('&nbsp;')
+	}
+}
+
 function drawMap(elem_id, opts) {
-	var width 	= Math.min($(elem_id).width(),$(window).height()*2)-20;
+	var width 	= Math.min($(elem_id).width(),$(window).height()*2);
 	var height 	= width/2;
 	
 	var centered;
@@ -20,7 +81,7 @@ function drawMap(elem_id, opts) {
     var svg = d3.select(elem_id).append("svg")
         		.attr("width", width)
         		.attr("height", height)
-        		.style('margin-left','10px')
+        		//.style('margin-left','10px')
         		//.style('display','block')
         		//.style('margin','auto')
         		//.style("border-radius", "4px")
@@ -36,14 +97,7 @@ function drawMap(elem_id, opts) {
 			'stroke-width'		: '.4px',
 			'stroke-linejoin'	: 'round'
 	}
-	
-	var alternative_path_style = {
-			'cursor' 			: 'pointer',
-			'fill'	 			: '#444',
-			'stroke' 			: '#2F3238',
-			'stroke-width'		: '.4px',
-			'stroke-linejoin'	: 'round'
-	}
+	var highlight_opacity = .8;
 	
 	var world_map = g
 		.selectAll("path")
@@ -52,26 +106,17 @@ function drawMap(elem_id, opts) {
 		.style('cursor','pointer')
 		.style(default_path_style)
 		.attr("d", path);
-		
-	var hover_text = svg.append('text')
-		.style('position', 'fixed')
-		.attr("transform", "translate(" + (width/2) + " , " + (height-10) + ")")
-		.style('font-size', '20px')
-		//.style('visibility', 'hidden')
-		.style('stroke-width', 0)
-		.style('fill', fill_color)
-		.style('text-anchor', 'middle')
+	
+	hoverInitElements(opts)
 	
 	world_map
 		.on("mouseover", function(d) {
-			//d3.select(this).style('fill', fill_color);
-			hover_text
-				.style('visibility', 'visible')
-				.text(d.properties.name)
+			d3.select(this).style('opacity', highlight_opacity);
+			hoverUpdateElements(d,opts)
 		})
 		.on("mouseout", function(d) {
-			//d3.select(this).style('fill', default_path_style.fill);
-			hover_text.style('visibility', 'hidden')
+			d3.select(this).style('opacity', 1);
+			hoverUpdateElements(null,opts)
 		})
 		.on("click", function(d) {
 			d3.select(elem_id + " .centered").classed('centered', false)
@@ -103,20 +148,21 @@ function drawMap(elem_id, opts) {
 				.each("start", function() {
 					g.selectAll("path")
 						//.style(alternative_path_style)
-						.on("mouseout", function(d) {
-							var color = (d == centered)?fill_color:alternative_path_style.fill;
-							//d3.select(this).style('fill',color);
-							hover_text.text(centered.properties.name)
+						.style('opacity', highlight_opacity)
+						.on("mouseover", function(d) {
+							d3.select(this).style('opacity',1);
+							hoverUpdateElements(d,opts)
 						})
-					//d3.select(elem_id + " .centered").style('fill',fill_color)
+						.on("mouseout", function(d) {
+							var opacity = (d == centered)?1:highlight_opacity;
+							d3.select(this).style('opacity',opacity);
+							hoverUpdateElements(centered,opts)
+						})
+					d3.select(elem_id + " .centered").style('opacity', '1')
 				})
 				.each("end", function() {
-					hover_text
-						.style('fill', '#fff')	
-						.text(d.properties.name)
-						.style('visibility', 'visible')
 					
-					//d3.select(elem_id + " .centered").style('fill',fill_color)
+					d3.select(elem_id + " .centered").style('opacity',1)
 					locked = true;
 				})
 		} 
@@ -131,17 +177,17 @@ function drawMap(elem_id, opts) {
 				.attr("transform", "scale(" + k + ")")
 				.each("start", function() {
 					g.selectAll("path")
-						//.style(default_path_style)
+						.style('opacity', '1')
+						.on("mouseover", function(d) {
+							d3.select(this).style('opacity', highlight_opacity)
+							hoverUpdateElements(d,opts)
+						})
 						.on("mouseout", function(d) {
-							//d3.select(this).style('fill',default_path_style.fill);
-							hover_text.style('visibility', 'hidden')
+							d3.select(this).style('opacity', '1')
+							hoverUpdateElements(null,opts)
 						})
 				})
 				.each("end", function() {
-					hover_text      
-						.style('fill', fill_color)	
-						.style('stroke', fill_color)  
-					
 					locked=false;		
 				})
 		}

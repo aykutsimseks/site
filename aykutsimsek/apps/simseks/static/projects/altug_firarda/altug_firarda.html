@@ -16,7 +16,6 @@
 		
 		
 		<link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.css" />
-		<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
 		<link rel="stylesheet" href="http://watson.lennardvoogdt.nl/Leaflet.awesome-markers/dist/leaflet.awesome-markers.css">
 		<link rel="stylesheet" href="/static/projects/altug_firarda/css/app.css" />
 		
@@ -25,18 +24,22 @@
 		<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 		
 		<!-- JS -->
-		<script src="https://cdn.jsdelivr.net/g/jquery@2.1.4,bootstrap@3.3.6,datejs@1.0"></script>
-		<script src="http://twemoji.maxcdn.com/twemoji.min.js"></script>
 		<script src="http://libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script>
 		<script src="http://cartodb.github.io/odyssey.js/dist/odyssey.js" charset="UTF-8"></script>
+		<script src="/static/projects/altug_firarda/js/leaflet.activearea.js"></script>
 		<script src="http://watson.lennardvoogdt.nl/Leaflet.awesome-markers/dist/leaflet.awesome-markers.js"></script>
 		
+		<script src="http://twemoji.maxcdn.com/twemoji.min.js"></script>
 		<script async defer src="/static/projects/altug_firarda/js/embeds.js"></script>
-		<script async defer src="/static/projects/altug_firarda/js/leaflet.activearea.js"></script>
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/datejs/1.0/date.min.js"></script>
+		<script type="text/javascript" src="//cdn.jsdelivr.net/g/jquery@2.1.4,bootstrap@3.3.6,d3js@3.5.12,highcharts@4.1.5"></script>
+		<script src="/static/projects/altug_firarda/js/topojson.v1.min.js"></script>
+		<script src="/static/projects/altug_firarda/js/d3.geo.projection.v0.min.js"></script>
+		<script src="/static/projects/altug_firarda/js/utils.js"></script>
 		<script src="/static/projects/altug_firarda/js/app.js"></script>
-		<style>
-			
-		</style>
+		
+		
 		<!-- Analytics -->
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -48,6 +51,12 @@
 		</script>
 	</head>
 	<body>
+		<script>
+			window.onload = function() {
+				create_vis()
+			}
+			
+		</script>
 		<div id="map"></div>
 		<div id="cover"></div>
 		<div id="language">
@@ -74,6 +83,10 @@
 			</div>
 			<div id="content">
 				<div>
+					<div id='map-panel' 	  class='col-md-12 nopadding' style=''>
+						<div class='col-md-12' id='hover_text1'>&nbsp;</div>
+						<div id='map_canvas1' class='col-md-12 map_canvas' style='padding:0;margin:0;margin-left:-5px;min-height:165px;text-align:center;'></div>
+					</div>
 					<div id="instagram-panel" class='col-md-12 nopadding'>
 						<div id='loader'>
 							<i class="fa fa-spinner fa-pulse" ></i>

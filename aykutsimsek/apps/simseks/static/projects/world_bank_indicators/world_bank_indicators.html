@@ -51,7 +51,7 @@
 				font-weight: bold;
 			}
 		</style>
-		<script type="text/javascript" src="//cdn.jsdelivr.net/g/jquery@2.1.4,bootstrap@3.3.6,d3js@3.5.12,select2@4.0.1,simple-statistics@1.0.0"></script>
+		<script type="text/javascript" src="//cdn.jsdelivr.net/g/jquery@2.1.4,bootstrap@3.3.6,d3js@3.5.12,select2@4.0.1,simple-statistics@1.0.0,highcharts@4.1.5"></script>
 		<script src="{{ STATIC_URL }}js/topojson.v1.min.js"></script>
 		<script src="{{ STATIC_URL }}js/d3.geo.projection.v0.min.js"></script>
 		<!-- <script src="www.civicdashboards.com/static/js/lib/civicdashboards.js"></script>-->
@@ -83,36 +83,35 @@
 			</div>
 		  </div>
 		</nav>
-		<div style='col-md-12 row nopadding'>
+		<div id='maps' style='col-md-12 row nopadding'>
 			<div class='col-md-6 nopadding'>
 				<div class='col-md-12' style='margin-bottom:5px;'>
 					<select id="indicator_select1"></select>
 				</div>
 				<div id='map_canvas1' class='col-md-12 map_canvas'></div>
-				<div id='hover_text1' class='col-md-12 nopadding'>&nbsp;</div>
-				<div class='col-md-12 nopadding' id='country_info1'>
-					<div class='col-md-8' id='last_value1'></div>
-					<div class='col-md-4 pull-right' id='mean_value1'></div>
-				</div>
+				<div class='col-md-6' id='hover_text1'>&nbsp;</div>
+				<div class='col-md-6'></div>
 			</div>
+			
 			<div class='col-md-6 nopadding'>
 				<div class='col-md-12' style='margin-bottom:5px;'>
 					<select id="indicator_select2"></select>	
 				</div>
 				<div id='map_canvas2' class='col-md-12 map_canvas'></div>
-				<div id='hover_text2' class='col-md-12 nopadding'>&nbsp;</div>
-				<div class='col-md-12 nopadding' id='country_info2'>
-					<div class='col-md-8' id='last_value2'></div>
-					<div class='col-md-4 pull-right' id='mean_value2'></div>
-				</div>
+				<div class='col-md-6'></div>
+				<div class='col-md-6' id='hover_text2' >&nbsp;</div>
 			</div>
 		</div>
 		<div class='col-md-12 nopadding'>
-			<div class='col-md-3'>		
+			<div class='col-md-3 nopadding' id='country_info1'>
+				<div class='col-md-6' id='last_value1'>&nbsp;</br>&nbsp;</div>
+				<div class='col-md-6' id='mean_value1'>&nbsp;</br>&nbsp;</div>
 			</div>
-			<div class='col-md-6' >			
+			<div id='container' class='col-md-6'>
 			</div>
-			<div class='col-md-3'>		
+			<div class='col-md-3 nopadding' id='country_info2'>
+				<div class='col-md-6' id='last_value2'>&nbsp;</br>&nbsp;</div>
+				<div class='col-md-6' id='mean_value2'>&nbsp;</br>&nbsp;</div>
 			</div>
 		</div>
 		<script>
@@ -121,9 +120,10 @@
 			$("#indicator_select1").select2()
 			$("#indicator_select2").select2()
    		 	var default_set = [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,]
-            var vis_color_sets = [colorbrewer['Oranges'], colorbrewer['Reds']]
+            var vis_color_sets = [colorbrewer['Oranges'], colorbrewer['Greens']]
 			
 			selected_indicator 	= [null,null]
+			selected_polygons 	= [null,null]
 			world_polygons 		= null
 			countries	   		= null
 			
@@ -196,9 +196,9 @@
 								
 								var ind_data = indicator_data.filter(function (d) { return d['Indicator Code'] == ind.id})
 								selected_indicator[id-1] = ind.id
-								var mean_values = jsonToArrayKey(ind_data, 'mean')
+								var latest_values = jsonToArrayKey(ind_data, 'last')
 							
-								var buckets = generateBuckets(mean_values,no_buckets)
+								var buckets = generateBuckets(latest_values,no_buckets)
 								var factorize = 1
 								//var colorRamp	  = generateSingleColorRamp(default_colors[id-1],6*factorize)
 								var colorRamp	= vis_color_sets[id-1][(no_buckets+1)]

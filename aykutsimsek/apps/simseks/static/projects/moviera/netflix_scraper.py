@@ -3,8 +3,8 @@ import time
 from random import betavariate
 import datetime
 import gzip,json
+from simseks import *
 from requests import Request, Session
-
 
 from fuzzywuzzy import fuzz
 import codecs
@@ -14,6 +14,12 @@ sys.setdefaultencoding('utf8')
 
 force_refresh = True
 #force_refresh = False
+
+sleep_time=100;
+output_directory = "download/allflicks"
+pwd = os.path.dirname(os.path.realpath(__file__))
+
+url_base = 'http://www.allflicks.net/wp-content/themes/responsive/processing/processing_us.php'
 
 class Netflix():
     def __init__(self):
@@ -37,18 +43,10 @@ class Netflix():
 	        return netflix_json[num]
 	return None
 
-def randomsleep(t):
-    'Sleep between zero and t seconds.'
-    time.sleep(t * betavariate(0.7, 8))
-
-sleep_time=100;
-output_directory = "download/allflicks"
-pwd = os.path.dirname(os.path.realpath(__file__))
-
-url_base = 'http://www.allflicks.net/wp-content/themes/responsive/processing/processing_us.php'
-
-def run_scraper():
+def run_scraper():    
+    max_age       = week_seconds
     _session = Session()
+    
     
     params = {
 	'draw' 		: 2,
@@ -79,33 +77,41 @@ def run_scraper():
     }
     
     cookies = {
-	'PHPSESSID'	: 'kaf6p0on6qln3jqhtv0qvp3v60',
 	'__utma'	: '211810501',
-	'__utmb'	: '211810501.1.10.1450151467',
 	'__utmz'	: '211810501.1447610159.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided)',
-	'__utma'	: '211810501.591813640.1447610159.1447615343.1450151467.4',
-	'us'		: 'J%3B1Fvh%26hVrdlFML'
+	'us'		: 'J%3B1Fvh%26hVrdlFML',
+	'__utmt'	: '1',
+	'PHPSESSID'	: '28r3b4qoc6kq62tlf5prokqc74', #
+	#'__utmb'	: '211810501.1.10.1450151467',
+	'__utmb'	: '211810501.1.10.1452960892',
+	#'__utma'	: '211810501.591813640.1447610159.1447615343.1450151467.4',
+	'__utma'	: '211810501.591813640.1447610159.1450151467.1452960892.5',
+	
     }
     
     scrape = True
     start  = 0
+    outdir		= pwd + "/" + output_directory
+    
+    if not os.path.exists(outdir):
+	os.makedirs(outdir);
+    
     while scrape:
 	end 	 	= (start+99)
 	file_handle 	= str(start+1) + "_" + str(end+1)
 	print "**** " + file_handle
 	
-	outdir		= pwd + "/" + output_directory
 	filepath 	= pwd + "/" + output_directory + "/"+ file_handle + '.json'
-	
-	params['start'] = start
-	
-	_request = Request('GET', url_base, params=params,headers=headers, cookies=cookies)
-	_prepped = _request.prepare()
-	
-	if not os.path.exists(outdir):
-	    os.makedirs(outdir);
+	if max_age and os.path.exists(filepath):
+	    file_age = file_age_in_seconds(filepath) - time.time()/1000
+	else:
+	    file_age = -1
+	    max_age  =  0
         
-	if not os.path.exists(filepath) or force_refresh:
+	if file_age > max_age or not os.path.exists(filepath):
+	    params['start'] = start
+	    _request = Request('GET', url_base, params=params,headers=headers, cookies=cookies)
+	    _prepped = _request.prepare()
 	    print("Downloading page.....: " + _prepped.url);
 	    _response = _session.send(_prepped)
 	    if(_response and _response.json() and _response.json().get('data')):

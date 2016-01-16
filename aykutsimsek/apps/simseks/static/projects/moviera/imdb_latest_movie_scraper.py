@@ -1,15 +1,16 @@
 import sys, os, re
-from bs4 import BeautifulSoup,NavigableString
+from bs4 import BeautifulSoup
 from HTMLParser import HTMLParser
 import urllib2
-import time
+import time, stat
 from random import betavariate
 import datetime
 import gzip,json
 import unicodecsv as csv 
 import shutil
-import glob
+
 from netflix_scraper import Netflix
+from simseks import *
 
 reload(sys)  
 sys.setdefaultencoding('utf8')
@@ -24,99 +25,29 @@ end   = [int(datetime.datetime.now().strftime("%Y")),int(datetime.datetime.now()
 
 pwd = os.path.dirname(os.path.realpath(__file__))
 netflix = Netflix()
-
-### GENERICS
-def randomsleep(t):
-    'Sleep between zero and t seconds.'
-    time.sleep(t * betavariate(0.7, 8))
-
-def mk_int(s):
-    try:
-        s = re.search(r'\d+',s).group()
-        return int(s) if s else 0
-    except:
-	return ''
     
-def date_as_int(array):
-    #[%Y, %m]
-    return array[0]*12 + array[1]
-
-def json_array_fields_as_str(d):
-    for k, v in d.items():
-	# catch None's
-	if v is not None:
-	    d[k] = ",".join(v).encode("utf-8") if isinstance(v, list) else v.encode("utf-8")
-	    
 sleep_time=10;
-    
-def get_url_content(url,page_id, loc='download', ext='html', s=sleep_time, force_refresh=False, force_action=False,action=None):
-    outdir	= pwd 	  + "/" + loc
-    filepath 	= outdir  + "/" + page_id + '.' + ext
-    
-    if not os.path.exists(outdir):
-        os.makedirs(outdir);
-        
-    if force_refresh or not os.path.exists(filepath):
-        print("Downloading page.....: " + url);
-	#try:
-	contents = urllib2.urlopen(url).read()
-	if action:
-	    contents = action(contents)
-	with open(filepath, 'wb') as content_file:
-	    content_file.write(contents)
-	    randomsleep(sleep_time)
-	    
-	#except:
-	#    print "ERROR!!!"
-	#    return ""
-    content = open(filepath, 'r').read();
-    if force_action:
-	content = action(content)
-    return content
-
-def html_scraper(soup,matcher):
-    content = ''
-    for i in matcher:
-        if i[0] == 'id':
-            content = soup.findAll(id=i[1])
-	    soup = content[0]
-        elif i[0] == 'tag':
-            content = soup.findAll(i[1])
-	elif i[0] == 'tag_class':
-            content = soup.findAll(i[1], { "class" : i[2] })
-	elif i[0] == 'other':
-            content = soup.findAll(i[1], { i[2] : i[3] })
-    return content
-
-def html_stripper(soup,strip_tags):
-    for i in strip_tags:
-        element = []
-        if i[0] == 'id':
-            element = soup.findAll(id=i[1])
-        elif i[0] == 'tag':
-            element = soup.findAll(i[1])
-        elif i[0] == 'tag_class':
-            element = soup.findAll(i[1], { "class" : i[2] })
-	elif i[0] == 'free_form':
-            element = soup.findAll(i[1], { i[2] : i[3] })
-        for e in element:
-            e.extract()
-    return soup
 
 ####
 
 
-def parse_imdb_html(content, current, force_refresh=False):
+def parse_imdb_html(content, current, max_age=False):
     outdir	= "%s/download/imdb_html_parsed" % (pwd)
     file_handle = "%d-%s" 	% (current[0],str(current[1]).zfill(2))
     filepath 	= "%s/%s.csv"	% (outdir,file_handle)
+    
+    if max_age and os.path.exists(filepath):
+	file_age = file_age_in_seconds(filepath) - time.time()/1000
+    else:
+	file_age = -1
+	max_age  = 0
     
     movie_list 	= []
     
     if not os.path.exists(outdir):
         os.makedirs(outdir);
     
-    if force_refresh or not os.path.exists(filepath):
+    if file_age > max_age or not os.path.exists(filepath):
 	print("Parsing page into: " + file_handle);
 	soup = BeautifulSoup(content, "html.parser")
 	movies = html_scraper(soup,[['tag_class','td','overview-top']])
@@ -199,17 +130,23 @@ def parse_imdb_html(content, current, force_refresh=False):
     
     return movie_list
 
-def parse_imdb_html_omdb(content, current, force_refresh=False):
+def parse_imdb_html_omdb(content, current, max_age=False):
     outdir	= "%s/download/imdb_html_parsed_omdb" % (pwd)
     file_handle = "%d-%s" 	% (current[0],str(current[1]).zfill(2))
     filepath 	= "%s/%s.csv"	% (outdir,file_handle)
+    
+    if max_age and os.path.exists(filepath):
+	file_age = file_age_in_seconds(filepath) - time.time()/1000
+    else:
+	file_age = -1
+	max_age  = 0
     
     movie_list 	= []
     
     if not os.path.exists(outdir):
         os.makedirs(outdir);
     
-    if force_refresh or not os.path.exists(filepath):
+    if file_age > max_age or not os.path.exists(filepath):
 	print("Parsing page into: " + file_handle);
 	soup   = BeautifulSoup(content, "html.parser")
 	movies = html_scraper(soup,[['tag_class','td','overview-top']])
@@ -244,60 +181,6 @@ def parse_imdb_html_omdb(content, current, force_refresh=False):
     return movie_list
     return
 
-def main_bk():
-    current = start;
-    movie_list = []
-    while date_as_int(current) <= date_as_int(end):
-	file_handle = "%d-%s"%(current[0],str(current[1]).zfill(2))
-	print file_handle
-	url = url_base + '/' + file_handle
-	# Re-download and parse last 2 months data as they might update
-	refresh_last = 250
-	force_refresh 	 = date_as_int(current) > (date_as_int(end) - refresh_last)
-	content 	 = get_url_content(url,file_handle, loc="download/imdb_html", force_refresh= force_refresh)
-	
-	#movie_list 	+= parse_imdb_html(content, current, force_refresh= force_refresh)
-	movie_list 	+= parse_imdb_html_omdb(content, current, force_refresh= force_refresh)
-	
-        if current[1] == 12:
-	    current[0] = current[0]+1;
-	    
-	current[1] = (current[1]%12)+1;
-	
-    # Write to csv
-    with open(pwd + "/data/movies.csv", "w") as csvfile:
-	unique_ids    	= []
-	header = ["Title",
-		  "imdbID",
-		  "Year",
-		  "Released",
-		  "Runtime",
-		  "Genre",
-		  "Director",
-		  "Actors",
-		  "Plot",
-		  "Metascore",
-		  "imdbRating",
-		  "tomatoRating",
-		  "netflixID"
-	]
-	writer = csv.DictWriter(csvfile, fieldnames=header)
-	writer.writeheader()
-	read_files 	= glob.glob(pwd + "/download/omdb_json/*.json")
-
-	for f in read_files:
-	    with open(f, "rb") as infile:
-		d = json.loads(infile)
-		for d in movie_list:
-		    if d['imdbID'] not in unique_ids:
-		        unique_ids.append(d['imdbID'])
-		        writer.writerow(d)
-	    
-    # Gzip csv file
-    with open(pwd + "/data/movies.csv", 'rb') as f_in, gzip.open(pwd + "/data/movies.csv.gz", 'wb') as f_out:
-	shutil.copyfileobj(f_in, f_out)
-
-
 def generate_movie_list():
     current 	= start;
     movie_list 	= []
@@ -308,9 +191,9 @@ def generate_movie_list():
 	print file_handle
 	url = url_base + '/' + file_handle
 	# Re-download and parse last 2 months data as they might update
-	refresh_last 	 = 0
-	force_refresh 	 = date_as_int(current) > (date_as_int(end) - refresh_last)
-	content 	 = get_url_content(url,file_handle, loc="download/imdb_html", force_refresh= force_refresh)
+	#refresh_last 	 = 0
+	#force_refresh 	 = date_as_int(current) > (date_as_int(end) - refresh_last)
+	content 	 = get_url_content(url,file_handle, loc="download/imdb_html", max_age=week_seconds)
 	# Parse
 	soup = BeautifulSoup(content, "html.parser")
 	movies = html_scraper(soup,[['other', 'div', 'itemtype','http://schema.org/Movie']])
@@ -318,7 +201,7 @@ def generate_movie_list():
 	    try:
 		link  = html_scraper(movie,[['other','a', 'itemprop','url']])[0]
 		unique_id = link.get('href').split('?')[0].split('/')[-2]
-		movie_list.append(unique_id);
+		movie_list.append({'unique_id': unique_id, 'date' : [current[0],current[1]]});
 	    except:
 	    	None;
 	if current[1] == 12:
@@ -327,7 +210,7 @@ def generate_movie_list():
 
     return movie_list
 
-def movie_content(movie_id,force_refresh=False):
+def movie_content(movie_id, max_age = False):
     # Get main content from omdb
     omdb_url  = "http://www.omdbapi.com/?i=%s&tomatoes=true"%(movie_id)
     
@@ -352,17 +235,24 @@ def movie_content(movie_id,force_refresh=False):
 	    contents['netflixAvailable']	= netflix_json.get('available')
 	    
 	return json.dumps(contents, indent=4, sort_keys=True)
-	
-    omdb_json = json.loads(get_url_content(omdb_url,movie_id, loc='download/movie_json', ext='json', s=1, force_refresh=force_refresh, action=additional_operations, force_action=True))
+    omdb_json = json.loads(get_url_content(omdb_url,movie_id, loc='download/movie_json', ext='json', s=1, max_age=max_age, action=additional_operations, force_action=True))
     return omdb_json
     
 	
 def main():
-    movie_list = list(set(generate_movie_list()));
+    print "***** Generating Movie List"
+    movie_list = {v['unique_id']:v for v in generate_movie_list()}.values();
     
-    for movie_id in movie_list:
-    	movie_content(movie_id)
     
+    print "***** Gathering Movie Data"
+    i=1
+    for movie in movie_list:
+	print str(i) + "/" + str(len(movie_list))
+	factor = ((date_as_int(end) - date_as_int(movie.get('date'))))/2
+    	movie_content(movie.get('unique_id'), max_age = factor * week_seconds)
+	i+=1
+    
+    print "***** Generating movies.csv"
     with open(pwd + "/data/movies.csv", "w") as csvfile:
 	header = ["Title",
 		  "imdbID",
@@ -383,7 +273,7 @@ def main():
 	writer.writeheader()
 	
 	for movie_id in movie_list:
-	    json_file = '%s/download/movie_json/%s.json'%(pwd,movie_id)
+	    json_file = '%s/download/movie_json/%s.json'%(pwd,movie_id.get('unique_id'))
 	    with open(json_file, "rb") as json_file:
 		jsonobj = json.load(json_file)
 		row = { k: (jsonobj.get(k) or '') for k in header }

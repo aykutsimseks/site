@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<title>{% block head_title %}Aykut Simsek{% endblock %}</title>
+		<link rel="shortcut icon" href="{{ STATIC_URL }}img/logo/favicon.ico">
+	
+		<!-- Meta Tags -->
+		<meta name="description" 			content="{% block head_meta_description %}Aykut Simsek’s Personal Website{% endblock %}">
+		<meta http-equiv="Content-Type" 	content="text/html; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" 	content="IE=edge,chrome=1">
+		<!-- Mobile Specifics -->
+		<meta name="viewport" 				content="width=device-width, initial-scale=1.0">
+		<meta name="HandheldFriendly" 		content="true"/>
+		<meta name="MobileOptimized" 		content="320"/>
+        <meta charset="utf-8">
+        
+        <!-- FACEBOOK TAGS -->
+        <meta property="og:site_name" 		content="Aykut Simsek" />
+        <meta property="og:type" 			content="article" />
+        
+        {% block head_facebook_tags %}
+        <meta property="og:title" 			content="Aykut Simsek" />
+		<meta property="og:url" 			content="http://www.aykutsimsek.com" />
+		<meta property="og:description" 	content="Aykut Simsek" />
+        {% endblock %}
+        <!-- TWITTER TAGS -->
+        <meta name="twitter:card" 			content="summary">
+		<meta name="twitter:site" 			content="@aykutsimseks">
+		<meta name="twitter:creator" 		content="@aykutsimseks">
+		
+        {% block head_twitter_tags %}
+		<meta name="twitter:title" 			content="CivicDashboards">
+		<meta name="twitter:description" 	content="CivicDashboards">
+        {% endblock %}
+        <!-- Page generated: {% now "Y-m-d H:i:s.u" %} -->
+        
+        {% block head_css %}
+        <!-- Font-Awesome -->
+		<link rel="stylesheet" 		href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		
+		<!-- Main Style -->
+		<link href="{{ STATIC_URL }}css/main.css" rel="stylesheet">
+		{% block head_css_extra %}{% endblock %}
+		{% endblock head_css %}
+		
+		{% block head_javascript %}
+        {% block head_javascript_extra %}{% endblock %}
+        {% endblock %}
+        <!-- Begin Google Analytics -->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-66787829-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+        <!-- End Google Analytics -->
+    </head>
+    <body>
+        {% block body %}
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+		
+		{% block jsplash %}
+        <!-- This section is for Splash Screen -->
+		<div class="ole">
+		<section id="jSplash">
+			<div id="circle"></div>
+		</section>
+		</div>
+		<!-- End of Splash Screen -->
+		{% endblock %}
+
+        {% block header %}
+		
+		{% block home_slider %}
+		{% endblock %}
+        <!-- Header -->
+		<header>
+			<nav class="sticky-nav navbar navbar-inverse" role="navigation">
+				<div class="container-fluid">
+					<!--
+					<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
+					<div id="logo">
+						<a id="goUp" href="#home-slider"></a>
+					</div>
+					-->
+					<ul class="nav navbar-nav navbar-left">
+						<li><a class="btn btn-lg" href="#" style="padding-left:0;">Aykut Simsek</a></li>
+					</ul>
+					<!-- social media icons -->
+					<ul class="nav navbar-nav navbar-right social">
+						{% if user and not user.is_anonymous %}
+						<li class="dropdown" id="">
+							<a class="dropdown-toggle" href="#" data-toggle="dropdown"> {{ user.get_full_name|default:user.username }}<span class="caret"></span></a>
+							<div class="dropdown-menu" style="padding:5px;text-align:center;">
+								<a class="btn" href="{% url 'auth:logout' %}?next=/">Sign Out</a>
+							</div>
+						</li>
+						{% else %}
+						<li class="dropdown" id="">
+							<a class="dropdown-toggle" href="#" data-toggle="dropdown">Login</a>
+							<div class="dropdown-menu" style="padding:5px;text-align:center;">
+								<a class="btn" href="{% url 'social:begin' 'facebook' %}?next={{request.path|urlencode}}"><i class="fa fa-lg fa-facebook"></i></a>
+								<a class="btn" href="{% url 'social:begin' 'twitter' %}?next={{request.path|urlencode}}"><i class="fa fa-lg fa-twitter"></i></a>
+								<a class="btn" href="{% url 'social:begin' 'google-oauth2' %}?next={{request.path|urlencode}}"><i class="fa fa-lg fa-google-plus"></i></a>
+								<!-- <li><a href="#"><i class="fa fa-linkedin"></i></a></li> -->
+							</div>
+						</li>
+						{% endif %}
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!-- End Header -->
+        {% block header_content %}{% endblock header_content %}
+        {% endblock %}
+        
+        {% block content %}{% endblock %}
+        
+        {% block extra_content_container %}
+        {% endblock %}
+        
+        {% endblock body %}
+
+        {% block body_javascript %}
+        {% block body_javascript_extra %}
+        {% endblock %}{% endblock body_javascript %}
+    </body>
+</html>

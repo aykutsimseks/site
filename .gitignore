@@ -6,3 +6,5 @@ aykutsimsek/apps/simseks/static/projects/moviera/download/*
 
 
 *.sqlite3
+
+aykutsimsek/secrets.py

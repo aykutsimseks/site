@@ -16,4 +16,8 @@ urlpatterns = patterns('',
     url(r'^(project/)?aid-indicators/?$', TemplateView.as_view(template_name='aid_indicators/aid_indicators.html'), name="aid_indicators"),
     url(r'^(project/)?altug-firarda/?(\?l=(?P<language>\w+))?$', TemplateView.as_view(template_name='altug_firarda/altug_firarda.html'), name="altug_firarda"),
     url(r'^(project/)?moviera/?$', TemplateView.as_view(template_name='moviera/moviera.html'), name="moviera"),
+    
+    
+    url('', include('social.apps.django_app.urls', namespace='social')),
+    url('', include('django.contrib.auth.urls', namespace='auth')),
 )

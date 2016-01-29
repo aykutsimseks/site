@@ -26,10 +26,13 @@ html, hmtl a{
 body{
 	background:#2F3238;
 	color:#7F8289;
+	/*
 	font-weight:300;
 	font-size:16px;
-	font-family: 'Titillium Web', sans-serif;
 	line-height:28px;
+	*/
+	font-family: 'Titillium Web', sans-serif;
+	
 }
 
 
@@ -481,7 +484,7 @@ header {
 header .sticky-nav {
 	position: relative;
 	width: 100%;
-	height: 60px;
+	/* height: 60px; */
 	background: #26292E;
 	z-index: 1001;
 
@@ -501,7 +504,7 @@ header #logo {
 	color: #FFFFFF;
 	float: left;
 	padding: 15px 0;
-	margin-left: 20px;
+	/* margin-left: 20px; */
 }
 
 header #logo a {
@@ -1407,4 +1410,43 @@ footer .credits {
       -ms-transition: none;
        -o-transition: none;
           transition: none;
+}
+
+/*
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #777;
+}
+*/
+
+.navbar {
+	border: none;
+	border-radius : none;
+}
+
+.navbar .social a,
+.navbar .social a:hover,
+.navbar .social a:focus {
+    color: #fff;
+}
+
+
+.navbar .social .dropdown-menu {
+	background: #000;
+    min-width: 100%;
+}
+.social a:hover .fa-facebook {
+    color: #4060A5;
+}
+
+.social a:hover .fa-twitter {
+    color: #00ABE3;
+}
+
+.social a:hover .fa-google-plus {
+    color: #e64522;
+}
+
+.social a:hover .fa-linkedin {
+    color: #0094BC;
 }

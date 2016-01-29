@@ -4,3 +4,5 @@ aykutsimsek/apps/simseks/static/projects/moviera/data/*
 
 aykutsimsek/apps/simseks/static/projects/moviera/download/*
 
+
+*.sqlite3

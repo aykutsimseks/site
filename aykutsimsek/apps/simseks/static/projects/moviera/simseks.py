@@ -89,18 +89,18 @@ def get_url_content(url, page_id, loc='download', ext='html', s=default_sleep_ti
 	file_age = -1
 	max_age  =  0
 
-    if file_age > max_age:
-            print("Downloading page.....: " + url);
-	#try:
+    if file_age > max_age or not os.path.exists(filepath):
+	print("Downloading page.....: " + url);
+	try:
             contents = urllib2.urlopen(url).read()
             if action:
                 contents = action(contents)
             with open(filepath, 'wb') as content_file:
                 content_file.write(contents)
-                randomsleep(sleep_time)
+                randomsleep(default_sleep_time)
 	    
-	#except:
-	#    print "ERROR retrieving content from: %s"%(url)
+	except:
+	    print "ERROR retrieving content from: %s"%(url)
 
     content = open(filepath, 'r').read();
     if force_action:

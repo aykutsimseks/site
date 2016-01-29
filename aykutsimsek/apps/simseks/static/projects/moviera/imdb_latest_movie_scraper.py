@@ -215,6 +215,8 @@ def movie_content(movie_id, max_age = False):
     omdb_url  = "http://www.omdbapi.com/?i=%s&tomatoes=true"%(movie_id)
     
     def additional_operations(contents):
+	if not contents:
+	    return {}
 	contents = json.loads(contents)
 	# Image
 	try:
@@ -247,9 +249,10 @@ def main():
     print "***** Gathering Movie Data"
     i=1
     for movie in movie_list:
-	print str(i) + "/" + str(len(movie_list))
-	factor = ((date_as_int(end) - date_as_int(movie.get('date'))))/2
-    	movie_content(movie.get('unique_id'), max_age = factor * week_seconds)
+	factor = ((date_as_int(end) - date_as_int(movie.get('date')) + 1))
+	print str(i).rjust(5) + "/" + str(len(movie_list)) + " | " + '-'.join(str(v).ljust(4) for v in movie.get('date')) + " | " + str(factor).ljust(2) + " months ago"
+	#print factor
+    	movie_content(movie.get('unique_id'), max_age = factor * week_seconds / 4)
 	i+=1
     
     print "***** Generating movies.csv"

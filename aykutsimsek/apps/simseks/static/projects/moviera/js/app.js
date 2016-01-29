@@ -14,8 +14,11 @@ var list_item_template = function(data) {
 	stars_html = ''
 	//var rating_text_html  = data.imdbRating +' <small> / </small> 10'
 	var imdb_html = '<div class="rating-box">'
-				  + 	'<span class="m_imdb_rating" style="display:none">' + imdb_rating + '</span>' + data.imdbRating + '<span class="source">/10</span><div class="source">IMDb</div>'
-				  + '</div>'
+	
+	if(data.imdbRating && data.imdbRating != 'N/A') {
+				imdb_html  += 	'<span class="m_imdb_rating" style="display:none">' + imdb_rating + '</span>' + data.imdbRating + '<span class="source">/10</span><div class="source">IMDb</div>'
+	}
+	imdb_html += '</div>'
 				  
 	
 	
@@ -59,7 +62,7 @@ var list_item_template = function(data) {
 								'<span class="m_air_date" style="display:none;">' + air_date + '</span>',
 								'<span class="m_month"    style="display:none;">' + month    + '</span>' + month_text + ', ',
 								'<span class="m_year"     style="display:none;">' + year     + '</span>' + year + " | ",
-								'<span class="m_genres">' + genres_str + '</span> | <span> ' + data.Runtime + '</span>',
+								'<span class="m_genres">' + genres_str + '</span>' + (data.Runtime == "N/A"?"":' | <span>' + data.Runtime + '</span>'),
 							'</p>',
 						'</div>',
 					'</div>',
